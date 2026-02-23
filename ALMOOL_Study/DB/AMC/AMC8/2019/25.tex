@@ -1,0 +1,80 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Alice has 24 apples. In how many ways can she share them with Becky and Chris so that each of the three people has at least two apples?
+
+	\ansFIVEs{%start
+		105}{%<--- (A)
+		114 }{%<--- (B)
+		190 }{%<--- (C)
+		210 }{%<---- (D)
+	380}%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2019-25-s-1.png}
+	\end{center}
+
+	Make a table of possibilities focusing on Alice.
+	\begin{tabular}{|c|c|c|}
+	\hline Alice & Becky & Chris \\
+	\hline 20 & 2 & 2 \\
+	19 & 3 & 2 \\
+	19 & 2 & 3 \\
+	18 & 4 & 2 \\
+	18 & 3 & 3 \\
+	18 & 2 & 4 \\
+	$\vdots$ & $\vdots$ & $\vdots$ \\
+	2 & 20 & 2 \\
+	$\vdots$ & $\vdots$ & $\vdots$ \\
+	2 & 2 & 20 \\
+	\hline
+	\end{tabular}
+	
+	There are $1+2+\cdots+18+19=(19)(20) / 2=190$ ways for Alice to share the apples.
+
+	OR
+	
+	Imagine 24 stars in a row to represent the apples and 23 bars separating them.
+	
+	$$
+	*|*| *|*| *|*| *|*| *|*| *|*| *|*| *|*| *|*| *|*| *|*| * \mid *
+	$$
+	
+	
+	To divide the apples into three groups, two of the bars must be selected. The bars at either end cannot be selected because each person must receive at least two apples. The number of ways to choose 2 of the remaining 21 bars, denoted by ${ }_{21} C_2$, is $\frac{21 \cdot 20}{2}=210$. We also cannot select two adjacent bars for the same reason. With the first and last bars excluded, there are 20 pairs of adjacent bars. Therefore, there are ${ }_{21} C_2-20=210-20=190$ ways to select the bars and thereby distribute the apples.
+
+	OR
+
+	Imagine first giving each of the girls two apples. Now there are 18 apples remaining. Each way to distribute these apples among the three girls can be modeled by an arrangement of 18 stars and 2 bars. For example,
+
+	\begin{center}		
+		\includegraphics[scale=0.6]{AMC-8-pics/2019-25-s-3.png}
+		\end{center}
+
+corresponds to giving 7 more apples to Alice, none to Becky, and 11 more to Chris. The number of arrangements of 18 stars and 2 bars is ${ }_{20} C_2=\frac{20!}{18!2!}=190$.
+
+
+
+	
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+Answer (C)
+}
+\ProcessDATA
+
+
+

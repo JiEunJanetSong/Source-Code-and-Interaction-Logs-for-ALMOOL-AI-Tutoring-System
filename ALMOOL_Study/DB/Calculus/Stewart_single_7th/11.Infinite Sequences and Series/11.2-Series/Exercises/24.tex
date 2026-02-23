@@ -1,0 +1,79 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the geometric series is convergent or divergent. If it is convergent, find its sum.
+
+$$\sum_{n=0}^{\infty} \dfrac{1}{(\sqrt{2})^n}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Identify the first term $a$ and common ratio $r$
+We can rewrite the general term as:
+
+$$
+\left(\dfrac{1}{\sqrt{2}}\right)^n
+$$
+
+
+This is a geometric series of the form:
+
+$$
+\sum_{n=0}^{\infty} a r^n \quad \text { with } a=1, \quad r=\dfrac{1}{\sqrt{2}}
+$$
+
+
+Step 2: Convergence Test
+
+A geometric series $\sum a r^n$ converges if:
+
+$$
+|r|<1
+$$
+
+
+Here:
+
+$$
+r=\dfrac{1}{\sqrt{2}} \approx 0.7071<1 \Rightarrow \text { converges }
+$$
+
+Step 3: Use the geometric series sum formula
+
+$$
+S=\dfrac{a}{1-r}=\dfrac{1}{1-\dfrac{1}{\sqrt{2}}}=\dfrac{1}{\dfrac{\sqrt{2}-1}{\sqrt{2}}}=\dfrac{\sqrt{2}}{\sqrt{2}-1}
+$$
+
+
+Rationalize the denominator:
+
+$$
+\dfrac{\sqrt{2}}{\sqrt{2}-1} \cdot \dfrac{\sqrt{2}+1}{\sqrt{2}+1}=\dfrac{\sqrt{2}(\sqrt{2}+1)}{(\sqrt{2})^2-1^2}=\dfrac{\sqrt{2}(\sqrt{2}+1)}{2-1}=\sqrt{2}(\sqrt{2}+1)=2+\sqrt{2}
+$$
+
+
+Final Answer:
+
+- The series is convergent.
+
+- The sum is $2+\sqrt{2}$.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

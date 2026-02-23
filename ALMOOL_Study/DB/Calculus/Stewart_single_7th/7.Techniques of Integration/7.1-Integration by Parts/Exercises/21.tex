@@ -1,0 +1,66 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+   
+$$\int\ \dfrac{xe^{2x}}{\left( 1+2x \right)^2 }\ d x$$
+   
+}\SetValue{Solution}{%
+
+A quick way to see the result is to notice that the expression
+
+$$
+\dfrac{x e^{2 x}}{(1+2 x)^2}
+$$
+
+resembles the derivative of $\dfrac{e^{2 x}}{1+2 x}$. Indeed, let us compute
+
+$$
+\dfrac{d}{d x}\left(\dfrac{e^{2 x}}{1+2 x}\right)
+$$
+
+using the quotient rule:
+
+$$
+\dfrac{d}{d x}\left(\dfrac{e^{2 x}}{1+2 x}\right)=\dfrac{(1+2 x) \dfrac{d}{d x}\left[e^{2 x}\right]-e^{2 x} \dfrac{d}{d x}[1+2 x]}{(1+2 x)^2}
+$$
+
+
+Since $\dfrac{d}{d x}\left[e^{2 x}\right]=2 e^{2 x}$ and $\dfrac{d}{d x}[1+2 x]=2$, we get
+
+$$
+=\dfrac{(1+2 x) \cdot 2 e^{2 x}-e^{2 x} \cdot 2}{(1+2 x)^2}=\dfrac{2 e^{2 x}((1+2 x)-1)}{(1+2 x)^2}=\dfrac{2 e^{2 x}(2 x)}{(1+2 x)^2}=\dfrac{4 x e^{2 x}}{(1+2 x)^2} .
+$$
+
+
+Observe that
+
+$$
+\dfrac{x e^{2 x}}{(1+2 x)^2}=\dfrac{1}{4} \dfrac{4 x e^{2 x}}{(1+2 x)^2}=\dfrac{1}{4} \dfrac{d}{d x}\left(\dfrac{e^{2 x}}{1+2 x}\right) .
+$$
+
+
+Hence,
+
+$$
+\int \dfrac{x e^{2 x}}{(1+2 x)^2} d x=\int \dfrac{1}{4} \dfrac{d}{d x}\left(\dfrac{e^{2 x}}{1+2 x}\right) d x=\dfrac{1}{4} \dfrac{e^{2 x}}{1+2 x}+C.
+$$
+
+Therefore, the integral evaluates to
+
+$$
+\int \dfrac{x e^{2 x}}{(1+2 x)^2} d x=\dfrac{e^{2 x}}{4(1+2 x)}+C
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+

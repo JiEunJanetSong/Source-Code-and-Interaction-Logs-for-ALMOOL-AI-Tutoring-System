@@ -1,0 +1,169 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ t^2\ \sin \ \beta \ t\ d t$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int t^2 \sin (\beta t) d t
+$$
+
+where $\beta$ is a constant.
+
+Step 1: First integration by parts
+Choose:
+
+$$
+u=t^2, \quad d v=\sin (\beta t) d t
+$$
+
+
+Then
+
+$$
+d u=2 t d t, \quad v=\int \sin (\beta t) d t=-\dfrac{1}{\beta} \cos (\beta t)
+$$
+
+
+By the integration by parts formula,
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+we get:
+
+$$
+\int t^2 \sin (\beta t) d t=t^2\left(-\dfrac{1}{\beta} \cos (\beta t)\right)-\int\left(-\dfrac{1}{\beta} \cos (\beta t)\right)(2 t d t)
+$$
+
+
+Simplify step by step:
+
+1. The first term is
+
+$$
+t^2 \cdot\left(-\dfrac{1}{\beta}\right) \cos (\beta t)=-\dfrac{t^2}{\beta} \cos (\beta t)
+$$
+
+2. The second term becomes
+
+$$
+-\int\left(-\dfrac{1}{\beta}\right) \cos (\beta t)(2 t) d t=+\dfrac{2}{\beta} \int t \cos (\beta t) d t
+$$
+
+
+So
+
+$$
+\int t^2 \sin (\beta t) d t=-\dfrac{t^2}{\beta} \cos (\beta t)+\dfrac{2}{\beta} \int t \cos (\beta t) d t
+$$
+
+
+Step 2: Second integration by parts for $\int t \cos (\beta t) d t$
+Choose:
+
+$$
+u=t, \quad d v=\cos (\beta t) d t
+$$
+
+
+Then
+
+$$
+d u=d t, \quad v=\int \cos (\beta t) d t=\dfrac{1}{\beta} \sin (\beta t)
+$$
+
+
+Apply integration by parts again:
+
+$$
+\int t \cos (\beta t) d t=t \cdot\left(\dfrac{1}{\beta} \sin (\beta t)\right)-\int\left(\dfrac{1}{\beta} \sin (\beta t)\right)(d t)
+$$
+
+
+That is
+
+$$
+\int t \cos (\beta t) d t=\dfrac{t}{\beta} \sin (\beta t)-\dfrac{1}{\beta} \int \sin (\beta t) d t
+$$
+
+
+We know
+
+$$
+\int \sin (\beta t) d t=-\dfrac{1}{\beta} \cos (\beta t)
+$$
+
+
+Hence
+
+$$
+-\dfrac{1}{\beta} \int \sin (\beta t) d t=-\dfrac{1}{\beta}\left(-\dfrac{1}{\beta} \cos (\beta t)\right)=+\dfrac{1}{\beta^2} \cos (\beta t) .
+$$
+
+
+So
+
+$$
+\int t \cos (\beta t) d t=\dfrac{t}{\beta} \sin (\beta t)+\dfrac{1}{\beta^2} \cos (\beta t)
+$$
+
+
+Step 3: Combine both parts
+Returning to our expression:
+
+$$
+\int t^2 \sin (\beta t) d t=-\dfrac{t^2}{\beta} \cos (\beta t)+\dfrac{2}{\beta} \int t \cos (\beta t) d t
+$$
+
+We have just found:
+
+$$
+\int t \cos (\beta t) d t=\dfrac{t}{\beta} \sin (\beta t)+\dfrac{1}{\beta^2} \cos (\beta t)
+$$
+
+
+Hence
+
+$$
+\dfrac{2}{\beta} \int t \cos (\beta t) d t=\dfrac{2}{\beta}\left(\dfrac{t}{\beta} \sin (\beta t)+\dfrac{1}{\beta^2} \cos (\beta t)\right)=\dfrac{2 t}{\beta^2} \sin (\beta t)+\dfrac{2}{\beta^3} \cos (\beta t) .
+$$
+
+
+Putting it all together:
+
+$$
+\int t^2 \sin (\beta t) d t=-\dfrac{t^2}{\beta} \cos (\beta t)+\dfrac{2 t}{\beta^2} \sin (\beta t)+\dfrac{2}{\beta^3} \cos (\beta t)+C
+$$
+
+where $C$ is the constant of integration.
+
+Final Answer
+
+$$
+\int t^2 \sin (\beta t) d t=-\dfrac{t^2}{\beta} \cos (\beta t)+\dfrac{2 t}{\beta^2} \sin (\beta t)+\dfrac{2}{\beta^3} \cos (\beta t)+C
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
+   
+   
+
+   
+
+

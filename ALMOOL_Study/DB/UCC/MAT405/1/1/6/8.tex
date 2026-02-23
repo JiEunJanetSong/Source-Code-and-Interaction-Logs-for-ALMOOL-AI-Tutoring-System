@@ -1,0 +1,134 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Express the differential equation
+
+$$
+y^{\prime}=6 y+1
+$$
+
+as a total derivative of a potential function $\psi(t, y)$, that is, find $\psi$ satisfying
+
+$$
+y^{\prime}=6 y+1 \quad \Leftrightarrow \quad \psi^{\prime}=0
+$$
+
+
+Integrate the equation for the potential function $\psi$ to find all solutions $y$ of Eq. (1.1.14).
+
+
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Rewrite as a first-order linear ODE
+
+We write:
+
+$$
+y^{\prime}-6 y=1
+$$
+
+
+This is in the standard form:
+
+$$
+y^{\prime}+P(t) y=Q(t), \quad \text { with } P(t)=-6, \quad Q(t)=1
+$$
+
+
+Step 2: Find the integrating factor
+
+$$
+\mu(t)=e^{\int-6 d t}=e^{-6 t}
+$$
+
+
+Multiply the entire equation by $\mu(t)=e^{-6 t}$ :
+
+$$
+e^{-6 t} y^{\prime}-6 e^{-6 t} y=e^{-6 t} \Rightarrow \frac{d}{d t}\left(e^{-6 t} y\right)=e^{-6 t}
+$$
+
+
+Step 3: Define the potential function $\psi(t, y)$
+
+Let:
+
+$$
+\psi(t, y):=e^{-6 t} y \Rightarrow \frac{d}{d t} \psi(t, y(t))=e^{-6 t}
+$$
+
+
+This is not yet of the form $\psi^{\prime}=0$, so we proceed as follows:
+
+We integrate both sides:
+
+$$
+\frac{d}{d t}\left(e^{-6 t} y\right)=e^{-6 t} \Rightarrow e^{-6 t} y=\int e^{-6 t} d t=\frac{-1}{6} e^{-6 t}+C
+$$
+
+
+So we define:
+
+$$
+\psi(t, y):=e^{-6 t} y+\frac{1}{6} e^{-6 t}=e^{-6 t}\left(y+\frac{1}{6}\right) \Rightarrow \frac{d}{d t} \psi(t, y(t))=0
+$$
+
+
+Hence, we've expressed the differential equation as:
+
+$$
+y^{\prime}=6 y+1 \quad \Leftrightarrow \quad \frac{d}{d t}\left(e^{-6 t}\left(y+\frac{1}{6}\right)\right)=0
+$$
+
+
+That is,
+
+$$
+\psi(t, y)=e^{-6 t}\left(y+\frac{1}{6}\right)=\mathrm{constant}
+$$
+
+Step 4: Solve for $y(t)$
+
+From $\psi(t, y)=C$ :
+
+$$
+e^{-6 t}\left(y+\frac{1}{6}\right)=C \Rightarrow y+\frac{1}{6}=C e^{6 t} \Rightarrow y(t)=C e^{6 t}-\frac{1}{6}
+$$
+
+
+Final Answer:
+
+- Potential function:
+
+$$
+\psi(t, y)=e^{-6 t}\left(y+\frac{1}{6}\right) \quad \text { so that } \quad \psi^{\prime}=0
+$$
+
+- General solution:
+
+$$
+y(t)=C e^{6 t}-\frac{1}{6}, \quad C \in \mathbb{R}
+$$
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

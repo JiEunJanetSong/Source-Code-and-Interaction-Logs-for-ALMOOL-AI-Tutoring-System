@@ -1,0 +1,108 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find all solutions $y$ to the ODE
+
+$$
+\frac{y^{\prime}}{\left(t^2+1\right) y}=4 t
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Multiply both sides to isolate $y^{\prime}$
+Multiply both sides by $\left(t^2+1\right) y$ :
+
+$$
+y^{\prime}=4 t\left(t^2+1\right) y
+$$
+
+
+This is a first-order separable ODE.
+
+Step 2: Separate the variables
+
+$$
+\frac{d y}{y}=4 t\left(t^2+1\right) d t
+$$
+
+
+Step 3: Integrate both sides
+Left-hand side:
+
+$$
+\int \frac{1}{y} d y=\ln |y|
+$$
+
+
+Right-hand side:
+
+$$
+\int 4 t\left(t^2+1\right) d t
+$$
+
+
+First expand the integrand:
+
+$$
+4 t\left(t^2+1\right)=4 t^3+4 t
+$$
+
+
+Now integrate:
+
+$$
+\int\left(4 t^3+4 t\right) d t=t^4+2 t^2+C
+$$
+
+Step 4: Combine results
+
+$$
+\ln |y|=t^4+2 t^2+C
+$$
+
+
+Exponentiate both sides:
+
+$$
+|y|=e^{t^4+2 t^2+C}=e^C \cdot e^{t^4+2 t^2}
+$$
+
+
+Let $A= \pm e^C$ (arbitrary nonzero constant), then the general solution is:
+
+$$
+y(t)=A e^{t^4+2 t^2}
+$$
+
+
+Also, note that $y(t)=0$ is not a solution, because it makes the original denominator zero. So we exclude $y=0$ from the solution set.
+
+Final Answer:
+
+$$
+y(t)=A e^{t^4+2 t^2}=A e^{t^2\left(t^2+2\right)}, \text{with} A \in \mathbb{R}$, \quad A \in \mathbb{R} \backslash\{0\}
+$$
+
+
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

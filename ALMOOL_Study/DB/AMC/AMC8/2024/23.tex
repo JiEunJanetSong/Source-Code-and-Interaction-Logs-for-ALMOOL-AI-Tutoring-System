@@ -1,0 +1,52 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+   
+Rodrigo has a very large sheet of graph paper. First he draws a line segment connecting point $(0,4)$ to point $(2,0)$ and colors the 4 cells whose interiors intersect the segment, as shown below. Next Rodrigo draws a line segment connecting point $(2000,3000)$ to point $(5000,8000)$. How many cells will he color this time?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2024-23.png}
+	\end{center}
+
+\ansFIVEs{%start
+		6000 }{%<--- (A)
+		6500 }{%<--- (B)
+		7000 }{%<--- (C)
+		7500 }{%<---- (D)
+		8000 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Let $f(x, y)$ be the number of cells the line segment from $(0,0)$ to $(x, y)$ passes through. The problem is then equivalent to finding
+
+$$
+f(5000-2000,8000-3000)=f(3000,5000)
+$$
+
+
+Sometimes the segment passes through lattice points in between the endpoints, which happens $\operatorname{gcd}(3000,5000)-1=999$ times. This partitions the segment into 1000 congruent pieces that each pass through $f(3,5)$ cells, which means the answer is
+
+$$
+1000 f(3,5) .
+$$
+
+
+Note that a new square is entered when the lines pass through one of the lines in the coordinate grid, which for $f(3,5)$ happens $3-1+5-1=6$ times. Because 3 and 5 are relatively prime, no lattice point except for the endpoints intersects the line segment from $(0,0)$ to $(3,5)$. This means that including the first cell closest to $(0,0)$, The segment passes through $f(3,5)=6+1=7$ cells. Thus, the answer is $\square$ (C)7000 . Alternatively, $f(3,5)$ can be found by drawing an accurate diagram, leaving you with the same answer.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

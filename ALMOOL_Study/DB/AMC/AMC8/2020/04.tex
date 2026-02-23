@@ -1,0 +1,76 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Three hexagons of increasing size are shown below. Suppose the dot pattern continues so that each successive hexagon contains one more band of dots. How many dots are in the next hexagon?
+	
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2020-04.png}
+	\end{center}
+	
+	\ansFIVEs{%start
+	35}{%<--- (A)
+	37}{%<--- (B)
+	39}{%<--- (C)
+	43}{%<---- (D)
+	49}%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+ The fourth hexagon has 3 bands of dots surrounding a center dot, as shown below. The innermost band has $6 \cdot 1=6$ dots, the middle band has $6 \cdot 2=12$ dots, and the outermost band has $6 \cdot 3=18$ dots. Therefore the total number of dots in the fourth hexagon is $1+6+12+18=37$.
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2020-04-s-1.png}
+	\end{center}
+
+OR
+
+Excluding the center dot, each hexagon can be subdivided into six congruent triangular regions, as shown in the figure below. In the fourth hexagon, each triangular region contains $1+2+3=6$ dots, so the total number of dots in the fourth hexagon is $1+6 \cdot 6=37$.
+
+	\begin{center}		
+		\includegraphics[scale=0.6]{AMC-8-pics/2020-04-s-2.png}
+		\end{center}
+
+		OR
+
+In each hexagon, the dots that lie on a diagonal form a line of symmetry, as shown in the figure below. The fourth hexagon has 7 dots on a diagonal and $6+5+4=15$ dots on either side, for a total of $7+2 \cdot 15=37$ dots.	
+
+\begin{center}		
+	\includegraphics[scale=0.6]{AMC-8-pics/2020-04-s-3.png}
+	\end{center}
+
+	Note: The number of dots in each hexagon is called a hex number. Generalizing from the first and second solutions, the $n$th hex number can be calculated as
+
+	$$
+	1+6 \cdot(1+2+3+\cdots+(n-1))=1+6 \cdot \frac{n(n-1)}{2}=1+3 n(n-1)
+	$$
+	
+	
+	Generalizing from the third solution, the $n$th hex number equals
+	
+	$$
+	(2 n-1)+2 \cdot((2 n-2)+(2 n-3)+\cdots+n)=1+3 n(n-1)
+	$$
+	
+	
+	It can be shown that the sum of the first $n$ hex numbers is $n^3$. For example, the sum of the first 2 hex numbers is $1+7=8=2^3$, the sum of the first 3 hex numbers is $1+7+19=27=3^3$, and the sum of the first 4 hex numbers is $1+7+19+37=64=4^3$.
+		
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+Answer (B):
+}
+\ProcessDATA
+
+
+

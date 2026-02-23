@@ -1,0 +1,66 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\sqrt[n]{2^{1+3n}}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \sqrt[n]{2^{1 + 3n}} = \left(2^{1 + 3n}\right)^{1/n}
+$
+
+
+
+ Step 1: Simplify the expression
+
+Using the exponent rule $(a^b)^c = a^{bc}$, we get:
+
+$
+a_n = 2^{\frac{1 + 3n}{n}} = 2^{\frac{1}{n} + 3}
+$
+
+
+
+ Step 2: Take the limit as $n \to \infty$
+
+We know:
+
+- $\frac{1}{n} \to 0$
+
+So:
+
+$
+\lim_{n \to \infty} a_n = \lim_{n \to \infty} 2^{\frac{1}{n} + 3} = 2^3 = 8
+$
+
+Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{8}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

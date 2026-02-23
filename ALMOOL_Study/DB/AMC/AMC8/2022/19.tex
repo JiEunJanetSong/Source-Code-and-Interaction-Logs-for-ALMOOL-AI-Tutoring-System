@@ -1,0 +1,79 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Mr. Ramos gave a test to his class of 20 students. The dot plot below shows the distribution of test scores.
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2022-19.png}
+	\end{center}
+
+	Later Mr. Ramos discovered that there was a scoring error on one of the questions. He regraded the tests, awarding some of the students 5 extra points, which increased the median test score to 85. What is the minimum number of students who received extra points?
+	(Note that the median test score equals the average of the 2 scores in the middle if the 20 test scores are arranged in increasing order.)
+
+\ansFIVEs{%start
+		2 }{%<--- (A)
+		3 }{%<--- (B)
+		4 }{%<--- (C)
+		5 }{%<---- (D)
+		6 }%<---- (D)
+}\SetValue{Concept}{%
+
+라모스 선생님은 20명의 학생으로 구성된 반에서 시험을 치렀습니다. 아래 점선은 시험 점수의 분포를 보여줍니다.
+
+나중에 라모스 씨는 문제 중 하나에 채점 오류가 있음을 발견했습니다. 그는 시험을 재채점하여 일부 학생에게 5점의 가산점을 부여하여 시험 평균 점수를 85점으로 올렸습니다. 추가 점수를 받은 학생의 최소 인원은 몇 명인가요? (시험 점수 중앙값은 20개의 시험 점수를 높은 순서로 배열한 경우 가운데에 있는 2개의 점수의 평균과 같습니다.)
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Given:
+
+- 20 students $\rightarrow$ median $=$ average of the 10 th and 11 th scores
+
+- Original median:
+
+$$
+\frac{75+75}{2}=75
+$$
+
+- New median $=85$
+
+Step 1: Count how many students scored below 85
+
+From the dot plot:
+
+\begin{tabular}{|l|l|l|}
+\hline Score & Count & Cumulative \\
+\hline 60 & 2 & 2 \\
+\hline 65 & 4 & 6 \\
+\hline 70 & 2 & 8 \\
+\hline 75 & 4 & $12 \leftarrow$ includes 10th \& 11th scores \\
+\hline
+\end{tabular}
+
+So, the 10th and 11th students originally scored 75.
+
+Step 2: Raise scores to make 10th and 11th $\geq 85$
+
+To do this, we must push at least 4 students who scored below 85 up to 85 or higher, so they move above the 10th/11th position.
+
+If 4 students who had 75 get +5 points $(75 \rightarrow 80)$, they are still not $\geq 85$. But if they get $+10(75 \rightarrow 85)$, now:
+
+- Number of students scoring 85 increases from 2 to 6
+
+- 85 becomes the new 10th and 11th scores
+
+Final Answer: (C) 4
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,93 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$F(t)=e^{t \sin 2 t}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We have
+
+$$
+F(t) = e^{t \sin(2t)}.
+$$
+
+To differentiate this, use the chain rule. Let
+
+$$
+g(t) = t \sin(2t).
+$$
+
+Then
+
+$$
+F(t) = e^{g(t)}.
+$$
+
+By the chain rule,
+
+$$
+F'(t)
+= e^{g(t)} \, g'(t).
+$$
+Hence we need $g'(t)$.
+
+\textbf{Differentiating} $g(t)$
+
+$$
+g(t) = t \sin(2t).
+$$
+
+Apply the product rule:
+
+$$
+g'(t)
+= \bigl(\sin(2t)\bigr) \cdot \dfrac{d}{dt}[t]
++ t \cdot \dfrac{d}{dt}\bigl[\sin(2t)\bigr].
+$$
+
+1. $\dfrac{d}{dt}[t] = 1.$
+
+2. $\dfrac{d}{dt}[\sin(2t)] = \cos(2t)\cdot 2 = 2\cos(2t).$
+
+So
+$$
+g'(t) = \sin(2t) + 2t \cos(2t).
+$$
+
+\textbf{Combine via the chain rule}
+
+$$
+F'(t) 
+= e^{t \sin(2t)} \; \bigl[\sin(2t) + 2t \cos(2t)\bigr].
+$$
+
+Thus, the derivative is:
+
+$$
+\boxed{
+F'(t) = e^{t \sin(2t)} \,\bigl(\,\sin(2t) + 2t\,\cos(2t)\bigr).
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

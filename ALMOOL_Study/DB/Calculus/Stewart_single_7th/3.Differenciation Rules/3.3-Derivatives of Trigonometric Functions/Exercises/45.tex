@@ -1,0 +1,93 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the limit.
+
+$\lim _{\theta \rightarrow 0} \dfrac{\sin \theta}{\theta+\tan \theta}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Using small-angle approximations or direct factorization:
+
+We want to compute
+$
+\lim_{\theta \to 0} \dfrac{\sin \theta}{\theta + \tan \theta}.
+$
+
+Approach 1: Small-angle approximation
+For small $\theta$,
+$
+\sin \theta \approx \theta, 
+\quad
+\tan \theta \approx \theta.
+$
+
+Hence,
+$
+\theta + \tan \theta \approx \theta + \theta = 2\theta.
+$
+
+Then
+$
+\dfrac{\sin \theta}{\theta + \tan \theta} \approx \dfrac{\theta}{2\theta} = \dfrac{1}{2}.
+$
+
+Thus the limit is $ \tfrac{1}{2} $.
+
+Approach 2: More rigorous (factor out $\theta$)
+
+Rewrite:
+$
+\dfrac{\sin \theta}{\theta + \tan \theta}
+= \dfrac{\sin \theta}{\theta(1 + \dfrac{\tan \theta}{\theta})}.
+$
+
+As $\theta \to 0$,
+$
+\dfrac{\sin \theta}{\theta} \to 1,
+\quad
+\dfrac{\tan \theta}{\theta} \to 1.
+$
+
+So we can write:
+$
+\dfrac{\sin \theta}{\theta + \tan \theta}
+= \dfrac{\sin \theta}{\theta} \cdot \dfrac{1}{1 + \dfrac{\tan \theta}{\theta}}.
+$
+
+Hence,
+$
+\lim_{\theta \to 0} \dfrac{\sin \theta}{\theta + \tan \theta}
+= \left(\lim_{\theta \to 0} \dfrac{\sin \theta}{\theta}\right)
+  \cdot
+  \dfrac{1}{1 + \lim_{\theta \to 0} \dfrac{\tan \theta}{\theta}}
+= 1 \cdot \dfrac{1}{1 + 1}
+= \dfrac{1}{2}.
+$
+
+Therefore,
+
+$
+\boxed{\dfrac{1}{2}}.
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

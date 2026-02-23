@@ -1,0 +1,95 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the values of $x$ for which the series converges. Find the sum of the series for those values of $x$.
+
+$$\sum_{n=0}^{\infty} \dfrac{\sin ^n x}{3^n}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Recognize the Geometric Series Form
+
+We can write this as:
+
+$$
+\sum_{n=0}^{\infty}\left(\dfrac{\sin x}{3}\right)^n
+$$
+
+
+This is a geometric series with common ratio:
+
+$$
+r=\dfrac{\sin x}{3}
+$$
+
+
+Step 2: Convergence Condition
+
+A geometric series $\sum r^n$ converges if and only if:
+
+$$
+|r|<1
+$$
+
+
+So we require:
+
+$$
+\left|\dfrac{\sin x}{3}\right|<1 \quad \Rightarrow \quad|\sin x|<3
+$$
+
+
+But we know that:
+
+$$
+|\sin x| \leq 1 \quad \text { for all real } x
+$$
+
+
+So the condition is always satisfied for all real values of $x$. Hence, the series converges for all real $x$.
+
+Step 3: Find the Sum
+
+The sum of a geometric series is:
+
+$$
+\sum_{n=0}^{\infty} r^n=\dfrac{1}{1-r}
+$$
+
+
+So with $r=\dfrac{\sin x}{3}$, the sum is:
+
+$$
+\sum_{n=0}^{\infty} \dfrac{\sin ^n x}{3^n}=\dfrac{1}{1-\dfrac{\sin x}{3}}=\dfrac{1}{\dfrac{3-\sin x}{3}}=\dfrac{3}{3-\sin x}
+$$
+
+Final Answer:
+
+- The series converges for all real values of $x$ :
+
+All real $x$
+
+- For those values, the sum is:
+
+$$\dfrac{3}{3-\sin x}$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

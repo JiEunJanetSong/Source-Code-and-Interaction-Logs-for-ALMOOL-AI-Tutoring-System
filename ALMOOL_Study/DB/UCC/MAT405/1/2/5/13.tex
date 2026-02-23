@@ -1,0 +1,168 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find all solutions of
+
+$$
+y^{\prime}=a y+b y^n,
+$$
+
+where $a \neq 0, b$, and $n$ are real constants with $n \neq 0,1$.
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are asked to solve the general nonlinear differential equation:
+
+$$
+y^{\prime}=a y+b y^n
+$$
+
+where $a \neq 0, b \in \mathbb{R}$, and $n \neq 0,1$. This is a Bernoulli differential equation, which can be solved by a standard substitution.
+
+Step 1: Recognize Bernoulli Form
+This is of the form:
+
+$$
+y^{\prime}=a y+b y^n
+$$
+
+
+We can write it as:
+
+$$
+y^{\prime}-a y=b y^n
+$$
+
+
+This matches the standard Bernoulli equation:
+
+$$
+y^{\prime}+P(x) y=Q(x) y^n
+$$
+
+
+Step 2: Use Bernoulli Substitution
+
+Let:
+
+$$
+v=y^{1-n} \quad \Rightarrow \quad y=v^{\frac{1}{1-n}}
+$$
+
+
+Differentiate both sides using the chain rule:
+
+$$
+y^{\prime}=\frac{1}{1-n} v^{\frac{n}{1-n}} v^{\prime}
+$$
+
+Now recall from the original equation:
+
+$$
+y^{\prime}-a y=b y^n
+$$
+
+
+Substitute $y=v^{1 /(1-n)}$, and notice that:
+- $y=v^{1 /(1-n)}$
+- $y^n=v^{n /(1-n)}$
+
+So:
+
+$$
+\frac{1}{1-n} v^{\frac{n}{1-n}} v^{\prime}-a v^{\frac{1}{1-n}}=b v^{\frac{n}{1-n}}
+$$
+
+
+Multiply both sides by $(1-n) v^{-\frac{n}{1-n}}$ :
+
+$$
+v^{\prime}-a(1-n) v=b(1-n)
+$$
+
+
+This is now a first-order linear equation in $v$ :
+
+$$
+v^{\prime}-a(1-n) v=b(1-n)
+$$
+
+
+Step 3: Solve the Linear Equation
+
+Let's solve:
+
+$$
+v^{\prime}-A v=B, \quad \text { where } A=a(1-n), \quad B=b(1-n)
+$$
+
+
+This is a standard linear ODE. The integrating factor is:
+
+$$
+\mu(x)=e^{-A x}=e^{-a(1-n) x}
+$$
+
+
+Multiply through:
+
+$$
+\frac{d}{d x}\left(e^{-A x} v\right)=B e^{-A x}
+$$
+
+
+Integrate both sides:
+
+$$
+e^{-A x} v=\int B e^{-A x} d x=-\frac{B}{A} e^{-A x}+C \Rightarrow v(x)=-\frac{B}{A}+C e^{A x}
+$$
+
+
+Now plug back in:
+
+$$
+v(x)=-\frac{b(1-n)}{a(1-n)}+C e^{a(1-n) x}=-\frac{b}{a}+C e^{a(1-n) x}
+$$
+
+
+Step 4: Back-substitute $v=y^{1-n}$
+
+$$
+y^{1-n}=-\frac{b}{a}+C e^{a(1-n) x} \Rightarrow y(x)=\left(-\frac{b}{a}+C e^{a(1-n) x}\right)^{\frac{1}{1-n}}
+$$
+
+Final Answer:
+
+$$
+y(x)=\left(-\frac{b}{a}+C e^{a(1-n) x}\right)^{\frac{1}{1-n}}, \quad C \in \mathbb{R}
+$$
+
+
+This is the general solution of the equation
+
+$$
+y^{\prime}=a y+b y^n
+$$
+
+for $n \neq 0,1$ and $a \neq 0$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

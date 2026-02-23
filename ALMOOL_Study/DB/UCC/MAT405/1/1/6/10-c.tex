@@ -1,0 +1,70 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Follow the steps below to solve
+
+$$
+y^{\prime}=-3 y+5, \quad y(0)=1
+$$
+
+(c) Use the potential function to find the general solution of the differential equation.
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We have transformed the differential equation $y^{\prime}=-3 y+5$ into the form $\psi^{\prime}=0$, where $\psi(t, y)=$ $e^{3 t} y-\frac{5}{3} e^{3 t}$, from part (b).
+
+Now, to find the general solution of the differential equation, we integrate the equation $\psi^{\prime}(t)=0$ with respect to $t$:
+
+$$
+\begin{gathered}
+\int \psi^{\prime}(t) d t=\int 0 d t \\
+\psi(t)=C
+\end{gathered}
+$$
+
+where $C$ is the constant of integration.
+
+Substitute the expression for $\psi(t, y)$ back into this integrated equation:
+
+$$
+e^{3 t} y-\frac{5}{3} e^{3 t}=C
+$$
+
+
+Now, solve this equation for $y(t)$ to find the general solution:
+
+$\$ e^{3 t} y=C+\frac{5}{3} e^{3 t} \$$ Divide both sides by $e^{3 t}$:
+
+$$
+\begin{aligned}
+& y(t)=\frac{C+\frac{5}{3} e^{3 t}}{e^{3 t}} \\
+& y(t)=\frac{C}{e^{3 t}}+\frac{\frac{5}{3} e^{3 t}}{e^{3 t}} \\
+& y(t)=C e^{-3 t}+\frac{5}{3}
+\end{aligned}
+$$
+
+
+This is the general solution to the differential equation $y^{\prime}=-3 y+5$.
+
+The final answer is $y(t)=C e^{-3 t}+\frac{5}{3}, \quad$ for all $C \in \mathbb{R}$.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

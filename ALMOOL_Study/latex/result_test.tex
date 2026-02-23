@@ -1,0 +1,1758 @@
+\documentclass[showtrims,svgnames,chapter,openany,oneside]{oblivoir}
+\usepackage{ibmath}%수식 명령 설정파일
+\usepackage{memtikzpagenodes}% 페이지 레이아웃
+\usepackage{SATdesign}% 디자인 설정파일
+\usepackage{bigints} %큰 적분기호
+\usepackage{dhucs-enumitem}
+\usepackage{tabularray}
+\usepackage{bookmark}
+\usepackage{multirow}
+
+%\usepackage{amsmath}
+%%%%%%
+\newcommand{\autoinput}{\input{AMC\expandafter\AMClevel/\expandafter\AMCyear AMC\expandafter\AMClevel\expandafter\AMCtype.tex}}
+\newcommand\AMCyear{2001}%
+\newcommand\AMClevel{10}%
+\newcommand\AMCtype{B}%
+%%%%%%%%%%%% 줄바꿈 or 페이지바꿈 설정하기
+\newcommand{\Jnewpage}{%\JNewpage라는 이름의 기존에 없던 새로운 명령을 만들고, 그 명령을 입력하면 무엇이 실행될지 명시
+%\vskip30pt %%% 줄바꾸려면 주석해제
+ %%% 페이지바꾸려면 주석해제
+}
+%%%%%%%%%%% 불러올 파일 설정
+%%%%%%%%%%% 머릿말 설정\text{a parabola tangent to the }x\text{-axis} 
+\headersetting{%left start
+\colormouth[\MYCOLOR]{Research Team - ALMOOL}%{USSCE-2018-M$_\textbf{G1}$}%left contentsBivariate Statistics
+}{%middle start 
+%\today%middle contents
+}{%{right start
+\colormouth[\MYCOLOR]{Digital SAT Math}%right contents
+}
+
+\begin{document}
+
+%%% 어떤파일 부를지
+
+%\input{AMC12/2000AMC12-}
+
+%Problem 문제지 Solution 해설지 Teacher 문제+해설
+\SetValue{Book}{SATProblem}
+%\SetValue{Book}{SATSolution}
+%\SetValue{Book}{Solution}
+\thispagestyle{empty}
+%\begin{comment}
+\null\vfill 
+    \begin{center}\Huge\bfseries\sffamily
+ALMOOL Digital SAT Math 28Q\vskip7pt
+Master the Toughest Problems \vskip7pt
+with Real-Time Q\&A Support \vskip7pt
+1st Edition
+\vskip15pt
+
+    \end{center}
+\vfill\null
+
+\newpage 
+\section*{About Us}
+Research Team is an educational research team led by the research team. In the field of mathematics education, they study various mathematics curricula from around the world and specialize in guiding students from Western and Asia-Pacific regions through their independently researched and developed mathematics education methods. Recently, they have been exploring the expansion of teacher education using their newly developed AI educational tool to Papua New Guinea and African regions, including Tanzania. Ultimately, they aim to provide more students with opportunities for quality education by developing public education teacher training programs in collaboration with universities and overseas schools.
+
+\section*{How to Use This Book}
+This book consists of 28 challenging questions that are crucial for achieving a perfect score of 800 on the Digital SAT. It is specifically designed to help students aiming for top schools achieve high scores more easily and efficiently compared to taking full-length tests.
+
+By scanning or clicking the QR code, you can access real-time Q\&A support. After purchasing the book, buyers can request an ID and temporary password by contacting contact@researchteam.ai with their order number and preferred ID. 
+
+    \newpage 
+    \SetValue{examTitle}{Module 3}    
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries The Toughest 28Q)}\hfill\null
+\vfill\null
+\newpage 
+\pagestyle{mathclass2021}
+
+During her adventures in the bazaars of Tunisia, Maya chose to stay in a luxury riad.
+It charged \(2,500\) Tunisian dinars per night.
+Given that she lodged there for four nights and her credit card only allows a maximum transaction of \( \$250\) at once, how many times must Maya swipe her card to settle her bill? 
+ote: \(1\) Tunisian dinar \(= \$0.35\))
+
+During her adventures in the bazaars of Tunisia, Maya chose to stay in a luxury riad. It charged \(2,500\) Tunisian dinars per night. Given that she lodged there for four nights and her credit card only allows a maximum transaction of \( \$250\) at once, how many times must Maya swipe her card to settle her bill? (Note: \(1\) Tunisian dinar \(= \$0.35\)) 
+
+\ansFOURs{       
+4}{          
+10}{          
+14}{          
+29}\vfillMaya stayed in a luxury riad in Tunisia that cost 2,500 Tunisian dinars per night. She stayed for four nights, and her credit card allows a maximum transaction of \$250 per swipe. We need to find how many times she must swipe her card to pay the total bill. 
+
+\begin{alignat*}{2}
+\text{Total cost in TND} &= 2,500 \times 4 \quad && \{ \text{Multiply by the number of nights} \} \\
+&= 10,000 \, \text{TND} \\
+\text{Total cost in USD} &= 10,000 \times 0.35 \quad && \{ \text{Convert TND to USD} \} \\
+&= 3,500 \, \text{USD} \\
+\text{Number of swipes} &= \frac{3,500}{250} \quad && \{ \text{Divide by the per-swipe limit} \} \\
+&= 14
+\end{alignat*}
+
+Thus, Maya must swipe her card 14 times to settle her bill.
+
+The correct answer is: \boxed{\text{C) }14.}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/05.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_05.png}}\end{center}\newpage
+$$ \sqrt{-6 x+6}+2=x+1 $$ What is the solution set of the equation above? 
+
+\ansFOURs{      
+	\{-1\}   }{         
+	\{1\}   }{         
+	\{-1,-5\}   }{         
+    \{1,-5\} }\vfillWe need to find the solution set for the equation \( \sqrt{-6x + 6} + 2 = x + 1 \).
+
+\begin{alignat*}{2}
+\sqrt{-6x + 6} + 2 &= x + 1 \qquad && \{ \text{Given equation} \} \\
+\sqrt{-6x + 6} &= x - 1 \qquad && \{ \text{Subtract 2 from both sides} \} \\
+\left(\sqrt{-6x + 6}\right)^2 &= (x - 1)^2 \qquad && \{ \text{Square both sides} \} \\
+-6x + 6 &= x^2 - 2x + 1 \qquad && \{ \text{Expand the right side} \} \\
+0 &= x^2 + 4x - 5 \qquad && \{ \text{Move all terms to one side} \}
+\end{alignat*}
+
+Now, we will solve the quadratic equation.
+
+\begin{alignat*}{2}
+(x + 5)(x - 1) &= 0 \qquad && \{ \text{Factor the quadratic} \} \\
+x &= -5, \, 1 \qquad && \{ \text{Solve for } x \}
+\end{alignat*}
+
+Check each solution in the original equation.
+
+Checking \( x = -5 \):
+\[
+\sqrt{-6(-5) + 6} + 2 = -5 + 1
+\]
+\[
+\sqrt{36} + 2 = -4 \Rightarrow 6 + 2 = -4 \quad \text{(False)}
+\]
+
+Checking \( x = 1 \):
+\[
+\sqrt{-6(1) + 6} + 2 = 1 + 1
+\]
+\[
+\sqrt{0} + 2 = 2 \Rightarrow 0 + 2 = 2 \quad \text{(True)}
+\]
+
+The only valid solution is \( x = 1 \).
+
+Thus, the correct answer is \boxed{\text{B) } 1}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/06.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_06.png}}\end{center}\newpage
+Which of the following complex numbers is equivalent to \( \frac{7 - 2i}{5 + 3i} \) ?  
+(Note: \( i = \sqrt{-1} \))
+
+\ansFOURs{      
+	 	 \frac{7}{5} - \frac{2i}{3}}{         
+	 	 \frac{7}{5} + \frac{2i}{3}}{         
+	 	 \frac{29}{34} - \frac{31i}{34}}{         
+		 \frac{29}{34} + \frac{31i}{34}}\vfillTo solve the given complex number division, we need to eliminate the imaginary unit in the denominator by multiplying both the numerator and denominator by the complex conjugate of the denominator.\begin{alignat*}{2}
+\frac{7 - 2i}{5 + 3i} 
+&= \frac{(7 - 2i)(5 - 3i)}{(5 + 3i)(5 - 3i)} \qquad && \{ \text{Multiplying by the complex conjugate} \} \\
+&= \frac{35 - 21i - 10i + 6i^2}{25 - 9i^2} \qquad && \{ \text{Expanding the numerator and denominator} \} \\
+&= \frac{35 - 31i - 6}{25 + 9} \qquad && \{ i^2 = -1 \} \\
+&= \frac{29 - 31i}{34} \qquad && \{ \text{Simplifying both numerator and denominator} \}
+\end{alignat*}
+Finally, we separate the real and imaginary parts of the expression to get the final result.\begin{alignat*}{2}
+\frac{29 - 31i}{34}
+&= \frac{29}{34} - \frac{31i}{34} \qquad && \{ \text{Separating real and imaginary parts} \}
+\end{alignat*}
+Thus, the given expression simplifies to \( \frac{29}{34} - \frac{31i}{34} \), which corresponds to option \boxed{\text{C) } \frac{29}{34} - \frac{31i}{34} }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/07.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_07.png}}\end{center}\newpage
+If \( 3x + y = 9 \), then what is the value of \( \left(8^x\right)\left(2^y\right) \)?
+  
+\ansFOURs{      
+	 	 2^6 }{         
+	 	  2^9 }{         
+	 	  16^6 }{         
+		 \text{It cannot be determined from the information given.}}\vfillWe are given the equation \(3x + y = 9\) and asked to find the value of \( \left(8^x\right)\left(2^y\right) \). Let's solve step by step.
+
+\begin{alignat*}{2}
+8^x \cdot 2^y 
+&= \left(2^3\right)^x \cdot 2^y \qquad &&  \text{since } 8 = 2^3  \\
+&= 2^{3x} \cdot 2^y &&  \text{simplifying powers} \end{alignat*}
+
+Now, we will use the rule of exponents to combine the terms.
+\begin{alignat*}{2}
+2^{3x} \cdot 2^y 
+&= 2^{3x + y} \qquad &&  \text{adding the exponents} 
+\end{alignat*}
+We are given that \( 3x + y = 9 \), so substitute this into the equation.
+\begin{alignat*}{2}
+2^{3x + y} 
+&= 2^9 \qquad && \text{substitute } 3x + y = 9 
+\end{alignat*}
+Thus, the value of \(\left(8^x\right)\left(2^y\right)\) is \(2^9\) .
+\boxed{\text{B) }2^9 }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/08.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_08.png}}\end{center}\newpage
+Brentwood High School has \( 850 \) sophomores and juniors. Out of them, \( 380 \) are enrolled in one or more Advanced Placement (AP) courses. Among these AP students, \( 90 \) are in AP Chemistry, \( 70 \) are in AP World History, and \( 30 \) are in both AP Chemistry and AP World History. Approximately what percent of the sophomores and juniors at Brentwood High School take AP courses other than Chemistry and World History? 
+
+\ansFOURsT{       
+$10 \%$}{          
+$20 \%$}{          
+$30 \%$}{          
+$40 \%$}\vfillGiven that Brentwood High School has 850 sophomores and juniors, and 380 of them are enrolled in one or more AP courses, we need to find the percentage of students taking AP courses other than Chemistry and World History.
+
+\begin{alignat*}{2}
+\text{Number of students in AP Chemistry or World History} &= 90 + 70 - 30 \qquad && \{ \text{Inclusion-Exclusion Principle} \} \\
+&= 130 && \{ \text{Total in AP Chemistry, AP World History, or both} \}
+\end{alignat*}
+
+Next, we find the number of students taking AP courses other than Chemistry and World History.
+
+\begin{alignat*}{2}
+\text{Number of students in other AP courses} &= 380 - 130 \qquad && \{ \text{Subtracting AP Chemistry and World History students} \} \\
+&= 250 && \{ \text{Students in other AP courses} \}
+\end{alignat*}
+
+Now, we calculate the percentage of these students out of the total number of sophomores and juniors.
+
+\begin{alignat*}{2}
+\text{Percentage} &= \left( \frac{250}{850} \right) \times 100 \qquad && \{ \text{Finding the percentage} \} \\
+&\approx 29.41\% && \{ \text{Rounding to the nearest whole number} \} \\
+&\approx 30\% && \{ \text{Final approximation} \}
+\end{alignat*}
+
+Thus, the percentage of students taking AP courses other than Chemistry and World History is approximately:
+\[
+\boxed{\text{C) }30\%}
+\]\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/09.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_09.png}}\end{center}\newpage
+If \((2x + m)(4x + n) = 8x^2 + kx + 20\) for all values of \(x\), and \(m + n = 9\), what are all possible values of \(k\)?
+
+\ansFOURsT{      
+	 	 $13$ and $14$}{         
+	 	 $17$ and $18$}{         
+	 	 $22$ and $23$}{         
+		 $26$ and $28$}\vfillWe begin by expanding the left-hand side of the equation and simplifying the expression.\begin{alignat*}{2}
+(2x + m)(4x + n) 
+&= 2x \cdot 4x + 2x \cdot n + m \cdot 4x + m \cdot n \qquad && \text{(distribute terms)} \\
+&= 8x^2 + 2nx + 4mx + mn  \qquad && \text{(simplify products)} \\
+&= 8x^2 + (2n + 4m)x + mn \qquad && \text{(combine like terms)} 
+\end{alignat*}
+Next, we equate the coefficients of like terms from both sides of the equation.\begin{alignat*}{2}
+8x^2 + (2n + 4m)x + mn &= 8x^2 + kx + 20 \qquad && \text{(equating both sides)} \\
+2n + 4m &= k \qquad && \text{(coefficients of } x \text{)} \\
+mn &= 20 \qquad && \text{(constant terms)}
+\end{alignat*}
+We now use the additional information given to find the values of \( m \) and \( n \).\begin{alignat*}{2}
+m + n &= 9 \qquad && \text{(given)} \\
+n &= 9 - m \qquad && \text{(solving for } n \text{)}
+\end{alignat*}
+Substitute \( n = 9 - m \) into the equation \( mn = 20 \):\begin{alignat*}{2}
+m(9 - m) &= 20 \qquad && \text{(substitute and simplify)} \\
+-m^2 + 9m - 20 &= 0 \qquad && \text{(rearrange)} \\
+m^2 - 9m + 20 &= 0 \qquad && \text{(multiply by } -1 \text{)} \\
+(m - 5)(m - 4) &= 0 \qquad && \text{(factor)} \\
+m &= 5 \quad \text{or} \quad m = 4 \qquad && \text{(solve)}
+\end{alignat*}
+Finally, substitute these values of \( m \) into the equations for \( n \) and \( k \).\begin{alignat*}{2}
+\text{If } m = 5, &\ n = 4: \quad k = 2(4) + 4(5) = 28 \qquad && \text{(calculate } k \text{)} \\
+\text{If } m = 4, &\ n = 5: \quad k = 2(5) + 4(4) = 26 \qquad && \text{(calculate } k \text{)}
+\end{alignat*}
+Thus, the possible values of \( k \) are \boxed{\text{D) } 26  \text{ and } 28 }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/10.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_10.png}}\end{center}\newpage
+\begin{align*} \frac{x^2+x-2}{x-1} = \sqrt{2x+7} 
+\end{align*} 
+For the equation above, there are two potential solutions. However, one of them is extraneous. What is the value of the extraneous solution? 
+
+\ansFOURs{      
+1}{          
+2}{          
+3}{          
+-1}\vfillGiven the equation:
+\[
+\frac{x^2 + x - 2}{x - 1} = \sqrt{2x + 7}
+\]
+we need to find the extraneous solution by simplifying and solving.
+
+\textbf{Step 1: Simplify the Left Side}
+First, factor the numerator \(x^2 + x - 2\) as:
+\[
+x^2 + x - 2 = (x - 1)(x + 2)
+\]
+Then, the expression becomes:
+\[
+\frac{(x - 1)(x + 2)}{x - 1}
+\]
+For \(x \neq 1\), this simplifies to \(x + 2\).
+
+\textbf{Step 2: Solve the Equation}
+The equation now is:
+\[
+x + 2 = \sqrt{2x + 7}
+\]
+Square both sides to get rid of the square root:
+\[
+(x + 2)^2 = 2x + 7
+\]
+Expanding the left side:
+\[
+x^2 + 4x + 4 = 2x + 7
+\]
+
+\textbf{Step 3: Move All Terms to One Side}
+Subtract \(2x + 7\) from both sides:
+\[
+x^2 + 2x - 3 = 0
+\]
+
+\textbf{Step 4: Factor the Quadratic}
+\[
+x^2 + 2x - 3 = (x - 1)(x + 3) = 0
+\]
+
+\textbf{Step 5: Solve for \(x\)}
+The solutions are:
+\[
+x = 1 \quad \text{and} \quad x = -3
+\]
+
+\textbf{Step 6: Check for Extraneous Solutions}
+For \(x = 1\):
+\[
+\frac{1^2 + 1 - 2}{1 - 1} = \frac{0}{0} \quad \text{(undefined)}
+\]
+So, \(x = 1\) is extraneous.
+
+For \(x = -3\):
+\[
+\frac{(-3)^2 + (-3) - 2}{-3 - 1} = \frac{4}{-4} = -1
+\]
+\[
+\sqrt{2(-3) + 7} = \sqrt{1} = 1
+\]
+Since \(-1 \neq 1\), this does not satisfy the original equation.
+
+Thus, the extraneous solution is \boxed{\text{A) } 1}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/11.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_11.png}}\end{center}\newpage
+$$ \begin{array}{r} 10 x + 4 y = 80 \\ c x + d y = 20 \end{array} $$ In the system of equations above, \( c \) and \( d \) are constants. If the system has no solutions, what is the value of \( \frac{d}{c} \) ?\vfillTo solve for \( \frac{d}{c} \), we start by making the constants on the right-hand side of the equations easier to compare.
+\begin{alignat*}{2}
+4 \times (cx + dy) &= 4 \times 20 \qquad && \{ \text{Multiply the second equation by 4} \} \\
+4cx + 4dy &= 80  && \{ \text{Resulting equation after multiplying} \}
+\end{alignat*}
+Now, we compare the coefficients of \(x\) and \(y\) in both equations. The first equation remains as:
+\begin{alignat*}{2}
+10x + 4y &= 80 \qquad && \{ \text{Original first equation} \} \\
+\frac{10}{4c} &= \frac{4}{4d} \qquad && \{ \text{Equating coefficients of the terms} \}
+\end{alignat*}
+Simplifying both sides to find the proportionality:
+\begin{alignat*}{2}
+\frac{10}{c} &= \frac{4}{d} \qquad && \{ \text{Simplified equation} \} \\
+10d &= 4c \qquad && \{ \text{Cross-multiplying} \} \\
+\frac{d}{c} &= \frac{2}{5} \qquad && \{ \text{Solving for } \frac{d}{c} \}
+\end{alignat*}
+Thus, the value of \( \frac{d}{c} \) is \boxed{ \frac{2}{5} }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/12.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_12.png}}\end{center}\newpage
+If \( a^{-\tfrac{2}{3}} = x \), where \( a > 0 \), which of the following is NOT equal to \( a \) in terms of \( x \)? 
+
+\ansFOURsT{ 
+\( \frac{1}{x\sqrt{x}} \)}{          
+\( \left(\frac{1}{x}\right)^{\tfrac{3}{2}} \)}{          
+\( x^{-\tfrac{3}{2}} \)}{          
+\( \left(\frac{1}{x}\right)^{\tfrac{2}{3}} \)}\vfillWe start by solving for \( a \) in terms of \( x \) using the given equation \( a^{-\tfrac{2}{3}} = x \).
+
+\begin{alignat*}{3}
+a^{-\tfrac{2}{3}} &= x \qquad && \{ \text{Given} \} \\
+a &= x^{-\tfrac{3}{2}} \qquad && \{ \text{Raise both sides to the power of } -\frac{3}{2} \}
+\end{alignat*}
+
+Now, let's analyze each option to determine which one is NOT equal to \( a = x^{-\tfrac{3}{2}} \).
+
+\begin{enumerate}[label={\textbf{(\Alph*)}}]
+\item \( \frac{1}{x \sqrt{x}} \): \textbf{True}. 
+\[
+\frac{1}{x \sqrt{x}} = \frac{1}{x \cdot x^{\tfrac{1}{2}}} = \frac{1}{x^{\tfrac{3}{2}}} = x^{-\tfrac{3}{2}}
+\]
+This is equal to \( a \).
+
+\item \( \left(\frac{1}{x}\right)^{\tfrac{3}{2}} \): \textbf{True}. 
+\[
+\left(\frac{1}{x}\right)^{\tfrac{3}{2}} = \frac{1}{x^{\tfrac{3}{2}}} = x^{-\tfrac{3}{2}}
+\]
+This is also equal to \( a \).
+
+\item \( x^{-\tfrac{3}{2}} \): \textbf{True}. 
+This is exactly equal to \( a \).
+
+\item \( \left(\frac{1}{x}\right)^{\tfrac{2}{3}} \): \textbf{False}. 
+\[
+\left(\frac{1}{x}\right)^{\tfrac{2}{3}} = \frac{1}{x^{\tfrac{2}{3}}}
+\]
+This is not equal to \( x^{-\tfrac{3}{2}} \), so this is not equal to \( a \).
+\end{enumerate}
+
+The expression that is NOT equal to \( a \) is: \boxed{\text{D)}\left(\frac{1}{x}\right)^{\tfrac{2}{3}}}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/13.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_13.png}}\end{center}\newpage
+<p align='center'><img src="14.png"></p>
+
+The chart above shows the names, number of floors, and heights of $5$ of the tallest skyscrapers in a city. 
+
+ The skyscraper with the greatest height is what percent taller than the skyscraper with the lowest height? 
+
+\ansFOURs{       
+50}{          
+80}{          
+100}{          
+200}\vfillThe problem asks for the percentage by which the tallest skyscraper is greater in height than the shortest skyscraper.
+
+\begin{alignat*}{2}
+\text{Difference in height} &= 450 - 225 && \{ \text{Subtracting the height of Monument Epsilon from Tower Alpha} \} \\
+&= 225 \, \text{meters} && \{ \text{The difference in height} \}
+\end{alignat*}
+
+Now, we calculate the percentage increase based on the height of the shorter skyscraper:
+
+\begin{alignat*}{2}
+\text{Percentage increase} &= \left( \frac{225}{225} \right) \times 100 && \{ \text{Dividing the difference by the height of the shorter skyscraper} \} \\
+&= 100\% && \{ \text{Resulting percentage} \}
+\end{alignat*}
+
+Thus, the tallest skyscraper is 100\% taller than the shortest skyscraper.
+
+The correct answer is: \boxed{\text{C) }100}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/14.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_14.png}}\end{center}\newpage
+<p align='center'><img src="15.png"></p>
+
+In a culinary workshop, each participant selected and prepared a dish from scratch. The table above displays the dishes and the preparation times. What is the median preparation time for these dishes? 
+
+\ansFOURs{       
+17.5}{          
+20}{          
+22.5}{          
+25}\vfillThe goal is to find the median preparation time from the given list of dishes and their preparation times.
+
+\begin{alignat*}{2}
+&\text{Step 1: List the preparation times in order} \\
+&10, 15, 15, 20, 25, 25, 30, 30 \quad && \{ \text{Sorted in ascending order} \} \\
+\end{alignat*}
+
+The number of values is even (8 values), so the median is the average of the 4th and 5th values in the sorted list.
+
+\begin{alignat*}{2}
+&\text{Step 2: Calculate the median} \\
+&\frac{20 + 25}{2} = 22.5 \quad && \{ \text{Average of the two middle values} \} \\
+\end{alignat*}
+
+Thus, the median preparation time is: \boxed{\text{C) }22.5}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/15.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_15.png}}\end{center}\newpage
+By what percent must each side of a cube with a volume of $27$ cubic inches be increased in order to attain a volume of $64$ cubic inches? 
+
+\ansFOURsT{       
+$25 \%$}{          
+$33 \%$}{          
+$50 \%$}{          
+$75 \%$}\vfill\textbf{Finding the percent increase in the cube's side length}
+
+To find the required percent increase in side length for the cube, we start by finding the side lengths of the original and new cubes.
+
+\textbf{Step 1: Finding the original side length}
+
+The volume \( V \) of a cube is given by:
+\[
+V = s^3
+\]
+For the cube with a volume of 27 cubic inches:
+\[
+s^3 = 27
+\]
+\[
+s = \sqrt[3]{27} = 3 \, \text{inches}
+\]
+
+\textbf{Step 2: Finding the new side length}
+
+For the cube with a volume of 64 cubic inches:
+\[
+s^3 = 64
+\]
+\[
+s = \sqrt[3]{64} = 4 \, \text{inches}
+\]
+
+\textbf{Step 3: Calculating the percent increase}
+
+The increase in side length is:
+\[
+4 - 3 = 1 \, \text{inch}
+\]
+The percent increase is:
+\[
+\left( \frac{1}{3} \right) \times 100 = 33.33\%
+\]
+
+Thus, the correct answer is: \boxed{\text{B) }33\%}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/16.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_16.png}}\end{center}\newpage
+A company is planning to hire both male and female employees for a new project. The company wants to hire at least twice as many men as women for the project. The company will spend no more than $\$5000$ on the salaries for these new hires. Each man hired will cost the company $\$1250$, and each woman will cost $\$1000$. Let $m$ represent the number of men hired and $w$ represent the number of women hired, where $m$ and $w$ are nonnegative integers. Which of the following systems of inequalities best expresses this situation?
+
+\ansFOURs{      
+\begin{cases}m \geq 2w\\
+1250m + 1000w \leq 5000\end{cases}}{         
+\begin{cases}2m \geq w\\
+1250m + 1000w \leq 5000\end{cases}}{         
+\begin{cases}m \geq 2w\\
+1250m + 500w \leq 5000\end{cases}}{         
+\begin{cases}2m \geq w\\
+1250m + 500w \leq 5000\end{cases}}\vfillGiven the problem, we need to set up the inequalities that represent the conditions described.
+
+1. The company wants to hire at least twice as many men as women. This can be expressed as: \(m \geq 2w\)
+
+2. The total spending on salaries should not exceed \$5000. Since each man costs \$1250 and each woman costs \$1000, the inequality for the total cost is: \(1250m + 1000w \leq 5000\)   
+
+Now, let's evaluate each option:
+
+\begin{enumerate}[label={\textbf{(\Alph*)}}]
+\item \( m \geq 2w \) and \( 1250m + 1000w \leq 5000 \): \textbf{True}. \\This matches the conditions given in the problem.
+\item \( 2m \geq w \) and \( 1250m + 1000w \leq 5000 \): \textbf{False}. \\The inequality \( 2m \geq w \) does not match the requirement of having at least twice as many men as women.
+\item \( m \geq 2w \) and \( 1250m + 500w \leq 5000 \): \textbf{False}. \\The salary cost for women is incorrect; it should be \(\$1000\) per woman, not \(\$500\).
+\item \( 2m \geq w \) and \( 1250m + 500w \leq 5000 \): \textbf{False}. \\Both the ratio condition and the salary cost for women are incorrect.
+\end{enumerate}
+
+Thus, the correct system of inequalities is option \boxed{\text{A}}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/17.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_17.png}}\end{center}\newpage
+$$
+\begin{aligned}
+& 5x + r = 8y + 4 \\
+& 3y + s = 4x + 6
+\end{aligned}
+$$
+
+In the equations above, \( r \) and \( s \) are constants. If \( r + s = 10 \), which of the following statements is true?
+
+\ansFOURsT{      
+	 	 \( y \) minus \( x \) is 10  }{         
+	 	 \( x \) minus \( y \) is 10  }{         
+	 	 \( y \) is one-fifth of \( x \)  }{         
+		 \( x \) is one-fifth of \( y \)  }\vfillWe are given two equations. We will begin by adding them to simplify and find the relationship between \(x\) and \(y\).\begin{alignat*}{2}
+(5x + r) + (3y + s) & = (8y + 4) + (4x + 6) \qquad && \text{(Add both equations)} \\
+5x + 3y + r + s & = 8y + 4x + 10  && \text{(Simplify both sides)}
+\end{alignat*}
+Next, substitute \(r + s = 10\) into the equation and simplify further.\begin{alignat*}{2}
+5x + 3y + 10 & = 8y + 4x + 10 \qquad && \text{(Substitute \(r + s = 10\))} \\
+5x + 3y & = 8y + 4x  && \text{(Subtract 10 from both sides)} \\
+x & = 5y  && \text{(Rearrange terms and simplify)}
+\end{alignat*}
+Since we found that \(x = 5y\), we can conclude that \(y\) is one-fifth of \(x\). Therefore, the correct answer is:
+
+\boxed{\text{C)  y \text{ is one-fifth of}  x .}}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/18.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_18.png}}\end{center}\newpage
+The quadratic function \( g(x) = 2x^2 + pqx + qr \) has only one root at the point \((-3,0)\), where \( p, q, \) and \( r \) are positive integer constants that satisfy \( q < p < r \). What is one possible value for the product \( pqr \)?\vfillSince the quadratic function has only one root at \( x = -3 \), it must be a double root. We start by expressing the quadratic in the form of a double root.
+
+\begin{alignat*}{3}
+g(x) &= a(x + 3)^2 && \{ \text{Double root at } x = -3 \} \\
+&= a(x^2 + 6x + 9) \\
+&= ax^2 + 6ax + 9a
+\end{alignat*}
+
+Given the general form of \( g(x) = 2x^2 + pqx + qr \), we compare coefficients:
+
+\textbf{Coefficient of \( x^2 \): \( a = 2 \).}\\
+\textbf{Coefficient of \( x \): \( 6a = pq \Rightarrow 6(2) = pq \Rightarrow pq = 12 \).}\\
+\textbf{Constant term: \( 9a = qr \Rightarrow 9(2) = qr \Rightarrow qr = 18 \).}
+
+Now, we find integers \( p, q, r \) that satisfy \( q < p < r \).
+
+\textbf{Finding Possible Values}
+
+1. \( pq = 12 \): Possible pairs are:\\
+   - \( (p, q) = (12, 1) \)\\
+   - \( (p, q) = (6, 2) \)\\
+   - \( (p, q) = (4, 3) \)
+
+2. \( qr = 18 \): Possible pairs are:\\
+   - \( (q, r) = (1, 18) \)\\
+   - \( (q, r) = (2, 9) \)\\
+   - \( (q, r) = (3, 6) \)
+
+   \textbf{Matching Pairs}
+We now find common \( q \) values that meet the conditions:
+
+If \( p = 12 \) and \( q = 1 \), then \( qr = 1 \times 18 = 18 \), so \( r = 18 \). 
+
+This gives \( q < p < r \): \( 1 < 12 < 18 \).
+
+If \( p = 6 \) and \( q = 2 \), then \( qr = 2 \times 9 = 18 \), so \( r = 9 \). 
+
+This gives \( q < p < r \): \( 2 < 6 < 9 \).
+
+If \( p = 4 \) and \( q = 3 \), then \( qr = 3 \times 6 = 18 \), so \( r = 6 \). 
+
+This gives \( q < p < r \): \( 3 < 4 < 6 \).
+
+\textbf{Calculating Possible Products}\\
+1. For \( p = 12 \), \( q = 1 \), \( r = 18 \):
+   \[
+   pqr = 12 \times 1 \times 18 = 216
+   \]
+2. For \( p = 6 \), \( q = 2 \), \( r = 9 \):
+   \[
+   pqr = 6 \times 2 \times 9 = 108
+   \]
+3. For \( p = 4 \), \( q = 3 \), \( r = 6 \):
+   \[
+   pqr = 4 \times 3 \times 6 = 72
+   \]
+
+Thus, the possible values for the product \( pqr \) are: \boxed{72,\ 108, \ 216}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/19.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_19.png}}\end{center}\newpage
+The frictional force \( F \) on an object, in Newtons (N), is calculated by multiplying the normal force \( N \), in Newtons, by the coefficient of friction \( \mu \). The coefficient of static friction on ice is \( 0.1 \) and the coefficient of static friction on dry concrete is \( 0.75 \).
+
+A crate weighing \(200\) Newtons is placed on an icy surface. It is then moved to a dry concrete surface. What is the difference in frictional force between the icy surface and the dry concrete surface acting on the crate?
+
+\ansFOURs{       
+10 N}{          
+50 N}{          
+130 N}{          
+150 N}\vfillThe frictional force \( F \) depends on the coefficient of friction \( \mu \) and the normal force \( N \), given by the equation:
+\[
+F = \mu \times N
+\]
+
+1. Frictional force on ice:
+   \begin{alignat*}{2}
+   F_{\text{ice}} &= \mu_{\text{ice}} \times N \qquad && \{ \text{Using } \mu_{\text{ice}} = 0.1, N = 200 \, \text{N} \} \\
+   &= 0.1 \times 200 \\
+   &= 20 \, \text{N} 
+   \end{alignat*}
+
+2. Frictional force on dry concrete:
+   \begin{alignat*}{2}
+   F_{\text{concrete}} &= \mu_{\text{concrete}} \times N \qquad && \{ \text{Using } \mu_{\text{concrete}} = 0.75, N = 200 \, \text{N} \} \\
+   &= 0.75 \times 200 \\
+   &= 150 \, \text{N} 
+   \end{alignat*}
+
+3. Difference in frictional force:
+   \begin{alignat*}{2}
+   F_{\text{difference}} &= F_{\text{concrete}} - F_{\text{ice}} \qquad && \{ \text{Subtracting the two forces} \} \\
+   &= 150 - 20 \\
+   &= 130 \, \text{N} 
+   \end{alignat*}
+
+Thus, the difference in the frictional force is found to be 130 N.
+
+\boxed{\text{C) } 130 N}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/20.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_20.png}}\end{center}\newpage
+Which of the following equivalent forms of the function \( g(x) = 3x^2 + 9x - 12 \) is the most suitable to indicate the \( x \)-coordinates of the \( x \)-intercepts of the graph of \( y = g(x) \) in the \( xy \)-plane? 
+
+\ansFOURs{      
+	  g(x) = 3(x^2 + 3x - 4)}{         
+	  g(x) = 3(x + 1)(x - 4)}{         
+	  g(x) = 3(x - 1)(x + 4)}{         
+	  g(x) = (3x - 3)(x + 4)}\vfillWe are given the function \( g(x) = 3x^2 + 9x - 12 \). Our goal is to find the form that best reveals the \( x \)-intercepts. Let's begin by factoring the expression.\begin{alignat*}{2}
+g(x) 
+&= 3x^2 + 9x - 12 \qquad && \{\text{given function} \} \\
+&= 3(x^2 + 3x - 4) \qquad && \{\text{factor out 3} \} 
+\end{alignat*}
+Next, we will factor the quadratic expression inside the parentheses.\begin{alignat*}{2}
+x^2 + 3x - 4 
+&= (x - 1)(x + 4) \qquad && \{\text{find factors of } -4 \text{ that sum to } 3 \}
+\end{alignat*}
+Now substitute this factored form back into the original expression.\begin{alignat*}{2}
+g(x) 
+&= 3(x - 1)(x + 4) \qquad && \{\text{substitute factored quadratic} \}
+\end{alignat*}
+Finally, setting \( g(x) = 0 \) to find the \( x \)-intercepts, we solve:\begin{alignat*}{2}
+3(x - 1)(x + 4) &= 0 \\
+x - 1 &= 0 \quad \text{or} \quad x + 4 = 0 \\
+x &= 1 \quad \text{or} \quad x = -4
+\end{alignat*}
+Thus, the \( x \)-intercepts are \( x = 1 \) and \( x = -4 \), and the most suitable form to reveal the intercepts is \( g(x) = 3(x - 1)(x + 4) \).
+
+Thus, the correct choice is \boxed {C}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/21.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_21.png}}\end{center}\newpage
+A local library donates $7$ of every $140$ donated books that it receives to a nearby school. If the library donated $28$ books to the school last week, how many books were donated to the library?
+
+\ansFOURs{      
+    2}{         
+    20}{         
+    560}{         
+    700}\vfillThe library donates 7 books for every 140 books received. Given that 28 books were donated to the school, we need to find the total number of books donated to the library.
+
+\begin{alignat*}{2}
+\frac{7}{140} &= \frac{28}{x} \qquad && \{ \text{Setting up a proportion} \} \\
+7x &= 140 \times 28 && \{ \text{Cross-multiply to solve for } x \} \\
+7x &= 3920 && \{ \text{Calculate } 140 \times 28 \} \\
+x &= \frac{3920}{7} && \{ \text{Divide both sides by 7} \} \\
+x &= 560. && \{ \text{Final result} \}
+\end{alignat*}
+
+Thus, the total number of books donated to the library was \boxed{\text{C) }560}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/22.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_22.png}}\end{center}\newpage
+$$ \begin{aligned} & 4 a-3 b=7 \\ & d a-8 b=15 \end{aligned} $$ In the system of equations above, $d$ is a constant, and $a$ and $b$ are variables. For which value of $d$ will the system have no solution? 
+
+\ansFOURs{      
+    -\frac{32}{3}}{         
+	-\frac{56}{4}}{         
+	\frac{56}{4}}{         
+	\frac{32}{3}}\vfill\textbf{Step 1: Determine when the system has no solution}
+A system of linear equations has no solution if the lines are parallel, meaning the coefficients of \(a\) and \(b\) are proportional but the constant terms are not.
+
+\textbf{Step 2: Set up the ratio of coefficients}
+From the given equations:
+\[
+4a - 3b = 7
+\]
+\[
+da - 8b = 15
+\]
+For the lines to be parallel, the ratio of the coefficients of \(a\) and \(b\) must be equal:
+\[
+\frac{4}{d} = \frac{-3}{-8}
+\]
+
+\textbf{Step 3: Solve for \(d\)}
+\[
+\frac{4}{d} = \frac{3}{8}
+\]
+Cross-multiply:
+\[
+4 \times 8 = 3 \times d
+\]
+\[
+32 = 3d
+\]
+Divide by 3:
+\[
+d = \frac{32}{3}
+\]
+
+\textbf{Conclusion}
+The value of \(d\) that makes the system have no solution is: \boxed{\text{D) }\frac{32}{3}}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/23.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_23.png}}\end{center}\newpage
+Ella offers two different packages of dance classes at her dance studio. She offers three ballet classes and two hip-hop classes at a total cost of \$360. She also offers five ballet classes and four hip-hop classes at a price of \$680. Ella wants to create a special package for her loyal clients in which the cost must exceed \$750. If Ella does not wish to include more than 12 total classes for the loyal client package, will she be able to create this package for her clients? 
+
+\ansFOURsT{      
+	 	 No, because the closest package that she can offer consists of three ballet and three hip-hop classes. }{         
+	 	 No, because the closest package that she can offer consists of four ballet and four hip-hop classes. }{         
+	 	 Yes, because she can offer five ballet and five hip-hop classes. }{         
+		 Yes, because she can offer six ballet and six hip-hop classes.}\vfillLet's define the variables and set up the equations based on the given conditions to solve for the cost of each class.\begin{alignat*}{2}
+3b + 2h &= 360  \qquad && \{ \text{Cost of 3 ballet and 2 hip-hop classes} \} \\
+5b + 4h &= 680  \qquad && \{ \text{Cost of 5 ballet and 4 hip-hop classes} \}\end{alignat*}
+To eliminate one variable, we multiply the first equation by 2 and subtract the second equation. This will help us find the cost of one ballet class.\begin{alignat*}{2}
+6b + 4h &= 720  \qquad && \{ \text{Multiplying the first equation by 2} \} \\
+6b + 4h - (5b + 4h) &= 720 - 680  \qquad && \{ \text{Subtracting the second equation} \} \\
+b &= 40  \qquad && \{ \text{Solved for the cost of one ballet class} \}\end{alignat*}
+Next, substitute \( b = 40 \) into the first equation to solve for \( h \), the cost of one hip-hop class.\begin{alignat*}{2}
+3(40) + 2h &= 360  \qquad && \{ \text{Substituting the value of } b \} \\
+120 + 2h &= 360 \\
+2h &= 240 \\
+h &= 120  \qquad && \{ \text{Solved for the cost of one hip-hop class} \}\end{alignat*}
+Now that we have the costs, let's create the inequality for the special package. The total cost of a package with \( x \) ballet classes and \( y \) hip-hop classes must exceed \$750, with the total number of classes not exceeding 12.\begin{alignat*}{2}
+40x + 120y &> 750  \qquad && \{ \text{Total cost must exceed 750} \} \\
+x + y &\leq 12  \qquad && \{ \text{Total classes must not exceed 12} \}\end{alignat*}
+By testing different values for \( x \) and \( y \), we find that offering 6 ballet classes and 6 hip-hop classes gives a total cost of \$960, which satisfies the cost and class limit. Therefore, Ella can create this package for her clients.
+
+Thus, the correct answer is: \boxed{\text{D) Yes, because she can offer six ballet and six hip-hop classes.}}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/24.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_24.png}}\end{center}\newpage
+The equation \( 2x^2 + 5x - 7 = 0 \) has two distinct solutions. What is the value of the smaller solution subtracted from the larger solution?\vfillLet's solve the quadratic equation step by step using the quadratic formula to find the difference between the larger and smaller solutions.\begin{alignat*}{2}
+x &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \qquad && \{ \text{Quadratic formula} \} \\
+  &= \frac{-5 \pm \sqrt{5^2 - 4(2)(-7)}}{2(2)} \qquad && \{ \text{Substitute values of } a, b, c \} \\
+  &= \frac{-5 \pm \sqrt{25 + 56}}{4} \qquad && \{ \text{Simplify inside the square root} \} \\
+  &= \frac{-5 \pm \sqrt{81}}{4} \qquad && \{ \text{Simplify further} \} \\
+  &= \frac{-5 \pm 9}{4} \qquad && \{ \text{Square root of 81 is 9} \}
+\end{alignat*}
+Now, we compute both possible solutions:\begin{alignat*}{2}
+x_1 &= \frac{-5 + 9}{4} = \frac{4}{4} = 1 \qquad && \{ \text{First solution with } + \} \\
+x_2 &= \frac{-5 - 9}{4} = \frac{-14}{4} = -\frac{7}{2} \qquad && \{ \text{Second solution with } - \}
+\end{alignat*}
+Finally, we subtract the smaller solution from the larger solution:\begin{alignat*}{2}
+1 - \left( -\frac{7}{2} \right) &= 1 + \frac{7}{2} = \frac{2}{2} + \frac{7}{2} = \frac{9}{2} \qquad && \{ \text{Final subtraction} \}
+\end{alignat*}
+Thus, the value of the larger solution subtracted from the smaller solution is \boxed{ \frac{9}{2} }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/25.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_25.png}}\end{center}\newpage
+$$ 2 i(4-3 i)\left(2+\frac{3}{2} i\right) $$ Which of the following complex numbers is equivalent to the expression above? (Note: $i=\sqrt{-1}$ ) 
+
+\ansFOURs{      
+	  18-24 i}{         
+	  24+18 i}{         
+	  16 i}{         
+	  25 i}\vfillFirst, we start by simplifying the expression \( 2i(4-3i) \left( 2 + \frac{3}{2} i \right) \). We will break this down into smaller steps.
+
+\begin{alignat*}{2}
+2i(4 - 3i) &= 2i \cdot 4 + 2i \cdot (-3i) \qquad && \{ Distribute \, 2i \} \\
+&= 8i - 6i^2 \qquad && \{ Simplifying \, each \, term \} \\
+&= 8i + 6 \qquad && \{ Substitute \, i^2 = -1 \} \\
+\end{alignat*}
+
+Now, we multiply the result \( 8i + 6 \) by \( \left( 2 + \frac{3}{2} i \right) \).
+
+\begin{alignat*}{2}
+(8i + 6)\left( 2 + \frac{3}{2} i \right) &= 8i \cdot 2 + 8i \cdot \frac{3}{2}i + 6 \cdot 2 + 6 \cdot \frac{3}{2}i \qquad && \{ Distribute \, terms \} \\
+&= 16i + 12i^2 + 12 + 9i \qquad && \{ Simplify \, each \, product \} \\
+&= 16i - 12 + 12 + 9i \qquad && \{ Substitute \, i^2 = -1 \} \\
+&= 25i \qquad && \{ Combine \, like \, terms \} \\
+\end{alignat*}
+
+The final expression simplifies to \boxed{\text{D) }25i}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/26.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_26.png}}\end{center}\newpage
+If \( 6x + 6y = 20 \) and \( x^2 - y^2 = -\frac{5}{12} \), what is the value of \( 2x - 2y \)? 
+
+\ansFOURs{      
+	 	 -\frac{1}{4}  }{         
+	 	 -\frac{1}{8}  }{         
+	 	 \frac{1}{4}  }{         
+		 \frac{1}{8} }\vfillWe are given two equations and need to simplify and solve for \( 2x - 2y \).\begin{alignat*}{2}
+6x + 6y &= 20  \qquad && \{ \text{Given equation} \} \\
+x + y &= \frac{10}{3}  && \{ \text{Dividing by 6 to simplify} \}
+\end{alignat*}
+Next, we apply the difference of squares identity to the second equation.\begin{alignat*}{2}
+x^2 - y^2 &= -\frac{5}{12} \qquad && \{ \text{Given equation} \} \\
+(x - y)(x + y) &= -\frac{5}{12}  && \{ \text{Applying difference of squares identity} \} \\
+(x - y)\left(\frac{10}{3}\right) &= -\frac{5}{12} && \{ \text{Substituting } x + y = \frac{10}{3} \}
+\end{alignat*}
+Now, solve for \( x - y \) by dividing both sides by \( \frac{10}{3} \).\begin{alignat*}{2}
+x - y &= \frac{-\frac{5}{12}}{\frac{10}{3}} \qquad && \{ \text{Dividing both sides} \} \\
+x - y &= -\frac{1}{8} && \{ \text{Simplifying the fraction} \}
+\end{alignat*}
+Finally, we multiply both sides by 2 to find \( 2x - 2y \).\begin{alignat*}{2}
+2x - 2y &= 2 \times \left(-\frac{1}{8}\right) \qquad && \{ \text{Multiplying both sides by 2} \} \\
+2x - 2y &= -\frac{1}{4} && \{ \text{Simplifying} \}
+\end{alignat*}
+Thus, the value of \( 2x - 2y \) is \boxed{\text{A) }-\frac{1}{4}}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/27.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_27.png}}\end{center}\newpage
+$$ R=300(1.007)^{\tfrac{s}{4}} $$ How can the formula above be used to predict the revenue, in thousands of dollars, of a startup company $s$ quarters after its inception? According to the prediction, the revenue is expected to rise by $0.7 \%$ every $s$ quarters. What is the value of $s$ ? 
+
+\ansFOURs{      
+	 	 1  }{         
+	 	 2  }{         
+	 	 4  }{         
+		 8 }\vfill\textbf{Step 1: Understanding the formula}
+The formula \( R = 300(1.007)^{\tfrac{s}{4}} \) models the exponential revenue growth of a startup. Here, \( R \) is the revenue in thousands of dollars, and \( 1.007 \) indicates a 0.7\% growth per quarter. We need to find the value of \( s \) that aligns with this growth rate.
+
+\textbf{Step 2: Setting up the equation}
+Since the revenue is said to rise by 0.7\% every \( s \) quarters, we want to find \( s \) for which:
+\[
+(1.007)^{\frac{s}{4}} = 1.007.
+\]
+
+\textbf{Step 3: Solving for \( s \)}
+\begin{alignat*}{2}
+(1.007)^{\frac{s}{4}} &= 1.007 \qquad && \{ \text{since } 1.007 = (1.007)^1 \} \\
+\frac{s}{4} &= 1 \qquad && \{ \text{taking the exponent } \} \\
+s &= 4 \qquad && \{ \text{multiplying both sides by 4} \}.
+\end{alignat*}
+
+\textbf{Conclusion}
+Thus, the revenue increases by 0.7\% every 4 quarters. Therefore, the value of \( s \) is \boxed{\text{C) }4}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/28.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_28.png}}\end{center}\newpage
+
+%\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/01.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_01.png}}\end{center}\newpage
+
+%\input{Harder/01}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/01.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_01.png}}\end{center}\newpage
+%\input{Harder/02}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/02.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_02.png}}\end{center}\newpage
+%\input{Harder/03}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/03.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_03.png}}\end{center}\newpage
+%\input{Harder/04}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/04.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_04.png}}\end{center}\newpage
+%\input{Harder/05}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/05.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_05.png}}\end{center}\newpage
+%\input{Harder/06}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/06.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_06.png}}\end{center}\newpage
+%\input{Harder/07}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/07.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_07.png}}\end{center}\newpage
+%\input{Harder/08}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/08.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_08.png}}\end{center}\newpage
+%\input{Harder/09}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/09.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_09.png}}\end{center}\newpage
+%\input{Harder/10}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/10.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_10.png}}\end{center}\newpage
+%\input{Harder/11}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/11.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_11.png}}\end{center}\newpage
+%\input{Harder/12}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/12.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_12.png}}\end{center}\newpage
+%\input{Harder/13}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/13.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_13.png}}\end{center}\newpage
+%\input{Harder/14}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/14.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_14.png}}\end{center}\newpage
+%\input{Harder/15}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/15.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_15.png}}\end{center}\newpage
+%\input{Harder/16}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/16.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_16.png}}\end{center}\newpage
+%\input{Harder/17}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/17.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_17.png}}\end{center}\newpage
+%\input{Harder/18}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/18.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_18.png}}\end{center}\newpage
+%\input{Harder/19}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/19.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_19.png}}\end{center}\newpage
+%\input{Harder/20}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/20.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_20.png}}\end{center}\newpage
+%\input{Harder/21}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/21.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_21.png}}\end{center}\newpage
+%\input{Harder/22}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/22.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_22.png}}\end{center}\newpage
+%\input{Harder/23}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/23.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_23.png}}\end{center}\newpage
+%\input{Harder/24}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/24.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_24.png}}\end{center}\newpage
+%\input{Harder/25}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/25.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_25.png}}\end{center}\newpage
+%\input{Harder/26}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/26.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_26.png}}\end{center}\newpage
+%\input{Harder/27}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/27.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_27.png}}\end{center}\newpage
+%\input{Harder/28}\vfill\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/28.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_28.png}}\end{center}\newpage
+
+\newpage
+\stepcounter{resetSAT} 
+\SetValue{examTitle}{Solution of Module 3}    
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries Solutions Manual}\hfill\null
+\vfill\null
+\newpage 
+\SetValue{Book}{SATSolution}
+
+
+During a drought, the average annual rainfall was at least 5 inches less than the normal average. If the average annual rainfall during the drought is $y$ inches and the normal average annual rainfall is $x$ inches, which of the following must be true?
+
+\ansFOURsT{      
+	 	 $y=x-5$}{         
+	 	 $y \leq x-5$}{         
+	 	 $y \geq x-5$}{         
+		 $y \leq x+5$}\vfillThe problem states that during a drought, the average annual rainfall is at least 5 inches less than the normal average rainfall.\begin{alignat*}{2}
+y &\leq x - 5 \qquad && \{\text{the drought rainfall is at least 5 inches less than the normal rainfall}\} 
+\end{alignat*}
+This inequality shows that the average rainfall during the drought is less than or equal to the normal average rainfall minus 5 inches. 
+\begin{alignat*}{2}
+	y &\neq x - 5 \qquad && \{\text{because the drought rainfall can be less than exactly 5 inches less}\} \\
+	y &\geq x - 5 \qquad && \{\text{contradicts the condition of the rainfall being less than or equal to \( x - 5 \)}\} \\
+	y &\leq x + 5 \qquad && \{\text{irrelevant to the problem statement of being at least 5 inches less}\}
+\end{alignat*}
+	
+	Thus, the correct answer is \boxed{\text{B) } y \leq x - 5 }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/01.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_01.png}}\end{center}\newpage
+Alex sold \( x \) bicycles in 2016. The number of bicycles he sold in 2017 was $150\%$ greater than in 2016, and the number of bicycles he sold in 2018 was $20\%$ greater than in 2017. Which of the following expressions represents the number of bicycles Alex sold in 2018?
+
+\ansFOURsT{      
+	  \( (0.20)(2.5 x) \)	}{         
+	  \( (1.2)(1.5 x) \)	}{         
+	  \( (1.2)(2.5 x) \)	}{         
+	  \( (1.5)(1.2 x) \) }\vfillLet's calculate the total number of bicycles sold by Alex in 2018 based on the given percentage increases.
+\begin{alignat*}{2}
+\text{2017 Sales} 
+&= 2.5x \qquad && \{ 150\% \text{ increase from 2016} \} \\
+\text{2018 Sales} 
+&= 1.2 \times 2.5x  \qquad && \{ 20\% \text{ increase from 2017} \}
+\end{alignat*}
+We calculated that Alex sold 2.5 times the number of bicycles in 2017 compared to 2016, and in 2018, he sold 1.2 times more than in 2017.
+\begin{alignat*}{2}
+\text{2018 Sales} 
+&= 1.2 \times 2.5x  \qquad && \{ \text{Apply the percentage increases step by step} \} \\
+&= (1.2)(2.5x) && \{ \text{Final expression for 2018 sales} \}
+\end{alignat*}
+Thus, the correct expression representing the number of bicycles sold in 2018 is \boxed{\text{C)} (1.2)(2.5x) }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/02.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_02.png}}\end{center}\newpage
+In the equation $\frac{3}{w}=\frac{9}{w+36}$, what is the value of $\frac{w}{3}$ ? 
+
+\ansFOURs{      
+	 	 18 }{         
+	 	 9 }{         
+	 	 6 }{         
+		 \frac{1}{9}  }\vfillWe need to solve the equation \( \frac{3}{w} = \frac{9}{w + 36} \) to find the value of \( \frac{w}{3} \).
+
+\begin{alignat*}{2}
+3(w + 36) &= 9w \qquad && \{ \text{Cross-multiply to clear denominators} \} \\
+3w + 108 &= 9w \qquad && \{ \text{Distribute the } 3 \text{ on the left side} \} \\
+108 &= 6w \qquad && \{ \text{Subtract } 3w \text{ from both sides} \} \\
+w &= 18 \qquad && \{ \text{Divide both sides by } 6 \}
+\end{alignat*}
+
+Now, we need to find \( \frac{w}{3} \). 
+
+\begin{alignat*}{2}
+\frac{w}{3} &= \frac{18}{3} \qquad && \{ \text{Substitute } w = 18 \} \\
+&= 6 \qquad && \{ \text{Simplify} \}
+\end{alignat*}
+
+Thus, the value of \( \frac{w}{3} \) is \( 6 \).
+
+The correct answer is \boxed{\text{C) } 6}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/03.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_03.png}}\end{center}\newpage
+Which of the following equations has the graph in the $x y$-plane such that $y$ is always greater than or equal to \(- 2\)?
+
+\ansFOURs{      
+	 	 y = x^3 - 3 }{         
+	 	 y = |x| - 5 }{         
+	 	 y = x^2 - 5 }{         
+		 y = (x - 3)^2 }\vfillWe will evaluate each option to determine which equation satisfies the condition that \( y \) is always greater than or equal to \(- 2\).
+\begin{alignat*}{2}
+y 
+&= x^3 - 3 \qquad && \{ \text{shift of cubic function downward by 3 units} \} \\
+y
+&< -2  \qquad && \{ \text{for some values of } x, e.g., y = -3 \text{ when } x = 0 \}\end{alignat*}
+Thus, this equation does not satisfy the given condition.
+
+Next, we examine the absolute value function.
+\begin{alignat*}{2}
+y 
+&= |x| - 5 \qquad && \{ \text{shift of absolute value graph downward by 5 units} \} \\
+y 
+&\geq - 5  \qquad && \{ \text{minimum value occurs at } x = 0, \text{where } y = -5 \}\end{alignat*}
+
+This equation also does not satisfy the condition since \( y \) can be less than \(- 2\).
+
+Next, we analyze the quadratic function.
+\begin{alignat*}{2}
+y 
+&= x^2 - 5 \qquad && \{ \text{shift of parabola downward by 5 units} \} \\
+y 
+&\geq -5 \qquad && \{ \text{minimum value occurs at } x = 0, \text{where } y = - 5 \}\end{alignat*}
+This option also does not meet the condition as \( y \) can be less than \(- 2\).
+
+Finally, we evaluate the shifted quadratic.
+\begin{alignat*}{2}
+y 
+&= (x - 3)^2 \qquad && \{ \text{parabola shifted right, minimum at } x = 3 \} \\
+y 
+&\geq 0  \qquad && \{ \text{since the square is always non-negative} \}
+\end{alignat*}
+Since \( y \geq 0 \) for all \( x \), this option satisfies the condition \( y \geq - 2 \).
+
+Therefore, the correct equation is Option \boxed{\text{D) } y = (x - 3)^2 }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/04.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_04.png}}\end{center}\newpage
+During her adventures in the bazaars of Tunisia, Maya chose to stay in a luxury riad. It charged \(2,500\) Tunisian dinars per night. Given that she lodged there for four nights and her credit card only allows a maximum transaction of \( \$250\) at once, how many times must Maya swipe her card to settle her bill? (Note: \(1\) Tunisian dinar \(= \$0.35\)) 
+
+\ansFOURs{       
+4}{          
+10}{          
+14}{          
+29}\vfillMaya stayed in a luxury riad in Tunisia that cost 2,500 Tunisian dinars per night. She stayed for four nights, and her credit card allows a maximum transaction of \$250 per swipe. We need to find how many times she must swipe her card to pay the total bill. 
+
+\begin{alignat*}{2}
+\text{Total cost in TND} &= 2,500 \times 4 \quad && \{ \text{Multiply by the number of nights} \} \\
+&= 10,000 \, \text{TND} \\
+\text{Total cost in USD} &= 10,000 \times 0.35 \quad && \{ \text{Convert TND to USD} \} \\
+&= 3,500 \, \text{USD} \\
+\text{Number of swipes} &= \frac{3,500}{250} \quad && \{ \text{Divide by the per-swipe limit} \} \\
+&= 14
+\end{alignat*}
+
+Thus, Maya must swipe her card 14 times to settle her bill.
+
+The correct answer is: \boxed{\text{C) }14.}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/05.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_05.png}}\end{center}\newpage
+$$ \sqrt{-6 x+6}+2=x+1 $$ What is the solution set of the equation above? 
+
+\ansFOURs{      
+	\{-1\}   }{         
+	\{1\}   }{         
+	\{-1,-5\}   }{         
+    \{1,-5\} }\vfillWe need to find the solution set for the equation \( \sqrt{-6x + 6} + 2 = x + 1 \).
+
+\begin{alignat*}{2}
+\sqrt{-6x + 6} + 2 &= x + 1 \qquad && \{ \text{Given equation} \} \\
+\sqrt{-6x + 6} &= x - 1 \qquad && \{ \text{Subtract 2 from both sides} \} \\
+\left(\sqrt{-6x + 6}\right)^2 &= (x - 1)^2 \qquad && \{ \text{Square both sides} \} \\
+-6x + 6 &= x^2 - 2x + 1 \qquad && \{ \text{Expand the right side} \} \\
+0 &= x^2 + 4x - 5 \qquad && \{ \text{Move all terms to one side} \}
+\end{alignat*}
+
+Now, we will solve the quadratic equation.
+
+\begin{alignat*}{2}
+(x + 5)(x - 1) &= 0 \qquad && \{ \text{Factor the quadratic} \} \\
+x &= -5, \, 1 \qquad && \{ \text{Solve for } x \}
+\end{alignat*}
+
+Check each solution in the original equation.
+
+Checking \( x = -5 \):
+\[
+\sqrt{-6(-5) + 6} + 2 = -5 + 1
+\]
+\[
+\sqrt{36} + 2 = -4 \Rightarrow 6 + 2 = -4 \quad \text{(False)}
+\]
+
+Checking \( x = 1 \):
+\[
+\sqrt{-6(1) + 6} + 2 = 1 + 1
+\]
+\[
+\sqrt{0} + 2 = 2 \Rightarrow 0 + 2 = 2 \quad \text{(True)}
+\]
+
+The only valid solution is \( x = 1 \).
+
+Thus, the correct answer is \boxed{\text{B) } 1}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/06.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_06.png}}\end{center}\newpage
+Which of the following complex numbers is equivalent to \( \frac{7 - 2i}{5 + 3i} \) ?  
+(Note: \( i = \sqrt{-1} \))
+
+\ansFOURs{      
+	 	 \frac{7}{5} - \frac{2i}{3}}{         
+	 	 \frac{7}{5} + \frac{2i}{3}}{         
+	 	 \frac{29}{34} - \frac{31i}{34}}{         
+		 \frac{29}{34} + \frac{31i}{34}}\vfillTo solve the given complex number division, we need to eliminate the imaginary unit in the denominator by multiplying both the numerator and denominator by the complex conjugate of the denominator.\begin{alignat*}{2}
+\frac{7 - 2i}{5 + 3i} 
+&= \frac{(7 - 2i)(5 - 3i)}{(5 + 3i)(5 - 3i)} \qquad && \{ \text{Multiplying by the complex conjugate} \} \\
+&= \frac{35 - 21i - 10i + 6i^2}{25 - 9i^2} \qquad && \{ \text{Expanding the numerator and denominator} \} \\
+&= \frac{35 - 31i - 6}{25 + 9} \qquad && \{ i^2 = -1 \} \\
+&= \frac{29 - 31i}{34} \qquad && \{ \text{Simplifying both numerator and denominator} \}
+\end{alignat*}
+Finally, we separate the real and imaginary parts of the expression to get the final result.\begin{alignat*}{2}
+\frac{29 - 31i}{34}
+&= \frac{29}{34} - \frac{31i}{34} \qquad && \{ \text{Separating real and imaginary parts} \}
+\end{alignat*}
+Thus, the given expression simplifies to \( \frac{29}{34} - \frac{31i}{34} \), which corresponds to option \boxed{\text{C) } \frac{29}{34} - \frac{31i}{34} }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/07.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_07.png}}\end{center}\newpage
+If \( 3x + y = 9 \), then what is the value of \( \left(8^x\right)\left(2^y\right) \)?
+  
+\ansFOURs{      
+	 	 2^6 }{         
+	 	  2^9 }{         
+	 	  16^6 }{         
+		 \text{It cannot be determined from the information given.}}\vfillWe are given the equation \(3x + y = 9\) and asked to find the value of \( \left(8^x\right)\left(2^y\right) \). Let's solve step by step.
+
+\begin{alignat*}{2}
+8^x \cdot 2^y 
+&= \left(2^3\right)^x \cdot 2^y \qquad &&  \text{since } 8 = 2^3  \\
+&= 2^{3x} \cdot 2^y &&  \text{simplifying powers} \end{alignat*}
+
+Now, we will use the rule of exponents to combine the terms.
+\begin{alignat*}{2}
+2^{3x} \cdot 2^y 
+&= 2^{3x + y} \qquad &&  \text{adding the exponents} 
+\end{alignat*}
+We are given that \( 3x + y = 9 \), so substitute this into the equation.
+\begin{alignat*}{2}
+2^{3x + y} 
+&= 2^9 \qquad && \text{substitute } 3x + y = 9 
+\end{alignat*}
+Thus, the value of \(\left(8^x\right)\left(2^y\right)\) is \(2^9\) .
+\boxed{\text{B) }2^9 }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/08.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_08.png}}\end{center}\newpage
+Brentwood High School has \( 850 \) sophomores and juniors. Out of them, \( 380 \) are enrolled in one or more Advanced Placement (AP) courses. Among these AP students, \( 90 \) are in AP Chemistry, \( 70 \) are in AP World History, and \( 30 \) are in both AP Chemistry and AP World History. Approximately what percent of the sophomores and juniors at Brentwood High School take AP courses other than Chemistry and World History? 
+
+\ansFOURsT{       
+$10 \%$}{          
+$20 \%$}{          
+$30 \%$}{          
+$40 \%$}\vfillGiven that Brentwood High School has 850 sophomores and juniors, and 380 of them are enrolled in one or more AP courses, we need to find the percentage of students taking AP courses other than Chemistry and World History.
+
+\begin{alignat*}{2}
+\text{Number of students in AP Chemistry or World History} &= 90 + 70 - 30 \qquad && \{ \text{Inclusion-Exclusion Principle} \} \\
+&= 130 && \{ \text{Total in AP Chemistry, AP World History, or both} \}
+\end{alignat*}
+
+Next, we find the number of students taking AP courses other than Chemistry and World History.
+
+\begin{alignat*}{2}
+\text{Number of students in other AP courses} &= 380 - 130 \qquad && \{ \text{Subtracting AP Chemistry and World History students} \} \\
+&= 250 && \{ \text{Students in other AP courses} \}
+\end{alignat*}
+
+Now, we calculate the percentage of these students out of the total number of sophomores and juniors.
+
+\begin{alignat*}{2}
+\text{Percentage} &= \left( \frac{250}{850} \right) \times 100 \qquad && \{ \text{Finding the percentage} \} \\
+&\approx 29.41\% && \{ \text{Rounding to the nearest whole number} \} \\
+&\approx 30\% && \{ \text{Final approximation} \}
+\end{alignat*}
+
+Thus, the percentage of students taking AP courses other than Chemistry and World History is approximately:
+\[
+\boxed{\text{C) }30\%}
+\]\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/09.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_09.png}}\end{center}\newpage
+If \((2x + m)(4x + n) = 8x^2 + kx + 20\) for all values of \(x\), and \(m + n = 9\), what are all possible values of \(k\)?
+
+\ansFOURsT{      
+	 	 $13$ and $14$}{         
+	 	 $17$ and $18$}{         
+	 	 $22$ and $23$}{         
+		 $26$ and $28$}\vfillWe begin by expanding the left-hand side of the equation and simplifying the expression.\begin{alignat*}{2}
+(2x + m)(4x + n) 
+&= 2x \cdot 4x + 2x \cdot n + m \cdot 4x + m \cdot n \qquad && \text{(distribute terms)} \\
+&= 8x^2 + 2nx + 4mx + mn  \qquad && \text{(simplify products)} \\
+&= 8x^2 + (2n + 4m)x + mn \qquad && \text{(combine like terms)} 
+\end{alignat*}
+Next, we equate the coefficients of like terms from both sides of the equation.\begin{alignat*}{2}
+8x^2 + (2n + 4m)x + mn &= 8x^2 + kx + 20 \qquad && \text{(equating both sides)} \\
+2n + 4m &= k \qquad && \text{(coefficients of } x \text{)} \\
+mn &= 20 \qquad && \text{(constant terms)}
+\end{alignat*}
+We now use the additional information given to find the values of \( m \) and \( n \).\begin{alignat*}{2}
+m + n &= 9 \qquad && \text{(given)} \\
+n &= 9 - m \qquad && \text{(solving for } n \text{)}
+\end{alignat*}
+Substitute \( n = 9 - m \) into the equation \( mn = 20 \):\begin{alignat*}{2}
+m(9 - m) &= 20 \qquad && \text{(substitute and simplify)} \\
+-m^2 + 9m - 20 &= 0 \qquad && \text{(rearrange)} \\
+m^2 - 9m + 20 &= 0 \qquad && \text{(multiply by } -1 \text{)} \\
+(m - 5)(m - 4) &= 0 \qquad && \text{(factor)} \\
+m &= 5 \quad \text{or} \quad m = 4 \qquad && \text{(solve)}
+\end{alignat*}
+Finally, substitute these values of \( m \) into the equations for \( n \) and \( k \).\begin{alignat*}{2}
+\text{If } m = 5, &\ n = 4: \quad k = 2(4) + 4(5) = 28 \qquad && \text{(calculate } k \text{)} \\
+\text{If } m = 4, &\ n = 5: \quad k = 2(5) + 4(4) = 26 \qquad && \text{(calculate } k \text{)}
+\end{alignat*}
+Thus, the possible values of \( k \) are \boxed{\text{D) } 26  \text{ and } 28 }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/10.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_10.png}}\end{center}\newpage
+\begin{align*} \frac{x^2+x-2}{x-1} = \sqrt{2x+7} 
+\end{align*} 
+For the equation above, there are two potential solutions. However, one of them is extraneous. What is the value of the extraneous solution? 
+
+\ansFOURs{      
+1}{          
+2}{          
+3}{          
+-1}\vfillGiven the equation:
+\[
+\frac{x^2 + x - 2}{x - 1} = \sqrt{2x + 7}
+\]
+we need to find the extraneous solution by simplifying and solving.
+
+\textbf{Step 1: Simplify the Left Side}
+First, factor the numerator \(x^2 + x - 2\) as:
+\[
+x^2 + x - 2 = (x - 1)(x + 2)
+\]
+Then, the expression becomes:
+\[
+\frac{(x - 1)(x + 2)}{x - 1}
+\]
+For \(x \neq 1\), this simplifies to \(x + 2\).
+
+\textbf{Step 2: Solve the Equation}
+The equation now is:
+\[
+x + 2 = \sqrt{2x + 7}
+\]
+Square both sides to get rid of the square root:
+\[
+(x + 2)^2 = 2x + 7
+\]
+Expanding the left side:
+\[
+x^2 + 4x + 4 = 2x + 7
+\]
+
+\textbf{Step 3: Move All Terms to One Side}
+Subtract \(2x + 7\) from both sides:
+\[
+x^2 + 2x - 3 = 0
+\]
+
+\textbf{Step 4: Factor the Quadratic}
+\[
+x^2 + 2x - 3 = (x - 1)(x + 3) = 0
+\]
+
+\textbf{Step 5: Solve for \(x\)}
+The solutions are:
+\[
+x = 1 \quad \text{and} \quad x = -3
+\]
+
+\textbf{Step 6: Check for Extraneous Solutions}
+For \(x = 1\):
+\[
+\frac{1^2 + 1 - 2}{1 - 1} = \frac{0}{0} \quad \text{(undefined)}
+\]
+So, \(x = 1\) is extraneous.
+
+For \(x = -3\):
+\[
+\frac{(-3)^2 + (-3) - 2}{-3 - 1} = \frac{4}{-4} = -1
+\]
+\[
+\sqrt{2(-3) + 7} = \sqrt{1} = 1
+\]
+Since \(-1 \neq 1\), this does not satisfy the original equation.
+
+Thus, the extraneous solution is \boxed{\text{A) } 1}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/11.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_11.png}}\end{center}\newpage
+$$ \begin{array}{r} 10 x + 4 y = 80 \\ c x + d y = 20 \end{array} $$ In the system of equations above, \( c \) and \( d \) are constants. If the system has no solutions, what is the value of \( \frac{d}{c} \) ?\vfillTo solve for \( \frac{d}{c} \), we start by making the constants on the right-hand side of the equations easier to compare.
+\begin{alignat*}{2}
+4 \times (cx + dy) &= 4 \times 20 \qquad && \{ \text{Multiply the second equation by 4} \} \\
+4cx + 4dy &= 80  && \{ \text{Resulting equation after multiplying} \}
+\end{alignat*}
+Now, we compare the coefficients of \(x\) and \(y\) in both equations. The first equation remains as:
+\begin{alignat*}{2}
+10x + 4y &= 80 \qquad && \{ \text{Original first equation} \} \\
+\frac{10}{4c} &= \frac{4}{4d} \qquad && \{ \text{Equating coefficients of the terms} \}
+\end{alignat*}
+Simplifying both sides to find the proportionality:
+\begin{alignat*}{2}
+\frac{10}{c} &= \frac{4}{d} \qquad && \{ \text{Simplified equation} \} \\
+10d &= 4c \qquad && \{ \text{Cross-multiplying} \} \\
+\frac{d}{c} &= \frac{2}{5} \qquad && \{ \text{Solving for } \frac{d}{c} \}
+\end{alignat*}
+Thus, the value of \( \frac{d}{c} \) is \boxed{ \frac{2}{5} }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/12.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_12.png}}\end{center}\newpage
+If \( a^{-\tfrac{2}{3}} = x \), where \( a > 0 \), which of the following is NOT equal to \( a \) in terms of \( x \)? 
+
+\ansFOURsT{ 
+\( \frac{1}{x\sqrt{x}} \)}{          
+\( \left(\frac{1}{x}\right)^{\tfrac{3}{2}} \)}{          
+\( x^{-\tfrac{3}{2}} \)}{          
+\( \left(\frac{1}{x}\right)^{\tfrac{2}{3}} \)}\vfillWe start by solving for \( a \) in terms of \( x \) using the given equation \( a^{-\tfrac{2}{3}} = x \).
+
+\begin{alignat*}{3}
+a^{-\tfrac{2}{3}} &= x \qquad && \{ \text{Given} \} \\
+a &= x^{-\tfrac{3}{2}} \qquad && \{ \text{Raise both sides to the power of } -\frac{3}{2} \}
+\end{alignat*}
+
+Now, let's analyze each option to determine which one is NOT equal to \( a = x^{-\tfrac{3}{2}} \).
+
+\begin{enumerate}[label={\textbf{(\Alph*)}}]
+\item \( \frac{1}{x \sqrt{x}} \): \textbf{True}. 
+\[
+\frac{1}{x \sqrt{x}} = \frac{1}{x \cdot x^{\tfrac{1}{2}}} = \frac{1}{x^{\tfrac{3}{2}}} = x^{-\tfrac{3}{2}}
+\]
+This is equal to \( a \).
+
+\item \( \left(\frac{1}{x}\right)^{\tfrac{3}{2}} \): \textbf{True}. 
+\[
+\left(\frac{1}{x}\right)^{\tfrac{3}{2}} = \frac{1}{x^{\tfrac{3}{2}}} = x^{-\tfrac{3}{2}}
+\]
+This is also equal to \( a \).
+
+\item \( x^{-\tfrac{3}{2}} \): \textbf{True}. 
+This is exactly equal to \( a \).
+
+\item \( \left(\frac{1}{x}\right)^{\tfrac{2}{3}} \): \textbf{False}. 
+\[
+\left(\frac{1}{x}\right)^{\tfrac{2}{3}} = \frac{1}{x^{\tfrac{2}{3}}}
+\]
+This is not equal to \( x^{-\tfrac{3}{2}} \), so this is not equal to \( a \).
+\end{enumerate}
+
+The expression that is NOT equal to \( a \) is: \boxed{\text{D)}\left(\frac{1}{x}\right)^{\tfrac{2}{3}}}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/13.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_13.png}}\end{center}\newpage
+<p align='center'><img src="14.png"></p>
+
+The chart above shows the names, number of floors, and heights of $5$ of the tallest skyscrapers in a city. 
+
+ The skyscraper with the greatest height is what percent taller than the skyscraper with the lowest height? 
+
+\ansFOURs{       
+50}{          
+80}{          
+100}{          
+200}\vfillThe problem asks for the percentage by which the tallest skyscraper is greater in height than the shortest skyscraper.
+
+\begin{alignat*}{2}
+\text{Difference in height} &= 450 - 225 && \{ \text{Subtracting the height of Monument Epsilon from Tower Alpha} \} \\
+&= 225 \, \text{meters} && \{ \text{The difference in height} \}
+\end{alignat*}
+
+Now, we calculate the percentage increase based on the height of the shorter skyscraper:
+
+\begin{alignat*}{2}
+\text{Percentage increase} &= \left( \frac{225}{225} \right) \times 100 && \{ \text{Dividing the difference by the height of the shorter skyscraper} \} \\
+&= 100\% && \{ \text{Resulting percentage} \}
+\end{alignat*}
+
+Thus, the tallest skyscraper is 100\% taller than the shortest skyscraper.
+
+The correct answer is: \boxed{\text{C) }100}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/14.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_14.png}}\end{center}\newpage
+<p align='center'><img src="15.png"></p>
+
+In a culinary workshop, each participant selected and prepared a dish from scratch. The table above displays the dishes and the preparation times. What is the median preparation time for these dishes? 
+
+\ansFOURs{       
+17.5}{          
+20}{          
+22.5}{          
+25}\vfillThe goal is to find the median preparation time from the given list of dishes and their preparation times.
+
+\begin{alignat*}{2}
+&\text{Step 1: List the preparation times in order} \\
+&10, 15, 15, 20, 25, 25, 30, 30 \quad && \{ \text{Sorted in ascending order} \} \\
+\end{alignat*}
+
+The number of values is even (8 values), so the median is the average of the 4th and 5th values in the sorted list.
+
+\begin{alignat*}{2}
+&\text{Step 2: Calculate the median} \\
+&\frac{20 + 25}{2} = 22.5 \quad && \{ \text{Average of the two middle values} \} \\
+\end{alignat*}
+
+Thus, the median preparation time is: \boxed{\text{C) }22.5}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/15.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_15.png}}\end{center}\newpage
+By what percent must each side of a cube with a volume of $27$ cubic inches be increased in order to attain a volume of $64$ cubic inches? 
+
+\ansFOURsT{       
+$25 \%$}{          
+$33 \%$}{          
+$50 \%$}{          
+$75 \%$}\vfill\textbf{Finding the percent increase in the cube's side length}
+
+To find the required percent increase in side length for the cube, we start by finding the side lengths of the original and new cubes.
+
+\textbf{Step 1: Finding the original side length}
+
+The volume \( V \) of a cube is given by:
+\[
+V = s^3
+\]
+For the cube with a volume of 27 cubic inches:
+\[
+s^3 = 27
+\]
+\[
+s = \sqrt[3]{27} = 3 \, \text{inches}
+\]
+
+\textbf{Step 2: Finding the new side length}
+
+For the cube with a volume of 64 cubic inches:
+\[
+s^3 = 64
+\]
+\[
+s = \sqrt[3]{64} = 4 \, \text{inches}
+\]
+
+\textbf{Step 3: Calculating the percent increase}
+
+The increase in side length is:
+\[
+4 - 3 = 1 \, \text{inch}
+\]
+The percent increase is:
+\[
+\left( \frac{1}{3} \right) \times 100 = 33.33\%
+\]
+
+Thus, the correct answer is: \boxed{\text{B) }33\%}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/16.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_16.png}}\end{center}\newpage
+A company is planning to hire both male and female employees for a new project. The company wants to hire at least twice as many men as women for the project. The company will spend no more than $\$5000$ on the salaries for these new hires. Each man hired will cost the company $\$1250$, and each woman will cost $\$1000$. Let $m$ represent the number of men hired and $w$ represent the number of women hired, where $m$ and $w$ are nonnegative integers. Which of the following systems of inequalities best expresses this situation?
+
+\ansFOURs{      
+\begin{cases}m \geq 2w\\
+1250m + 1000w \leq 5000\end{cases}}{         
+\begin{cases}2m \geq w\\
+1250m + 1000w \leq 5000\end{cases}}{         
+\begin{cases}m \geq 2w\\
+1250m + 500w \leq 5000\end{cases}}{         
+\begin{cases}2m \geq w\\
+1250m + 500w \leq 5000\end{cases}}\vfillGiven the problem, we need to set up the inequalities that represent the conditions described.
+
+1. The company wants to hire at least twice as many men as women. This can be expressed as: \(m \geq 2w\)
+
+2. The total spending on salaries should not exceed \$5000. Since each man costs \$1250 and each woman costs \$1000, the inequality for the total cost is: \(1250m + 1000w \leq 5000\)   
+
+Now, let's evaluate each option:
+
+\begin{enumerate}[label={\textbf{(\Alph*)}}]
+\item \( m \geq 2w \) and \( 1250m + 1000w \leq 5000 \): \textbf{True}. \\This matches the conditions given in the problem.
+\item \( 2m \geq w \) and \( 1250m + 1000w \leq 5000 \): \textbf{False}. \\The inequality \( 2m \geq w \) does not match the requirement of having at least twice as many men as women.
+\item \( m \geq 2w \) and \( 1250m + 500w \leq 5000 \): \textbf{False}. \\The salary cost for women is incorrect; it should be \(\$1000\) per woman, not \(\$500\).
+\item \( 2m \geq w \) and \( 1250m + 500w \leq 5000 \): \textbf{False}. \\Both the ratio condition and the salary cost for women are incorrect.
+\end{enumerate}
+
+Thus, the correct system of inequalities is option \boxed{\text{A}}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/17.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_17.png}}\end{center}\newpage
+$$
+\begin{aligned}
+& 5x + r = 8y + 4 \\
+& 3y + s = 4x + 6
+\end{aligned}
+$$
+
+In the equations above, \( r \) and \( s \) are constants. If \( r + s = 10 \), which of the following statements is true?
+
+\ansFOURsT{      
+	 	 \( y \) minus \( x \) is 10  }{         
+	 	 \( x \) minus \( y \) is 10  }{         
+	 	 \( y \) is one-fifth of \( x \)  }{         
+		 \( x \) is one-fifth of \( y \)  }\vfillWe are given two equations. We will begin by adding them to simplify and find the relationship between \(x\) and \(y\).\begin{alignat*}{2}
+(5x + r) + (3y + s) & = (8y + 4) + (4x + 6) \qquad && \text{(Add both equations)} \\
+5x + 3y + r + s & = 8y + 4x + 10  && \text{(Simplify both sides)}
+\end{alignat*}
+Next, substitute \(r + s = 10\) into the equation and simplify further.\begin{alignat*}{2}
+5x + 3y + 10 & = 8y + 4x + 10 \qquad && \text{(Substitute \(r + s = 10\))} \\
+5x + 3y & = 8y + 4x  && \text{(Subtract 10 from both sides)} \\
+x & = 5y  && \text{(Rearrange terms and simplify)}
+\end{alignat*}
+Since we found that \(x = 5y\), we can conclude that \(y\) is one-fifth of \(x\). Therefore, the correct answer is:
+
+\boxed{\text{C)  y \text{ is one-fifth of}  x .}}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/18.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_18.png}}\end{center}\newpage
+The quadratic function \( g(x) = 2x^2 + pqx + qr \) has only one root at the point \((-3,0)\), where \( p, q, \) and \( r \) are positive integer constants that satisfy \( q < p < r \). What is one possible value for the product \( pqr \)?\vfillSince the quadratic function has only one root at \( x = -3 \), it must be a double root. We start by expressing the quadratic in the form of a double root.
+
+\begin{alignat*}{3}
+g(x) &= a(x + 3)^2 && \{ \text{Double root at } x = -3 \} \\
+&= a(x^2 + 6x + 9) \\
+&= ax^2 + 6ax + 9a
+\end{alignat*}
+
+Given the general form of \( g(x) = 2x^2 + pqx + qr \), we compare coefficients:
+
+\textbf{Coefficient of \( x^2 \): \( a = 2 \).}\\
+\textbf{Coefficient of \( x \): \( 6a = pq \Rightarrow 6(2) = pq \Rightarrow pq = 12 \).}\\
+\textbf{Constant term: \( 9a = qr \Rightarrow 9(2) = qr \Rightarrow qr = 18 \).}
+
+Now, we find integers \( p, q, r \) that satisfy \( q < p < r \).
+
+\textbf{Finding Possible Values}
+
+1. \( pq = 12 \): Possible pairs are:\\
+   - \( (p, q) = (12, 1) \)\\
+   - \( (p, q) = (6, 2) \)\\
+   - \( (p, q) = (4, 3) \)
+
+2. \( qr = 18 \): Possible pairs are:\\
+   - \( (q, r) = (1, 18) \)\\
+   - \( (q, r) = (2, 9) \)\\
+   - \( (q, r) = (3, 6) \)
+
+   \textbf{Matching Pairs}
+We now find common \( q \) values that meet the conditions:
+
+If \( p = 12 \) and \( q = 1 \), then \( qr = 1 \times 18 = 18 \), so \( r = 18 \). 
+
+This gives \( q < p < r \): \( 1 < 12 < 18 \).
+
+If \( p = 6 \) and \( q = 2 \), then \( qr = 2 \times 9 = 18 \), so \( r = 9 \). 
+
+This gives \( q < p < r \): \( 2 < 6 < 9 \).
+
+If \( p = 4 \) and \( q = 3 \), then \( qr = 3 \times 6 = 18 \), so \( r = 6 \). 
+
+This gives \( q < p < r \): \( 3 < 4 < 6 \).
+
+\textbf{Calculating Possible Products}\\
+1. For \( p = 12 \), \( q = 1 \), \( r = 18 \):
+   \[
+   pqr = 12 \times 1 \times 18 = 216
+   \]
+2. For \( p = 6 \), \( q = 2 \), \( r = 9 \):
+   \[
+   pqr = 6 \times 2 \times 9 = 108
+   \]
+3. For \( p = 4 \), \( q = 3 \), \( r = 6 \):
+   \[
+   pqr = 4 \times 3 \times 6 = 72
+   \]
+
+Thus, the possible values for the product \( pqr \) are: \boxed{72,\ 108, \ 216}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/19.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_19.png}}\end{center}\newpage
+The frictional force \( F \) on an object, in Newtons (N), is calculated by multiplying the normal force \( N \), in Newtons, by the coefficient of friction \( \mu \). The coefficient of static friction on ice is \( 0.1 \) and the coefficient of static friction on dry concrete is \( 0.75 \).
+
+A crate weighing \(200\) Newtons is placed on an icy surface. It is then moved to a dry concrete surface. What is the difference in frictional force between the icy surface and the dry concrete surface acting on the crate?
+
+\ansFOURs{       
+10 N}{          
+50 N}{          
+130 N}{          
+150 N}\vfillThe frictional force \( F \) depends on the coefficient of friction \( \mu \) and the normal force \( N \), given by the equation:
+\[
+F = \mu \times N
+\]
+
+1. Frictional force on ice:
+   \begin{alignat*}{2}
+   F_{\text{ice}} &= \mu_{\text{ice}} \times N \qquad && \{ \text{Using } \mu_{\text{ice}} = 0.1, N = 200 \, \text{N} \} \\
+   &= 0.1 \times 200 \\
+   &= 20 \, \text{N} 
+   \end{alignat*}
+
+2. Frictional force on dry concrete:
+   \begin{alignat*}{2}
+   F_{\text{concrete}} &= \mu_{\text{concrete}} \times N \qquad && \{ \text{Using } \mu_{\text{concrete}} = 0.75, N = 200 \, \text{N} \} \\
+   &= 0.75 \times 200 \\
+   &= 150 \, \text{N} 
+   \end{alignat*}
+
+3. Difference in frictional force:
+   \begin{alignat*}{2}
+   F_{\text{difference}} &= F_{\text{concrete}} - F_{\text{ice}} \qquad && \{ \text{Subtracting the two forces} \} \\
+   &= 150 - 20 \\
+   &= 130 \, \text{N} 
+   \end{alignat*}
+
+Thus, the difference in the frictional force is found to be 130 N.
+
+\boxed{\text{C) } 130 N}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/20.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_20.png}}\end{center}\newpage
+Which of the following equivalent forms of the function \( g(x) = 3x^2 + 9x - 12 \) is the most suitable to indicate the \( x \)-coordinates of the \( x \)-intercepts of the graph of \( y = g(x) \) in the \( xy \)-plane? 
+
+\ansFOURs{      
+	  g(x) = 3(x^2 + 3x - 4)}{         
+	  g(x) = 3(x + 1)(x - 4)}{         
+	  g(x) = 3(x - 1)(x + 4)}{         
+	  g(x) = (3x - 3)(x + 4)}\vfillWe are given the function \( g(x) = 3x^2 + 9x - 12 \). Our goal is to find the form that best reveals the \( x \)-intercepts. Let's begin by factoring the expression.\begin{alignat*}{2}
+g(x) 
+&= 3x^2 + 9x - 12 \qquad && \{\text{given function} \} \\
+&= 3(x^2 + 3x - 4) \qquad && \{\text{factor out 3} \} 
+\end{alignat*}
+Next, we will factor the quadratic expression inside the parentheses.\begin{alignat*}{2}
+x^2 + 3x - 4 
+&= (x - 1)(x + 4) \qquad && \{\text{find factors of } -4 \text{ that sum to } 3 \}
+\end{alignat*}
+Now substitute this factored form back into the original expression.\begin{alignat*}{2}
+g(x) 
+&= 3(x - 1)(x + 4) \qquad && \{\text{substitute factored quadratic} \}
+\end{alignat*}
+Finally, setting \( g(x) = 0 \) to find the \( x \)-intercepts, we solve:\begin{alignat*}{2}
+3(x - 1)(x + 4) &= 0 \\
+x - 1 &= 0 \quad \text{or} \quad x + 4 = 0 \\
+x &= 1 \quad \text{or} \quad x = -4
+\end{alignat*}
+Thus, the \( x \)-intercepts are \( x = 1 \) and \( x = -4 \), and the most suitable form to reveal the intercepts is \( g(x) = 3(x - 1)(x + 4) \).
+
+Thus, the correct choice is \boxed {C}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/21.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_21.png}}\end{center}\newpage
+A local library donates $7$ of every $140$ donated books that it receives to a nearby school. If the library donated $28$ books to the school last week, how many books were donated to the library?
+
+\ansFOURs{      
+    2}{         
+    20}{         
+    560}{         
+    700}\vfillThe library donates 7 books for every 140 books received. Given that 28 books were donated to the school, we need to find the total number of books donated to the library.
+
+\begin{alignat*}{2}
+\frac{7}{140} &= \frac{28}{x} \qquad && \{ \text{Setting up a proportion} \} \\
+7x &= 140 \times 28 && \{ \text{Cross-multiply to solve for } x \} \\
+7x &= 3920 && \{ \text{Calculate } 140 \times 28 \} \\
+x &= \frac{3920}{7} && \{ \text{Divide both sides by 7} \} \\
+x &= 560. && \{ \text{Final result} \}
+\end{alignat*}
+
+Thus, the total number of books donated to the library was \boxed{\text{C) }560}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/22.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_22.png}}\end{center}\newpage
+$$ \begin{aligned} & 4 a-3 b=7 \\ & d a-8 b=15 \end{aligned} $$ In the system of equations above, $d$ is a constant, and $a$ and $b$ are variables. For which value of $d$ will the system have no solution? 
+
+\ansFOURs{      
+    -\frac{32}{3}}{         
+	-\frac{56}{4}}{         
+	\frac{56}{4}}{         
+	\frac{32}{3}}\vfill\textbf{Step 1: Determine when the system has no solution}
+A system of linear equations has no solution if the lines are parallel, meaning the coefficients of \(a\) and \(b\) are proportional but the constant terms are not.
+
+\textbf{Step 2: Set up the ratio of coefficients}
+From the given equations:
+\[
+4a - 3b = 7
+\]
+\[
+da - 8b = 15
+\]
+For the lines to be parallel, the ratio of the coefficients of \(a\) and \(b\) must be equal:
+\[
+\frac{4}{d} = \frac{-3}{-8}
+\]
+
+\textbf{Step 3: Solve for \(d\)}
+\[
+\frac{4}{d} = \frac{3}{8}
+\]
+Cross-multiply:
+\[
+4 \times 8 = 3 \times d
+\]
+\[
+32 = 3d
+\]
+Divide by 3:
+\[
+d = \frac{32}{3}
+\]
+
+\textbf{Conclusion}
+The value of \(d\) that makes the system have no solution is: \boxed{\text{D) }\frac{32}{3}}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/23.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_23.png}}\end{center}\newpage
+Ella offers two different packages of dance classes at her dance studio. She offers three ballet classes and two hip-hop classes at a total cost of \$360. She also offers five ballet classes and four hip-hop classes at a price of \$680. Ella wants to create a special package for her loyal clients in which the cost must exceed \$750. If Ella does not wish to include more than 12 total classes for the loyal client package, will she be able to create this package for her clients? 
+
+\ansFOURsT{      
+	 	 No, because the closest package that she can offer consists of three ballet and three hip-hop classes. }{         
+	 	 No, because the closest package that she can offer consists of four ballet and four hip-hop classes. }{         
+	 	 Yes, because she can offer five ballet and five hip-hop classes. }{         
+		 Yes, because she can offer six ballet and six hip-hop classes.}\vfillLet's define the variables and set up the equations based on the given conditions to solve for the cost of each class.\begin{alignat*}{2}
+3b + 2h &= 360  \qquad && \{ \text{Cost of 3 ballet and 2 hip-hop classes} \} \\
+5b + 4h &= 680  \qquad && \{ \text{Cost of 5 ballet and 4 hip-hop classes} \}\end{alignat*}
+To eliminate one variable, we multiply the first equation by 2 and subtract the second equation. This will help us find the cost of one ballet class.\begin{alignat*}{2}
+6b + 4h &= 720  \qquad && \{ \text{Multiplying the first equation by 2} \} \\
+6b + 4h - (5b + 4h) &= 720 - 680  \qquad && \{ \text{Subtracting the second equation} \} \\
+b &= 40  \qquad && \{ \text{Solved for the cost of one ballet class} \}\end{alignat*}
+Next, substitute \( b = 40 \) into the first equation to solve for \( h \), the cost of one hip-hop class.\begin{alignat*}{2}
+3(40) + 2h &= 360  \qquad && \{ \text{Substituting the value of } b \} \\
+120 + 2h &= 360 \\
+2h &= 240 \\
+h &= 120  \qquad && \{ \text{Solved for the cost of one hip-hop class} \}\end{alignat*}
+Now that we have the costs, let's create the inequality for the special package. The total cost of a package with \( x \) ballet classes and \( y \) hip-hop classes must exceed \$750, with the total number of classes not exceeding 12.\begin{alignat*}{2}
+40x + 120y &> 750  \qquad && \{ \text{Total cost must exceed 750} \} \\
+x + y &\leq 12  \qquad && \{ \text{Total classes must not exceed 12} \}\end{alignat*}
+By testing different values for \( x \) and \( y \), we find that offering 6 ballet classes and 6 hip-hop classes gives a total cost of \$960, which satisfies the cost and class limit. Therefore, Ella can create this package for her clients.
+
+Thus, the correct answer is: \boxed{\text{D) Yes, because she can offer six ballet and six hip-hop classes.}}\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/24.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_24.png}}\end{center}\newpage
+The equation \( 2x^2 + 5x - 7 = 0 \) has two distinct solutions. What is the value of the smaller solution subtracted from the larger solution?\vfillLet's solve the quadratic equation step by step using the quadratic formula to find the difference between the larger and smaller solutions.\begin{alignat*}{2}
+x &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \qquad && \{ \text{Quadratic formula} \} \\
+  &= \frac{-5 \pm \sqrt{5^2 - 4(2)(-7)}}{2(2)} \qquad && \{ \text{Substitute values of } a, b, c \} \\
+  &= \frac{-5 \pm \sqrt{25 + 56}}{4} \qquad && \{ \text{Simplify inside the square root} \} \\
+  &= \frac{-5 \pm \sqrt{81}}{4} \qquad && \{ \text{Simplify further} \} \\
+  &= \frac{-5 \pm 9}{4} \qquad && \{ \text{Square root of 81 is 9} \}
+\end{alignat*}
+Now, we compute both possible solutions:\begin{alignat*}{2}
+x_1 &= \frac{-5 + 9}{4} = \frac{4}{4} = 1 \qquad && \{ \text{First solution with } + \} \\
+x_2 &= \frac{-5 - 9}{4} = \frac{-14}{4} = -\frac{7}{2} \qquad && \{ \text{Second solution with } - \}
+\end{alignat*}
+Finally, we subtract the smaller solution from the larger solution:\begin{alignat*}{2}
+1 - \left( -\frac{7}{2} \right) &= 1 + \frac{7}{2} = \frac{2}{2} + \frac{7}{2} = \frac{9}{2} \qquad && \{ \text{Final subtraction} \}
+\end{alignat*}
+Thus, the value of the larger solution subtracted from the smaller solution is \boxed{ \frac{9}{2} }.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/25.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_25.png}}\end{center}\newpage
+$$ 2 i(4-3 i)\left(2+\frac{3}{2} i\right) $$ Which of the following complex numbers is equivalent to the expression above? (Note: $i=\sqrt{-1}$ ) 
+
+\ansFOURs{      
+	  18-24 i}{         
+	  24+18 i}{         
+	  16 i}{         
+	  25 i}\vfillFirst, we start by simplifying the expression \( 2i(4-3i) \left( 2 + \frac{3}{2} i \right) \). We will break this down into smaller steps.
+
+\begin{alignat*}{2}
+2i(4 - 3i) &= 2i \cdot 4 + 2i \cdot (-3i) \qquad && \{ Distribute \, 2i \} \\
+&= 8i - 6i^2 \qquad && \{ Simplifying \, each \, term \} \\
+&= 8i + 6 \qquad && \{ Substitute \, i^2 = -1 \} \\
+\end{alignat*}
+
+Now, we multiply the result \( 8i + 6 \) by \( \left( 2 + \frac{3}{2} i \right) \).
+
+\begin{alignat*}{2}
+(8i + 6)\left( 2 + \frac{3}{2} i \right) &= 8i \cdot 2 + 8i \cdot \frac{3}{2}i + 6 \cdot 2 + 6 \cdot \frac{3}{2}i \qquad && \{ Distribute \, terms \} \\
+&= 16i + 12i^2 + 12 + 9i \qquad && \{ Simplify \, each \, product \} \\
+&= 16i - 12 + 12 + 9i \qquad && \{ Substitute \, i^2 = -1 \} \\
+&= 25i \qquad && \{ Combine \, like \, terms \} \\
+\end{alignat*}
+
+The final expression simplifies to \boxed{\text{D) }25i}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/26.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_26.png}}\end{center}\newpage
+If \( 6x + 6y = 20 \) and \( x^2 - y^2 = -\frac{5}{12} \), what is the value of \( 2x - 2y \)? 
+
+\ansFOURs{      
+	 	 -\frac{1}{4}  }{         
+	 	 -\frac{1}{8}  }{         
+	 	 \frac{1}{4}  }{         
+		 \frac{1}{8} }\vfillWe are given two equations and need to simplify and solve for \( 2x - 2y \).\begin{alignat*}{2}
+6x + 6y &= 20  \qquad && \{ \text{Given equation} \} \\
+x + y &= \frac{10}{3}  && \{ \text{Dividing by 6 to simplify} \}
+\end{alignat*}
+Next, we apply the difference of squares identity to the second equation.\begin{alignat*}{2}
+x^2 - y^2 &= -\frac{5}{12} \qquad && \{ \text{Given equation} \} \\
+(x - y)(x + y) &= -\frac{5}{12}  && \{ \text{Applying difference of squares identity} \} \\
+(x - y)\left(\frac{10}{3}\right) &= -\frac{5}{12} && \{ \text{Substituting } x + y = \frac{10}{3} \}
+\end{alignat*}
+Now, solve for \( x - y \) by dividing both sides by \( \frac{10}{3} \).\begin{alignat*}{2}
+x - y &= \frac{-\frac{5}{12}}{\frac{10}{3}} \qquad && \{ \text{Dividing both sides} \} \\
+x - y &= -\frac{1}{8} && \{ \text{Simplifying the fraction} \}
+\end{alignat*}
+Finally, we multiply both sides by 2 to find \( 2x - 2y \).\begin{alignat*}{2}
+2x - 2y &= 2 \times \left(-\frac{1}{8}\right) \qquad && \{ \text{Multiplying both sides by 2} \} \\
+2x - 2y &= -\frac{1}{4} && \{ \text{Simplifying} \}
+\end{alignat*}
+Thus, the value of \( 2x - 2y \) is \boxed{\text{A) }-\frac{1}{4}}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/27.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_27.png}}\end{center}\newpage
+$$ R=300(1.007)^{\tfrac{s}{4}} $$ How can the formula above be used to predict the revenue, in thousands of dollars, of a startup company $s$ quarters after its inception? According to the prediction, the revenue is expected to rise by $0.7 \%$ every $s$ quarters. What is the value of $s$ ? 
+
+\ansFOURs{      
+	 	 1  }{         
+	 	 2  }{         
+	 	 4  }{         
+		 8 }\vfill\textbf{Step 1: Understanding the formula}
+The formula \( R = 300(1.007)^{\tfrac{s}{4}} \) models the exponential revenue growth of a startup. Here, \( R \) is the revenue in thousands of dollars, and \( 1.007 \) indicates a 0.7\% growth per quarter. We need to find the value of \( s \) that aligns with this growth rate.
+
+\textbf{Step 2: Setting up the equation}
+Since the revenue is said to rise by 0.7\% every \( s \) quarters, we want to find \( s \) for which:
+\[
+(1.007)^{\frac{s}{4}} = 1.007.
+\]
+
+\textbf{Step 3: Solving for \( s \)}
+\begin{alignat*}{2}
+(1.007)^{\frac{s}{4}} &= 1.007 \qquad && \{ \text{since } 1.007 = (1.007)^1 \} \\
+\frac{s}{4} &= 1 \qquad && \{ \text{taking the exponent } \} \\
+s &= 4 \qquad && \{ \text{multiplying both sides by 4} \}.
+\end{alignat*}
+
+\textbf{Conclusion}
+Thus, the revenue increases by 0.7\% every 4 quarters. Therefore, the value of \( s \) is \boxed{\text{C) }4}.\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/28.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{DB/Harder/qrcode_28.png}}\end{center}\newpage
+
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/01.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_01.png}}\end{center}\input{Harder/01}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/02.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_02.png}}\end{center}\input{Harder/02}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/03.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_03.png}}\end{center}\input{Harder/03}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/04.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_04.png}}\end{center}\input{Harder/04}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/05.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_05.png}}\end{center}\input{Harder/05}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/06.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_06.png}}\end{center}\input{Harder/06}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/07.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_07.png}}\end{center}\input{Harder/07}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/08.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_08.png}}\end{center}\input{Harder/08}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/09.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_09.png}}\end{center}\input{Harder/09}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/10.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_10.png}}\end{center}\input{Harder/10}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/11.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_11.png}}\end{center}\input{Harder/11}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/12.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_12.png}}\end{center}\input{Harder/12}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/13.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_13.png}}\end{center}\input{Harder/13}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/14.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_14.png}}\end{center}\input{Harder/14}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/15.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_15.png}}\end{center}\input{Harder/15}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/16.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_16.png}}\end{center}\input{Harder/16}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/17.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_17.png}}\end{center}\input{Harder/17}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/18.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_18.png}}\end{center}\input{Harder/18}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/19.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_19.png}}\end{center}\input{Harder/19}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/20.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_20.png}}\end{center}\input{Harder/20}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/21.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_21.png}}\end{center}\input{Harder/21}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/22.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_22.png}}\end{center}\input{Harder/22}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/23.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_23.png}}\end{center}\input{Harder/23}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/24.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_24.png}}\end{center}\input{Harder/24}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/25.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_25.png}}\end{center}\input{Harder/25}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/26.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_26.png}}\end{center}\input{Harder/26}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/27.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_27.png}}\end{center}\input{Harder/27}\newpage
+%\begin{center}\href{https://researchteam.ai:6112/Papua/?afilePath=DB/Harder/28.tex&aexamCode=1302}{\includegraphics[width=0.1\textwidth]{Harder/qrcode_28.png}}\end{center}\input{Harder/28}\newpage 
+\thispagestyle{empty}
+{%
+\setlength{\parindent}{0pt}
+\sffamily
+{\Huge {\bfseries{}ALMOOL Digital SAT Math 28Q\vskip7pt
+Master the Toughest Problems \vskip7pt
+with Real-Time Q\&A Support \vskip7pt
+1st Edition
+}}
+\vskip15pt
+
+\small Research Team aims to restore the right to quality education for students worldwide by localizing superior educational programs from developed countries and offering them to students in developing countries, thereby realizing global educational equality.
+\vfill
+\begin{description}[font={\bfseries\sffamily}]
+  \item[Authors] the authors.
+\end{description}
+\vfill
+
+
+\rule{0.7\textwidth}{0.4pt}
+\begin{description}[font={\bfseries\sffamily}]
+  \item[Publisher] Research Team
+  \item[Published by] Amazon KDP
+  \item[Published on] First edition, first print, October 5, 2024
+\end{description}
+}
+\end{document}
+
+
+\end{document}

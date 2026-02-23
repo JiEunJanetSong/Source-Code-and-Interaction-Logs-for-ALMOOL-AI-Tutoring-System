@@ -1,0 +1,24 @@
+# Sensitive files
+.env
+*.pem
+
+# Runtime data
+*.db
+data/
+**/requestResult/
+
+# Python
+__pycache__/
+venv/
+
+# OS
+.DS_Store
+
+# Claude Code
+.claude/
+
+# Excluded projects (not part of ALMOOL)
+chatgpt-math/
+chatgpt-EBS/
+eos_dependencies.json
+extract_dependencies.py

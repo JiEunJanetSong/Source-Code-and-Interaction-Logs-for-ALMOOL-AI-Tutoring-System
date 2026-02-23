@@ -1,0 +1,77 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int \dfrac{d x}{x^2 \sqrt{4-x^2}} $$
+
+}\SetValue{Solution}{%
+
+Step 1: Use a trigonometric substitution
+This form suggests the substitution:
+
+$$
+x=2 \sin \theta \quad \Rightarrow \quad d x=2 \cos \theta d \theta
+$$
+
+
+Also note:
+- $\sqrt{4-x^2}=\sqrt{4-4 \sin ^2 \theta}=\sqrt{4 \cos ^2 \theta}=2 \cos \theta$
+- $x^2=4 \sin ^2 \theta$
+
+Step 2: Substitute into the integral
+
+$$
+\int \dfrac{d x}{x^2 \sqrt{4-x^2}}=\int \dfrac{2 \cos \theta}{4 \sin ^2 \theta \cdot 2 \cos \theta} d \theta=\int \dfrac{1}{4 \sin ^2 \theta} d \theta=\dfrac{1}{4} \int \csc ^2 \theta d \theta
+$$
+
+
+Step 3: Integrate
+
+$$
+\dfrac{1}{4} \int \csc ^2 \theta d \theta=-\dfrac{1}{4} \cot \theta+C
+$$
+
+
+Step 4: Back-substitute
+Recall:
+
+$$
+x=2 \sin \theta \Rightarrow \sin \theta=\dfrac{x}{2}
+$$
+
+
+Then:
+
+$$
+\cot \theta=\dfrac{\cos \theta}{\sin \theta}=\dfrac{\sqrt{1-\sin ^2 \theta}}{\sin \theta}=\dfrac{\sqrt{1-\left(\dfrac{x}{2}\right)^2}}{\dfrac{x}{2}}=\dfrac{\sqrt{4-x^2}}{x}
+$$
+
+
+Final Answer:
+
+$$
+-\dfrac{1}{4} \cdot \dfrac{\sqrt{4-x^2}}{x}+C
+$$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+
+## Model Solution (a)
+
+
+## Scoring (a)
+
+For $\text { Area }=\int_0^2(f(x)-g(x)) d x$,
+Integrand; 1 point, Answer; 1 point.
+
+## Scoring notes (a)
+
+
+}\SetValue{Answer}{%
+
+$-\dfrac{1}{4} \cdot \dfrac{\sqrt{4-x^2}}{x}+C$
+
+}
+\ProcessDATA

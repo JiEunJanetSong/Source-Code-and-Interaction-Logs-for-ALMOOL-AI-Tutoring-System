@@ -1,0 +1,90 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find at least 10 partial sums of the series. Graph both the sequence of terms and the sequence of partial sums on the same screen. Does it appear that the series is convergent or divergent? If it is convergent, find the sum. If it is divergent, explain why.
+
+$$\sum_{n=1}^{\infty}\left(\dfrac{1}{\sqrt{n}}-\dfrac{1}{\sqrt{n+1}}\right)$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Here are the first 10 partial sums of the series:
+
+\begin{tabular}{|l|l|}
+\hline & \\
+\hline $n$ & Partial Sum $s_n$ (rounded) \\
+\hline 1 & 0.292893 \\
+\hline 2 & 0.422650 \\
+\hline 3 & 0.500000 \\
+\hline 4 & 0.552786 \\
+\hline 5 & 0.591752 \\
+\hline 6 & 0.622036 \\
+\hline 7 & 0.646447 \\
+\hline 8 & 0.666667 \\
+\hline 9 & 0.683772 \\
+\hline 10 & 0.698489 \\
+\hline
+\end{tabular}
+
+Observation from the graph:
+
+- The individual terms are positive and decreasing.
+
+- The partial sums approach a finite limit, indicating convergence.
+
+Analytical Insight:
+
+This is a telescoping series. Each term is:
+
+$$
+a_n=\dfrac{1}{\sqrt{n}}-\dfrac{1}{\sqrt{n+1}}
+$$
+
+
+So the partial sum up to $n=N$ is:
+
+$$
+s_N=\left(\dfrac{1}{\sqrt{1}}-\dfrac{1}{\sqrt{2}}\right)+\left(\dfrac{1}{\sqrt{2}}-\dfrac{1}{\sqrt{3}}\right)+\cdots+\left(\dfrac{1}{\sqrt{N}}-\dfrac{1}{\sqrt{N+1}}\right)
+$$
+
+
+All intermediate terms cancel, leaving:
+
+$$
+s_N=1-\dfrac{1}{\sqrt{N+1}}
+$$
+
+
+As $N \rightarrow \infty$ :
+
+$$
+\lim _{N \rightarrow \infty} s_N=1
+$$
+
+Final Answer:
+
+- The series converges.
+
+- The sum is 1.
+
+- The partial sums and telescoping pattern both confirm this.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,40 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+In a tournament there are six teams that play each other twice. A team earns 3 points for a win, 1 point for a draw, and 0 points for a loss. After all the games have been played it turns out that the top three teams earned the same number of total points. What is the greatest possible number of total points for each of the top three teams?
+
+	\ansFIVEs{%start
+		22}{%<--- (A)
+		23 }{%<--- (B)
+		24 }{%<--- (C)
+		26 }{%<---- (D)
+	30}%<---- (D)
+
+}\SetValue{Concept}{%
+
+토너먼트에서는 여섯 팀이 서로 두 번씩 경기를 치릅니다. 한 팀이 승리하면 3점, 무승부하면 1점, 패배하면 0점을 획득합니다. 모든 경기가 끝난 후 상위 세 팀이 획득한 총 점수가 동일한 것으로 나타났습니다. 상위 세 팀이 각각 획득할 수 있는 총 점수의 최대 값은 얼마인가요?
+
+solutions
+
+상위 세 팀은 최대 $6 \cdot 3=18$ 점수가 주어지는 6경기를 서로 치렀고, 나머지 세 팀과 최대 $18 \cdot 3=54$ 점수가 주어지는 18경기를 치렀습니다. 따라서 상위 세 팀의 점수의 합은 최대 72점이므로 각 상위 팀의 총 점수는 최대 24점이 됩니다. 이 점수는 실제로 각 상위 팀 쌍이 한 게임에서 이기고 한 게임에서 지고, 각 상위 팀이 다른 세 팀을 상대로 두 게임 모두 이길 때 얻을 수 있는 점수입니다.
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+The top three teams played six games against one another in which at most $6 \cdot 3=18$ points were awarded, and they played 18 games against the other three teams in which at most $18 \cdot 3=54$ points were awarded. Therefore the sum of the scores of the top three teams was at most 72, and thus the total score of each of the top teams was at most 24. This score is indeed obtained when between each pair of top teams, one game is won and one game is lost, and each top team wins both games against each of the other three teams.
+
+Answer (C)
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+Answer (C)
+}
+\ProcessDATA
+
+
+

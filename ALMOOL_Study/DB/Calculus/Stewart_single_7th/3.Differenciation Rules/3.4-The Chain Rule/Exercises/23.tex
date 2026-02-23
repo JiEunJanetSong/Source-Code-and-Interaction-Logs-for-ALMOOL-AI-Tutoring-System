@@ -1,0 +1,73 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\sqrt{1+2 e^{3 x}}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+To differentiate 
+
+$$
+y = \sqrt{1 + 2 e^{3x}} = \bigl(1 + 2 e^{3x}\bigr)^{\tfrac{1}{2}},
+$$
+
+use the chain rule:
+
+1. Let $u(x) = 1 + 2 e^{3x}$.
+
+2. Then $y = \bigl(u(x)\bigr)^{1/2}$.
+
+Step A: Differentiate the outer function $(u)^{1/2}$:
+
+$$
+\dfrac{d}{du} \bigl(u^{1/2}\bigr)
+= \tfrac12\,u^{-1/2}.
+$$
+
+Step B: Differentiate the inner function $u(x) = 1 + 2 e^{3x}$:
+
+$$
+u'(x) = 2\,\dfrac{d}{dx}\bigl(e^{3x}\bigr)
+= 2\cdot 3\,e^{3x}
+= 6\,e^{3x}.
+$$
+
+Step C: Combine via the chain rule:
+
+$$
+y'(x)
+= \dfrac12\,(1 + 2 e^{3x})^{-\tfrac12} \;\times\; \bigl[\,6\,e^{3x}\bigr]
+= \dfrac{6\,e^{3x}}{2\,\sqrt{1 + 2 e^{3x}}}
+= \dfrac{3\,e^{3x}}{\sqrt{1 + 2 e^{3x}}}.
+$$
+
+Hence, the derivative is
+
+$$
+\boxed{
+\dfrac{dy}{dx} = \dfrac{3 e^{3x}}{\sqrt{1 + 2 e^{3x}}}.
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

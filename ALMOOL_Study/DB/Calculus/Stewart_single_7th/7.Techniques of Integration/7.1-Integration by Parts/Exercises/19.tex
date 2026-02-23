@@ -1,0 +1,146 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ z^{3} \ e^z\ d z$$
+
+}\SetValue{Solution}{%
+
+A straightforward way to evaluate
+
+$$
+\int z^3 e^z d z
+$$
+
+is by using integration by parts repeatedly. Here's a clear step-by-step process.
+
+Integration by Parts Formula
+Recall that for functions $u(z)$ and $v(z)$,
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+
+Step 1: First Integration by Parts
+1. Let
+
+$$
+u=z^3, \quad d v=e^z d z
+$$
+
+2. Then
+
+$$
+d u=3 z^2 d z, \quad v=\int e^z d z=e^z
+$$
+
+3. Apply the formula:
+
+$$
+\int z^3 e^z d z=z^3 e^z-\int 3 z^2 e^z d z=z^3 e^z-3 \int z^2 e^z d z
+$$
+
+
+Hence we must now handle $\int z^2 e^z d z$.
+
+Step 2: Second Integration by Parts
+Consider $\int z^2 e^z d z$ :
+1. Let
+
+$$
+u=z^2, \quad d v=e^z d z
+$$
+
+2. Then
+
+$$
+d u=2 z d z, \quad v=e^z
+$$
+
+3. Apply the formula:
+
+$$
+\int z^2 e^z d z=z^2 e^z-\int 2 z e^z d z=z^2 e^z-2 \int z e^z d z
+$$
+
+
+Now we need $\int z e^z d z$.
+
+Step 3: Third Integration by Parts
+Consider $\int z e^z d z$ :
+1. Let
+
+$$
+u=z, \quad d v=e^z d z
+$$
+
+2. Then
+
+$$
+d u=d z, \quad v=e^z .
+$$
+
+3. Apply the formula:
+
+$$
+\int z e^z d z=z e^z-\int e^z d z=z e^z-e^z=e^z(z-1) .
+$$
+
+
+Thus
+
+$$
+\int z e^z d z=e^z(z-1)
+$$
+
+
+Step 2 (continued)
+Substitute back:
+
+$$
+\int z^2 e^z d z=z^2 e^z-2\left[e^z(z-1)\right]=z^2 e^z-2 z e^z+2 e^z=e^z\left(z^2-2 z+2\right)
+$$
+
+Step 4: Combine Everything
+
+Recall from Step 1:
+
+$$
+\int z^3 e^z d z=z^3 e^z-3 \int z^2 e^z d z=z^3 e^z-3\left[e^z\left(z^2-2 z+2\right)\right]
+$$
+
+
+Distribute the -3 :
+
+$$
+=z^3 e^z-3 z^2 e^z+6 z e^z-6 e^z=e^z\left(z^3-3 z^2+6 z-6\right) .
+$$
+
+
+Thus the final result is:
+
+$$
+\int z^3 e^z d z=e^z\left(z^3-3 z^2+6 z-6\right)+C
+$$
+
+where $C$ is the constant of integration.
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+   
+   
+
+   
+
+

@@ -1,0 +1,60 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+A scientist walking through a forest recorded as integers the heights of 5 trees standing in a row. She observed that each tree was either twice as tall or half as tall as the one to its right. Unfortunately some of her data was lost when rain fell on her notebook. Her notes are shown below, with blanks indicating the missing numbers. Based on her observations, the scientist was able to reconstruct the lost data. What was the average height of the trees, in meters?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2020-20.png}
+	\end{center}
+	
+\ansFIVEs{%start
+		22.2 }{%<--- (A)
+		24.2 }{%<--- (B)
+		33.2 }{%<--- (C)
+		35.2 }{%<---- (D)
+		37.2 }%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Answer (B): The notebook shows that the second tree is 11 meters tall. The first and third trees must be twice as tall at 22 meters, otherwise if they were half as tall, their heights would not be integers. This means the first 3 trees have a total height of $22+11+22=55$ meters. Because the third tree is 22 meters tall, the only possibilities for the heights of the last 2 trees are
+
+- 11 and 22 meters, which result in an average of $\frac{55+11+22}{5}=17.6$ meters,
+
+- 44 and 22 meters, which result in an average of $\frac{55+44+22}{5}=24.2$ meters, or
+
+- 44 and 88 meters, which result in an average of $\frac{55+44+88}{5}=37.4$ meters.
+
+The average ends in ``.2" so the second option must be the correct one. Thus it must be that the heights of the trees are $22,11,22,44$, and 22 meters, and the average height of all the trees is 24.2 meters.
+
+OR
+
+The average tree height equals the sum of the tree heights divided by 5. Because the average ends in ``. 2" which equals $\frac{2}{10}=\frac{1}{5}$, the sum of the tree heights must be one more than a multiple of 5.
+As shown above, the heights of the first 3 trees are 22, 11, and 22 meters, producing a total height of 55 meters, which is evenly divisible by 5. The sum of the heights of the last 2 trees must be one more than a multiple of 5. Because the third tree is 22 meters tall, the only possibilities for the heights of the last 2 trees are
+
+- 11 and 22 meters, which sum to 33 meters,
+
+- 44 and 22 meters, which sum to 66 meters, or
+
+- 44 and 88 meters, which sum to 132 meters.
+
+Only the second option is one more than a multiple of 5. Thus it must be that the heights of the trees are $22,11,22,44$, and 22 meters, and the average height is $\frac{55+44+22}{5}=24.2$ meters.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

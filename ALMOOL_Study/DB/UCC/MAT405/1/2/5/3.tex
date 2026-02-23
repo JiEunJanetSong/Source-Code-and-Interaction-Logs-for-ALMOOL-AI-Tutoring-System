@@ -1,0 +1,114 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find the solution $y$ to the IVP
+
+$$
+y^{\prime}=y+2 t e^{2 t}, \quad y(0)=0
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+using Theorem 1.2.3 (Variable Coefficients IVP) from section 1.2.3, which gives an explicit formula for the unique solution of the initial value problem:
+
+Step 1: Identify the components of the IVP
+We are given:
+- Differential equation: $y^{\prime}=a(t) y+b(t)$
+- Initial condition: $\quad y(0)=0$
+
+From the equation:
+- $a(t)=1$
+- $b(t)=2 t e^{2 t}$
+- $t_0=0$
+- $y_0=0$
+
+Step 2: Compute $A(t)=\int_{t_0}^t a(s) d s$
+
+$$
+A(t)=\int_0^t 1 d s=t
+$$
+
+
+Step 3: Use the theorem's formula
+The unique solution is:
+
+$$
+y(t)=y_0 e^{A(t)}+e^{A(t)} \int_{t_0}^t e^{-A(s)} b(s) d s
+$$
+
+
+Substitute the known values:
+
+$$
+y(t)=0 \cdot e^t+e^t \int_0^t e^{-s} \cdot 2 s e^{2 s} d s
+$$
+
+
+Simplify the integrand:
+
+$$
+e^{-s} \cdot 2 s e^{2 s}=2 s e^s
+$$
+
+So:
+
+$$
+y(t)=e^t \int_0^t 2 s e^s d s
+$$
+
+
+Step 4: Evaluate the integral $\int_0^t 2 s e^s d s$
+Use integration by parts:
+Let:
+- $u=2 s \Rightarrow d u=2 d s$
+- $d v=e^s d s \Rightarrow v=e^s$
+
+Then:
+
+$$
+\int 2 s e^s d s=2 s e^s-\int 2 e^s d s=2 s e^s-2 e^s+C
+$$
+
+
+Thus:
+
+$$
+\int_0^t 2 s e^s d s=\left[2 s e^s-2 e^s\right]_0^t=\left(2 t e^t-2 e^t\right)-\left(0-2 e^0\right)=2 t e^t-2 e^t+2
+$$
+
+
+Step 5: Final expression for $y(t)$
+
+$$
+y(t)=e^t \cdot\left(2 t e^t-2 e^t+2\right)=2 t e^{2 t}-2 e^{2 t}+2 e^t
+$$
+
+
+Final Answer:
+
+$$
+y(t)=2 e^t+2(t-1) e^{2 t}
+$$
+
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

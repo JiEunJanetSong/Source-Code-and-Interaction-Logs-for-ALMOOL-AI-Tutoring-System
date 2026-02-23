@@ -1,0 +1,102 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Follow the steps below to find all solutions of
+
+$$
+y^{\prime}=-4 y+2
+$$
+
+(b) Write the equations as a total derivative of a function $\psi$, that is
+
+$$
+y^{\prime}=-4 y+2 \Leftrightarrow \psi^{\prime}=0.
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+To write the equation $y^{\prime}=-4 y+2$ as a total derivative of a function $\psi$ such that $\psi^{\prime}=0$, we first rewrite the given differential equation in the standard linear first-order form and multiply by the integrating factor found in the previous step.
+
+The differential equation is $y^{\prime}=-4 y+2$.
+Rearranging it to the standard form $y^{\prime}+P(t) y=Q(t)$, we get:
+
+$$
+y^{\prime}+4 y=2
+$$
+
+
+From part (a), the integrating factor is $\mu(t)=e^{4 t}$.
+Multiply the standard form of the equation by the integrating factor:
+
+$$
+\begin{aligned}
+& e^{4 t}\left(y^{\prime}+4 y\right)=e^{4 t}(2) \\
+& e^{4 t} y^{\prime}+4 e^{4 t} y=2 e^{4 t}
+\end{aligned}
+$$
+
+
+The left side of this equation is the exact derivative of the product of the integrating factor and $y(t)$.
+That is, $\frac{d}{d t}\left(e^{4 t} y\right)=e^{4 t} y^{\prime}+4 e^{4 t} y$.
+So, the equation becomes:
+
+$$
+\frac{d}{d t}\left(e^{4 t} y\right)=2 e^{4 t}
+$$
+
+
+To get the equation in the form $\psi^{\prime}=0$, move the term on the right side to the left side:
+
+$$
+\frac{d}{d t}\left(e^{4 t} y\right)-2 e^{4 t}=0
+$$
+
+
+Now, we need to express the left side as the total derivative of some function $\psi(t, y)$. We can see that the first term is the derivative of $e^{4 t} y$. The second term, $-2 e^{4 t}$, is the derivative of $-\int 2 e^{4 t} d t$.
+
+$$
+\int-2 e^{4 t} d t=-2 \cdot \frac{1}{4} e^{4 t}+C_2=-\frac{1}{2} e^{4 t}+C_2
+$$
+
+
+So, the left side of the equation is the derivative of $e^{4 t} y-\frac{1}{2} e^{4 t}$ (we can ignore the constant of integration $C_2$ when defining $\psi$ ).
+
+Let $\psi(t, y)=e^{4 t} y-\frac{1}{2} e^{4 t}$.
+Then, the total derivative of $\psi$ with respect to $t$ is:
+
+$$
+\begin{gathered}
+\psi^{\prime}(t)=\frac{d}{d t}\left(e^{4 t} y-\frac{1}{2} e^{4 t}\right)=\frac{d}{d t}\left(e^{4 t} y\right)-\frac{d}{d t}\left(\frac{1}{2} e^{4 t}\right) \\
+\psi^{\prime}(t)=\left(e^{4 t} y^{\prime}+4 e^{4 t} y\right)-\left(\frac{1}{2} \cdot 4 e^{4 t}\right) \\
+\psi^{\prime}(t)=e^{4 t} y^{\prime}+4 e^{4 t} y-2 e^{4 t}
+\end{gathered}
+$$
+
+
+Since we have shown that $y^{\prime}=-4 y+2$ is equivalent to $e^{4 t} y^{\prime}+4 e^{4 t} y-2 e^{4 t}=0$, we can conclude that the original differential equation is equivalent to $\psi^{\prime}(t)=0$, where $\psi(t, y)=e^{4 t} y-\frac{1}{2} e^{4 t}$.
+
+The function $\psi$ is $\psi(t, y)=e^{4 t} y-\frac{1}{2} e^{4 t}$.
+
+The final answer is $\psi(t, y)=e^{4 t} y-\frac{1}{2} e^{4 t}$.
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

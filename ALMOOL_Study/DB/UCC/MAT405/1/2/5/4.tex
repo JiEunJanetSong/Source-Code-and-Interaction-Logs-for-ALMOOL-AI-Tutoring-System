@@ -1,0 +1,125 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find the solution $y$ to the IVP
+
+$$
+t y^{\prime}+2 y=\frac{\sin (t)}{t}, \quad y\left(\frac{\pi}{2}\right)=\frac{2}{\pi}
+$$
+
+for $t>0$.
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Write in standard linear form
+Divide both sides by $t$ (since $t>0$ ):
+
+$$
+y^{\prime}+\frac{2}{t} y=\frac{\sin t}{t^2}
+$$
+
+
+This is a first-order linear equation with variable coefficients, of the form:
+
+$$
+y^{\prime}+a(t) y=b(t)
+$$
+
+where:
+- $a(t)=\frac{2}{t}$
+- $b(t)=\frac{\sin t}{t^2}$
+
+Step 2: Compute the integrating factor
+
+$$
+\mu(t)=e^{\int a(t) d t}=e^{\int \frac{2}{t} d t}=e^{2 \ln t}=t^2
+$$
+
+
+Step 3: Multiply through by the integrating factor
+
+$$
+t^2 y^{\prime}+2 t y=\sin t
+$$
+
+
+Left-hand side is the derivative of $t^2 y$ :
+
+$$
+\frac{d}{d t}\left(t^2 y\right)=\sin t
+$$
+
+
+Step 4: Integrate both sides
+
+$$
+\begin{gathered}
+\int \frac{d}{d t}\left(t^2 y\right) d t=\int \sin t d t \\
+t^2 y=-\cos t+C
+\end{gathered}
+$$
+
+Step 5: Solve for $y(t)$
+
+$$
+y(t)=\frac{-\cos t+C}{t^2}
+$$
+
+
+Step 6: Apply initial condition
+We are given:
+
+$$
+y\left(\frac{\pi}{2}\right)=\frac{2}{\pi}
+$$
+
+
+Substitute:
+
+$$
+\begin{aligned}
+& \frac{2}{\pi}=\frac{-\cos \left(\frac{\pi}{2}\right)+C}{\left(\frac{\pi}{2}\right)^2} \\
+& \frac{2}{\pi}=\frac{0+C}{\left(\frac{\pi^2}{4}\right)}=\frac{4 C}{\pi^2}
+\end{aligned}
+$$
+
+
+Solve for $C$ :
+
+$$
+\frac{2}{\pi}=\frac{4 C}{\pi^2} \quad \Rightarrow \quad C=\frac{2}{\pi} \cdot \frac{\pi^2}{4}=\frac{\pi}{2}
+$$
+
+
+Final Answer:
+
+$$
+y(t)=\frac{-\cos t+\frac{\pi}{2}}{t^2}
+
+=\frac{\pi}{2 t^2}-\frac{\cos (t)}{t^2}
+$$
+
+
+This is the unique solution to the IVP for $t>0$.
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

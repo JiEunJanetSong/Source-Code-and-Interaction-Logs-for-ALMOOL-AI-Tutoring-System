@@ -1,0 +1,123 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int \sqrt{1-4 x^2}\  d x$$
+
+}\SetValue{Solution}{%
+
+To evaluate
+
+$$
+\int \sqrt{1-4 x^2} d x
+$$
+
+we use a trigonometric substitution. Notice the integrand resembles $\sqrt{1-k^2 x^2}$ with $k=2$. Use
+
+$$
+\begin{aligned}
+2 x=\sin \theta & \Longrightarrow x=\dfrac{1}{2} \sin \theta \\
+d x & =\dfrac{1}{2} \cos \theta d \theta
+\end{aligned}
+$$
+
+
+Then, the square root transforms as follows:
+
+$$
+\sqrt{1-4 x^2}=\sqrt{1-4\left(\dfrac{1}{2} \sin \theta\right)^2}=\sqrt{1-\sin ^2 \theta}=\cos \theta
+$$
+
+
+Substitute into the integral:
+
+$$
+\int \sqrt{1-4 x^2} d x=\int \cos \theta\left(\dfrac{1}{2} \cos \theta d \theta\right)=\dfrac{1}{2} \int \cos ^2 \theta d \theta
+$$
+
+
+Now, use the power-reduction identity:
+
+$$
+\cos ^2 \theta=\dfrac{1+\cos (2 \theta)}{2}
+$$
+
+
+Thus, the integral becomes
+
+$$
+\dfrac{1}{2} \int \dfrac{1+\cos (2 \theta)}{2} d \theta=\dfrac{1}{4} \int(1+\cos (2 \theta)) d \theta
+$$
+
+Integrate term by term:
+
+$$
+\int 1 d \theta=\theta, \quad \int \cos (2 \theta) d \theta=\dfrac{1}{2} \sin (2 \theta)
+$$
+
+
+Thus,
+
+$$
+\dfrac{1}{4}\left(\theta+\dfrac{1}{2} \sin (2 \theta)\right)+C
+$$
+
+
+Substitute back in terms of $x$. Since
+
+$$
+\sin \theta=2 x \quad \Longrightarrow \quad \theta=\arcsin (2 x),
+$$
+
+and using the double-angle formula,
+
+$$
+\sin (2 \theta)=2 \sin \theta \cos \theta
+$$
+
+with
+
+$$
+\cos \theta=\sqrt{1-\sin ^2 \theta}=\sqrt{1-4 x^2}
+$$
+
+we have
+
+$$
+\sin (2 \theta)=2(2 x) \sqrt{1-4 x^2}=4 x \sqrt{1-4 x^2}
+$$
+
+
+Thus, the antiderivative in terms of $x$ is
+
+$$
+\dfrac{1}{4} \arcsin (2 x)+\dfrac{1}{4} \cdot \dfrac{1}{2} \cdot 4 x \sqrt{1-4 x^2}+C=\dfrac{1}{4} \arcsin (2 x)+\dfrac{x}{2} \sqrt{1-4 x^2}+C
+$$
+
+The final result is
+
+$$
+\dfrac{1}{4} \arcsin (2 x)+\dfrac{x}{2} \sqrt{1-4 x^2}+C
+$$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+
+## Model Solution (a)
+
+
+## Scoring (a)
+
+For $\text { Area }=\int_0^2(f(x)-g(x)) d x$,
+Integrand; 1 point, Answer; 1 point.
+
+## Scoring notes (a)
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+

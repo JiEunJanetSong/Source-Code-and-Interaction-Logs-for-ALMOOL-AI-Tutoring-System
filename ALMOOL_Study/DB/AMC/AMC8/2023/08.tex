@@ -1,0 +1,38 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+   
+Lola, Lolo, Tiya, and Tiyo participated in a ping pong tournament. Each player competed against each of the other three players exactly twice. Shown below are the win-loss records for the players. The numbers 1 and 0 represent a win or loss, respectively. For example, Lola won five matches and lost the fourth match. What was Tiyo's win-loss record?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2023-08.png}
+	\end{center}
+
+\ansFIVEs{%start
+		 000101 }{%<--- (A)
+		 001001 }{%<--- (B)
+		 010000 }{%<--- (C)
+		 010101 }{%<---- (D)
+		 011000 }%<---- (D)
+}\SetValue{Concept}{%
+
+롤라, 롤로, 티야, 티요가 탁구 토너먼트에 참가했습니다. 각 플레이어는 다른 세 플레이어와 정확히 두 번씩 경쟁했습니다. 아래는 플레이어들의 승패 기록입니다. 숫자 1과 0은 각각 승패를 나타냅니다. 예를 들어 롤라는 5번의 경기에서 승리하고 4번의 경기에서 패배했습니다. 티요의 승패 기록은 어떻게 되나요?
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We can calculate the total number of wins (1's) by seeing how many matches were players, which is 12 matches played. Then, we can calculate the \# of wins already on the table, which is $5+3+2=10$, so there are $12-10=2$ wins left in the mystery player. Now, we will make the key observation that there is only 2 wins ( 1's) per column as there are 2 winners and 2 losers in each round. Strategically looking through the columns counting the 1 's and putting our own 21's when the column isn't already full yields (A) 000101.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

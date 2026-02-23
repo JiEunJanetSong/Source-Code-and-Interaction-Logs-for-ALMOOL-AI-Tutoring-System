@@ -1,0 +1,87 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the series is convergent or divergent by expressing $s_n$ as a telescoping sum. If it is convergent, find its sum.
+
+$$\sum_{n=1}^{\infty} \ln \dfrac{n}{n+1}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Use logarithmic identities
+
+We can use the identity:
+
+$$
+\ln \dfrac{n}{n+1}=\ln n-\ln (n+1)
+$$
+
+
+So the series becomes:
+
+$$
+\sum_{n=1}^{\infty}(\ln n-\ln (n+1))
+$$
+
+
+Step 2: Write as a telescoping sum
+
+This is a telescoping series:
+
+$$
+(\ln 1-\ln 2)+(\ln 2-\ln 3)+(\ln 3-\ln 4)+\cdots
+$$
+
+
+You can see that terms cancel in sequence:
+
+- $\ln 1$ stays
+
+- $-\ln 2+\ln 2=0$
+
+- $-\ln 3+\ln 3=0$
+
+- ...
+
+- Only $\ln 1$ and $-\ln (n+1)$ remain in the $n$-th partial sum
+
+So the partial sum is:
+
+$$
+s_N=\ln 1-\ln (N+1)=0-\ln (N+1)=-\ln (N+1)
+$$
+
+
+Step 3: Take the limit
+
+$$
+\lim _{N \rightarrow \infty} s_N=\lim _{N \rightarrow \infty}-\ln (N+1)=-\infty
+$$
+
+Final Answer:
+
+- The series diverges.
+
+- In fact, it diverges to $-\infty$.
+
+The series diverges (to $-\infty$).
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

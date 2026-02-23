@@ -1,0 +1,83 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find an equation of the tangent line to the curve at the given point.
+
+$y=e^x \cos x, \quad(0,1)$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+1. Differentiate: Given
+$
+y = e^x \cos x,
+$
+
+we apply the product rule, $\dfrac{d}{dx}(uv) = u'v + uv'$. Let $u = e^x$ and $v = \cos x$. 
+
+Then
+
+$
+u' = e^x, 
+\quad 
+v' = -\sin x.
+$
+
+Thus,
+
+$
+y' = (e^x)(\cos x) + (e^x)(-\sin x) 
+    = e^x(\cos x - \sin x).
+$
+
+2. Evaluate the derivative at $x = 0$:  
+$
+m = y'(0) = e^0 \bigl(\cos 0 - \sin 0\bigr) 
+           = 1 \times (1 - 0) 
+           = 1.
+$
+
+So the slope of the tangent line at $x=0$ is $1$.
+
+3. Write the tangent line using point-slope form: 
+
+The given point is $(0,1)$. 
+
+The point-slope form is
+$
+y - y_0 = m (x - x_0).
+$
+
+Substitute $m=1$, $x_0=0$, and $y_0=1$:
+
+$
+y - 1 = 1 \cdot (x - 0)
+\quad \Longrightarrow \quad
+y - 1 = x.
+$
+
+Hence the tangent line is:
+
+$
+\boxed{y = x + 1.}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

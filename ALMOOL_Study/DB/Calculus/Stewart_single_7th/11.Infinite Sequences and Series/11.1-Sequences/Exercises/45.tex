@@ -1,0 +1,71 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=n\sin\left( \frac{1}{n} \right) $$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = n \sin\left( \frac{1}{n} \right)
+$
+
+
+
+ Step 1: Use a known limit identity
+
+There is a standard limit result:
+
+$
+\lim_{x \to 0} \frac{\sin x}{x} = 1
+$
+
+Let $x = \frac{1}{n}$. Then as $n \to \infty$, $x \to 0$, so:
+
+$
+\sin\left(\frac{1}{n}\right) = \frac{1}{n} \cdot \left(1 + o(1)\right)
+$
+
+Multiplying by $n$:
+
+$
+a_n = n \cdot \sin\left(\frac{1}{n}\right) \approx n \cdot \frac{1}{n} = 1
+$
+
+More rigorously:
+
+$
+\lim_{n \to \infty} n \sin\left(\frac{1}{n}\right) = \lim_{x \to 0} \frac{\sin x}{x} = 1
+$
+
+Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{1}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

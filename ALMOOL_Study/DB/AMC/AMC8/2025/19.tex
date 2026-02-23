@@ -1,0 +1,51 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Two towns, $A$ and $B$, are connected by a straight road, 15 miles long. Traveling from town $A$ to town $B$, the speed limit changes every 5 miles: from 25 to 40 to 20 miles per hour (mph). Two cars, one at town $A$ and one at town $B$, start moving toward each other at the same time. They drive at exactly the speed limit in each portion of the road. How far from town $A$, in miles, will the two cars meet?
+
+\ansFIVEs{%start
+		7.75 }{%<--- (A)
+		8 }{%<--- (B)
+		8.25 }{%<--- (C)
+		8.5 }{%<---- (D)
+		8.75 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+The first car, moving from town $A$ at 25 miles per hour, takes $\frac{5}{25}=\frac{1}{5}$ hours $=12$ minutes. The second car, traveling another 5 miles from town $B$, takes $\frac{5}{20}=\frac{1}{4}$ hours $=15$ minutes. The first car has traveled for 3 minutes or $\frac{1}{20}$ th of an hour at 40 miles per hour when the second car has traveled 5 miles. The first car has traveled $40 \cdot \frac{1}{20}=2$ miles from the previous 5 miles it traveled at 25 miles per hour. They have 3 miles left, and they travel at the same speed, so they meet 1.5 miles through, so they are $5+2+1.5=$ (D) 8.5 miles from town $A$.
+
+Solution 2
+From the answer choices, the cars will meet somewhere along the 40 mph stretch. Car $A$ travels 25 mph for 5 miles, so we can use dimensional analysis to see that it will be $\frac{1 \mathrm{hr}}{25 \mathrm{mi}} \cdot 5 \mathrm{mi}=\frac{1}{5}$ of an hour for this portion. Similarly, car $B$ spends $\frac{1}{4}$ of an hour on the 20 mph portion.
+
+Suppose that car $A$ travels $x$ miles along the 40 mph portion-- then car $B$ travels $5-x$ miles along the 40 mph portion. By identical methods, car $A$ travels for $\frac{1}{40} \cdot x=\frac{x}{40}$ hours, and car $B$ travels for $\frac{5-x}{40}$ hours.
+At their meeting point, cars $A$ and $B$ will have traveled for the same amount of time, so we have
+
+$$
+\begin{aligned}
+\frac{1}{5}+\frac{x}{40} & =\frac{1}{4}+\frac{5-x}{40} \\
+8+x & =10+5-x
+\end{aligned}
+$$
+
+so $2 x=7$, and $x=3.5$ miles. This means that car $A$ will have traveled $5+3.5=(\mathrm{D}) 8.5$ miles.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

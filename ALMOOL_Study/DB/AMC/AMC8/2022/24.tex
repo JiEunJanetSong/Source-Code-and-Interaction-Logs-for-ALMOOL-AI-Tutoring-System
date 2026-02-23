@@ -1,0 +1,97 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+The figure below shows a polygon $A B C D E F G H$, consisting of rectangles and right triangles. When cut out and folded on the dotted lines, the polygon forms a triangular prism. Suppose that $A H=E F=8$ and $G H=14$. What is the volume of the prism?	
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2022-24.png}
+	\end{center}
+
+\ansFIVEs{%start
+		112 }{%<--- (A)
+		128 }{%<--- (B)
+		192 }{%<--- (C)
+		240 }{%<---- (D)
+		288 }%<---- (D)
+}\SetValue{Concept}{%
+
+아래 그림은 직사각형과 직각 삼각형으로 구성된 다각형 $A -B-C-D -E-F-G -H$를 보여줍니다. 점선으로 잘라내어 접으면 다각형은 삼각형 프리즘을 형성합니다. A-H=E- F=8과 -$G-H=14$라고 가정합니다. 프리즘의 부피는 어떻게 될까요?
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Mathematical Solution
+
+We are given a triangular prism formed by folding a 2D net. To find its volume, we use the prism volume formula:
+
+$$
+\text { Volume }=\text { Area of base } \times \text { Height }
+$$
+
+
+Step 1: Identify the base triangle
+
+After folding, triangle $\triangle B J G$ becomes one of the triangular bases.
+
+We are told:
+
+- $B J=C I=8$
+
+- $G H=14$, and since $H J=8$, it follows that:
+
+$$
+J G=G H-H J=14-8=6
+$$
+
+
+Thus, triangle $B J G$ has:
+
+- Base $=B J=8$
+
+- Height $=J G=6$
+
+$$
+\text { Area }_{\triangle B J G}=\frac{1}{2} \cdot 8 \cdot 6=24
+$$
+
+
+Step 2: Prism height
+
+The prism's height is the length perpendicular to the triangular base, which corresponds to the rectangle $F G$, i.e.,
+
+$$
+\text { Height }=F G=8
+$$
+
+
+Step 3: Volume
+
+$$
+\text { Volume }=\text { Area }_{\triangle B J G} \cdot \text { Height }=24 \cdot 8=192
+$$
+
+
+Answer: (C) 192.
+
+Remark
+
+After folding polygon $A B C D E F G H$ on the dotted lines, we obtain the following triangular prism:
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2022-24-s.png}
+	\end{center}
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

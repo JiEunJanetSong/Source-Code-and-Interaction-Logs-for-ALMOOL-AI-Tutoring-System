@@ -1,0 +1,88 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find an equation of the tangent line to the curve at the given point.
+
+$y=\sqrt{1+x^3},\quad (2, 3)$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We’re given:
+
+- Function: $ y = \sqrt{1 + x^3}$
+
+- Point: $ (2, 3)$
+
+We want the equation of the tangent line at that point.
+
+Step 1: Find the derivative $ y'$
+
+Rewrite the function to make differentiation easier:
+
+$$
+y = (1 + x^3)^{1/2}
+$$
+
+Use the **chain rule**:
+
+$$
+y' = \dfrac{1}{2}(1 + x^3)^{-1/2} \cdot \dfrac{d}{dx}(1 + x^3) = \dfrac{1}{2}(1 + x^3)^{-1/2} \cdot 3x^2
+$$
+
+So:
+
+$$
+y' = \dfrac{3x^2}{2\sqrt{1 + x^3}}
+$$
+
+Step 2: Evaluate the derivative at $ x = 2$
+
+Plug in:
+
+$$
+y'(2) = \dfrac{3(2)^2}{2\sqrt{1 + (2)^3}} = \dfrac{12}{2\sqrt{9}} = \dfrac{12}{2 \cdot 3} = 2
+$$
+
+So the **slope** of the tangent line at $ x = 2$ is $ 2$.
+
+Step 3: Use point-slope form of the line
+
+Point: $ (2, 3)$, Slope: $ m = 2$
+
+$$
+y - 3 = 2(x - 2)
+$$
+
+Simplify:
+
+$$
+y = 2x - 4 + 3 = 2x - 1
+$$
+
+Final Answer:
+
+$$
+\boxed{y = 2x - 1}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
+

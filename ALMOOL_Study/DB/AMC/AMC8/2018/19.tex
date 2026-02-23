@@ -1,0 +1,99 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+In a sign pyramid a cell gets a `` + " if the two cells below it have the same sign, and it gets a ``-" if the two cells below it have different signs. The diagram below illustrates a sign pyramid with four levels. How many possible ways are there to fill the four cells in the bottom row to produce a ``+" at the top of the pyramid?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2018-19.png}
+	\end{center}
+
+\ansFIVEs{%start
+		2 }{%<--- (A)
+		4 }{%<--- (B)
+		8 }{%<--- (C)
+		12 }{%<---- (D)
+		 16}%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+
+
+
+1. 기호를 수로 바꾸어 생각하기
+- ' + '는 +1 , ' - '는 -1 로 두고 네 개의 바닥 칸을 $a, b, c, d$ 라고 하자.
+
+2. 윗칸 값은 아래 두 칸의 곱
+
+- 둘째 줄(아래에서 두 번째) 값
+
+$$
+a b, b c, a d
+$$
+
+- 셋째 줄 값
+
+$$
+(a b)(b c)=a c, \quad(b c)(a d)=b d
+$$
+
+(왜냐하면 $( \pm 1)^2=1$ 이므로 가운데 $b^2, c^2$ 는 1 이 된다.)
+- 맨 위값
+
+$$
+(a c)(b d)=a b d .
+$$
+
+3. 맨 위가 '+'가 되는 조건
+
+$$
+a b c d=+1 .
+$$
+
+
+이는 다음 두 경우뿐이다.
+1. 네 개 모두 $+1(++++)$.
+2. 두 개는 +1 , 두 개는 -1 .
+- 네 개 모두 +1: 1 가지.
+- 두 개씩 $+/-$ 섞기: $\binom{4}{2}=6$ 가지.
+- 네 개 모두 -1 역시 +1 을 만들므로 1 가지.
+
+따라서 총 경우의 수는
+
+$$
+1+6+1=8
+$$
+
+
+즉, 바닥줄 네 칸을 채우는 방법은 8 가지입니다.
+
+}\SetValue{AltText}{%
+
+}\SetValue{Solution}{%
+
+}\SetValue{Solution MAA}{%
+
+Answer (C): Think of the $+\operatorname{sign}$ as +1 , and the $-\operatorname{sign}$ as -1 . Let $a, b, c$, and $d$ denote the values of the four cells at the bottom of the pyramid, in that order. Then the cells in the second row from the bottom have values $a \cdot b, b \cdot c$ and $c \cdot d$, and the cells in the row above this are $a \cdot b \cdot b \cdot c=a \cdot c$ and $b \cdot c \cdot c \cdot d=b \cdot d$ (because both 1 and -1 squared are 1.) Finally, the top cell has value $a \cdot b \cdot c \cdot d$. This value is +1 if all four variables are +1 or all four are -1 , giving two ways; or, if two of the variables are +1 and two are -1 , giving 6 additional ways $(++--,+-+-,+--+,-++-,-+-+$, and --++$)$. Thus there are a total of 8 ways to fill the fourth row.
+
+OR
+
+In order to produce $\mathrm{a}+$ at the top of the pyramid, the second row must contain either ++ or --. Each leads to two possible arrangements for the third row. Consider the following cases.
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2018-19-s.png}
+	\end{center}
+
+	Thus, there are eight possible ways to fill the fourth row.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

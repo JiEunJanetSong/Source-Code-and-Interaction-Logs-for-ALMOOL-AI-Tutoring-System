@@ -1,0 +1,656 @@
+\documentclass[showtrims,svgnames,chapter,openany,oneside]{oblivoir}
+\usepackage{ibmath}%수식 명령 설정파일
+\usepackage{memtikzpagenodes}% 페이지 레이아웃
+\usepackage{SATdesign}% 디자인 설정파일
+\usepackage{bigints} %큰 적분기호
+\usepackage{dhucs-enumitem}
+\usepackage{tabularray}
+\usepackage{bookmark}
+\usepackage{multirow}
+
+%\usepackage{amsmath}
+%%%%%%
+\newcommand{\autoinput}{\input{AMC\expandafter\AMClevel/\expandafter\AMCyear AMC\expandafter\AMClevel\expandafter\AMCtype.tex}}
+\newcommand\AMCyear{2001}%
+\newcommand\AMClevel{10}%
+\newcommand\AMCtype{B}%
+%%%%%%%%%%%% 줄바꿈 or 페이지바꿈 설정하기
+\newcommand{\Jnewpage}{%\JNewpage라는 이름의 기존에 없던 새로운 명령을 만들고, 그 명령을 입력하면 무엇이 실행될지 명시
+%\vskip30pt %%% 줄바꾸려면 주석해제
+ %%% 페이지바꾸려면 주석해제
+}
+%%%%%%%%%%% 불러올 파일 설정
+%%%%%%%%%%% 머릿말 설정\text{a parabola tangent to the }x\text{-axis} 
+\headersetting{%left start
+\colormouth[\MYCOLOR]{ALMooL-EMA310-Dr.Benning}%{USSCE-2018-M$_\textbf{G1}$}% PDF출력시 왼쪽 head
+}{%middle start 
+%\today%middle contents
+}{%{right start
+\colormouth[\MYCOLOR]{UCC-ResearchTeam}%right contents
+}
+
+\begin{document}\pagestyle{mathclass2021}
+%여기 밑으로 작성
+\SetValue{mainTitle}{AlMool-Dr.Benning}%%%%왼쪽상단
+\SetValue{Book}{SATProblem}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/UCC/EMA310/1/reference.pdf}
+%\SetValue{Book}{Solution}
+
+\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries 
+Unit 1: Meaning of a vector}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{Unit 1: Meaning of a vector}%test체크박스, 왼쪽아래
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{UCC/EMA310/1/01.tex}%
+\end{comment}
+
+
+\SetValue{mainTitle}{AlMool-Dr.Benning}%%%%왼쪽상단
+\SetValue{Book}{SATProblem}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/UCC/EMA310/3/reference.pdf}
+%\SetValue{Book}{Solution}
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries 
+Unit 3: Unit vector and 3D vectors}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{Unit 3: Unit vector and 3D vectors}%test체크박스, 왼쪽아래
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{UCC/EMA310/3/01.tex}%
+\newpage
+\input{UCC/EMA310/3/02.tex}%
+\newpage
+\input{UCC/EMA310/3/03.tex}%
+\newpage
+\input{UCC/EMA310/3/04.tex}%
+\newpage
+\input{UCC/EMA310/3/05.tex}%
+\newpage
+\input{UCC/EMA310/3/06.tex}%
+
+\SetValue{mainTitle}{AlMool-UCC-EMA301-Dr.Benning}%%%%왼쪽상단
+\SetValue{Book}{SATProblem}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/UCC/EMA310/4/reference.pdf}
+%\SetValue{Book}{Solution}
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries 
+Unit 4: Multiplication of vectors}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{Unit 4: Multiplication of vectors}%test체크박스, 왼쪽아래
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{UCC/EMA310/4/01.tex}%
+\newpage
+\input{UCC/EMA310/4/02.tex}%
+\newpage
+\input{UCC/EMA310/4/03.tex}%
+\newpage
+\input{UCC/EMA310/4/04.tex}%
+\newpage
+\input{UCC/EMA310/4/05.tex}%
+\newpage
+\input{UCC/EMA310/4/06.tex}%
+\newpage
+\input{UCC/EMA310/4/07.tex}%
+
+\end{document}
+
+
+
+%%% 어떤파일 부를지
+
+%\input{AMC12/2000AMC12-}
+
+%Problem 문제지 Solution 해설지 Teacher 문제+해설
+\SetValue{mainTitle}{AlMool-Calculus-UCC}%%%%왼쪽상단
+\SetValue{Book}{SATProblem}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/Calculus/Stewart_single_7th/Reference/3-3.png}
+%\SetValue{Book}{Solution}
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries 3.3-Derivatives of Trigonometric Functions}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{3.3-Derivatives of Trigonometric Functions}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/01.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/02.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/03.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/04.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/05.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/06.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/07.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/08.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/09.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/10.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/11.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/12.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/13.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/14.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/15.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/16.tex}%
+
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/21.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/22.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/23.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/24.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/25.tex}%
+
+
+
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/39.tex}%26
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/40.tex}%27
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/41.tex}%28
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/42.tex}%29
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/43.tex}%30
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/44.tex}%31
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/45.tex}%32
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/46.tex}%33
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/47.tex}%34
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.3-Derivatives of Trigonometric Functions/Exercises/48.tex}%35
+%\end{document}
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries 3.4-The Chain Rule}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{3.4-The Chain Rule}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/Calculus/Stewart_single_7th/Reference/3-4.png}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/07.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/08.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/09.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/10.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/11.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/12.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/13.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/14.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/15.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/16.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/17.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/18.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/19.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/20.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/21.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/22.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/23.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/24.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/25.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/26.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/27.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/28.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/29.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/30.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/31.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/32.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/33.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/34.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/35.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/36.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/37.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/38.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/39.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/40.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/41.tex}%
+
+
+
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/45.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/46.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/47.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/48.tex}%
+
+
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/50.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/51.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/52.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/53.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/54.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/3.Differenciation Rules/3.4-The Chain Rule/Exercises/55.tex}%
+
+\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries 9.1-Modeling with Differential Equations-Example}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{9.1-Modeling with Differential Equations-Example}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/Calculus/Stewart_UIUC_9th/Reference/9-1.png}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{Calculus/Stewart_UIUC_9th/9/9.1/Example/01.tex}%
+\newpage
+\input{Calculus/Stewart_UIUC_9th/9/9.1/Example/02.tex}%
+\newpage
+\input{Calculus/Stewart_UIUC_9th/9/9.1/Example/03.tex}%
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries 9.1-Modeling with Differential Equations-Exercises}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{9.1-Modeling with Differential Equations-Exercises}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/Calculus/Stewart_UIUC_9th/Reference/9-1.png}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{Calculus/Stewart_UIUC_9th/9/9.1/Exercises/01.tex}%
+\end{comment}
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries 11.1-Sequences}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{11.1-Sequences}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/Calculus/Stewart_single_7th/Reference/11-1.png}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/03.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/04.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/05.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/06.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/07.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/08.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/09.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/10.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/11.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/12.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/13.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/14.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/15.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/16.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/17.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/19.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/20.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/21.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/22.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/23.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/24.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/25.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/26.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/27.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/28.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/29.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/30.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/31.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/32.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/33.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/34.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/35.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/36.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/37.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/38.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/39.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/40.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/41.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/42.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/43.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/44.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/45.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/46.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/47.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/48.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/49.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/50.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/51.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.1-Sequences/Exercises/52.tex}%
+
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries 11.2-Series}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{11.2-Series}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/Calculus/Stewart_single_7th/Reference/11-2.pdf}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/03.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/04.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/05.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/06.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/07.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/08.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/09.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/10.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/11.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/12.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/13.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/14.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/15.tex}%
+%\newpage
+%\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/16.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/17.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/19.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/20.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/21.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/22.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/23.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/24.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/25.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/26.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/27.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/28.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/29.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/30.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/31.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/32.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/33.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/34.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/35.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/36.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/37.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/38.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/39.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/40.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/41.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/42.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/43.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/44.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/45.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/46.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/47.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/48.tex}%
+
+
+
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/57.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/58.tex}%
+
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/59.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/60.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/61.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/62.tex}%
+\newpage
+\input{Calculus/Stewart_single_7th/11.Infinite Sequences and Series/11.2-Series/Exercises/63.tex}%
+
+\end{document}
+
+
+
+
+
+\SetValue{examTime}{2700}
+\setcounter{SATQuestionNum}{0}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{1}
+\SetValue{referenceImage}{DB/Calculus/Stewart_single_7th/Reference/3-3.png}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부

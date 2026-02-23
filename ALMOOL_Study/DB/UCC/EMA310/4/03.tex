@@ -1,0 +1,94 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the area of the triangle with vertices $P(1,4,6), Q(-2,5,-1)$ and $R(1,-1,1)$.
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Compute two vectors from the triangle
+Let's use vectors $\overrightarrow{P Q}$ and $\overrightarrow{P R}$ :
+
+$$
+\begin{gathered}
+\overrightarrow{P Q}=Q-P=(-2-1,5-4,-1-6)=(-3,1,-7) \\
+\overrightarrow{P R}=R-P=(1-1,-1-4,1-6)=(0,-5,-5)
+\end{gathered}
+$$
+
+
+Step 2: Compute the cross product $\overrightarrow{P Q} \times \overrightarrow{P R}$
+Use the determinant formula:
+
+$$
+\begin{gathered}
+\overrightarrow{P Q} \times \overrightarrow{P R}=\left|\begin{array}{ccc}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+-3 & 1 & -7 \\
+0 & -5 & -5
+\end{array}\right| \\
+=\mathbf{i}\left|\begin{array}{cc}
+1 & -7 \\
+-5 & -5
+\end{array}\right|-\mathbf{j}\left|\begin{array}{cc}
+-3 & -7 \\
+0 & -5
+\end{array}\right|+\mathbf{k}\left|\begin{array}{cc}
+-3 & 1 \\
+0 & -5
+\end{array}\right|
+\end{gathered}
+$$
+
+
+Compute each:
+- $\left|\begin{array}{cc}1 & -7 \\ -5 & -5\end{array}\right|=(1)(-5)-(-7)(-5)=-5-35=-40$
+- $\left|\begin{array}{cc}-3 & -7 \\ 0 & -5\end{array}\right|=(-3)(-5)-(-7)(0)=15-0=15$
+- $\left|\begin{array}{cc}-3 & 1 \\ 0 & -5\end{array}\right|=(-3)(-5)-(1)(0)=15-0=15$
+
+So:
+
+$$
+\overrightarrow{P Q} \times \overrightarrow{P R}=-40 \mathbf{i}-15 \mathbf{j}+15 \mathbf{k}
+$$
+
+
+Step 3: Find the magnitude of the cross product
+
+$$
+|\overrightarrow{P Q} \times \overrightarrow{P R}|=\sqrt{(-40)^2+(-15)^2+15^2}=\sqrt{1600+225+225}=\sqrt{2050}
+$$
+
+
+Step 4: Use the formula for area
+The area $A$ of the triangle is:
+
+$$
+\begin{aligned}
+& A=\frac{1}{2}|\overrightarrow{P Q} \times \overrightarrow{P R}|=\frac{1}{2} \sqrt{2050} \\
+& =\frac{1}{2} \sqrt{2050} \\
+& =\frac{5\sqrt{82}}{2}  \text { units }^2
+\end{aligned}
+$$
+
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

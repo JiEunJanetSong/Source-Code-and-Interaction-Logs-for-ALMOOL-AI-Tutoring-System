@@ -1,0 +1,92 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=e^{k \tan \sqrt{x}}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+First, let us denote the inner function:
+
+$$
+f(x) = k \,\tan\bigl(\sqrt{x}\bigr).
+$$
+
+The given function is
+$$
+y = e^{f(x)}.
+$$
+
+To find $\dfrac{dy}{dx}$, apply the chain rule:
+
+\textbf{1. Differentiate $e^{f(x)}$ with respect to $f(x)$:}
+   $$
+   \dfrac{d}{df}\bigl(e^{f}\bigr) = e^{f}.
+   $$
+
+   \textbf{2. Differentiate $f(x)$ with respect to $x$:}
+
+   $$
+   f(x) = k \,\tan\bigl(\sqrt{x}\bigr).
+   $$
+
+   First set $u = \sqrt{x}$. 
+   
+   Then
+
+   $$
+   \dfrac{du}{dx} = \dfrac{1}{2\sqrt{x}},
+   $$
+
+   and
+
+   $$
+   \dfrac{d}{du}\bigl(\tan(u)\bigr) = \sec^2(u).
+   $$
+
+   Therefore,
+   
+   $$
+   \dfrac{df}{dx} 
+   = k \,\sec^2\bigl(\sqrt{x}\bigr)\,\cdot \dfrac{d}{dx}\bigl(\sqrt{x}\bigr)
+   = k \,\sec^2\bigl(\sqrt{x}\bigr)\,\cdot \dfrac{1}{2\sqrt{x}}.
+   $$
+
+Putting it all together via the chain rule:
+
+$$
+\dfrac{dy}{dx}
+= \dfrac{d}{df}\bigl(e^{f}\bigr)\,\cdot \dfrac{df}{dx}
+= e^{f(x)} \cdot k \,\sec^2\bigl(\sqrt{x}\bigr)\,\dfrac{1}{2\sqrt{x}}.
+$$
+
+Substitute back $f(x) = k \tan(\sqrt{x})$:
+
+$$
+\boxed{
+\dfrac{dy}{dx}
+= e^{k \tan(\sqrt{x})} \cdot \dfrac{k}{2\sqrt{x}} \,\sec^2\bigl(\sqrt{x}\bigr).
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

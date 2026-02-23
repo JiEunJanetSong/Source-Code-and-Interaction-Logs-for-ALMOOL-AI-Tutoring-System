@@ -1,0 +1,75 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find at least 10 partial sums of the series. Graph both the sequence of terms and the sequence of partial sums on the same screen. Does it appear that the series is convergent or divergent? If it is convergent, find the sum. If it is divergent, explain why.
+
+$$\sum_{n=1}^{\infty} \dfrac{n}{\sqrt{n^2+4}}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Here are the first 10 partial sums of the series:
+
+$$
+\sum_{n=1}^{\infty} \dfrac{n}{\sqrt{n^2+4}}
+$$
+
+\begin{tabular}{|l|l|}
+\hline $n$ & Partial Sum $s_n$ (rounded) \\
+\hline 1 & 0.447214 \\
+\hline 2 & 1.154320 \\
+\hline 3 & 1.986371 \\
+\hline 4 & 2.880798 \\
+\hline 5 & 3.809275 \\
+\hline 6 & 4.757958 \\
+\hline 7 & 5.719482 \\
+\hline 8 & 6.689624 \\
+\hline 9 & 7.665811 \\
+\hline 10 & 8.646392 \\
+\hline
+\end{tabular}
+
+Observation from the graph:
+
+- The terms $\dfrac{n}{\sqrt{n^2+4}}$ approach 1 as $n$ grows.
+
+- In fact, $\dfrac{n}{\sqrt{n^2+4}} \rightarrow 1$ as $n \rightarrow \infty$.
+
+- The partial sums increase steadily and show no sign of leveling off.
+
+Convergence Check:
+
+To determine if the series converges, we look at the limit of the terms:
+
+$$
+\lim _{n \rightarrow \infty} \dfrac{n}{\sqrt{n^2+4}}=\lim _{n \rightarrow \infty} \dfrac{1}{\sqrt{1+\dfrac{4}{n^2}}}=1
+$$
+
+
+Since the individual terms do not tend to zero (they tend to 1), the series must diverge.
+
+Final Answer:
+
+- The series $\sum_{n=1}^{\infty} \dfrac{n}{\sqrt{n^2+4}}$ is divergent.
+
+- Reason: The terms approach 1, not 0, so the sum grows without bound.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

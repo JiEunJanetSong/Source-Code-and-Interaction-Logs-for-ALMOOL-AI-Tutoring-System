@@ -1,0 +1,89 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ t\ e^{-3t}\ d t$$
+
+}\SetValue{Solution}{%
+
+To integrate
+
+$$
+\int t e^{-3 t} d t
+$$
+
+we use integration by parts. Let
+
+$$
+u=t \quad \text { and } \quad d v=e^{-3 t} d t
+$$
+
+
+Then
+
+$$
+d u=d t \quad \text { and } \quad v=\int e^{-3 t} d t=-\dfrac{1}{3} e^{-3 t}
+$$
+
+
+Applying the integration by parts formula
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+we get
+
+$$
+\int t e^{-3 t} d t=t \cdot\left(-\dfrac{1}{3} e^{-3 t}\right)-\int\left(-\dfrac{1}{3} e^{-3 t}\right) d t
+$$
+
+
+Simplify step by step:
+1. First part:
+
+$$
+t \cdot\left(-\dfrac{1}{3} e^{-3 t}\right)=-\dfrac{t}{3} e^{-3 t}
+$$
+
+2. Second part:
+
+$$
+-\int\left(-\dfrac{1}{3} e^{-3 t}\right) d t=\dfrac{1}{3} \int e^{-3 t} d t=\dfrac{1}{3}\left(-\dfrac{1}{3}\right) e^{-3 t}=-\dfrac{1}{9} e^{-3 t}
+$$
+
+
+Combine the two parts:
+
+$$
+\int t e^{-3 t} d t=-\dfrac{t}{3} e^{-3 t}-\dfrac{1}{9} e^{-3 t}+C
+$$
+
+
+You can also factor out $-\dfrac{1}{3} e^{-3 t}$ :
+
+$$
+\int t e^{-3 t} d t=-\dfrac{1}{3} e^{-3 t}\left(t+\dfrac{1}{3}\right)+C
+$$
+
+where $C$ is the constant of integration.
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
+   
+   
+   
+
+   
+
+

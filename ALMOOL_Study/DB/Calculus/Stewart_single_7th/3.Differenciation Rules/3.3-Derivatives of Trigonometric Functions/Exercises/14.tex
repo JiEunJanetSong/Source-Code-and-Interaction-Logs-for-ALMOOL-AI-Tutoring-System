@@ -1,0 +1,93 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Differentiate.
+
+$y=\dfrac{1-\sec x}{\tan x}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Using the Quotient Rule:
+
+Given
+$
+y = \dfrac{1 - \sec x}{\tan x},
+$
+let 
+$
+u = 1 - \sec x, 
+\quad 
+v = \tan x.
+$
+
+Then
+$
+u' = \dfrac{d}{dx}(1 - \sec x) = -\sec x \tan x,
+\quad
+v' = \dfrac{d}{dx}(\tan x) = \sec^2 x.
+$
+
+By the quotient rule,
+$
+\biggl(\dfrac{u}{v}\biggr)' 
+= \dfrac{u'v \;-\; u\,v'}{v^2},
+$
+
+we get
+
+$
+y' 
+= \dfrac{(-\sec x \tan x)\,(\tan x) \;-\; (1 - \sec x)\,\sec^2 x}{(\tan x)^2}.
+$
+
+Numerator Simplification
+
+1. First term: 
+   $-\sec x \tan x \cdot \tan x = -\sec x \,\tan^2 x.$
+
+2. Second term: 
+   $- (1 - \sec x)\,\sec^2 x = -\sec^2 x + \sec^3 x$ (distributing the minus sign).
+
+Hence the numerator is $-\sec x \,\tan^2 x \;-\; \sec^2 x \;+\; \sec^3 x.$
+
+Use the identity $\tan^2 x = \sec^2 x - 1$ to rewrite 
+$\sec x \,\tan^2 x = \sec x(\sec^2 x - 1) = \sec^3 x - \sec x.$
+
+Thus $-\sec x \tan^2 x = -(\sec^3 x - \sec x) 
+= -\sec^3 x + \sec x.$
+
+So the numerator becomes
+$
+(-\sec^3 x + \sec x) \;-\; \sec^2 x \;+\; \sec^3 x 
+= -\sec^3 x + \sec^3 x \;+\; \sec x \;-\; \sec^2 x 
+= \sec x - \sec^2 x 
+= \sec x \,(1 - \sec x).
+$
+
+Therefore, the derivative is
+$
+\boxed{
+y' = \dfrac{\sec x\,(1 - \sec x)}{\tan^2 x}.
+}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

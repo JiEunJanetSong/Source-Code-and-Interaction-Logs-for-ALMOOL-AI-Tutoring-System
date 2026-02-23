@@ -1,0 +1,76 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+   
+$$\int\ y\ e^{0.2y}\ d y$$
+
+}\SetValue{Solution}{%
+
+To evaluate
+
+$$
+\int y e^{0.2 y} d y
+$$
+
+we use integration by parts. Let
+
+$$
+u=y \quad \text { and } \quad d v=e^{0.2 y} d y
+$$
+
+
+Then,
+
+$$
+d u=d y \quad \text { and } \quad v=\int e^{0.2 y} d y=\dfrac{1}{0.2} e^{0.2 y}=5 e^{0.2 y}
+$$
+
+
+Using the integration by parts formula
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+we get
+
+$$
+\int y e^{0.2 y} d y=y \cdot\left(5 e^{0.2 y}\right)-\int 5 e^{0.2 y} d y
+$$
+
+
+Next, integrate $5 e^{0.2 y}$.
+
+$$
+\int 5 e^{0.2 y} d y=5 \int e^{0.2 y} d y=5\left(\dfrac{1}{0.2} e^{0.2 y}\right)=25 e^{0.2 y}
+$$
+
+
+Putting this all together:
+
+$$
+\int y e^{0.2 y} d y=5 y e^{0.2 y}-25 e^{0.2 y}+C
+$$
+
+where $C$ is the constant of integration.
+Alternatively, you can factor out $5 e^{0.2 y}$ to write the result as
+
+$$
+\int y e^{0.2 y} d y=5 e^{0.2 y}(y-5)+C
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
+   
+
+

@@ -1,0 +1,139 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Evaluate the integral.
+
+$$\int^\tfrac{1}{2}_{0}\ x\ \cos\ \pi x\ d x$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+To evaluate
+
+$$
+\int_0^{\dfrac{1}{2}} x \cos (\pi x) d x
+$$
+
+we can first find the indefinite integral $\int x \cos (\pi x) d x$ using integration by parts and then apply the limits 0 to $\dfrac{1}{2}$.
+
+1) Indefinite integral $\int x \cos (\pi x) d x$
+
+Use integration by parts:
+
+- Let $u=x$. Then $d u=d x$.
+
+- Let $d v=\cos (\pi x) d x$. 
+
+Then
+
+$$
+v=\int \cos (\pi x) d x=\dfrac{1}{\pi} \sin (\pi x)
+$$
+
+
+Applying the formula $\int u d v=u v-\int v d u$, we get
+
+$$
+\int x \cos (\pi x) d x=x \cdot \dfrac{1}{\pi} \sin (\pi x)-\int \dfrac{1}{\pi} \sin (\pi x) d x
+$$
+
+
+The remaining integral is
+
+$$
+\int \sin (\pi x) d x=-\dfrac{1}{\pi} \cos (\pi x)
+$$
+
+Hence,
+
+$$
+-\int \dfrac{1}{\pi} \sin (\pi x) d x=-\dfrac{1}{\pi}\left(-\dfrac{1}{\pi} \cos (\pi x)\right)=\dfrac{1}{\pi^2} \cos (\pi x)
+$$
+
+
+Putting it all together:
+
+$$
+\int x \cos (\pi x) d x=\dfrac{x}{\pi} \sin (\pi x)+\dfrac{1}{\pi^2} \cos (\pi x)+C
+$$
+
+2) Evaluate the definite integral from 0 to $\dfrac{1}{2}$
+
+We have
+
+$$
+\int_0^{\dfrac{1}{2}} x \cos (\pi x) d x=\left[\dfrac{x}{\pi} \sin (\pi x)+\dfrac{1}{\pi^2} \cos (\pi x)\right]_0^{1 / 2}
+$$
+
+
+At $x=\dfrac{1}{2}$ :
+
+- $\sin \left(\pi \cdot \dfrac{1}{2}\right)=\sin \left(\dfrac{\pi}{2}\right)=1$.
+
+- $\cos \left(\pi \cdot \dfrac{1}{2}\right)=\cos \left(\dfrac{\pi}{2}\right)=0$.
+
+So the expression becomes
+
+$$
+\dfrac{\dfrac{1}{2}}{\pi} \cdot 1+\dfrac{1}{\pi^2} \cdot 0=\dfrac{1}{2 \pi}
+$$
+
+At $x=0$ :
+
+- $\sin (0)=0$.
+
+- $\cos (0)=1$.
+
+So the expression becomes
+
+$$
+\dfrac{0}{\pi} \cdot 0+\dfrac{1}{\pi^2} \cdot 1=\dfrac{1}{\pi^2} .
+$$
+
+
+Subtracting,
+
+$$
+\left[\dfrac{x}{\pi} \sin (\pi x)+\dfrac{1}{\pi^2} \cos (\pi x)\right]_0^{1 / 2}=\left(\dfrac{1}{2 \pi}\right)-\left(\dfrac{1}{\pi^2}\right)
+$$
+
+
+We can leave the result in this form or combine it into a single fraction:
+
+$$
+\dfrac{1}{2 \pi}-\dfrac{1}{\pi^2}=\dfrac{\pi}{2 \pi^2}-\dfrac{1}{\pi^2}=\dfrac{\pi-2}{2 \pi^2}
+$$
+
+
+Both forms are correct. A compact final answer is
+
+$$
+\int_0^{\dfrac{1}{2}} x \cos (\pi x) d x=\dfrac{1}{2 \pi}-\dfrac{1}{\pi^2}=\dfrac{\pi-2}{2 \pi^2}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
+ 
+   
+   
+
+   
+
+

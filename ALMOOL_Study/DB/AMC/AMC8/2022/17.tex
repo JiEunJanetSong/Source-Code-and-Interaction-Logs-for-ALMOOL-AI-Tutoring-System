@@ -1,0 +1,86 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+If $n$ is an even positive integer, the double factorial notation $n$ !! represents the product of all the even integers from 2 to $n$. For example, $8!!=2 \cdot 4 \cdot 6 \cdot 8$. What is the units digit of the following sum?
+
+$$
+2!!+4!!+6!!+\cdots+2018!!+2020!!+2022!!
+$$
+
+\ansFIVEs{%start
+		0 }{%<--- (A)
+		2 }{%<--- (B)
+		4 }{%<--- (C)
+		6 }{%<---- (D)
+		8 }%<---- (D)
+		
+}\SetValue{Concept}{%
+
+n이 짝수 양의 정수인 경우, 이중 인수분해 표기법 $n$ !! 은 2에서 $n$까지의 모든 짝수 정수의 곱을 나타냅니다. 예를 들어, $8!!=2 \cdot 4 \cdot 6 \cdot 8$입니다. 다음 합계의 단위 자릿수는 무엇인가요?
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Key idea:
+
+- For even $n, n!!=2 \cdot 4 \cdot 6 \cdots n$
+
+- Once $n \geq 10, n$ !! includes both a factor of 2 and $5 
+\rightarrow$ product divisible by 10 $\rightarrow$ units digit is 0
+
+So only need to compute:
+
+$$
+2!!+4!!+6!!+8!!
+$$
+
+
+Compute each:
+
+- $2!!=2$
+
+- $4!!=2 \cdot 4=8$
+
+- $6!!=2 \cdot 4 \cdot 6=48$
+
+- $8!!=2 \cdot 4 \cdot 6 \cdot 8=384$
+
+- $2018!!=2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdots 2018=0$
+
+- $2020!!=2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdots 2020=0$
+
+- $2022!!=2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdots 2022=0$
+
+Now, units digits:
+
+- $2!!=2$
+
+- $4!!=8$
+
+- $6!!=8$
+
+- $8!!=4$
+
+Sum of units digits:
+
+$$
+2+8+8+4=22 \Rightarrow 2
+$$
+
+
+Answer: (B) 2
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

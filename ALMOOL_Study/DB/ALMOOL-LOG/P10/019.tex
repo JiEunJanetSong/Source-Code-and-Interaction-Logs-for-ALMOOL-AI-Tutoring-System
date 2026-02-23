@@ -1,0 +1,47 @@
+\begin{GPTQ}
+ $\sin$ 루트 x를 미분해줘   
+\end{GPTQ}
+
+\begin{GPTA}
+ 
+함수 $\sin (\sqrt{x})$ 의 미분을 구하기 위해 체인 를(chain rule)을 사용할 수 있습니다. 체인 를은 합성 함수의 미분을 구할 때 사용하는 방법입니다.
+
+단계별 풀이
+
+1. 함수 정의:
+
+- 주어진 합수 $y=\sin (\sqrt{x})$ 입니다.
+
+2. 내부 함수와 외부 함수:
+
+- 내부 함수는 $u=\sqrt{x}$ 이고,
+
+- 외부 함수는 $v=\sin (u)$ 입니다.
+
+3. 내부 미분:
+
+- $\frac{d u}{d x}=\frac{d}{d x}(\sqrt{x})=\frac{1}{2 \sqrt{x}}$.
+
+4. 외부 미분:
+
+- $\frac{d v}{d u}=\frac{d}{d u}(\sin (u))=\cos (u)$ 입니다. 여기서 $u=\sqrt{x}$.
+
+5. 체인 룰 적용:
+
+$$
+\frac{d y}{d x}=\frac{d v}{d u} \cdot \frac{d u}{d x}=\cos (\sqrt{x}) \cdot \frac{1}{2 \sqrt{x}}
+$$
+
+
+따라서, $\sin (\sqrt{x})$ 를 $x$ 에 대해 미분한 결과는:
+
+$$
+\frac{d y}{d x}=\frac{\cos (\sqrt{x})}{2 \sqrt{x}}
+$$
+
+
+이와 같은 방법으로 합성 함수의 미분을 구할 때 체인 룰을 활용할 수 있습니다.
+   
+\end{GPTA}
+
+

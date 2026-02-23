@@ -1,0 +1,81 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+In the diagram below, a diameter of each of the two smaller circles is a radius of the larger circle. If the two smaller circles have a combined area of 1 square unit, then what is the area of the shaded region, in square units?
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2018-15.png}
+	\end{center}
+\ansFIVEs{%start
+		\frac{1}{4} }{%<--- (A)
+		\frac{1}{3} }{%<--- (B)
+		\frac{1}{2} }{%<--- (C)
+		1 }{%<---- (D)
+		\frac{\pi}{2} }%<---- (D)
+}\SetValue{Concept}{%
+
+아래 그림에서 두 작은 원의 지름은 각각 큰 원의 반지름입니다. 두 개의 작은 원의 합한 면적이 1제곱 단위인 경우 음영 처리된 영역의 면적은 제곱 단위로 얼마인가요?
+
+}\SetValue{AltText}{%
+
+}\SetValue{Solution MAA}{%
+Let
+- $R=$ radius of the large circle
+- $r=$ radius of each small circle
+1. Relate the radii
+
+The problem states that a diameter of each small circle equals a radius of the large circle.
+
+$$
+\text { diameter of small }=2 r=R \quad \Longrightarrow \quad r=\frac{R}{2} \text {. }
+$$
+
+2. Use the given area of the two small circles
+
+Combined area of the two small circles is 1 unit $^2$ :
+
+$$
+2\left(\pi r^2\right)=1
+$$
+
+
+Substitute $r=\frac{R}{2}$ :
+
+$$
+2\left(\pi\left(\frac{R}{2}\right)^2\right)=2\left(\pi \frac{R^2}{4}\right)=\frac{\pi R^2}{2}=1 \Longrightarrow R^2=\frac{2}{\pi}
+$$
+
+3. Find the area of the large circle
+
+$$
+\text { Area large }_{\text {larg }}=\pi R^2=\pi\left(\frac{2}{\pi}\right)=2
+$$
+
+4. Compute the shaded area
+
+The shaded region is everything inside the large circle except the interiors of the two small circles:
+
+$$
+\text { Shaded area }=\text { Area }_{\text {large }}-\text { Area }_{\text {two small }}=2-1=1 .
+$$
+
+1
+
+}\SetValue{Solution MAA}{%
+
+Answer (D): If one of the smaller circles has radius $r$, then its area is $\pi r^2$, and the area of the larger circle is $\pi(2 r)^2=4 \pi r^2$. Thus the area of the large circle is 4 times the area of one of the small circles. So the area of the shaded region is equal to the combined area of the two smaller circles, which is 1 square unit.
+
+OR
+
+The ratio of the areas of two similar figures is the square of the ratio of their corresponding lengths. Because the diameter of the larger circle is twice the diameter of each smaller circle, it follows that the area of the larger circle is four times the area of each smaller circle. Therefore the shaded area is equal to the combined area of the two smaller circles.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

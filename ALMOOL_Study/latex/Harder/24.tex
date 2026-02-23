@@ -1,0 +1,38 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Ella offers two different packages of dance classes at her dance studio. She offers three ballet classes and two hip-hop classes at a total cost of \$360. She also offers five ballet classes and four hip-hop classes at a price of \$680. Ella wants to create a special package for her loyal clients in which the cost must exceed \$750. If Ella does not wish to include more than 12 total classes for the loyal client package, will she be able to create this package for her clients? 
+
+\ansFOURsT{%start
+	 	 No, because the closest package that she can offer consists of three ballet and three hip-hop classes. }{%<--- (A)
+	 	 No, because the closest package that she can offer consists of four ballet and four hip-hop classes. }{%<--- (B)
+	 	 Yes, because she can offer five ballet and five hip-hop classes. }{%<--- (C)
+		 Yes, because she can offer six ballet and six hip-hop classes.}%<---- (D)
+
+}\SetValue{Solution}{%
+
+Let's define the variables and set up the equations based on the given conditions to solve for the cost of each class.\begin{alignat*}{2}
+3b + 2h &= 360  \qquad && \{ \text{Cost of 3 ballet and 2 hip-hop classes} \} \\
+5b + 4h &= 680  \qquad && \{ \text{Cost of 5 ballet and 4 hip-hop classes} \}\end{alignat*}
+To eliminate one variable, we multiply the first equation by 2 and subtract the second equation. This will help us find the cost of one ballet class.\begin{alignat*}{2}
+6b + 4h &= 720  \qquad && \{ \text{Multiplying the first equation by 2} \} \\
+6b + 4h - (5b + 4h) &= 720 - 680  \qquad && \{ \text{Subtracting the second equation} \} \\
+b &= 40  \qquad && \{ \text{Solved for the cost of one ballet class} \}\end{alignat*}
+Next, substitute \( b = 40 \) into the first equation to solve for \( h \), the cost of one hip-hop class.\begin{alignat*}{2}
+3(40) + 2h &= 360  \qquad && \{ \text{Substituting the value of } b \} \\
+120 + 2h &= 360 \\
+2h &= 240 \\
+h &= 120  \qquad && \{ \text{Solved for the cost of one hip-hop class} \}\end{alignat*}
+Now that we have the costs, let's create the inequality for the special package. The total cost of a package with \( x \) ballet classes and \( y \) hip-hop classes must exceed \$750, with the total number of classes not exceeding 12.\begin{alignat*}{2}
+40x + 120y &> 750  \qquad && \{ \text{Total cost must exceed 750} \} \\
+x + y &\leq 12  \qquad && \{ \text{Total classes must not exceed 12} \}\end{alignat*}
+By testing different values for \( x \) and \( y \), we find that offering 6 ballet classes and 6 hip-hop classes gives a total cost of \$960, which satisfies the cost and class limit. Therefore, Ella can create this package for her clients.
+
+Thus, the correct answer is: $\fbox{D) Yes, because she can offer six ballet and six hip-hop classes.}$
+
+
+}\SetValue{Answer}{%
+D
+}
+\ProcessDATA
+
+

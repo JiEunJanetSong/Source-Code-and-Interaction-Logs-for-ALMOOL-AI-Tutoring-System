@@ -1,0 +1,149 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find all solutions of the IVP
+
+$$
+y^{\prime}=y+\frac{3}{y^2}, \quad y(0)=1
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+This is a nonlinear first-order differential equation, but it can be solved by using an appropriate substitution.
+
+Step 1: Recognize the structure
+
+We observe that this equation resembles the form:
+
+$$
+y^{\prime}=y+\frac{3}{y^2}
+$$
+
+which is not separable or linear, but a good strategy is to multiply both sides by $y^2$ to eliminate the denominator:
+
+$$
+y^2 y^{\prime}=y^3+3
+$$
+
+
+Now, let's try a substitution to simplify this equation.
+
+Step 2: Substitution
+Let:
+
+$$
+u=y^3 \quad \Rightarrow \quad y=u^{1 / 3}
+$$
+
+
+But this makes things messy. Instead, look back to the equation:
+
+$$
+y^2 y^{\prime}=y^3+3
+$$
+
+
+Now try differentiating $y^3$ directly:
+
+$$
+\frac{d}{d t}\left(y^3\right)=3 y^2 y^{\prime} \Rightarrow y^2 y^{\prime}=\frac{1}{3} \frac{d}{d t}\left(y^3\right)
+$$
+
+
+So:
+
+$$
+\frac{1}{3} \frac{d}{d t}\left(y^3\right)=y^3+3 \Rightarrow \frac{d}{d t}\left(y^3\right)=3 y^3+9
+$$
+
+Step 3: Let $u=y^3 \Rightarrow u^{\prime}=3 y^2 y^{\prime}$
+
+From above:
+
+$$
+u^{\prime}=3 y^2 y^{\prime}=3\left(y^3+3\right)=3 u+9
+$$
+
+
+Now we have a linear ODE:
+
+$$
+u^{\prime}=3 u+9
+$$
+
+
+Step 4: Solve the linear equation
+
+Standard linear ODE:
+
+$$
+u^{\prime}-3 u=9
+$$
+
+
+Integrating factor:
+
+$$
+\mu(t)=e^{-3 t}
+$$
+
+
+Multiply both sides:
+
+$$
+e^{-3 t} u^{\prime}-3 e^{-3 t} u=9 e^{-3 t} \Rightarrow \frac{d}{d t}\left(e^{-3 t} u\right)=9 e^{-3 t}
+$$
+
+
+Integrate both sides:
+
+$$
+e^{-3 t} u=\int 9 e^{-3 t} d t=-3 e^{-3 t}+C \Rightarrow u(t)=-3+C e^{3 t}
+$$
+
+
+Step 5: Back-substitute to $y$
+We had $u=y^3$, so:
+
+$$
+y(t)=\left(-3+C e^{3 t}\right)^{1 / 3}
+$$
+
+
+Step 6: Apply initial condition $y(0)=1$
+
+$$
+1=\left(-3+C \cdot e^0\right)^{1 / 3} \Rightarrow 1=(C-3)^{1 / 3} \Rightarrow C-3=1 \Rightarrow C=4
+$$
+
+
+Final Answer:
+
+$$
+y(t)=\left(-3+4 e^{3 t}\right)^{1 / 3}=\left(4 e^{3 t}-3\right)^{1 / 3}
+$$
+
+
+This is the unique solution to the IVP.
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

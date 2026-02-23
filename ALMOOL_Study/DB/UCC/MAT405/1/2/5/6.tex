@@ -1,0 +1,101 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find all solutions $y$ to the ODE
+
+$$
+t y^{\prime}+n y=t^2
+$$
+
+with $n$ a positive integer.
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Write in standard linear form
+Divide both sides by $t$ (assume $t>0$ or $t<0$, but $t \neq 0$ ):
+
+$$
+y^{\prime}+\frac{n}{t} y=t
+$$
+
+
+This is of the form:
+
+$$
+y^{\prime}+a(t) y=b(t), \quad \text { with } a(t)=\frac{n}{t}, \quad b(t)=t
+$$
+
+
+Step 2: Compute the integrating factor
+
+$$
+\mu(t)=e^{\int \frac{n}{t} d t}=e^{n \ln |t|}=|t|^n
+$$
+
+(We'll work with $t>0$ so $\mu(t)=t^n$.)
+
+Step 3: Multiply through by integrating factor
+
+$$
+t^n y^{\prime}+n t^{n-1} y=t^{n+1}
+$$
+
+
+Left-hand side is:
+
+$$
+\frac{d}{d t}\left(t^n y\right)
+$$
+
+
+So:
+
+$$
+\frac{d}{d t}\left(t^n y\right)=t^{n+1}
+$$
+
+
+Step 4: Integrate both sides
+
+$$
+\begin{gathered}
+\int \frac{d}{d t}\left(t^n y\right) d t=\int t^{n+1} d t \\
+t^n y=\frac{t^{n+2}}{n+2}+C
+\end{gathered}
+$$
+
+Step 5: Solve for $y(t)$
+
+$$
+y(t)=\frac{t^{n+2}}{(n+2) t^n}+\frac{C}{t^n}=\frac{t^2}{n+2}+C t^{-n}
+$$
+
+
+Final Answer:
+
+$$
+y(t)=\frac{t^2}{n+2}+C t^{-n}=\frac{t^2}{n+2}+\frac{c}{t^n}, \quad t \neq 0, C \in \mathbb{R}
+$$
+
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

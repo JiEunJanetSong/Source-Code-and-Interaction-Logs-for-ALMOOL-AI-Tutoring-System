@@ -1,0 +1,120 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int \dfrac{t^5}{\sqrt{t^2+2}}\  d t$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int \dfrac{t^5}{\sqrt{t^2+2}} d t
+$$
+
+
+A good strategy is to use the substitution
+
+$$
+u=t^2+2
+$$
+
+so that
+
+$$
+d u=2 t d t \quad \Longrightarrow \quad t d t=\dfrac{d u}{2} .
+$$
+
+
+Notice that $t^5 d t$ can be written as $t^4(t d t)$. Since $u=t^2+2$, we have
+
+$$
+t^2=u-2 \quad \Longrightarrow \quad t^4=\left(t^2\right)^2=(u-2)^2
+$$
+
+
+Also, the square root in the denominator becomes
+
+$$
+\sqrt{t^2+2}=\sqrt{u}
+$$
+
+
+Substituting all of this into the integral, we get
+
+$$
+\int \dfrac{t^5}{\sqrt{t^2+2}} d t=\int \dfrac{(u-2)^2}{\sqrt{u}} \cdot \dfrac{d u}{2}=\dfrac{1}{2} \int \dfrac{(u-2)^2}{u^{1 / 2}} d u.
+$$
+
+
+Now, expand the numerator:
+
+$$
+(u-2)^2=u^2-4 u+4
+$$
+
+Then, the integrand becomes
+
+$$
+\dfrac{u^2-4 u+4}{u^{1 / 2}}=u^{3 / 2}-4 u^{1 / 2}+4 u^{-1 / 2}
+$$
+
+
+Thus, the integral is
+
+$$
+\dfrac{1}{2} \int\left(u^{3 / 2}-4 u^{1 / 2}+4 u^{-1 / 2}\right) d u
+$$
+
+
+Now, integrate term by term:
+1. $\int u^{3 / 2} d u=\dfrac{2}{5} u^{5 / 2}$,
+2. $\int u^{1 / 2} d u=\dfrac{2}{3} u^{3 / 2}$,
+3. $\int u^{-1 / 2} d u=2 u^{1 / 2}$.
+
+Putting these together:
+
+$$
+\dfrac{1}{2}\left[\dfrac{2}{5} u^{5 / 2}-4\left(\dfrac{2}{3} u^{3 / 2}\right)+4\left(2 u^{1 / 2}\right)\right]+C
+$$
+
+
+Simplify each term:
+- The first term: $\dfrac{1}{2} \cdot \dfrac{2}{5} u^{5 / 2}=\dfrac{1}{5} u^{5 / 2}$.
+- The second term: $\dfrac{1}{2} \cdot 4 \cdot \dfrac{2}{3} u^{3 / 2}=\dfrac{8}{6} u^{3 / 2}=\dfrac{4}{3} u^{3 / 2}$ (and note the minus sign gives $-\dfrac{4}{3} u^{3 / 2}$ ).
+- The third term: $\dfrac{1}{2} \cdot 4 \cdot 2 u^{1 / 2}=4 u^{1 / 2}$.
+
+Thus, the antiderivative in terms of $u$ is
+
+$$
+\dfrac{1}{5} u^{5 / 2}-\dfrac{4}{3} u^{3 / 2}+4 u^{1 / 2}+C
+$$
+
+
+Finally, substitute back $u=t^2+2$ :
+
+$$
+\dfrac{1}{5}\left(t^2+2\right)^{5 / 2}-\dfrac{4}{3}\left(t^2+2\right)^{3 / 2}+4\left(t^2+2\right)^{1 / 2}+C
+$$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+
+## Model Solution (a)
+
+
+## Scoring (a)
+
+For $\text { Area }=\int_0^2(f(x)-g(x)) d x$,
+Integrand; 1 point, Answer; 1 point.
+
+## Scoring notes (a)
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+

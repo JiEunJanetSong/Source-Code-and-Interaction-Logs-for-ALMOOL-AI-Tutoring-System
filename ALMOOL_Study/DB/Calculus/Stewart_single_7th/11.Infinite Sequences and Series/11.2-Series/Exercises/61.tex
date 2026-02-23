@@ -1,0 +1,89 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the values of $x$ for which the series converges. Find the sum of the series for those values of $x$.
+
+$$\sum_{n=0}^{\infty} \dfrac{2^n}{x^n}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Rewrite as a Geometric Series
+
+We can rewrite this as:
+
+$$
+\sum_{n=0}^{\infty}\left(\dfrac{2}{x}\right)^n
+$$
+
+
+This is a geometric series with common ratio:
+
+$$
+r=\dfrac{2}{x}
+$$
+
+
+Step 2: Convergence Condition
+
+A geometric series $\sum_{n=0}^{\infty} r^n$ converges if and only if:
+
+$$
+|r|<1
+$$
+
+
+So we need:
+
+$$
+\left|\dfrac{2}{x}\right|<1 \quad \Rightarrow \quad|x|>2
+$$
+
+Step 3: Find the Sum
+
+The sum of a geometric series $\sum_{n=0}^{\infty} r^n$ is:
+
+$$
+\dfrac{1}{1-r}
+$$
+
+
+Here, $r=\dfrac{2}{x}$, so the sum is:
+
+$$
+\sum_{n=0}^{\infty}\left(\dfrac{2}{x}\right)^n=\dfrac{1}{1-\dfrac{2}{x}}=\dfrac{1}{\dfrac{x-2}{x}}=\dfrac{x}{x-2}
+$$
+
+Final Answer:
+
+- The series converges when:
+
+$$
+|x|>2
+$$
+
+- For those values of $x$, the sum is:
+
+$$
+\dfrac{x}{x-2}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,69 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the series is convergent or divergent. If it is convergent, find its sum.
+
+$$\sum_{n=1}^{\infty} \ln \left(\dfrac{n^2+1}{2 n^2+1}\right)$$
+
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Understand the behavior of the general term
+
+We look at the expression inside the logarithm:
+
+$$
+\dfrac{n^2+1}{2 n^2+1}
+$$
+
+
+As $n \rightarrow \infty$, the dominant terms in numerator and denominator are $n^2$, so:
+
+$$
+\dfrac{n^2+1}{2 n^2+1} \approx \dfrac{n^2}{2 n^2}=\dfrac{1}{2}
+$$
+
+
+Thus,
+
+$$
+\ln \left(\dfrac{n^2+1}{2 n^2+1}\right) \rightarrow \ln \left(\dfrac{1}{2}\right)=-\ln (2) \quad \text { as } n \rightarrow \infty
+$$
+
+
+So the general term $\ln \left(\dfrac{n^2+1}{2 n^2+1}\right) \rightarrow-\ln (2) \neq 0$
+
+Step 2: Apply the Divergence Test
+
+If the terms of a series do not approach 0 , then the series diverges.
+
+Since:
+
+$$
+\lim _{n \rightarrow \infty} \ln \left(\dfrac{n^2+1}{2 n^2+1}\right)=-\ln (2) \neq 0
+$$
+
+the series diverges.
+
+Final Answer: The series diverges.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

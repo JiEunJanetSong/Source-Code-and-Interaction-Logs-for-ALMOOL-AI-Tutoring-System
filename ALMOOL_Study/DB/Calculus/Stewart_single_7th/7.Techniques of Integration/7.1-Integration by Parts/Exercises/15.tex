@@ -1,0 +1,101 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ \left( \ln\ x \right)^2 \ d x$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int(\ln x)^2 d x
+$$
+
+
+A natural approach is integration by parts. Recall:
+
+$$
+\int u d v=u v-\int v d u .
+$$
+
+
+Step 1: Choose $u$ and $d v$
+Set
+
+$$
+u=(\ln x)^2, \quad d v=d x
+$$
+
+
+Then
+
+$$
+d u=2(\ln x) \frac{1}{x} d x=\frac{2 \ln x}{x} d x, \quad v=\int 1 d x=x .
+$$
+
+Step 2: Apply the integration by parts formula
+
+$$
+\begin{aligned}
+\int(\ln x)^2 d x & =\underbrace{(\ln x)^2}_u \cdot \underbrace{x}_v-\int \underbrace{x}_v \cdot \underbrace{\frac{2 \ln x}{x} d x}_{d u} \\
+& =x(\ln x)^2-2 \int \ln x d x .
+\end{aligned}
+$$
+
+
+So we need $\int \ln x d x$.
+
+Step 3: Recall $\int \ln x d x$
+A standard result (which can also be shown by parts) is
+
+$$
+\int \ln x d x=x \ln x-x+C
+$$
+
+
+Hence,
+
+$$
+-2 \int \ln x d x=-2(x \ln x-x)=-2 x \ln x+2 x
+$$
+
+Step 4: Combine everything
+
+$$
+\int(\ln x)^2 d x=x(\ln x)^2-2 x \ln x+2 x+C .
+$$
+
+
+We can factor out $x$ if we like:
+
+$$
+\int(\ln x)^2 d x=x\left[(\ln x)^2-2 \ln x+2\right]+C
+$$
+
+but it's fine to leave it in expanded form.
+
+Final Answer
+
+$$
+\int(\ln x)^2 d x=x(\ln x)^2-2 x \ln x+2 x+C.
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+   
+   
+
+   
+
+

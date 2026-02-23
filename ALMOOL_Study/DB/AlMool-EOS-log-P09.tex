@@ -1,0 +1,217 @@
+\documentclass[showtrims,svgnames,chapter,openany,oneside]{oblivoir}
+\usepackage{ibmath}%수식 명령 설정파일
+\usepackage{memtikzpagenodes}% 페이지 레이아웃
+\usepackage{SATdesign}% 디자인 설정파일
+\usepackage{bigints} %큰 적분기호
+\usepackage{dhucs-enumitem}
+\usepackage{tabularray}
+\usepackage{bookmark}
+\usepackage{multirow}
+
+%\usepackage{amsmath}
+%%%%%%
+\newcommand{\autoinput}{\input{AMC\expandafter\AMClevel/\expandafter\AMCyear AMC\expandafter\AMClevel\expandafter\AMCtype.tex}}
+\newcommand\AMCyear{2001}%
+\newcommand\AMClevel{10}%
+\newcommand\AMCtype{B}%
+%%%%%%%%%%%% 줄바꿈 or 페이지바꿈 설정하기
+\newcommand{\Jnewpage}{%\JNewpage라는 이름의 기존에 없던 새로운 명령을 만들고, 그 명령을 입력하면 무엇이 실행될지 명시
+%\vskip30pt %%% 줄바꾸려면 주석해제
+ %%% 페이지바꾸려면 주석해제
+}
+%%%%%%%%%%% 불러올 파일 설정
+%%%%%%%%%%% 머릿말 설정\text{a parabola tangent to the }x\text{-axis} 
+\headersetting{%left start
+\colormouth[\MYCOLOR]{ALMOOL-Log-8}%{USSCE-2018-M$_\textbf{G1}$}% PDF출력시 왼쪽 head
+}{%middle start 
+%\today%middle contents
+}{%{right start
+\colormouth[\MYCOLOR]{EOS-ResearchTeam}%right contents
+}
+
+\begin{document}\pagestyle{mathclass2021}
+
+%%% 어떤파일 부를지
+
+%\input{AMC12/2000AMC12-}
+
+%Problem 문제지 Solution 해설지 Teacher 문제+해설
+\SetValue{mainTitle}{AlMool-EOS-GFMaP}%%%%왼쪽상단
+\SetValue{Book}{Problem}
+%\SetValue{Book}{Solution}
+%\SetValue{Book}{Teacher}
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries User Log Analysis}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{User Log Analysis}%test체크박스
+\SetValue{examTime}{2700}
+\setcounter{SATQuestionNum}{0}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{0}
+\SetValue{referenceImage}{DB/Calculus/Stewart_single_7th/Reference/3-3.png}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage%0213-
+\setcounter{SATQuestionNum}{0}
+\input{SAT/CB/_CB01/M1-19.tex}%
+\input{ALMOOL-LOG/P09/001-M1-19.tex}%
+
+
+\newpage%0213-
+\setcounter{SATQuestionNum}{1}
+\input{SAT/CB/_CB01/M2-13.tex}%
+\input{ALMOOL-LOG/P09/002-M2-13.tex}%
+\input{ALMOOL-LOG/P09/003.tex}%
+
+\newpage%0213-
+\setcounter{SATQuestionNum}{2}
+\input{SAT/CB/_CB01/M2-22.tex}%
+\input{ALMOOL-LOG/P09/004.tex}%
+\input{ALMOOL-LOG/P09/005.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{3}
+\input{SAT/CB/_CB02/M1-16.tex}%geo
+\input{ALMOOL-LOG/P09/006-M1-16.tex}%
+\input{ALMOOL-LOG/P09/007.tex}%
+
+
+\newpage%02
+\setcounter{SATQuestionNum}{4}
+\input{SAT/CB/_CB02/M1-17.tex}%geo
+\input{ALMOOL-LOG/P09/008-M1-17.tex}%
+
+
+\newpage%0220
+\setcounter{SATQuestionNum}{5}
+\input{SAT/CB/_CB02/M2-18.tex}%
+\input{ALMOOL-LOG/P09/009-M1-18.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{6}
+\input{SAT/CB/_CB02/M1-25.tex}%geo
+\input{ALMOOL-LOG/P09/010-M1-25.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{7}
+\input{SAT/CB/_CB02/M2-27.tex}%geo
+\input{ALMOOL-LOG/P09/011-M2-27.tex}%
+\input{ALMOOL-LOG/P09/012.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{8}
+\input{SAT/CB/_CB02/M1-10.tex}%
+\input{ALMOOL-LOG/P09/013-M1-10.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{9}
+\input{SAT/CB/_CB02/M1-14.tex}%
+\input{ALMOOL-LOG/P09/014-M1-14.tex}%
+\input{ALMOOL-LOG/P09/015.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{10}
+\input{SAT/CB/_CB02/M1-18.tex}%
+\input{ALMOOL-LOG/P09/016-M1-18.tex}%
+\input{ALMOOL-LOG/P09/017.tex}%
+\input{ALMOOL-LOG/P09/018.tex}%
+\input{ALMOOL-LOG/P09/019.tex}%
+\input{ALMOOL-LOG/P09/020.tex}%
+\input{ALMOOL-LOG/P09/021.tex}%
+\input{ALMOOL-LOG/P09/022.tex}%
+
+
+\newpage%0220
+\setcounter{SATQuestionNum}{11}
+\input{SAT/CB/_CB02/M1-26.tex}%
+\input{ALMOOL-LOG/P09/023-M1-26.tex}%
+
+\newpage%0227-W3
+\setcounter{SATQuestionNum}{12}
+\input{SAT/CB/_CB02/M1-15.tex}%
+\input{ALMOOL-LOG/P09/024-M1-15.tex}%
+
+
+
+
+
+\newpage%0227
+\setcounter{SATQuestionNum}{13}
+\input{SAT/Barrons22-TestPrep/M1-05.tex}%
+\input{ALMOOL-LOG/P09/052.tex}%------------추가
+\input{ALMOOL-LOG/P09/025-M1-05.tex}%
+\input{ALMOOL-LOG/P09/026.tex}%
+
+
+
+\newpage%0227
+\setcounter{SATQuestionNum}{14}
+\input{SAT/Barrons22-TestPrep/M1-06.tex}%
+\input{ALMOOL-LOG/P09/027-M1-06.tex}%
+
+
+\newpage%022
+\setcounter{SATQuestionNum}{15}
+\input{SAT/Barrons22-TestPrep/M1-07.tex}%
+\input{ALMOOL-LOG/P09/028-M1-07.tex}%
+
+
+\newpage%0220
+\setcounter{SATQuestionNum}{16}
+\input{GFMaP/ICEAS2025/G2/2023/03-a.tex}%1
+\input{ALMOOL-LOG/P09/029-03-a.tex}%
+\input{ALMOOL-LOG/P09/030.tex}%
+\input{ALMOOL-LOG/P09/031.tex}%
+\input{ALMOOL-LOG/P09/032.tex}%
+\input{ALMOOL-LOG/P09/033.tex}%
+\input{ALMOOL-LOG/P09/034.tex}%
+\input{ALMOOL-LOG/P09/035.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{17}
+\input{GFMaP/ICEAS2025/G2/2023/03-b.tex}%2
+\input{ALMOOL-LOG/P09/036-03-b.tex}%
+\input{ALMOOL-LOG/P09/037.tex}%
+\input{ALMOOL-LOG/P09/038.tex}%
+\input{ALMOOL-LOG/P09/039.tex}%
+\input{ALMOOL-LOG/P09/040.tex}%
+\input{ALMOOL-LOG/P09/041.tex}%
+\input{ALMOOL-LOG/P09/042.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{18}
+\input{GFMaP/ICEAS2025/G2/2023/08-a.tex}%3
+\input{ALMOOL-LOG/P09/043-08-a.tex}%
+\input{ALMOOL-LOG/P09/044.tex}%
+\input{ALMOOL-LOG/P09/045.tex}%
+\input{ALMOOL-LOG/P09/046.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{19}
+\input{GFMaP/ICEAS2025/G2/2023/08-b.tex}%4
+\input{ALMOOL-LOG/P09/047-08-b.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{20}
+\input{GFMaP/ICEAS2025/G2/2023/09-a.tex}%6
+\input{ALMOOL-LOG/P09/048-09-a.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{21}
+\input{GFMaP/ICEAS2025/G2/2023/09-b.tex}%
+\input{ALMOOL-LOG/P09/049-09-b.tex}%
+\input{ALMOOL-LOG/P09/050.tex}%
+
+\newpage%0220
+\setcounter{SATQuestionNum}{22}
+\input{GFMaP/ICEAS2025/G1/2022/38.tex}%11
+\input{ALMOOL-LOG/P09/051-38.tex}%
+
+
+\end{document} 

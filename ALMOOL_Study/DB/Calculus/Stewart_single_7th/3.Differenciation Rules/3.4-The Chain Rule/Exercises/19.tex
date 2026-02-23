@@ -1,0 +1,142 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$h(t)=(t+1)^{\tfrac{2}{3}}\left(2 t^2-1\right)^3$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to differentiate
+
+$$
+h(t) \;=\; (t+1)^{\tfrac{2}{3}}\,\bigl(2t^2 - 1\bigr)^{3}.
+$$
+
+\textbf{1. Identify the factors and use the Product Rule}
+
+Write $h(t) = u(t)\,v(t)$ where
+
+$$
+u(t) = (t+1)^{\tfrac{2}{3}}, 
+\quad 
+v(t) = (2t^2 - 1)^{3}.
+$$
+
+Then by the product rule,
+
+$$
+h'(t)
+= u'(t)\,v(t)\;+\;u(t)\,v'(t).
+$$
+
+\textbf{2. Differentiate} $u(t)$
+
+Let $u(t) = (t+1)^{2/3}$.  
+
+Using the chain rule:
+
+1. Inner function: $t+1$, derivative $1$.
+
+2. Outer function: $\bigl(\,\cdot\,\bigr)^{2/3}$, derivative $\tfrac{2}{3}(\,\cdot\,)^{-1/3}$.
+
+Hence,
+
+$$
+u'(t) 
+= \dfrac{2}{3}\,(t+1)^{-\tfrac{1}{3}}.
+$$
+
+\textbf{3. Differentiate} $v(t)$
+
+Let $v(t) = (2t^2 - 1)^3.$  
+
+Again, chain rule:
+
+1. Inner function: $2t^2 -1$, derivative $4t$.
+
+2. Outer function: $\bigl(\,\cdot\,\bigr)^3$, derivative $3(\,\cdot\,)^2$.
+
+Thus,
+
+$$
+v'(t) 
+= 3\,\bigl(2t^2 -1\bigr)^2 \,\cdot\,4t 
+= 12t\,\bigl(2t^2 -1\bigr)^2.
+$$
+
+\textbf{4. Combine via the Product Rule}
+
+$$
+h'(t)
+= u'(t)\,v(t) \;+\; u(t)\,v'(t)
+$$
+$$
+= \Bigl[\dfrac{2}{3}\,(t+1)^{-\tfrac{1}{3}}\Bigr]\!\bigl(2t^2 -1\bigr)^{3}
+\;+\;
+\bigl(t+1\bigr)^{\tfrac{2}{3}}\!\Bigl[12t\,\bigl(2t^2 -1\bigr)^{2}\Bigr].
+$$
+
+In a ``sum form'', you may leave the answer as:
+
+$$
+\boxed{
+h'(t) 
+= \dfrac{2}{3}\,(t+1)^{-\dfrac13}\,\bigl(2t^2 -1\bigr)^{3}
+\;+\;
+12t\,(t+1)^{\tfrac{2}{3}}\,(2t^2 -1)^{2}.
+}
+$$
+
+\textbf{5. Optional: A factored version}
+
+If you wish, you can factor out the common terms $(t+1)^{-1/3}\,(2t^2 -1)^2$:
+
+$$
+h'(t)
+= (t+1)^{-\dfrac13}\,(2t^2 -1)^{2}
+\Bigl[
+\,\tfrac{2}{3}\,(2t^2 -1)
+\;+\;
+12t\,\bigl(t+1\bigr)
+\Bigr].
+$$
+
+Inside the brackets,
+
+$$
+\tfrac{2}{3}(2t^2 -1) + 12t(t+1)
+= \tfrac{4}{3}t^2 - \tfrac{2}{3} + 12t^2 + 12t
+= \tfrac{40}{3}\,t^2 + 12t - \tfrac{2}{3}
+= \tfrac{2}{3}\bigl(20\,t^2 +18\,t -1\bigr).
+$$
+
+So a completely factored form is
+
+$$
+h'(t)
+= \dfrac{2}{3}\,(t+1)^{-\tfrac{1}{3}}\,\bigl(2t^2 -1\bigr)^{2}\,\bigl(20t^2 +18t -1\bigr).
+$$
+
+Either form is a correct expression for $h'(t)$.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

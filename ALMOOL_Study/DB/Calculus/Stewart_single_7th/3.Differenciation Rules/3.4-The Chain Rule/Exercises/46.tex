@@ -1,0 +1,124 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\left[x+\left(x+\sin ^2 x\right)^3\right]^4$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to differentiate 
+$$
+y = \Bigl[x + \bigl(x + \sin^2 x\bigr)^3\Bigr]^4.
+$$
+
+\textbf{Step 1: Identify the outer and inner functions.}
+
+1. Outer function:
+
+If we let 
+
+   $$
+   u = x + \bigl(x + \sin^2 x\bigr)^3,
+   $$
+
+   then $y = u^4$.
+
+2. Inner function: $u$ itself depends on $x$.
+
+\textbf{Step 2: Differentiate the outer function $y = u^4$.}
+
+$$
+\dfrac{dy}{du} = 4u^3.
+$$
+
+\textbf{Step 3: Differentiate the inner function $u = x + (x + \sin^2 x)^3$.}
+
+Let
+
+$$
+v = x + \sin^2 x.
+$$
+
+Then
+
+$$
+u = x + v^3.
+$$
+
+We will find $u'$ in two parts:
+
+1. $\dfrac{d}{dx}[x] = 1.$  
+
+2. $\dfrac{d}{dx}[v^3] = 3v^2 \cdot v'$.  
+
+But first we need $v' = \dfrac{d}{dx}[x + \sin^2 x]$.
+
+$$
+v' 
+= 1 + \dfrac{d}{dx}[\sin^2 x] 
+= 1 + 2\sin(x)\cos(x)
+= 1 + \sin(2x).
+$$
+
+So
+
+$$
+\dfrac{d}{dx}\bigl[v^3\bigr] 
+= 3 \, v^2 \, v' 
+= 3 \,\bigl(x + \sin^2 x\bigr)^2 \,\Bigl[\,1 + \sin(2x)\Bigr].
+$$
+
+Putting it together:
+
+$$
+u' = 1 + 3\,\bigl(x + \sin^2 x\bigr)^2\,\bigl[1 + \sin(2x)\bigr].
+$$
+
+\textbf{Step 4: Combine via the chain rule.}
+
+$$
+\dfrac{dy}{dx}
+= \dfrac{dy}{du} \cdot \dfrac{du}{dx}
+= 4\,u^3 \,\cdot u'.
+$$
+
+Recall $u = x + (x + \sin^2 x)^3$. Hence,
+
+$$
+\dfrac{dy}{dx}
+= 4 \,\Bigl[x + (x + \sin^2 x)^3\Bigr]^3
+  \;\times\;
+  \Bigl[\,1 + 3\,(x + \sin^2 x)^2\,\bigl(1 + \sin(2x)\bigr)\Bigr].
+$$
+
+\textbf{Final Answer}
+
+$$
+\boxed{
+\dfrac{dy}{dx}
+= 4 \,\Bigl[x + \bigl(x + \sin^2 x\bigr)^3\Bigr]^3 
+  \Bigl[1 + 3\,\bigl(x + \sin^2 x\bigr)^2\bigl(1 + \sin(2x)\bigr)\Bigr].
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

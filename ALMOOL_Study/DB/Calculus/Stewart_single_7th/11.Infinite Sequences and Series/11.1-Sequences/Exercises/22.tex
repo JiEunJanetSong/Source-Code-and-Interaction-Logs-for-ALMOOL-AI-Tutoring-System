@@ -1,0 +1,112 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Calculate, to four decimal places, the first ten terms of the sequence and use them to plot the graph of the sequence by hand. Does the sequence appear to have a limit? If so, calculate it. If not, explain why.
+
+$$a_n=1+\frac{10^n}{9^n}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = 1 + \frac{10^n}{9^n}
+$
+
+ Step 1: Simplify the Expression
+
+We can write the fraction as a single exponential:
+
+$
+\frac{10^n}{9^n} = \left( \frac{10}{9} \right)^n
+$
+
+So:
+
+$
+a_n = 1 + \left( \frac{10}{9} \right)^n
+$
+
+Step 2: Calculate the First 10 Terms (to 4 decimal places)
+
+We compute $a_n = 1 + \left( \frac{10}{9} \right)^n$ for $n = 1$ to $10$:
+
+$
+\begin{align}
+a_1 &= 1 + \left( \frac{10}{9} \right)^1 = 1 + 1.1111 = 2.1111 \\
+a_2 &= 1 + \left( \frac{10}{9} \right)^2 = 1 + 1.2346 = 2.2346 \\
+a_3 &= 1 + \left( \frac{10}{9} \right)^3 = 1 + 1.3717 = 2.3717 \\
+a_4 &= 1 + \left( \frac{10}{9} \right)^4 = 1 + 1.5242 = 2.5242 \\
+a_5 &= 1 + \left( \frac{10}{9} \right)^5 = 1 + 1.6936 = 2.6936 \\
+a_6 &= 1 + \left( \frac{10}{9} \right)^6 = 1 + 1.8817 = 2.8817 \\
+a_7 &= 1 + \left( \frac{10}{9} \right)^7 = 1 + 2.0908 = 3.0908 \\
+a_8 &= 1 + \left( \frac{10}{9} \right)^8 = 1 + 2.3231 = 3.3231 \\
+a_9 &= 1 + \left( \frac{10}{9} \right)^9 = 1 + 2.5812 = 3.5812 \\
+a_{10} &= 1 + \left( \frac{10}{9} \right)^{10} = 1 + 2.8670 = 3.8670 \\
+\end{align}
+$
+
+(Values rounded to 4 decimal places.)
+
+Step 3: Plot the Sequence by Hand
+
+- Plot points $(n, a_n)$ for $n = 1$ to $10$
+
+- You’ll see the sequence increasing steadily
+
+- The rate of increase gets faster over time
+
+ Step 4: Does the Sequence Have a Limit?
+
+We observe:
+
+$
+a_n = 1 + \left( \frac{10}{9} \right)^n
+$
+
+Since $\frac{10}{9} > 1$, then $\left( \frac{10}{9} \right)^n \to \infty$ as $n \to \infty$
+
+So:
+
+$
+\lim_{n \to \infty} a_n = 1 + \infty = \infty
+$
+
+ Final Answer:
+
+- First 10 terms (to 4 decimals): 
+
+  $
+  \boxed{2.1111,\ 2.2346,\ 2.3717,\ 2.5242,\ 2.6936,\ 2.8817,\ 3.0908,\ 3.3231,\ 3.5812,\ 3.8670}
+  $
+
+- Does the sequence have a limit?  
+
+ No, the sequence increases without bound.
+
+- Conclusion:  
+
+  $
+  \boxed{\text{The sequence diverges to infinity.}}
+  $
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

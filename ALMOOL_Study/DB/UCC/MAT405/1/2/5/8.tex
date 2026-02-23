@@ -1,0 +1,122 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find all solutions of the equation
+
+$$
+y^{\prime}=y-2 \sin (t)
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Write in standard form
+
+$$
+y^{\prime}-y=-2 \sin (t)
+$$
+
+
+This is of the form:
+
+$$
+y^{\prime}+a(t) y=b(t), \quad \text { with } a(t)=-1, \quad b(t)=-2 \sin (t)
+$$
+
+
+Step 2: Find the integrating factor
+
+$$
+\mu(t)=e^{\int-1 d t}=e^{-t}
+$$
+
+
+Step 3: Multiply both sides by the integrating factor
+
+$$
+e^{-t} y^{\prime}-e^{-t} y=-2 e^{-t} \sin (t)
+$$
+
+
+Left-hand side becomes:
+
+$$
+\frac{d}{d t}\left(e^{-t} y\right)=-2 e^{-t} \sin (t)
+$$
+
+
+Step 4: Integrate both sides
+
+$$
+\int \frac{d}{d t}\left(e^{-t} y\right) d t=\int-2 e^{-t} \sin (t) d t
+$$
+
+
+We need to compute:
+
+$$
+\int-2 e^{-t} \sin (t) d t
+$$
+
+
+This is a standard integral. The formula is:
+
+$$
+\int e^{a t} \sin (b t) d t=\frac{e^{a t}}{a^2+b^2}(a \sin (b t)-b \cos (b t))
+$$
+
+
+Using $a=-1, b=1$, we get:
+
+$$
+\int e^{-t} \sin (t) d t=\frac{e^{-t}}{2}(-\sin (t)-\cos (t))
+$$
+
+
+So:
+
+$$
+\int-2 e^{-t} \sin (t) d t=-2 \cdot \frac{e^{-t}}{2}(-\sin (t)-\cos (t))=e^{-t}(\sin (t)+\cos (t))
+$$
+
+Step 5: Solve for $y(t)$
+
+$$
+e^{-t} y=e^{-t}(\sin (t)+\cos (t))+C
+$$
+
+
+Multiply both sides by $e^t$ :
+
+$$
+y(t)=\sin (t)+\cos (t)+C e^t
+$$
+
+
+Final Answer:
+
+$$
+y(t)=\sin (t)+\cos (t)+C e^t, \quad C \in \mathbb{R}
+$$
+
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

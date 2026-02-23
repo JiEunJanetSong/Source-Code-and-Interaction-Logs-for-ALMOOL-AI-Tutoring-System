@@ -1,0 +1,46 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ e^{-\theta} \ \cos \ 2\theta\ d \theta$$
+
+}\SetValue{Solution}{%
+
+A convenient shortcut for integrals of the form $\int e^{a \theta} \cos (b \theta) d \theta$ is the known result:
+
+$$
+\int e^{a \theta} \cos (b \theta) d \theta=\dfrac{e^{a \theta}}{a^2+b^2}(a \cos (b \theta)+b \sin (b \theta))+C
+$$
+
+
+In your case, $a=-1$ and $b=2$. Then $a^2+b^2=1+4=5$, and substituting into the formula gives:
+
+$$
+\int e^{-\theta} \cos (2 \theta) d \theta=\dfrac{e^{-\theta}}{5}((-1) \cos (2 \theta)+2 \sin (2 \theta))+C
+$$
+
+
+Simplifying the factor:
+
+$$
+\int e^{-\theta} \cos (2 \theta) d \theta=\dfrac{e^{-\theta}}{5}(-\cos (2 \theta)+2 \sin (2 \theta))+C .
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+   
+   
+
+   
+
+

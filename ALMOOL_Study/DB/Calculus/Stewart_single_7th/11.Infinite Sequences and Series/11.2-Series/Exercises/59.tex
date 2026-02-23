@@ -1,0 +1,110 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the values of $x$ for which the series converges. Find the sum of the series for those values of $x$.
+
+$$\sum_{n=0}^{\infty} \dfrac{(x-2)^n}{3^n}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Recognize the Series Type
+
+This is a geometric series:
+
+$$
+\sum_{n=0}^{\infty}\left(\dfrac{x-2}{3}\right)^n
+$$
+
+
+Let:
+
+$$
+r=\dfrac{x-2}{3}
+$$
+
+Step 2: Convergence Condition
+
+A geometric series $\sum r^n$ (starting from $n=0$ ) converges if and only if:
+
+$$
+|r|<1
+$$
+
+
+So:
+
+$$
+\left|\dfrac{x-2}{3}\right|<1
+$$
+
+
+Multiply both sides by 3:
+
+$$
+|x-2|<3
+$$
+
+
+This gives the interval of convergence:
+
+$$
+-3<x-2<3 \quad \Rightarrow \quad-1<x<5
+$$
+
+
+So the series converges for:
+
+$$
+-1<x<5
+$$
+
+Step 3: Find the Sum
+
+The sum of a geometric series $\sum_{n=0}^{\infty} r^n$ is:
+
+$$
+\dfrac{1}{1-r}
+$$
+
+
+In this case, $r=\dfrac{x-2}{3}$, so the sum is:
+
+$$
+\sum_{n=0}^{\infty}\left(\dfrac{x-2}{3}\right)^n=\dfrac{1}{1-\dfrac{x-2}{3}}=\dfrac{1}{\dfrac{3-(x-2)}{3}}=\dfrac{3}{5-x}
+$$
+
+Final Answer:
+
+- The series converges for:
+
+$$
+-1<x<5
+$$
+
+- For those values of $x$, the sum is:
+
+$$
+\dfrac{3}{5-x}
+$$
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

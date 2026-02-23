@@ -1,0 +1,968 @@
+mjx-container
+{
+    overflow-x: scroll;    
+    overflow-y: hidden;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: auto;
+}
+
+img.objAnswer-Problem
+{
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+img.objAnswer-Solution
+{
+    max-height: fit-content;
+}
+
+.titleBar
+{ 
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid black;
+    user-select: none;
+    --barWidth: calc(50%);
+}
+
+.examInfo
+{
+    flex-direction: column;
+}
+
+.examInfo.title
+{
+    font-size: 24px;
+    text-align: center;
+}
+
+.examInfo.explanation
+{
+    font-size: 12px;
+    text-align: center;
+}
+
+.timer
+{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    
+    left:50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+.timerTime
+{
+    font-size: 24px;
+}
+
+.timerHide
+{
+    font-size: 12px;
+}
+
+.tools
+{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+
+    right: 20px;
+    align-items: flex-end;
+    font-size: 24px;
+    gap:25px;
+}
+
+.toolSet
+{
+    gap: 5px;
+}
+
+.toolBox
+{
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+}
+
+.toolIcon
+{
+    display: flex;
+    justify-content: center;
+}
+
+.toolTitle
+{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+.calculatorDivBar
+{
+    display:flex;
+    position:absolute;
+    left: 100px;
+    top: 70px;
+    width: 25%;
+    height: 30px;
+    justify-content: right;
+    z-index: 50;
+}
+
+.calculatorDivDrag
+{
+    cursor:grab;
+    background-color: #000000;
+    flex:1;
+    justify-content: right;
+    z-index: 50;
+}
+
+.closeButton
+{
+    cursor:pointer;
+    width:40px;
+    height:30px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+    font-size:1.3em;
+    background-color: #000000;
+    color:#efefef;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.calculatorDiv
+{
+    position:absolute;
+    left: 100px;
+    top: 100px;
+    width: 25%;
+    height: 80%;
+    background-color: #aaccff;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.calculatorDivResize
+{
+    width:80px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    z-index: 50;
+    cursor: pointer;
+}
+
+
+.modeButton
+{
+    width:150px;
+    height:40px;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    background-color: #eeeeee;
+}
+
+.modeButton:hover
+{
+    background-color: #ffcccc;
+}
+
+.examSelectionWrapper
+{ 
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap:10px;
+}
+
+.examSelectionDiv
+{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.examSelectionCheckbox
+{ 
+    zoom:3.0;
+    display: flex;
+    margin-right: 2px;
+}
+
+.examSelectionCheckboxLabel
+{ 
+    display: flex;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+
+.examContentsBox
+{ 
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 2%;
+    height: calc(100% - 160px);
+    border: 0px solid black;
+    user-select: none;
+    --barWidth: calc(90%);
+}
+
+.examContentsBox.init
+{ 
+    text-align: center;
+}
+
+.examContents1
+{
+    width:40%;
+    height:calc(100% - 100px);
+    display:flex;
+    flex-direction: column;
+    overflow:auto;
+}
+
+.examContentsResize
+{
+    width:10%;
+    height:calc(100% - 100px);
+    display:flex;
+    justify-content: center;
+    cursor:ew-resize;
+}
+
+.examContentsResizeBar
+{
+    width:2px;
+    height:100%;
+    display:flex;
+    background-color: #cccccc;
+}
+
+.examContents2
+{
+    width:40%;
+    height:calc(100% - 100px);
+    display:flex;
+    flex-direction: column;
+    overflow:auto;
+}
+
+
+
+
+.problemTitle
+{
+    width:100%;
+    height:40px;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+}
+
+.problemNumber
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:black;
+    color:white;
+    font-family: 'Lato';
+    width:10%;
+    height:40px;
+}
+
+.problemMark
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgb(238,238,238);
+    color:black;
+    
+    width:10%;
+    height:40px;
+    padding: 0px 1%;
+}
+
+.problemEmpty
+{
+    display:flex;
+    align-items: center;
+    background-color:rgb(238,238,238);
+    color:black;
+    padding : 0px 1%;
+    width:65%;
+    height:40px;
+}
+
+.problemEraseAnswer
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgb(238,238,238);
+    color:magenta;
+    
+    width:15%;
+    height:40px;
+    padding: 0px 2%;
+}
+
+.problemEraseAnswer:hover
+{
+    background-color:magenta;
+    color:rgb(238,238,238);
+}
+
+
+
+
+.problemContents
+{
+    width:100%;
+    height:calc(100% - 40px);
+    font-size: 18px;
+}
+
+.problemMainText
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.afterProblemRow
+{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:40px;
+    font-size: 24px;
+}
+
+.afterProblemButton
+{
+    width:30%;
+    height:40px;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+#Concept.afterProblemButton
+{
+    background-color: #eeeeee;
+}
+
+#Solution.afterProblemButton
+{
+    background-color: #ffcccc;
+}
+
+#Concept.afterProblemButton:hover
+{
+    color: #eeeeee;
+    background-color: #0077c8;
+}
+#Solution.afterProblemButton:hover
+{
+    color: #ffcccc;
+    background-color: #0077c8;
+}
+
+
+.afterProblemShow
+{
+    width:100%;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top-width: 2px;
+}
+
+hr.horizontalDivide{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top-width: 2px;
+}
+
+.problemAnswerObj
+{
+    display:flex;
+    flex-direction: row;
+    
+    width:100%;
+    height:50px;
+    padding:8px;
+    text-align: center;
+    border:2px solid black;
+    border-radius: 10px;
+    gap:10px;
+    cursor:pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height:auto;
+}
+
+/*
+.problemAnswerObj:hover
+{
+    border:2px solid white;
+    background-color:#0077c8;
+    color:white;
+}
+*/
+
+.problemAnswerObjKind
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevents shrinking */
+
+    border:1px solid black;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    font-size:18px;
+}
+
+.problemAnswerObj.selected .problemAnswerObjKind {
+    border: 1px solid white;
+    /* Add other style changes for .problemAnswerObjKind here */
+}
+
+
+.problemAnswerObj .problemAnswerObjKind {
+    border: 1px solid black;
+    /* Add other style changes for .problemAnswerObjKind here */
+}
+
+/*
+.problemAnswerObj:hover .problemAnswerObjKind {
+    border: 1px solid black;
+    color : black;
+}
+
+.problemAnswerObj:hover .problemAnswerObjContents {
+    color : black;
+}
+*/
+
+
+.problemAnswerObjContents
+{
+    display:inline;
+    align-items: center;
+    font-size:18px;
+    text-align: left;
+}
+
+.problemAnswerObj:not(.selected):hover {
+    background-color: white;
+    color: #0077c8;
+}
+
+.problemAnswerObj:not(.selected):hover .problemAnswerObjKind {
+    background-color:  white;
+    color: #0077c8;
+}
+
+.problemAnswerObj:not(.selected):hover .problemAnswerObjContents {
+    background-color:  white;
+    color: #0077c8;
+}
+
+.problemAnswerObj:not(.selected):hover .problemAnswerObjKind {
+    border: 1px solid #0077c8;
+    /* Add other style changes for .problemAnswerObjKind here */
+}
+
+
+
+.problemAnswerObj.init:not(.selected):hover {
+    color: white;
+    background-color: #0077c8;
+}
+
+.problemAnswerObj.init:not(.selected):hover .problemAnswerObjKind {
+    color: white;
+    background-color: #0077c8;
+}
+
+.problemAnswerObj.init:not(.selected):hover .problemAnswerObjContents {
+    color: white;
+    background-color: #0077c8;
+}
+
+.problemAnswerObj.init:not(.selected):hover .problemAnswerObjKind {
+    border: 1px solid white;
+    /* Add other style changes for .problemAnswerObjKind here */
+}
+
+
+.problemAnswerSubj
+{
+    display:flex;
+    flex-direction: row;
+    
+    width:100%;
+    padding:8px;
+    justify-content: center;
+    text-align: center;
+    gap:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.problemAnswerSubjInput
+{
+    width:40%;
+    height:60px;
+    justify-content: center;
+    text-align: center;
+    border:1px solid black;
+    border-radius: 10px;
+}
+
+.problemAnswerSubjReview
+{
+    display: grid;
+
+    width:40%;
+    height:60px;
+    align-items: center;
+}
+
+.moreListDiv
+{
+    position:absolute;
+    left:calc(100% - 200px);
+    top:80px;
+    width: 200px;
+    height: 120px;
+    display:flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    justify-content: top;
+    align-items: center;
+    z-index: 50;
+}
+
+.moreListRow
+{
+    width:100%;
+    height:40px;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    cursor:pointer;
+}
+.moreListRow:hover
+{
+    background-color: aqua;
+}
+
+
+
+.answerListDivBar
+{
+    display:flex;
+    position:absolute;
+    left: 100px;
+    top: 70px;
+    width: 450px;
+    height: 30px;
+    justify-content: right;
+    z-index: 50;
+}
+
+.answerListDivDrag
+{
+    cursor:grab;
+    background-color: #000000;
+    flex:1;
+    justify-content: right;
+    z-index: 50;
+}
+
+.answerListDiv
+{
+    position:absolute;
+    width: 450px;
+    height: 350px;
+    background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.answerListExplain
+{
+    width:100%;
+    height:100px;
+}
+
+.answerListRow
+{
+    width:100%;
+    height:30px;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    margin-top:10px;
+}
+
+.answerListColumn
+{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+
+
+.moveModulePopup{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    bottom: 90px;
+    width:150px;
+    background-color: #eeeeee;
+    gap:5px;
+}
+
+.moveModuleElement{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    min-height:35px;
+    width:150px;
+    cursor:pointer;
+}
+
+.moveModuleElement:hover{
+    background-color: #ffcccc;
+}
+
+
+.footerBar
+{ 
+    position: absolute;
+    top: calc(100% - 80px);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-top: 2px solid black;
+    user-select: none;
+}
+
+.footerInfo
+{
+    flex-direction: column;
+}
+
+.answerList
+{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+
+    padding:8px 10px;
+    border:2px solid black;
+    border-radius: 10px;
+    
+    left:50%;
+    transform: translateX(-50%);
+    align-items: center;
+    cursor:pointer;
+
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+
+.moveProblemSet
+{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+
+    right: 40px;
+    align-items: flex-end;
+    font-size: 24px;
+    gap:15px;
+}
+
+.moveProblem
+{
+    padding:8px 20px;
+    background-color: #0077c8;
+    border-radius: 23px;
+    color:white;
+
+    font-weight: 700;
+    font-family: 'Lato';
+    font-size: 14px;
+    text-align: center;
+    cursor:pointer;
+ 
+    transition: all .2s 0s ease;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.moveProblem:hover
+{
+    transform: translateY(-3px);
+    box-shadow: #00000080 0 3px 6px;
+}
+
+ul {
+    list-style-type: disc; /* This specifies the bullet style */
+    padding-left: 20px;   /* This adds some padding to the left of the list */
+}
+
+li {
+    margin-bottom: 5px;   /* This adds a small space between each list item */
+}
+
+
+@media only screen and (max-width: 768px) {
+    #moveBack:before {
+      font-family: 'Source Sans Pro';
+      font-size: 1.5em;
+    }
+    #moveBack {
+      overflow: hidden;
+    }
+    #moveNext:before {
+      font-family: 'Source Sans Pro';
+      font-size: 1.5em;
+    }
+    #moveNext {
+      overflow: hidden;
+    }
+    /* Adjust the #questionNumber as needed */
+    #questionNumber {
+      font-size: 1em; /* Adjust size accordingly */
+      padding: 5px; /* Add padding to ensure it doesn't overlap */
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .answerList {
+        padding: 8px 10px;
+    }
+
+    .moveProblemSet {
+        right: 20px;
+        align-items: flex-end;
+        font-size: 24px;
+        gap:10px;
+    }
+}
+
+  
+
+@media only screen and (max-width: 768px) {
+    .problemMainText {
+      font-size: 1.15em; /* or any size you prefer */
+    }
+
+    .answerListDiv{
+        width:96%;
+    }
+    .answerListRow{
+        width:96%;
+    }
+    .answerListDivBar{
+        width:96%;
+    }
+    .answerListExplain{
+        width:96%;
+    }
+
+    .calculatorDiv
+    {
+        position:absolute;
+        left: 2%;
+        right: 2%;
+        top: 30%;
+        width: 96%;
+        height: 70%;
+        background-color: #aaccff;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+    }
+
+    .calculatorDivBar
+    {
+        display:flex;
+        position:absolute;
+        left: 2%;
+        right: 2%;
+        top: calc(30% - 30px);
+        width: 96%;
+        height: 30px;
+        justify-content: right;
+        z-index: 50;
+    }
+
+    .calculatorDivDrag
+    {
+        cursor:grab;
+        background-color: #000000;
+        flex:1;
+        justify-content: right;
+        z-index: 50;
+    }
+  } 
+
+@media (min-width: 768px) {
+    .container {
+        width: 75%;
+    }
+
+    .sidebar {
+        width: 25%;
+        float: left;
+    }
+
+    .content {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+/* This media query applies styles for screens that are at least 1024px wide (typically desktops) */
+@media (min-width: 1024px) {
+    .container {
+        width: 60%;
+    }
+
+    .sidebar {
+        width: 20%;
+        float: left;
+    }
+
+    .content {
+        width: 40%;
+        float: left;
+    }
+}
+
+#examContents {
+    overflow-x: hidden; 
+    overflow-y: auto;  
+}
+
+/* Hide scrollbar for iOS devices  
+.examContents::-webkit-scrollbar {
+    display: none;
+}
+
+
+.examContents {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+*/
+
+/* Style for Markdown Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+.resizing {
+    cursor: ew-resize;
+}
+
+
+blockquote {
+    padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+}

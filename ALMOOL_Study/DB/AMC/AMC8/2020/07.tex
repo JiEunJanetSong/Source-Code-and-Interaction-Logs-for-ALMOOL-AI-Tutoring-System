@@ -1,0 +1,45 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+How many integers between 2020 and 2400 have four distinct digits arranged in increasing order? (For example, 2347 is one integer.)
+
+\ansFIVEs{%start
+		 9 }{%<--- (A)
+		 10 }{%<--- (B)
+		 15 }{%<--- (C)
+		 21 }{%<---- (D)
+		 28 }%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+The digits are in increasing order so the first digit must be 2, the second digit must be 3, and the third digit must be $4,5,6,7$, or 8. The possible integers are listed below.
+
+\begin{center}		
+	\includegraphics[scale=0.6]{AMC-8-pics/2020-07-s.png}
+	\end{center}
+
+	The total is $5+4+3+2+1=15$ integers.
+
+	OR
+
+	The first digit must be 2, the second digit must be 3, and the remaining two digits must be chosen from among the six digits $4,5,6,7,8$, and 9. There are ${ }_6 C_2=\binom{6}{2}=\frac{6!}{4!2!}=\frac{6 \cdot 5}{2}=15$ pairs of those digits and only one possible order for each pair, so there are 15 such integers.	
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+Answer (C): 
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,52 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+   
+Each of the points $A, B, C, D, E$, and $F$ in the figure below represents a different digit from 1 to 6. Each of the five lines shown passes through some of these points. The digits along each line are added to produce five sums, one for each line. The total of the five sums is 47. What is the digit represented by B?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2020-16.png}
+	\end{center}
+	
+	\ansFIVEs{%start
+	1}{%<--- (A)
+	2}{%<--- (B)
+	3}{%<--- (C)
+	4}{%<---- (D)
+	5}%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+\begin{aligned}
+	&\text { Answer (E): The total of the five sums is }\\
+	&\begin{aligned}
+	(A+B+C) & +(A+F+E)+(B+D)+(B+F)+(C+D+E) \\
+	& =2 A+3 B+2 C+2 D+2 E+2 F \\
+	& =2(A+B+C+D+E+F)+B
+	\end{aligned}
+	\end{aligned}
+
+	which equals 47. The expression $A+B+C+D+E+F$ equals 21, the sum of the digits from 1 to 6, so $2 \cdot 21+B=47$. Therefore $B=47-42=5$.
+
+	OR
+
+	Note that every point lies on exactly two lines except for $B$ which lies on three lines. Because the sum of the digits from 1 to 6 is 21, this gives a total sum of $2 \cdot 21+B=47$. Therefore $B=47-42=5$.	
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

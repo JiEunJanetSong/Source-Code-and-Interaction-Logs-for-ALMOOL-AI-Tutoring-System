@@ -1,0 +1,111 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int \dfrac{d t}{t^2 \sqrt{t^2-16}}$$
+
+}\SetValue{Solution}{%
+
+1) Trigonometric Substitution
+
+Set
+
+$$
+t=4 \sec (\theta)
+$$
+
+
+Then:
+1. $t^2-16=16 \sec ^2(\theta)-16=16\left(\sec ^2(\theta)-1\right)=16 \tan ^2(\theta)$.
+
+Hence,
+
+$$
+\sqrt{t^2-16}=4|\tan (\theta)|
+$$
+
+(For $t>4, \tan (\theta) \geq 0$, so $\sqrt{t^2-16}=4 \tan (\theta)$.)
+2. $d t=4 \sec (\theta) \tan (\theta) d \theta$.
+3. $t^2=(4 \sec (\theta))^2=16 \sec ^2(\theta)$.
+
+Substitute into the integrand:
+
+$$
+\dfrac{1}{t^2 \sqrt{t^2-16}} d t=\dfrac{1}{\left(16 \sec ^2(\theta)\right)(4 \tan (\theta))} \times(4 \sec (\theta) \tan (\theta)) d \theta
+$$
+
+
+Let us simplify step by step inside the product:
+- The denominator in front is $16 \sec ^2(\theta) \cdot 4 \tan (\theta)=64 \sec ^2(\theta) \tan (\theta)$.
+- The factor from $d t$ is $4 \sec (\theta) \tan (\theta)$.
+
+Thus,
+
+$$
+\dfrac{1}{64 \sec ^2(\theta) \tan (\theta)} \times 4 \sec (\theta) \tan (\theta)=\dfrac{4}{64} \dfrac{\sec (\theta) \tan (\theta)}{\sec ^2(\theta) \tan (\theta)}=\dfrac{4}{64} \dfrac{1}{\sec (\theta)}=\dfrac{1}{16} \cos (\theta)
+$$
+
+
+Hence the integral becomes
+
+$$
+\int \dfrac{d t}{t^2 \sqrt{t^2-16}}=\int \dfrac{1}{16} \cos (\theta) d \theta=\dfrac{1}{16} \int \cos (\theta) d \theta=\dfrac{1}{16} \sin (\theta)+C
+$$
+
+2) Back-Substitute in Terms of $t$
+
+From $t=4 \sec (\theta)$, we have $\sec (\theta)=\dfrac{t}{4}$. Then
+
+$$
+\cos (\theta)=\dfrac{4}{t}, \quad \sin ^2(\theta)=1-\cos ^2(\theta)=1-\left(\dfrac{4}{t}\right)^2=1-\dfrac{16}{t^2}=\dfrac{t^2-16}{t^2}
+$$
+
+
+Thus
+
+$$
+\sin (\theta)=\dfrac{\sqrt{t^2-16}}{|t|}
+$$
+
+
+If we assume $t>0$ and $|t| \geq 4$, then $|t|=t$. Hence
+
+$$
+\sin (\theta)=\dfrac{\sqrt{t^2-16}}{t}
+$$
+
+Therefore,
+
+$$
+\dfrac{1}{16} \sin (\theta)=\dfrac{1}{16} \dfrac{\sqrt{t^2-16}}{t}
+$$
+
+
+Final Result
+
+$$
+\int \dfrac{d t}{t^2 \sqrt{t^2-16}}=\dfrac{1}{16} \dfrac{\sqrt{t^2-16}}{t}+C.
+$$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+
+## Model Solution (a)
+
+
+## Scoring (a)
+
+For $\text { Area }=\int_0^2(f(x)-g(x)) d x$,
+Integrand; 1 point, Answer; 1 point.
+
+## Scoring notes (a)
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

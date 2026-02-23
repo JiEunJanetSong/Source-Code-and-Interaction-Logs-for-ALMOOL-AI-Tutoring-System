@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html data-theme="light">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<script>
+function showUserInfo()
+{
+    let userInfo = "";
+
+    userInfo += "<p>이름: xxx</p>";
+
+    document.getElementById("showData").innerHTML = userInfo;
+}
+
+let examNumber;
+let examData;
+let examResultData;
+
+function getExamData()
+{
+    examNumber = 8;
+    examData = Array(examNumber);
+    examResultData = Array(examNumber);
+}
+
+function initExamData()
+{
+    getExamData();
+
+    for(let i=0;i<examNumber;i++)
+    {
+        examData[i] = [false,"","",""]; // [유효 여부, 시험 제목, 시험 설명, 시험지 링크]
+        examResultData[i] = [false,"",""]; // [응시 여부, 정답 리스트 문자열, 제출 정답 리스트 문자열]
+    }
+
+    examData[0] = [true,"Exam1","DigitalSAT_1","DigitalSAT_sample.html"];
+    examResultData[i] = [false,"",""];
+}
+
+function showExamList()
+{
+    let examDataCode = "";
+
+    for(let i=0;i<examNumber;i++)
+    {
+        if(examData[i][0] == true)
+        {
+            examDataCode += "<div class='card w-1/6 bg-accent text-accent-content'>";
+            examDataCode += "<div class='card-body items-center text-center'>";
+            examDataCode += "    <h2 class='card-title'>" + examData[i][1] + "</h2>";
+            examDataCode += "    <p>" + examData[i][2] + "</p>";
+            examDataCode += "    <div class='card-actions justify-end'>";
+            examDataCode += "    <button type='button' class='btn btn-secondary' onclick=\"location.href='" + examData[i][3] + "';\">Start</button>";
+            examDataCode += "    </div>";
+            examDataCode += "</div>";
+            examDataCode += "</div>";
+        }
+        else
+        {
+            examDataCode += "<div class='card w-1/6 bg-accent text-neutral-content'>";
+            examDataCode += "    <div class='card-body items-center text-center'>";
+            examDataCode += "      <h2 class='card-title'>Exam " + (i+1) + "</h2>";
+            examDataCode += "      <p>Exam Not Ready</p>";
+            examDataCode += "      <div class='card-actions justify-end'>";
+            examDataCode += "        <button type='button' class='btn btn-neutral' style='cursor:not-allowed;'>Preparing</button>";
+            examDataCode += "      </div>";
+            examDataCode += "    </div>";
+            examDataCode += "</div>";
+        }
+    }
+
+    document.getElementById("showData").innerHTML = examDataCode;
+}
+
+function showResultList()
+{
+    let resultDataCode = "";
+
+    for(let i=0;i<examNumber;i++)
+    {
+        if(examData[i][0] == true)
+        {
+            if(examResultData[i][0] == true)
+            {
+                resultDataCode += "<div class='card w-1/6 bg-accent text-accent-content'>";
+                resultDataCode += "<div class='card-body items-center text-center'>";
+                resultDataCode += "    <h2 class='card-title'>" + examData[i][1] + "</h2>";
+                resultDataCode += "    <p>" + examData[i][2] + "</p>";
+                resultDataCode += "    <div class='card-actions justify-end'>";
+                resultDataCode += "    <button type='button' class='btn btn-secondary' onclick=\"location.href='" + examData[i][3] + "';\">Show Result</button>";
+                resultDataCode += "    </div>";
+                resultDataCode += "</div>";
+                resultDataCode += "</div>";
+            }
+            else
+            {
+                resultDataCode += "<div class='card w-1/6 bg-accent text-neutral-content'>";
+                resultDataCode += "    <div class='card-body items-center text-center'>";
+                resultDataCode += "    <h2 class='card-title'>" + examData[i][1] + "</h2>";
+                resultDataCode += "      <p>Show result after the exam</p>";
+                resultDataCode += "      <div class='card-actions justify-end'>";
+                resultDataCode += "        <button type='button' class='btn btn-neutral' style='cursor:not-allowed;'>Not Applied</button>";
+                resultDataCode += "      </div>";
+                resultDataCode += "    </div>";
+                resultDataCode += "</div>";
+            }
+            
+        }
+        else
+        {
+            resultDataCode += "<div class='card w-1/6 bg-accent text-neutral-content'>";
+            resultDataCode += "    <div class='card-body items-center text-center'>";
+            resultDataCode += "      <h2 class='card-title'>Exam " + (i+1) + "</h2>";
+            resultDataCode += "      <p>Exam Not Ready</p>";
+            resultDataCode += "      <div class='card-actions justify-end'>";
+            resultDataCode += "        <button type='button' class='btn btn-neutral' style='cursor:not-allowed;'>Preparing</button>";
+            resultDataCode += "      </div>";
+            resultDataCode += "    </div>";
+            resultDataCode += "</div>";
+        }
+    }
+
+    document.getElementById("showData").innerHTML = resultDataCode;
+}
+
+$(document).ready( function () {
+
+    initExamData();
+    showExamList();
+
+});
+
+</script>
+
+<body class="text-2xl">
+
+
+<div class="flex flex-row justify-center" style="background-color: #00ffff;height: 50px; padding: 6px 0;">
+    <div class="basis-auto text-center" style="background-color: none; cursor: pointer;">
+        Digital SAT
+    </div>
+</div>
+
+<div class="flex flex-row">
+    <div class="basis-1/6 text-center" style="background-color: none; height:500px;">
+        <p class="align-middle" style="height:50px; padding: 8px 0;">
+            xxx 님
+        </p>
+        <p class="hover:bg-sky-300 align-middle" style="cursor: pointer; height:50px; padding: 8px 0;" onclick="showUserInfo();">
+            내 정보
+        </p>
+        <p class="hover:bg-sky-300 align-middle" style="cursor: pointer; height:50px; padding: 8px 0;" onclick="showExamList();">
+            시험 선택
+        </p>
+        <p class="hover:bg-sky-300 align-middle" style="cursor: pointer; height:50px; padding: 8px 0;" onclick="showResultList();">
+            결과 보기
+        </p>
+    </div>
+    <div class="basis-3/4 text-center" style="background-color: none;padding: 30px 5%;">
+        <div class="grid grid-cols-3 gap-10" id="showData">
+            
+        </div>
+    </div>
+</div>
+
+</html>

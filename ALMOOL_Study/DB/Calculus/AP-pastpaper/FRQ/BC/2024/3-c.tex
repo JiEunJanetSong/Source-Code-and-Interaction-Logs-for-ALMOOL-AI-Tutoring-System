@@ -1,0 +1,94 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+The depth of seawater at a location can be modeled by the function $H$ that satisfies the differential equation $\frac{d H}{d t}=\frac{1}{2}(H-1) \cos \left(\frac{t}{2}\right)$, where $H(t)$ is measured in feet and $t$ is measured in hours after noon $(t=0)$. It is known that $H(0)=4$.
+
+(c) Use separation of variables to find $y=H(t)$, the particular solution to the differential equation $\frac{d H}{d t}=\frac{1}{2}(H-1) \cos \left(\frac{t}{2}\right)$ with initial condition $H(0)=4$.
+
+}\SetValue{Solution}{%
+
+\begin{align*}
+    & \frac{d H}{H-1} = \frac{1}{2} \cos \left(\frac{t}{2}\right) d t, \\
+    & \int \frac{d H}{H-1} = \int \frac{1}{2} \cos \left(\frac{t}{2}\right) d t, \\
+    & \Rightarrow \ln |H-1| = \sin \left(\frac{t}{2}\right) + C, \\
+    & \ln |4-1| = \sin \left(\frac{0}{2}\right) + C \Rightarrow C = \ln 3. \\
+    & \text{Because } H(0) = 4, H > 1, \text{ so } |H-1| = H-1. \\
+    & \ln (H-1) = \sin \left(\frac{t}{2}\right) + \ln 3, \\
+    & H-1 = e^{\sin (t / 2) + \ln 3} = 3 e^{\sin (t / 2)}, \\
+    & H(t) = 1 + 3 e^{\sin (t / 2)}.
+\end{align*}
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+The model solution is presented using standard mathematical notation.
+
+Answers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.
+
+The depth of seawater at a location can be modeled by the function $H$ that satisfies the differential equation $\frac{d H}{d t}=\frac{1}{2}(H-1) \cos \left(\frac{t}{2}\right)$, where $H(t)$ is measured in feet and $t$ is measured in hours after noon $(t=0)$. It is known that $H(0)=4$.
+
+## Model Solution (a)
+
+\begin{align*}
+    & \frac{d H}{H-1} = \frac{1}{2} \cos \left(\frac{t}{2}\right) d t, \\
+    & \int \frac{d H}{H-1} = \int \frac{1}{2} \cos \left(\frac{t}{2}\right) d t, \\
+    & \Rightarrow \ln |H-1| = \sin \left(\frac{t}{2}\right) + C, \\
+    & \ln |4-1| = \sin \left(\frac{0}{2}\right) + C \Rightarrow C = \ln 3. \\
+    & \text{Because } H(0) = 4, H > 1, \text{ so } |H-1| = H-1. \\
+    & \ln (H-1) = \sin \left(\frac{t}{2}\right) + \ln 3, \\
+    & H-1 = e^{\sin (t / 2) + \ln 3} = 3 e^{\sin (t / 2)}, \\
+    & H(t) = 1 + 3 e^{\sin (t / 2)}.
+\end{align*}
+
+
+## Scoring (c)
+
+- For $\frac{d H}{H-1} = \frac{1}{2} \cos \left(\frac{t}{2}\right) d t$
+    - Separation of variables; 1 point
+    
+- For $\int \frac{d H}{H-1} = \int \frac{1}{2} \cos \left(\frac{t}{2}\right) d t$
+    - One antiderivative; 1 point
+
+- For $\Rightarrow \ln |H-1| = \sin \left(\frac{t}{2}\right) + C$
+
+    - Second antiderivative; 1 point
+
+- For $\ln |4-1| = \sin \left(\frac{0}{2}\right) + C \Rightarrow C = \ln 3.$ \\
+    Because $H(0) = 4, H > 1, \text{ so } |H-1| = H-1$. \\
+    $\ln (H-1) = \sin \left(\frac{t}{2}\right) + \ln 3$
+
+    - Constant of integration and uses initial condition; 1 point
+    
+- For $H-1 = e^{\sin (t / 2) + \ln 3} = 3 e^{\sin (t / 2)}$, \\
+    $H(t) = 1 + 3 e^{\sin (t / 2)}$.
+    - Solves for $H$; 1 point
+
+## Scoring notes (c)
+
+- A response with no separation of variables earns 0 out of 5 points.
+
+- A response that presents $\int \frac{d H}{H-1}=\ln (H-1)$ without absolute value symbols earns that antiderivative point.
+
+- A response with no constant of integration can earn at most the first 3 points.
+
+- A response is eligible for the fourth point only if it has earned the first point and at least 1 of the 2 antiderivative points.
+
+- An eligible response earns the fourth point by correctly including the constant of integration in an equation and substituting 0 for $t$ and 4 for $H$.
+
+- A response is eligible for the fifth point only if it has earned the first 4 points.
+
+- A response earns the fifth point only for an answer of $H(t)=1+3 e^{\sin (t / 2)}$ or a mathematically equivalent expression for $H(t)$ such as $H(t)=1+e^{\sin (t / 2)+\ln 3}$.
+
+- A response does not need to argue that $|H-1|=H-1$ in order to earn the fifth point.
+
+- Special case: A response that presents an incorrect separation of variables of $\frac{1}{2} \cdot \frac{d H}{H-1}=\cos \left(\frac{t}{2}\right) d t$ does not earn the first point or the fifth point but is eligible for the 2 antiderivative points. If the response earns at least 1 of the 2 antiderivative points, then the response is eligible for the fourth point.
+
+Total for part (c) 5 points
+
+}\SetValue{Answer}{%
+
+
+}
+\ProcessDATA
+
+

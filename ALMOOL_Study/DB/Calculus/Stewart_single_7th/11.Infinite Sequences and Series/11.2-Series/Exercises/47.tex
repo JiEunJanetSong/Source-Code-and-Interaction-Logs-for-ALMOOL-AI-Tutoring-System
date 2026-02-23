@@ -1,0 +1,97 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the series is convergent or divergent by expressing $s_n$ as a telescoping sum. If it is convergent, find its sum.
+
+$$\sum_{n=1}^{\infty}\left(e^{1 / n}-e^{1 /(n-1)}\right)$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Understanding the Terms
+
+We can write the first few terms of the series:
+
+- For $n=1: e^{1 / 1}-e^{1 / 0}=e-e^{\infty}$
+
+But $e^{1 / 0}$ is undefined, so the term is not defined at $n=1$.
+
+Thus, we need to re-index the sum to avoid the undefined term.
+
+Let's shift the index to start at $n=2$ :
+
+$$
+\sum_{n=2}^{\infty}\left(e^{1 / n}-e^{1 /(n-1)}\right)
+$$
+
+Step 2: Write as a Telescoping Sum
+
+Let's write out the partial sums:
+
+$$
+s_N=\sum_{n=2}^N\left(e^{1 / n}-e^{1 /(n-1)}\right)
+$$
+
+
+Write a few terms explicitly:
+
+$$
+=\left(e^{1 / 2}-e^{1 / 1}\right)+\left(e^{1 / 3}-e^{1 / 2}\right)+\left(e^{1 / 4}-e^{1 / 3}\right)+\cdots+\left(e^{1 / N}-e^{1 /(N-1)}\right)
+$$
+
+
+Observe the telescoping cancellation:
+
+- $e^{1 / 2}$ cancels with $-e^{1 / 2}$,
+
+- $e^{1 / 3}$ cancels with $-e^{1 / 3}$,
+
+- ...
+
+- The only terms not canceled are:
+
+$$
+-e^{1 / 1}=-e \quad \text { and } \quad+e^{1 / N}
+$$
+
+
+Thus, the partial sum is:
+
+$$
+s_N=e^{1 / N}-e
+$$
+
+Step 3: Take the Limit of the Partial Sum
+
+To determine convergence, compute the limit of $s_N$ as $N \rightarrow \infty$:
+
+$$
+\lim _{N \rightarrow \infty} s_N=\lim _{N \rightarrow \infty}\left(e^{1 / N}-e\right)=1-e
+$$
+
+
+Therefore, the series converges, and the sum is:
+
+$$
+1-e
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,82 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int_0^3 \dfrac{x}{\sqrt{36-x^2}}\  d x$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int_0^3 \dfrac{x}{\sqrt{36-x^2}} d x
+$$
+
+
+A straightforward method is to use the substitution $u=36-x^2$.
+
+Step 1: Substitution
+Let
+
+$$
+u=36-x^2 \quad \Longrightarrow \quad d u=-2 x d x \quad \Longrightarrow \quad x d x=-\dfrac{1}{2} d u.
+$$
+
+
+When $x=0, u=36-0^2=36$.
+When $x=3, u=36-3^2=36-9=27$.
+Thus the integral becomes
+
+$$
+\int_0^3 \dfrac{x}{\sqrt{36-x^2}} d x=\int_{x=0}^{x=3} \dfrac{x}{\sqrt{u}}\left(-\dfrac{1}{2} d u\right)=-\dfrac{1}{2} \int_{u=36}^{u=27} \dfrac{1}{\sqrt{u}} d u.
+$$
+
+Step 2: Reverse the limits to remove the minus sign
+We have
+
+$$
+-\dfrac{1}{2} \int_{u=36}^{u=27} u^{-\dfrac{1}{2}} d u=\dfrac{1}{2} \int_{u=27}^{u=36} u^{-\dfrac{1}{2}} d u
+$$
+
+
+Step 3: Integrate $u^{-1 / 2}$
+
+$$
+\int u^{-1 / 2} d u=2 \sqrt{u}
+$$
+
+
+Thus,
+
+$$
+\dfrac{1}{2} \int_{27}^{36} u^{-1 / 2} d u=\dfrac{1}{2}[2 \sqrt{u}]_{27}^{36}=[\sqrt{u}]_{27}^{36}=\sqrt{36}-\sqrt{27}=6-3 \sqrt{3}.
+$$
+
+
+Hence the definite integral is
+
+$$
+\int_0^3 \dfrac{x}{\sqrt{36-x^2}} d x=6-3 \sqrt{3}
+$$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+
+## Model Solution (a)
+
+
+## Scoring (a)
+
+For $\text { Area }=\int_0^2(f(x)-g(x)) d x$,
+Integrand; 1 point, Answer; 1 point.
+
+## Scoring notes (a)
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+

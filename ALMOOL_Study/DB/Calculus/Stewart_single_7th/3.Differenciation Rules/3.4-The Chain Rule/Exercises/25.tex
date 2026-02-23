@@ -1,0 +1,101 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=5^{-\tfrac{1}{x}}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to differentiate
+
+$$
+y = 5^{-\tfrac{1}{x}}.
+$$
+
+A straightforward way is to rewrite this in exponential form and apply the chain rule:
+
+1. Rewrite $5^{-\dfrac{1}{x}}$ as an exponential with base $e$:
+
+   $$
+   y 
+   = 5^{-\dfrac{1}{x}}
+   = e^{\ln\!\bigl(5^{-\dfrac{1}{x}}\bigr)}
+   = e^{-\dfrac{1}{x} \,\ln(5)}.
+   $$
+
+   Define
+   $$
+   u(x) = -\tfrac{1}{x}.
+   $$
+   Then
+   $$
+   y = e^{\,u(x)\,\ln(5)}.
+   $$
+
+2. Differentiate $y$ via the chain rule:
+
+   $$
+   \dfrac{dy}{dx}
+   = \dfrac{d}{dx}\bigl[e^{\,u(x)\,\ln(5)}\bigr]
+   = e^{\,u(x)\,\ln(5)} \;\cdot\; \dfrac{d}{dx}\bigl(u(x)\,\ln(5)\bigr).
+   $$
+
+   Because $\ln(5)$ is constant, we get
+
+   $$
+   \dfrac{d}{dx}\bigl(u(x)\,\ln(5)\bigr)
+   = \ln(5)\,\dfrac{du}{dx}.
+   $$
+
+3. Compute $\dfrac{du}{dx}$ where $u(x) = -\tfrac{1}{x}$:
+
+   $$
+   u(x) = -x^{-1}.
+   $$
+
+   Its derivative is
+
+   $$
+   u'(x)
+   = -\bigl(-x^{-2}\bigr)
+   = \dfrac{1}{x^2}.
+   $$
+
+4. Combine everything:
+
+   $$
+   \dfrac{dy}{dx}
+   = e^{\,u(x)\,\ln(5)} \;\cdot\;\ln(5)\;\cdot\;\dfrac{1}{x^2}
+   = 5^{-\tfrac{1}{x}}\;\ln(5)\;\dfrac{1}{x^2}.
+   $$
+
+Thus, the derivative is
+
+$$
+\boxed{
+\dfrac{dy}{dx}
+= \dfrac{\ln(5)\,5^{-\dfrac{1}{x}}}{x^2}.
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

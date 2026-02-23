@@ -1,0 +1,47 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Sarika, Dev, and Rajiv are sharing a large block of cheese. They take turns cutting off half of what remains and eating it: first Sarika eats half of the cheese, then Dev eats half of the remaining half, then Rajiv eats half of what remains, then back to Sarika, and so on. They stop when the cheese is too small to see. About what fraction of the original block of cheese does Sarika eat in total?
+
+\ansFIVEs{%start
+		\frac{4}{7} }{%<--- (A)
+		\frac{3}{5} }{%<--- (B)
+		\frac{2}{3} }{%<--- (C)
+		\frac{3}{4} }{%<---- (D)
+		\frac{7}{8} }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+WLOG, let the amount of total cheese be 1 . Then Sarika eats $\frac{1}{2}$, Dev eats $\frac{1}{4}$, Rajiv eats $\frac{1}{8}$, Sarika eats $\frac{1}{16}$ and so on. After a couple for attempts, we see that Sarika eats cheese in an infinite geometric sequence with first term $\frac{1}{2}$ and common ratio of $\frac{1}{8}$. Therefore, we use the infinite geometric sequence formula and get
+
+$$
+\frac{\frac{1}{2}}{1-\frac{1}{8}}=\frac{\frac{1}{2}}{\frac{7}{8}}=\frac{4}{7}
+$$
+
+
+To find how much Sarika eats, we just divide this by our original total and get $\frac{\frac{4}{7}}{1}=1$.
+Therefore, Sarika eats (A) $\frac{4}{7}$ of the cheese.
+
+Solution 2 (Estimation)
+Sarika eats $1 / 2$ of the original cheese, and then because the others eat $1 / 4$ and $1 / 8$, she eats $1 / 16$ next, and then $1 / 128$, and then so on. Since the values later are going to be too small to make a huge difference, we can use these 3 values. She ate $(64+8+1) / 128=73 / 128$. We can replace the 73 with a 72 for now, so $72 / 128=9 / 16$, which simplifies to around 56.25 . Since there is a little bit more of the cheese to be accounted for, the amount that she eats will be around
+(A) $\frac{4}{7}$.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

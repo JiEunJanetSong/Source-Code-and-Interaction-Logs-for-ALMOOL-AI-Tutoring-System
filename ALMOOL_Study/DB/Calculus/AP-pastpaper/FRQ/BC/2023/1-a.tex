@@ -1,0 +1,78 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    $t$ 
+    (seconds)
+    & 0 & 60 & 90 & 120 & 135 & 150 \\
+    \hline 
+    $f(t)$  
+    (gallons per second)
+    & 0 & 0.1 & 0.15 & 0.1 & 0.05 & 0 \\
+    \hline
+    \end{tabular}
+
+A customer at a gas station is pumping gasoline into a gas tank. The rate of flow of gasoline is modeled by a differentiable function $f$, where $f(t)$ is measured in gallons per second and $t$ is measured in seconds since pumping began. Selected values of $f(t)$ are given in the table.
+
+(a) Using correct units, interpret the meaning of $\int_{60}^{135} f(t) d t$ in the context of the problem. Use a right Riemann sum with the three subintervals $[60,90],[90,120]$, and $[120,135]$ to approximate the value of $\int_{60}^{135} f(t) d t$.
+
+}\SetValue{Solution}{%LaTeX
+
+$\int_{60}^{135} f(t) d t$ represents the total number of gallons of gasoline pumped into the gas tank from time $t=60$ seconds to time $t=135$ seconds.
+
+$\begin{aligned} & \int_{60}^{135} f(t) d t \\ & \approx f(90)(90-60)+f(120)(120-90)+f(135)(135-120) \\ & =(0.15)(30)+(0.1)(30)+(0.05)(15)=8.25\end{aligned}$
+
+}\SetValue{Rubric}{%Markdown
+
+# General Scoring Notes
+
+The model solution is presented using standard mathematical notation.
+Answers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.
+
+| $t$ <br> (seconds) | 0 | 60 | 90 | 120 | 135 | 150 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $f(t)$ <br> (gallons per second) | 0 | 0.1 | 0.15 | 0.1 | 0.05 | 0 |
+
+A customer at a gas station is pumping gasoline into a gas tank. The rate of flow of gasoline is modeled by a differentiable function $f$, where $f(t)$ is measured in gallons per second and $t$ is measured in seconds since pumping began. Selected values of $f(t)$ are given in the table.
+
+## Model Solution (a)
+
+$\int_{60}^{135} f(t) d t$ represents the total number of gallons of gasoline pumped into the gas tank from time $t=60$ seconds to time $t=135$ seconds.
+
+$\begin{aligned} & \int_{60}^{135} f(t) d t \\ & \approx f(90)(90-60)+f(120)(120-90)+f(135)(135-120) \\ & =(0.15)(30)+(0.1)(30)+(0.05)(15)=8.25\end{aligned}$
+
+## Scoring (a)
+
+- For $\int_{60}^{135} f(t) d t$ represents the total number of gallons of gasoline pumped into the gas tank from time $t=60$ seconds to time $t=135$ seconds. 
+    -  Interpretation with units; 1 point
+
+- For $\begin{aligned} & \int_{60}^{135} f(t) d t \\ & \approx f(90)(90-60)+f(120)(120-90)+f(135)(135-120) \\ & =(0.15)(30)+(0.1)(30)+(0.05)(15)=8.25\end{aligned}$
+     - Form of Riemann sum ; 1 point  
+     - Answer ; 1 point  
+
+## Scoring notes (a)
+
+- To earn the first point the response must reference gallons of gasoline added/pumped and the time interval $t=60$ to $t=135$.
+
+- To earn the second point at least five of the six factors in the Riemann sum must be correct.
+
+- If there is any error in the Riemann sum, the response does not earn the third point.
+
+- A response of $(0.15)(30)+(0.1)(30)+(0.05)(15)$ earns both the second and third points, unless there is a subsequent error in simplification, in which case the response would earn only the second point.
+
+- A response that presents a correct value with accompanying work that shows the three products in the Riemann sum but does not show all six of the factors and/or the sum process, does not earn the second point but does earn the third point. For example, responses of either $4.5+3.0+0.75$ or $(0.15)(30), 0.1(30), 0.05(15) \rightarrow 8.25$ earn the third point but not the second.
+
+- A response of $f(90)(90-60)+f(120)(120-90)+f(135)(135-120)=8.25$ earns both the second and the third points.
+
+- A response that presents an answer of only 8.25 does not earn either the second or third point.
+
+- A response that provides a completely correct left Riemann sum with accompanying work, $f(60)(30)+f(90)(30)+f(120)(15)=9$, or $(0.1)(30)+(0.15)(30)+(0.1)(15)$ earns 1 of the last 2 points. A response with any errors or missing factors in a left Riemann sum earns neither of the last 2 points.
+
+Total for part (a) 3 points
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

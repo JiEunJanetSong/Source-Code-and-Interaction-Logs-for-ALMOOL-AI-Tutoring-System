@@ -1,0 +1,204 @@
+\documentclass[showtrims,svgnames,chapter,openany,oneside]{oblivoir}
+\usepackage{ibmath}%수식 명령 설정파일
+\usepackage{memtikzpagenodes}% 페이지 레이아웃
+\usepackage{SATdesign}% 디자인 설정파일
+\usepackage{bigints} %큰 적분기호
+\usepackage{dhucs-enumitem}
+\usepackage{tabularray}
+\usepackage{bookmark}
+\usepackage{multirow}
+
+%\usepackage{amsmath}
+%%%%%%
+\newcommand{\autoinput}{\input{AMC\expandafter\AMClevel/\expandafter\AMCyear AMC\expandafter\AMClevel\expandafter\AMCtype.tex}}
+\newcommand\AMCyear{2001}%
+\newcommand\AMClevel{10}%
+\newcommand\AMCtype{B}%
+%%%%%%%%%%%% 줄바꿈 or 페이지바꿈 설정하기
+\newcommand{\Jnewpage}{%\JNewpage라는 이름의 기존에 없던 새로운 명령을 만들고, 그 명령을 입력하면 무엇이 실행될지 명시
+%\vskip30pt %%% 줄바꾸려면 주석해제
+ %%% 페이지바꾸려면 주석해제
+}
+%%%%%%%%%%% 불러올 파일 설정
+%%%%%%%%%%% 머릿말 설정\text{a parabola tangent to the }x\text{-axis} 
+\headersetting{%left start
+\colormouth[\MYCOLOR]{ALMOOL}%{USSCE-2018-M$_\textbf{G1}$}% PDF출력시 왼쪽 head
+}{%middle start 
+%\today%middle contents
+}{%{right start
+\colormouth[\MYCOLOR]{ResearchTeam}%right contents
+}
+
+\begin{document}\pagestyle{mathclass2021}
+
+%%% 어떤파일 부를지
+
+%\input{AMC12/2000AMC12-}
+
+%Problem 문제지 Solution 해설지 Teacher 문제+해설
+\SetValue{mainTitle}{ALMooL}%%%%왼쪽상단
+\SetValue{Book}{Problem}
+%\SetValue{Book}{Solution}
+%\SetValue{Book}{Teacher}
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries BC FRQ 2023}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{2023}%test체크박스
+\SetValue{examTime}{2700}
+\setcounter{SATQuestionNum}{0}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{0}
+\SetValue{referenceImage}{DB/Calculus/Stewart_single_7th/Reference/3-3.png}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\setcounter{SATQuestionNum}{0}
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/1-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/1-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/1-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/1-d.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/2-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/2-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/2-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/2-d.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/3-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/3-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/3-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/3-d.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/4-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/4-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/4-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/4-d.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/5-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/5-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/5-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/6-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/6-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2023/6-c.tex}%
+
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries2024}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{BC FRQ 2024}%test체크박스
+\SetValue{examTime}{2700}
+\setcounter{SATQuestionNum}{0}
+\SetValue{examMode}{test}
+\SetValue{examMode}{study}
+\SetValue{ReferenceSwitch}{0}
+\SetValue{referenceImage}{DB/Calculus/Stewart_single_7th/Reference/3-3.png}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\setcounter{SATQuestionNum}{0}
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/1-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/1-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/1-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/1-d.tex}%
+
+
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/3-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/3-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/3-c.tex}%
+
+
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/4-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/4-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/4-c.tex}%
+
+\end{document} 
+
+\newpage
+\setcounter{SATQuestionNum}{0}
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/1-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/1-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/1-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/1-d.tex}%
+
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/2-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/2-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/2-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/2-d.tex}%
+
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/3-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/3-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/3-c.tex}%
+
+
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/4-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/4-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/4-c.tex}%
+
+
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/5-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/5-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/5-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/5-d.tex}%
+
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/6-a.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/6-b.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/6-c.tex}%
+\newpage
+\input{Calculus/AP-pastpaper/FRQ/BC/2024/6-d.tex}%
+
+\end{document} 

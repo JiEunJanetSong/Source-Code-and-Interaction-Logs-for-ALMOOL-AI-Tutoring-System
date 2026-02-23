@@ -1,0 +1,84 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the series is convergent or divergent. If it is convergent, find its sum.
+
+$$\sum_{n=1}^{\infty}\left(\dfrac{3}{5^n}+\dfrac{2}{n}\right)$$
+
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Split the Series
+
+Split the series into two parts:
+
+$$
+\sum_{n=1}^{\infty}\left(\dfrac{3}{5^n}+\dfrac{2}{n}\right)=\sum_{n=1}^{\infty} \dfrac{3}{5^n}+\sum_{n=1}^{\infty} \dfrac{2}{n}
+$$
+
+
+Step 2: Analyze Each Series
+
+1. $\sum_{n=1}^{\infty} \dfrac{3}{5^n}$
+
+This is a geometric series with:
+
+- First term $a=\dfrac{3}{5}$
+
+- Ratio $r=\dfrac{1}{5}$
+
+Since $|r|<1$, the series converges and its sum is:
+
+$$
+\sum_{n=1}^{\infty} \dfrac{3}{5^n}=\dfrac{3}{5} \cdot \dfrac{1}{1-\dfrac{1}{5}}=\dfrac{3}{5} \cdot \dfrac{5}{4}=\dfrac{3}{4}
+$$
+
+2. $\sum_{n=1}^{\infty} \dfrac{2}{n}$
+
+This is a constant multiple of the harmonic series:
+
+$$
+2 \sum_{n=1}^{\infty} \dfrac{1}{n}
+$$
+
+
+The harmonic series is divergent, and multiplying by 2 doesn't change that.
+
+So, this part diverges.
+
+Step 3: Combine the Results
+
+- One part converges: $\sum \dfrac{3}{5^n}$
+
+- One part diverges: $\sum \dfrac{2}{n}$
+
+Therefore, the entire series:
+
+$$
+\sum_{n=1}^{\infty}\left(\dfrac{3}{5^n}+\dfrac{2}{n}\right)
+$$
+
+diverges, because adding any divergent series to anything results in divergence.
+
+Final Answer: The series diverges.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

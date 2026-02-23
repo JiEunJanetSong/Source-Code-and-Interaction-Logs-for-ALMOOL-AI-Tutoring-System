@@ -1,0 +1,83 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the series is convergent or divergent. If it is convergent, find its sum.
+
+$$\sum_{k=1}^{\infty}(\cos 1)^k$$
+
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Check if it's a geometric series
+
+This is a geometric series of the form:
+
+$$
+\sum_{k=1}^{\infty} a r^k
+$$
+
+with $a=1$ and $r=\cos 1$.
+
+Step 2: Evaluate $\cos 1$
+
+Note that:
+
+$$
+\cos 1 \approx \cos (1 \text { radian }) \approx 0.5403
+$$
+
+
+Since $|r|=|\cos 1|<1$, the geometric series is convergent.
+
+Step 3: Use the formula for the sum of a geometric series
+
+For a geometric series starting from $k=1$, the sum is:
+
+$$
+\sum_{k=1}^{\infty} r^k=\dfrac{r}{1-r}
+$$
+
+So we plug in $r=\cos 1$ :
+
+$$
+\sum_{k=1}^{\infty}(\cos 1)^k=\dfrac{\cos 1}{1-\cos 1}
+$$
+
+
+Using $\cos 1 \approx 0.5403$ :
+
+$$
+\sum_{k=1}^{\infty}(\cos 1)^k \approx \dfrac{0.5403}{1-0.5403}=\dfrac{0.5403}{0.4597} \approx 1.175
+$$
+
+
+Final Answer:
+
+- The series is convergent.
+
+- The sum is:
+
+$$
+\dfrac{\cos 1}{1-\cos 1} \approx 1.175
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

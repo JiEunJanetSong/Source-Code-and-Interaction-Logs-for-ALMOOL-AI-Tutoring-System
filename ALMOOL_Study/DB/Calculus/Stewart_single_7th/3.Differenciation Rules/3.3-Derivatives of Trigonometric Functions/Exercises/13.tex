@@ -1,0 +1,78 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Differentiate.
+
+$y=\dfrac{t \sin t}{1+t}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Using the Quotient Rule:
+
+We have
+$
+y = \dfrac{t \sin t}{1 + t}.
+$
+Let $u = t \sin t$ and $v = 1 + t$. 
+
+Then:
+
+$
+u' = \dfrac{d}{dt}(t \sin t) = \sin t + t \cos t,\quad
+v' = \dfrac{d}{dt}(1 + t) = 1.
+$
+
+Using the quotient rule,
+$
+\left(\dfrac{u}{v}\right)' 
+= \dfrac{u'v - uv'}{v^2},
+$
+
+we get
+$
+y' 
+= \dfrac{\bigl(\sin t + t \cos t\bigr)\bigl(1 + t\bigr) - \bigl(t \sin t\bigr)\cdot(1)}{(1 + t)^2}.
+$
+
+Simplify the numerator:
+
+$
+(\sin t + t \cos t)(1 + t) - t \sin t 
+= \sin t(1 + t) + t \cos t(1 + t) - t \sin t 
+= \sin t + t \sin t + t \cos t + t^2 \cos t - t \sin t.
+$
+
+Notice 
+
+$t \sin t - t \sin t$ cancels out:
+$
+= \sin t + t \cos t + t^2 \cos t.
+$
+
+Therefore,
+$
+\boxed{y' 
+= \dfrac{\sin t + t \cos t + t^2 \cos t}{(1 + t)^2}.
+}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

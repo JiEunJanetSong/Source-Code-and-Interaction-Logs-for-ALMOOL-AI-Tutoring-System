@@ -1,0 +1,74 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+The digits $2,0,2$, and 3 are placed in the expression below, one digit per box. What is the maximum possible value of the expression?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2023-06.png}
+	\end{center}
+
+\ansFIVEs{%start
+		0 }{%<--- (A)
+		8 }{%<--- (B)
+		9 }{%<--- (C)
+		16 }{%<---- (D)
+		18}%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step-by-step analysis
+
+We want to maximize:
+
+$$
+a^b \times c^d
+$$
+
+using the digits: 0, 2, 2, 3 (each used once).
+
+Observations:
+
+- Anything to the power of 0 is 1 (except $0^0$, which we avoid).
+
+- $0^x=0$ for $x>0 \rightarrow$ this will zero out the whole product.
+
+- So we must avoid using 0 as a base.
+
+Hence, 0 should be used as an exponent.
+
+Try strong combinations
+
+Try: $3^2 \times 2^0=9 \times 1=9$
+
+Other possibilities:
+
+- $2^3 \times 2^0=8$
+
+- $2^2 \times 3^0=4$
+
+- $2^0 \times 3^2=1 \times 9=9$
+
+- $3^0 \times 2^2=1 \times 4=4$
+
+Maximum value is $\square$ 9
+
+Answer: (C) 9
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

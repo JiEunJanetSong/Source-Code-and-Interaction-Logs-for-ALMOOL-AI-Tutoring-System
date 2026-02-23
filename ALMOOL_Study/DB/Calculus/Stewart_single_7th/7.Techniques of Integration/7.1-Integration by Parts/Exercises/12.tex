@@ -1,0 +1,83 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ p^5 \ \ln\ p \ d p$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int p^5 \ln (p) d p
+$$
+
+
+A convenient way is to use integration by parts. Recall the formula:
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+
+Step 1: Choose $u$ and $d v$
+
+Let
+
+$$
+u=\ln (p), \quad d v=p^5 d p
+$$
+
+
+Then
+
+$$
+d u=\dfrac{1}{p} d p, \quad v=\int p^5 d p=\dfrac{p^6}{6}
+$$
+
+Step 2: Apply integration by parts
+
+$$
+\int p^5 \ln (p) d p=\ln (p) \cdot \dfrac{p^6}{6}-\int \dfrac{p^6}{6} \cdot \dfrac{1}{p} d p
+$$
+
+
+Simplify the second integral:
+
+$$
+\int \dfrac{p^6}{6} \cdot \dfrac{1}{p} d p=\dfrac{1}{6} \int p^5 d p=\dfrac{1}{6} \cdot \dfrac{p^6}{6}=\dfrac{p^6}{36}
+$$
+
+
+Thus,
+
+$$
+\int p^5 \ln (p) d p=\dfrac{p^6}{6} \ln (p)-\dfrac{p^6}{36}+C
+$$
+
+where $C$ is the constant of integration.
+
+Final Answer
+
+$$
+\int p^5 \ln (p) d p=\dfrac{p^6}{6} \ln (p)-\dfrac{p^6}{36}+C
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+   
+   
+
+   
+
+

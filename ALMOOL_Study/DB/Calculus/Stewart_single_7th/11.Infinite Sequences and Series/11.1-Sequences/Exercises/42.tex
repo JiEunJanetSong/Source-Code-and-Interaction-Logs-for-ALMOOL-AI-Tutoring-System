@@ -1,0 +1,68 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\ln(n+1)-\ln n $$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \ln(n+1) - \ln n
+$
+
+
+
+ Step 1: Use log properties
+
+Recall the logarithmic identity:
+
+$
+\ln(n+1) - \ln n = \ln\left(\frac{n+1}{n}\right)
+$
+
+So the sequence becomes:
+
+$
+a_n = \ln\left(1 + \frac{1}{n}\right)
+$
+
+
+
+ Step 2: Take the limit as $n \to \infty$
+
+As $n \to \infty$, $\frac{1}{n} \to 0$, so:
+
+$
+\lim_{n \to \infty} a_n = \lim_{n \to \infty} \ln\left(1 + \frac{1}{n}\right) = \ln(1) = 0
+$
+
+ Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{0}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

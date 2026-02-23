@@ -1,0 +1,73 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+The quadratic function \( g(x) = 2x^2 + pqx + qr \) has only one root at the point \((-3,0)\), where \( p, q, \) and \( r \) are positive integer constants that satisfy \( q < p < r \). What is one possible value for the product \( pqr \)?
+
+}\SetValue{Solution}{%
+
+Since the quadratic function has only one root at \( x = -3 \), it must be a double root. We start by expressing the quadratic in the form of a double root.
+
+\begin{alignat*}{3}
+g(x) &= a(x + 3)^2 && \{ \text{Double root at } x = -3 \} \\
+&= a(x^2 + 6x + 9) \\
+&= ax^2 + 6ax + 9a
+\end{alignat*}
+
+Given the general form of \( g(x) = 2x^2 + pqx + qr \), we compare coefficients:
+- Coefficient of \( x^2 \): \( a = 2 \).
+- Coefficient of \( x \): \( 6a = pq \Rightarrow 6(2) = pq \Rightarrow pq = 12 \).
+- Constant term: \( 9a = qr \Rightarrow 9(2) = qr \Rightarrow qr = 18 \).
+
+Now, we find integers \( p, q, r \) that satisfy \( q < p < r \).
+
+### Finding Possible Values
+
+1. \( pq = 12 \): Possible pairs are:
+   - \( (p, q) = (12, 1) \)
+   - \( (p, q) = (6, 2) \)
+   - \( (p, q) = (4, 3) \)
+
+2. \( qr = 18 \): Possible pairs are:
+   - \( (q, r) = (1, 18) \)
+   - \( (q, r) = (2, 9) \)
+   - \( (q, r) = (3, 6) \)
+
+### Matching Pairs
+
+We now find common \( q \) values that meet the conditions:
+
+If \( p = 12 \) and \( q = 1 \), then \( qr = 1 \times 18 = 18 \), so \( r = 18 \). 
+
+This gives \( q < p < r \): \( 1 < 12 < 18 \).
+
+If \( p = 6 \) and \( q = 2 \), then \( qr = 2 \times 9 = 18 \), so \( r = 9 \). 
+
+This gives \( q < p < r \): \( 2 < 6 < 9 \).
+
+If \( p = 4 \) and \( q = 3 \), then \( qr = 3 \times 6 = 18 \), so \( r = 6 \). 
+
+This gives \( q < p < r \): \( 3 < 4 < 6 \).
+
+### Calculating Possible Products
+
+1. For \( p = 12 \), \( q = 1 \), \( r = 18 \):
+   \[
+   pqr = 12 \times 1 \times 18 = 216
+   \]
+2. For \( p = 6 \), \( q = 2 \), \( r = 9 \):
+   \[
+   pqr = 6 \times 2 \times 9 = 108
+   \]
+3. For \( p = 4 \), \( q = 3 \), \( r = 6 \):
+   \[
+   pqr = 4 \times 3 \times 6 = 72
+   \]
+
+Thus, the possible values for the product \( pqr \) are: $\fbox{$72$, $108$, $216$}$.
+ %이 중 하나만 적으면 맞음
+
+}\SetValue{Answer}{%
+72,108,216
+}
+\ProcessDATA
+
+

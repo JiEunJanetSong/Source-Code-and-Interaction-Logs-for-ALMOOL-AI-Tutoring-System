@@ -1,0 +1,51 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+A tetromino consists of four squares connected along their edges. There are five possible tetromino shapes, $I, O, L, T$, and $S$, shown below, which can be rotated or flipped over. Three tetrominoes are used to completely cover a $3 \times 4$ rectangle. At least one of the tiles is an $S$ tile. What are the other two tiles?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2025-11.png}
+	\end{center}
+
+\ansFIVEs{%start
+		I and L }{%<--- (A)
+		I and T }{%<--- (B)
+		L and L }{%<--- (C)
+		L and S }{%<---- (D)
+		O and T }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+The $3 \times 4$ rectangle allows for 7 possible places to put the S piece, with each possible placement having an inverted version. One of the cases looks like this:
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2025-11-s-1.png}
+	\end{center}
+
+As you can see, there is a hole in the top left corner of the board, which would be impossible to fill using the tetrominos. There are three cases in which a hole isn't created; the $S$ lies flat in the bottom left corner, it lies flat in the top right corner, or it stands upright in the center. All three tilings are shown below.
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2025-11-s-2.png}
+	\end{center}
+
+	For each of the inverted cases, the $L$ pieces can be inverted along with the $S$ piece. Because the only cases that fill the rectangle after the $S$ is placed are the ones that use two $L$ pieces, the answer must be (C) $L$ and $L$. 
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

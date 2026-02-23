@@ -1,0 +1,67 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\tan\left( {\frac{2n\pi}{1+8n}} \right)$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \tan\left( \frac{2n\pi}{1 + 8n} \right)
+$
+
+ Step 1: Analyze the Limit of the Argument
+
+We analyze the argument of the tangent function:
+
+$
+\theta_n = \frac{2n\pi}{1 + 8n}
+$
+
+Divide numerator and denominator by $n$:
+
+$
+\theta_n = \frac{2\pi}{\frac{1}{n} + 8} \to \frac{2\pi}{8} = \frac{\pi}{4} \quad \text{as } n \to \infty
+$
+
+ Step 2: Use Continuity of $\tan(x)$
+
+Since $\theta_n \to \frac{\pi}{4}$ and $\tan(x)$ is continuous at $\frac{\pi}{4}$, we can take the limit inside:
+
+$
+\lim_{n \to \infty} a_n = \tan\left( \lim_{n \to \infty} \theta_n \right) = \tan\left( \frac{\pi}{4} \right) = 1
+$
+
+Final Answer:
+
+- The sequence converges
+
+- The limit is:
+
+$
+\boxed{1}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

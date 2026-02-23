@@ -1,0 +1,53 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+   
+Three concentric circles centered at $O$ have radii of 1,2 , and 3 . Points $B$ and $C$ lie on the largest circle. The region between the two smaller circles is shaded, as is the portion of the region between the two larger circles bounded by central angles $B O C$, as shown in the figure below. Suppose the shaded and unshaded regions are equal in area. What is the measure of $\angle B O C$ in degrees?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2024-18.png}
+	\end{center}
+
+\ansFIVEs{%start
+		108 }{%<--- (A)
+		120 }{%<--- (B)
+		135 }{%<--- (C)
+		144 }{%<---- (D)
+		150 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Let $x=\angle B O C$.
+We see that the shaded region is the inner ring plus a sector $x^{\circ}$ of the outer ring. Using the formula for the area of a circle ( $A=\pi r^2$ ), we find that the area of $x$ is $(4 \pi-\pi)+\frac{x}{360}(9 \pi-4 \pi)$. This simplifies to $3 \pi+\frac{x}{360}(5 \pi)$.
+The unshaded portion is comprised of the smallest circle plus the sector $(360-x)^{\circ}$ of the outer ring, which evaluates to $\pi+\frac{360-x}{360}(5 \pi)$.
+We are told these are equal. Therefore, $3 \pi+\frac{x}{360}(5 \pi)=\pi+\frac{360-x}{360}(5 \pi)$. Solving for $x$ reveals $x=$ (A) 108 .
+$\square$
+$\sim$ MrThinker
+~Dash11 (Edited coefficient of pi. Credit goes to MrThinker for the solution and explanation.)
+
+Solution 2
+Notice that for the 3rd most outer ring of the circle, the ratio of the shaded region to nonshaded region is the ratio of $\angle B O C$ to $360-\angle B O C$. With that, all we need to do is solve for the shaded region.
+
+The inner most circle has radius 1 , and the second circle has radius 2 . Therefore, the first shaded area has $4 \pi-\pi=3 \pi$ area. The circle has total area $9 \pi$, so the other shaded region must have $1.5 \pi$ area, as the non-shaded and shaded area is equivalent. So for the 3rd outer ring, the total area is $9 \pi-4 \pi=5 \pi$, so the non-shaded part of the outer ring is $5 \pi-1.5 \pi=3.5 \pi$.
+
+Now as said before, the ratio of these two areas is the ratio of $\angle B O C$ and $360-\angle B O C$.
+So, $\frac{3.5}{1.5}=\frac{7}{3}$. We have $7 x: 3 x$ where $7 x+3 x=360, x=36$, so our answer is $3 x=108,(A) 108$.
+$(A) 108$.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

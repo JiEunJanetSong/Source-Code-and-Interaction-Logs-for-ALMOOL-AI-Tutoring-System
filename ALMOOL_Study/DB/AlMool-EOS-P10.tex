@@ -1,0 +1,233 @@
+\documentclass[showtrims,svgnames,chapter,openany,oneside]{oblivoir}
+\usepackage{ibmath}%수식 명령 설정파일
+\usepackage{memtikzpagenodes}% 페이지 레이아웃
+\usepackage{SATdesign}% 디자인 설정파일
+\usepackage{bigints} %큰 적분기호
+\usepackage{dhucs-enumitem}
+\usepackage{tabularray}
+\usepackage{bookmark}
+\usepackage{multirow}
+
+%\usepackage{amsmath}
+%%%%%%
+\newcommand{\autoinput}{\input{AMC\expandafter\AMClevel/\expandafter\AMCyear AMC\expandafter\AMClevel\expandafter\AMCtype.tex}}
+\newcommand\AMCyear{2001}%
+\newcommand\AMClevel{10}%
+\newcommand\AMCtype{B}%
+%%%%%%%%%%%% 줄바꿈 or 페이지바꿈 설정하기
+\newcommand{\Jnewpage}{%\JNewpage라는 이름의 기존에 없던 새로운 명령을 만들고, 그 명령을 입력하면 무엇이 실행될지 명시
+%\vskip30pt %%% 줄바꾸려면 주석해제
+ %%% 페이지바꾸려면 주석해제
+}
+%%%%%%%%%%% 불러올 파일 설정
+%%%%%%%%%%% 머릿말 설정\text{a parabola tangent to the }x\text{-axis} 
+\headersetting{%left start
+\colormouth[\MYCOLOR]{AlMool-EOS-P10-Week 4}%{USSCE-2018-M$_\textbf{G1}$}% PDF출력시 왼쪽 head
+}{%middle start 
+%\today%middle contents
+}{%{right start
+\colormouth[\MYCOLOR]{AI-Powered Education for Sustainable Development}%right contents
+}
+
+\begin{document}\pagestyle{mathclass2021}
+
+%%% 어떤파일 부를지
+
+%\input{AMC12/2000AMC12-}
+
+%Problem 문제지 Solution 해설지 Teacher 문제+해설
+\SetValue{mainTitle}{AlMool-EOS-ResearchTeam}%%%%왼쪽상단
+\SetValue{Book}{SATProblem}
+%\SetValue{Book}{Solution}
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries YS-AP Calculus AB-MCQ}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{P10-Week 4-AP Calculus AB-MCQ}
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M08.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M09.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M10.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M11.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M12.tex}%
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M13.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M14.tex}%
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M15.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M16.tex}%
+
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M17.tex}%
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M18.tex}%
+%\end{document}
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M19.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M20.tex}%
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M21.tex}%
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M22.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M23.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M24.tex}%
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M25.tex}%
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M26.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M27.tex}%
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M28.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M29.tex}%
+%\newpage
+%\input{Calculus/APCalBC-MCQ-pastpaper/2019/M30.tex}%
+%\end{document}
+
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries Week 3-P10}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries YS-AP Calculus AB-MCQ}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{P10-Week 3-AP Calculus BC-MCQ}%test체크박스
+\setcounter{SATQuestionNum}{0}
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M01.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M02.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M03.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M04.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M05.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M06.tex}%
+\end{document}
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M07.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M08.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M09.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M10.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M11.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M12.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M13.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M14.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M15.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M16.tex}%
+
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M17.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M18.tex}%
+\end{document}
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M19.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M20.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M21.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M22.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M23.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M24.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M25.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M26.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M27.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M28.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M29.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M30.tex}%
+\end{document}
+
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M76.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M77.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M78.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M79.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M80.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M81.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M82.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M83.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M84.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M85.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M86.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M87.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M88.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M89.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2019/M90.tex}%
+\end{document}
+
+
+\newpage 
+\SetValue{examTitle}{P10-Week 2-AP Calculus-FRQ}%test체크박스
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/1-a.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/1-b.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/1-c.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/1-d.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/3-a.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/3-b.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/3-c.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/4-a.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/4-b.tex}%
+\newpage
+\input{Calculus/APCalBC-MCQ-pastpaper/2024/4-c.tex}%
+\end{document}

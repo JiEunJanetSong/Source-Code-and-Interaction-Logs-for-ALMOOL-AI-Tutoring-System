@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html data-theme="light">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<script>
+
+function login()
+{
+    let userID = document.getElementById("ID").value;
+    let userPW = document.getElementById("PW").value;
+
+    const data = JSON.stringify({
+        ID: userID,
+        PW: userPW
+    });
+
+    const httpData = new XMLHttpRequest();
+    httpData.open('POST','DigitalSAT_login.php');
+    httpData.setRequestHeader('Content-Type', 'text/plain');
+    //httpData.setRequestHeader('Accept', 'application/json');
+    
+    httpData.onreadystatechange = function()
+    {
+        if (this.readyState == 4 && this.status == 200)
+        {
+            if(httpData.responseText == "success")
+                window.location.href = `DigitalSAT_main_new.php`;
+        }
+    };
+
+    httpData.send(data);
+}
+
+</script>
+
+<body>
+
+
+<input type="text" id="ID" name="ID" placeholder="Username">
+<input type="password" id="PW" name="PW" placeholder="Password">
+<button onclick="login();">로그인</button>
+
+
+
+
+</html>
+
+
+

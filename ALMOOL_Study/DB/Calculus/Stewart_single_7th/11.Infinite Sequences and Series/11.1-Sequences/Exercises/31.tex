@@ -1,0 +1,71 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\frac{n^2}{\sqrt{n^3+4n}}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \frac{n^2}{\sqrt{n^3 + 4n}}
+$
+
+Step 1: Analyze Growth of Numerator and Denominator
+
+- Numerator: $n^2$
+
+- Denominator: $\sqrt{n^3 + 4n}$
+
+As $n \to \infty$, the dominant term inside the square root is $n^3$, so:
+
+$
+\sqrt{n^3 + 4n} \sim \sqrt{n^3} = n^{3/2}
+$
+
+So asymptotically:
+
+$
+a_n \sim \frac{n^2}{n^{3/2}} = n^{2 - 3/2} = n^{1/2}
+$
+
+Step 2: Behavior as $n \to \infty$
+
+Since $n^{1/2} \to \infty$, we conclude:
+
+$
+a_n \to \infty \quad \text{as } n \to \infty
+$
+
+Final Answer:
+
+- The sequence diverges
+
+- It diverges to infinity:
+
+$
+\boxed{\text{The sequence diverges to } \infty}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,70 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\frac{\left( \ln\ n \right) ^2}{n}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \frac{(\ln n)^2}{n}
+$
+
+We want to determine whether it converges or diverges, and if it converges, find the limit as $n \to \infty$.
+
+
+
+ Step 1: Analyze growth of numerator and denominator
+
+- $\ln n \to \infty$, so $(\ln n)^2 \to \infty$, but slowly
+
+- $n \to \infty$ much faster
+
+This is a classic case of a logarithmic (slow) growth over polynomial (faster) growth.
+
+
+
+ Step 2: Apply known limit result
+
+There is a well-known fact:
+
+$
+\lim_{n \to \infty} \frac{(\ln n)^k}{n} = 0 \quad \text{for any constant } k > 0
+$
+
+In our case, $k = 2$, so:
+
+$
+\lim_{n \to \infty} \frac{(\ln n)^2}{n} = 0
+$
+
+Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{0}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,106 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=n-\sqrt{n+1}\sqrt{n+3}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = n - \sqrt{n+1}\sqrt{n+3}
+$
+
+We want to determine whether this sequence converges or diverges, and if it converges, find the limit as $n \to \infty$.
+
+
+ Step 1: Simplify the expression
+
+We can write the square root product:
+
+$
+\sqrt{n+1}\sqrt{n+3} = \sqrt{(n+1)(n+3)} = \sqrt{n^2 + 4n + 3}
+$
+
+So:
+
+$
+a_n = n - \sqrt{n^2 + 4n + 3}
+$
+
+
+ Step 2: Factor out $n$ inside the square root to get dominant behavior
+
+Factor $n^2$ from inside the root:
+
+$
+a_n = n - \sqrt{n^2(1 + \frac{4}{n} + \frac{3}{n^2})}
+= n - n \sqrt{1 + \frac{4}{n} + \frac{3}{n^2}}
+$
+
+Factor out $n$:
+
+$
+a_n = n\left(1 - \sqrt{1 + \frac{4}{n} + \frac{3}{n^2}}\right)
+$
+
+
+ Step 3: Use binomial expansion or approximation
+
+As $n \to \infty$, we can use the Taylor expansion:
+
+$
+\sqrt{1 + x} \approx 1 + \frac{x}{2} - \frac{x^2}{8} + \dots
+$
+
+Let $x = \frac{4}{n} + \frac{3}{n^2}$, then:
+
+$
+\sqrt{1 + \frac{4}{n} + \frac{3}{n^2}} \approx 1 + \frac{1}{2} \left( \frac{4}{n} + \frac{3}{n^2} \right)
+= 1 + \frac{2}{n} + \frac{3}{2n^2}
+$
+
+So:
+
+$
+a_n \approx n \left(1 - \left[1 + \frac{2}{n} + \frac{3}{2n^2}\right]\right)
+= n \left(-\frac{2}{n} - \frac{3}{2n^2}\right)
+= -2 - \frac{3}{2n}
+$
+
+
+ Step 4: Take the limit
+
+$
+\lim_{n \to \infty} a_n = \lim_{n \to \infty} \left(-2 - \frac{3}{2n} \right) = -2
+$
+
+Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{-2}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,129 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\left(\dfrac{x^2+1}{x^2-1}\right)^3$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We have
+
+$$
+y = \left(\dfrac{x^2 + 1}{x^2 - 1}\right)^3.
+$$
+
+A convenient way to differentiate is to use the chain rule with an inner function:
+
+\textbf{1. Define the inner function}
+
+   $$
+   u(x) \;=\;\dfrac{x^2 + 1}{x^2 - 1}.
+   $$
+
+   Then
+
+   $$
+   y = \bigl(u(x)\bigr)^3.
+   $$
+
+   \textbf{2. Differentiate the outer function} $y = u^3$:
+
+   $$
+   \dfrac{dy}{du} = 3u^2.
+   $$
+   \textbf{3. Differentiate the inner function} $u(x)$ \textbf{using the quotient rule:}
+
+   $$
+   u(x) 
+   = \dfrac{x^2 + 1}{x^2 - 1}.
+   $$
+
+   The quotient rule states
+
+   $$
+   \left(\dfrac{f}{g}\right)' 
+   = \dfrac{f'g - fg'}{g^2}.
+   $$
+
+   Here $f(x) = x^2 + 1$ and $g(x) = x^2 - 1$. 
+   
+   Then
+   $$
+   f'(x) = 2x,\quad g'(x) = 2x.
+   $$
+
+   So
+   $$
+   u'(x)
+   = \dfrac{(2x)\,(x^2 - 1) \;-\; (x^2 + 1)\,(2x)}{(x^2 - 1)^2}
+   = \dfrac{2x\bigl[(x^2 - 1) - (x^2 + 1)\bigr]}{(x^2 - 1)^2}
+   = \dfrac{2x\,\bigl(x^2 - 1 - x^2 - 1\bigr)}{(x^2 - 1)^2}
+   = \dfrac{2x\,(-2)}{(x^2 - 1)^2}
+   = -\dfrac{4x}{(x^2 - 1)^2}.
+   $$
+
+   \textbf{4. Apply the chain rule:}
+
+   $$
+   y'(x) 
+   = \dfrac{dy}{du} \,\cdot\, \dfrac{du}{dx}
+   = 3\bigl(u(x)\bigr)^2 \cdot u'(x).
+   $$
+
+   Substituting $u(x) = \dfrac{x^2 + 1}{x^2 - 1}$ and $u'(x) = -\tfrac{4x}{(x^2 - 1)^2}$:
+
+   $$
+   y'(x) 
+   = 3 \Bigl(\dfrac{x^2 + 1}{x^2 - 1}\Bigr)^2
+       \times
+       \Bigl(-\dfrac{4x}{(x^2 - 1)^2}\Bigr).
+   $$
+
+   Combine the factors:
+
+   $$
+   y'(x) 
+   = -12x\, \dfrac{(x^2 + 1)^2}{(x^2 - 1)^2} \,\dfrac{1}{(x^2 - 1)^2}
+   = -12x\, \dfrac{(x^2 + 1)^2}{(x^2 - 1)^4}.
+   $$
+
+Either of the following forms is perfectly valid:
+
+- Factorized form using the chain rule directly:
+  $$
+  \boxed{
+    y'(x) 
+    = 3\left(\dfrac{x^2 + 1}{x^2 - 1}\right)^{2} 
+      \left(-\dfrac{4x}{(x^2 - 1)^{2}}\right),
+  }
+  $$
+
+  - As a single fraction:
+  $$
+  \boxed{
+    y'(x) 
+    = -\,12x\;\dfrac{(x^2 + 1)^2}{(x^2 - 1)^4}.
+  }
+  $$
+  
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,96 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Calculate, to four decimal places, the first ten terms of the sequence and use them to plot the graph of the sequence by hand. Does the sequence appear to have a limit? If so, calculate it. If not, explain why.
+
+$$a_n=1+\left( -\frac{1}{2} \right)^n$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = 1 + \left( -\frac{1}{2} \right)^n
+$
+
+ Step 1: Calculate the First 10 Terms (to 4 decimal places)
+
+We compute $a_n$ for $n = 1$ to $10$:
+
+$
+\begin{align}
+a_1 &= 1 + \left( -\frac{1}{2} \right)^1 = 1 - 0.5 = 0.5000 \\
+a_2 &= 1 + \left( -\frac{1}{2} \right)^2 = 1 + 0.25 = 1.2500 \\
+a_3 &= 1 + \left( -\frac{1}{2} \right)^3 = 1 - 0.125 = 0.8750 \\
+a_4 &= 1 + \left( -\frac{1}{2} \right)^4 = 1 + 0.0625 = 1.0625 \\
+a_5 &= 1 + \left( -\frac{1}{2} \right)^5 = 1 - 0.03125 = 0.9688 \\
+a_6 &= 1 + \left( -\frac{1}{2} \right)^6 = 1 + 0.015625 = 1.0156 \\
+a_7 &= 1 + \left( -\frac{1}{2} \right)^7 = 1 - 0.0078125 = 0.9922 \\
+a_8 &= 1 + \left( -\frac{1}{2} \right)^8 = 1 + 0.00390625 = 1.0039 \\
+a_9 &= 1 + \left( -\frac{1}{2} \right)^9 = 1 - 0.001953125 = 0.9980 \\
+a_{10} &= 1 + \left( -\frac{1}{2} \right)^{10} = 1 + 0.0009765625 = 1.0010 \\
+\end{align}
+$
+
+ Step 2: Plot by Hand (Description)
+
+To sketch the graph:
+
+- Plot points $(n, a_n)$ for $n = 1$ through $10$
+
+- You'll notice:
+
+  - The sequence oscillates above and below 1
+
+  - The amount it oscillates gets smaller over time
+
+  - The values get closer to 1
+
+ Step 3: Does the Sequence Have a Limit?
+
+The sequence is:
+
+$
+a_n = 1 + \left( -\frac{1}{2} \right)^n
+$
+
+As $n \to \infty$, the term $\left( -\frac{1}{2} \right)^n \to 0$  
+(since it’s a geometric sequence with common ratio $r = -\frac{1}{2}$, and $|r| < 1$)
+
+So:
+
+$
+\lim_{n \to \infty} a_n = 1 + 0 = 1
+$
+
+ Final Answer:
+
+- First 10 terms (4 decimal places):  
+  $
+  \boxed{0.5000,\ 1.2500,\ 0.8750,\ 1.0625,\ 0.9688,\ 1.0156,\ 0.9922,\ 1.0039,\ 0.9980,\ 1.0010}
+  $
+
+- The sequence has a limit, and the limit is:  
+  $
+  \boxed{1}
+  $
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

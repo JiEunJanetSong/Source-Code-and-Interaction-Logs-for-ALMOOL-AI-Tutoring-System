@@ -1,0 +1,82 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the series is convergent or divergent. If it is convergent, find its sum.
+
+$$\sum_{k=1}^{\infty} \dfrac{k(k+2)}{(k+3)^2}$$
+
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Analyze the general term
+
+Let's simplify the expression and analyze the behavior of the general term as $k \rightarrow \infty$:
+
+$$
+a_k=\dfrac{k(k+2)}{(k+3)^2}
+$$
+
+
+Multiply out the numerator and denominator:
+
+- Numerator: $k(k+2)=k^2+2 k$
+
+- Denominator: $(k+3)^2=k^2+6 k+9$
+
+So:
+
+$$
+a_k=\dfrac{k^2+2 k}{k^2+6 k+9}
+$$
+
+
+Now compute the limit of the general term as $k \rightarrow \infty$ :
+
+$$
+\lim _{k \rightarrow \infty} \dfrac{k^2+2 k}{k^2+6 k+9}
+$$
+
+
+Divide numerator and denominator by $k^2$ :
+
+$$
+\dfrac{1+\dfrac{2}{k}}{1+\dfrac{6}{k}+\dfrac{9}{k^2}} \rightarrow \dfrac{1}{1}=1
+$$
+
+Step 2: Use the Divergence Test
+
+The divergence test (a.k.a. nth-term test) states:
+
+If $\lim _{k \rightarrow \infty} a_k \neq 0$, then the series diverges.
+
+Here, since:
+
+$$
+\lim _{k \rightarrow \infty} \dfrac{k(k+2)}{(k+3)^2}=1 \neq 0
+$$
+
+the series must diverge.
+
+Final Answer:
+
+- The series is divergent, because the general term does not approach 0.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

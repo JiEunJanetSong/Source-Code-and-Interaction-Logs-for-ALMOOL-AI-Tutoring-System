@@ -1,0 +1,424 @@
+\RequirePackage{nicematrix}
+\RequirePackage{calc}
+\RequirePackage{xparse}
+\RequirePackage{xstring}
+\RequirePackage{physics}
+\RequirePackage{pgfkeys}
+\RequirePackage{pgfplots}
+
+
+\newcommand{\SetValue}{\pgfkeyssetvalue}
+\newcommand{\GetValue}{\pgfkeysvalueof}
+\newcommand{\ReSetValue}{\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{}\SetValue{Solution}{}\SetValue{Answer}{}}
+
+
+\newcommand{\ProcessDATA}{%
+\IfStrEq{\GetValue{SectionAB}}{A}{%
+\begin{center}{\bfseries\color{\MYCOLOR}Section \GetValue{SectionAB}}\end{center}}{}%
+\IfStrEq{\GetValue{SectionAB}}{B}{%
+\begin{center}{\bfseries\color{\MYCOLOR}Section \GetValue{SectionAB}}\end{center}}{}%
+\IfStrEq{\GetValue{Book}}{Problem}{\begin{JQuestion}\GetValue{Contents}\end{JQuestion}}{}%
+\IfStrEq{\GetValue{Book}}{SATProblem}{\begin{SATQuestion}\GetValue{Contents}\end{SATQuestion}}{}%
+\IfStrEq{\GetValue{Book}}{SATSolution}{\begin{SATQuestion}\GetValue{Contents}\end{SATQuestion}\GetValue{Solution}}{}%
+%\IfStrEq{\GetValue{Book}}{Teacher}{\begin{JQuestion}\GetValue{Contents}\end{JQuestion}}{}%
+\IfStrEq{\GetValue{Book}}{Solution}{\begin{JQuestion}\GetValue{Solution}\par\GetValue{Answer}\end{JQuestion}}{}%
+\IfStrEq{\GetValue{Book}}{Teacher}{\vskip10pt\GetValue{Solution}\par\GetValue{Answer}}{}%
+\ReSetValue
+}
+%% Dots on the first and last digit
+\ExplSyntaxOn
+\NewDocumentCommand{\periodfl}{m}
+ {
+  \repdec_initial_final_dots:n { #1 }
+ }
+
+\seq_new:N \l__repdec_digits_seq
+\tl_new:N \l__repdec_first_tl
+\tl_new:N \l__repdec_last_tl
+
+\cs_new_protected:Npn \repdec_initial_final_dots:n #1
+ {
+  \seq_set_split:Nnn \l__repdec_digits_seq {} { #1 }
+  \seq_pop_left:NN \l__repdec_digits_seq \l__repdec_first_tl
+  \seq_pop_right:NN \l__repdec_digits_seq \l__repdec_last_tl
+  \quark_if_no_value:VF \l__repdec_first_tl { \overset{\bigdot}{\vphantom{0}\l__repdec_first_tl} }
+  \seq_use:Nn \l__repdec_digits_seq {}
+  \quark_if_no_value:VF \l__repdec_last_tl { \overset{\bigdot}{\vphantom{0}\l__repdec_last_tl} }
+ }
+\cs_generate_variant:Nn \quark_if_no_value:nF { V }
+\ExplSyntaxOff
+
+
+
+\newcommand{\headersetting}[3]{\makeoddhead{mathclass2021}{#1}{#2}{#3}}
+\newcommand\jvec[3]{%
+\begin{pNiceArray}{r}#1 \\[.5em] #2 \\[.5em] #3\end{pNiceArray}}
+
+\setlength{\parindent}{0pt}
+
+
+\makepagestyle{mathclass2021} 
+\copypagestyle{mathclass2021}{ruled}
+
+
+%%%%%%%%%%%%%%%%%% 마이컬러 설정헤드랑 숫자글씨%orange%pink%cyan%olive %blue%violet
+\newcommand{\MYCOLOR}{Navy}
+%\newcommand{\MYCOLOR}{Crimson}
+%%color setting%CadetBlue%Blue%Orange%Cyan%Tan%Pink%Crimson%cyan%Turquoise%violet%Gray%orange%pink
+%%LightCyan-잘안보이지만 예쁨
+%%%%%%%%%%%%%%%%%% 머리 가로줄 두께 & 색상 설정
+\makeatletter 
+\renewcommand{\ruledheadrule}{%
+  \vskip 2pt
+  {\color{\MYCOLOR}%여기는 줄색깔
+  \hrule \@width \textwidth \@height \normalrulethickness%
+  }%
+  \vskip \normalrulethickness
+  {\color{\MYCOLOR}%여기는 아래줄색깔
+  \hrule \@width \textwidth \@height 2\normalrulethickness%
+  }%
+  \vskip -4\normalrulethickness%
+  }
+\makeatother
+%%%%%%%%%%%%%%%% 머릿말, 꼬릿말 설정
+\makeoddhead{mathclass2021}
+{%left start
+\colormouth{2016 AMC 12B}%left contents
+}%left end
+{%middle start
+\today%middle contents
+}%middle end
+{%right start
+\colormouth{Math Class}%right contents
+}%right end
+%\makeevenhead{mathclass2021}{}{}{\mouth{Math Class}}
+\makeoddfoot{mathclass2021}{}{}{}
+%\makeevenfoot{mathclass2021}{}{}{}
+%\makeheadrule{}{\pagewidth}{1pt}
+
+%%%%%%%%%%%%%%%% counter setting
+\newcounter{JQuestionNum}
+\setcounter{JQuestionNum}{0}
+
+\newcounter{resetSAT}
+\setcounter{resetSAT}{0}
+
+\newcounter{SATQuestionNum}[resetSAT]
+\setcounter{SATQuestionNum}{0}
+
+\newcounter{JExerciseNum}
+\setcounter{JExerciseNum}{0}
+
+\newcounter{JProblemNum}
+\setcounter{JProblemNum}{0}
+
+\newcounter{JExampleNum}
+\setcounter{JExampleNum}{0}
+
+\newcounter{JReviewNum}
+\setcounter{JReviewNum}{0}
+
+%%%%%%%%%%%%%%%% cmd setting
+
+\newcommand{\mouth}[1]{{\Large\textbf{#1}}}
+\newcommand{\colormouth}[2][cyan]{{\color{#1}\Large\textbf{#2}}}
+
+
+
+%%%%%%%%%%%%%%%% env setting
+
+\newenvironment{JQuestion}%
+{%시작전 세팅
+\noindent%들여쓰지 마시오
+\stepcounter{JQuestionNum}%
+{\colormouth[\MYCOLOR]{Question \theJQuestionNum }%
+}%
+}%
+{%끝마무리짓기
+\vskip10pt
+}%
+
+\newenvironment{SATQuestion}%
+{%시작전 세팅
+\noindent%들여쓰지 마시오
+\stepcounter{SATQuestionNum}%
+\begin{center}
+\begin{minipage}{0.6\linewidth}
+	\begin{SATBox}{}Mark For Review
+  \end{SATBox}
+}%
+{%끝마무리짓기
+\end{minipage}
+\end{center}
+\vskip10pt
+}%
+
+
+\newenvironment{JExercise}%
+{%시작할때할말들을
+\noindent% 
+\stepcounter{JExerciseNum}%
+{\colormouth[\MYCOLOR]{Exercise \theJExerciseNum}}%여기에적기
+\par
+\noindent
+}
+{%끝날때할말들을
+\Jnewpage
+%여기에적기
+}
+
+
+
+\newenvironment{JProblem}
+{%시작할때할말
+\begin{samepage}
+\noindent\stepcounter{JProblemNum}%엔터로인한의도치않은띄어쓰기방지
+\colormouth[\MYCOLOR]{Problem \theJProblemNum} \par  \nopagebreak \noindent%
+}%
+%{\color{cyan}\Large \textbf{Problem \theJProblemNum}}\par
+{%끝날때할말
+\end{samepage}
+%\vskip10pt
+\Jnewpage %\vskip 50pt 50포인트 vertical skip(뛰어넘기)
+}%
+
+\newenvironment{JExample}
+{%시작할때할말
+\begin{samepage}
+\noindent\stepcounter{JExampleNum}%엔터로인한의도치않은띄어쓰기방지
+\colormouth[\MYCOLOR]{Example \theJExampleNum} \par  \nopagebreak \noindent%
+}%
+%{\color{cyan}\Large \textbf{Problem \theJProblemNum}}\par
+{%끝날때할말
+\end{samepage}
+%\vskip10pt
+\Jnewpage %\vskip 50pt 50포인트 vertical skip(뛰어넘기)
+}%
+
+\newenvironment{JReview}[1][]%
+{%시작할때할말들을
+\noindent% 
+\stepcounter{JReviewNum}%
+{\colormouth[\MYCOLOR]{Review #1 \theJReviewNum}}%여기에적기
+\par
+\noindent
+}
+{%끝날때할말들을
+\Jnewpage
+%여기에적기
+}
+
+
+
+\setstocksize{297mm}{210mm}
+\settrimmedsize{\stockheight}{\stockwidth}{*}
+\settrims{0mm}{0mm}
+\setmarginnotes{0mm}{0mm}{0mm}
+\setulmarginsandblock{32.5mm}{24mm}{*}
+\setlrmarginsandblock{18mm}{*}{0.834}
+\setheadfoot{9.357mm}{14mm}
+\setheaderspaces{*}{9.245mm}{*}
+\checkandfixthelayout
+
+
+
+
+
+
+
+\makepsmarks{mathclass2021}{%
+\createmark{chapter}{left}{shownumber}{}{\quad }
+\createmark{section}{right}{shownumber}{\@chapapp\ }{. \ }
+\createplainmark{toc}{both}{\contentsname}
+\createplainmark{lof}{both}{\listfigurename}
+\createplainmark{lot}{both}{\listtablename}
+\createplainmark{bib}{both}{\bibname}
+\createplainmark{index}{both}{\indexname}
+\createplainmark{glossary}{both}{\glossaryname}}
+
+
+
+\newcommand{\EM}[1]{{\bfseries(E)} \: $#1$ \hfill\!}
+\newcommand{\ET}[1]{{\bfseries(E)} \: #1 \hfill\!}
+
+
+
+
+\newcommand{\ansONE}[5][]{\par%
+{\bfseries(A)} \: $#2$ \hfill\!%
+{\bfseries(B)} \: $#3$ \hfill\!%
+{\bfseries(C)} \: $#4$ \hfill\!%
+{\bfseries(D)} \: $#5$ \hfill\!%
+#1}
+\newcommand{\ansONEp}[5][]{\par%
+{\bfseries A.} \: $#2$ \hfill\!%
+{\bfseries B.} \: $#3$ \hfill\!%
+{\bfseries C.} \: $#4$ \hfill\!%
+{\bfseries D.} \: $#5$ \hfill\!%
+#1}
+\newcommand{\ansFive}[5]{\par%
+{\bfseries(A)} \: $#1$ \par%
+{\bfseries(B)} \: $#2$ \par%
+{\bfseries(C)} \: $#3$ \par%
+{\bfseries(D)} \: $#4$ \par%
+{\bfseries(E)} \: $#5$ \par%
+}
+\newcommand{\ansFOUR}[4]{\par%
+{\bfseries(A)} \: $#1$ \par%
+{\bfseries(B)} \: $#2$ \par%
+{\bfseries(C)} \: $#3$ \par%
+{\bfseries(D)} \: $#4$ \par%
+}
+\newcommand{\ansFOURs}[4]{
+\begin{SelBox}{A}$#1$\end{SelBox}
+\begin{SelBox}{B}$#2$\end{SelBox}
+\begin{SelBox}{C}$#3$\end{SelBox}
+\begin{SelBox}{D}$#4$\end{SelBox}
+}
+\newcommand{\ansFOURsT}[4]{
+\begin{SelBox}{A}#1\end{SelBox}
+\begin{SelBox}{B}#2\end{SelBox}
+\begin{SelBox}{C}#3\end{SelBox}
+\begin{SelBox}{D}#4\end{SelBox}
+}
+\newcommand{\ansFOURp}[4]{\par%
+{\bfseries A.} \: $#1$ \par%
+{\bfseries B.} \: $#2$ \par%
+{\bfseries C.} \: $#3$ \par%
+{\bfseries D.} \: $#4$ \par%
+}
+\newcommand{\ansONET}[4]{\par%
+{\bfseries(A)} \: #1 \hfill\!%
+{\bfseries(B)} \: #2 \hfill\!%
+{\bfseries(C)} \: #3 \hfill\!%
+{\bfseries(D)} \: #4 \hfill\!%
+}
+\newcommand{\ansONETp}[4]{\par%
+{\bfseries A.} \: #1 \hfill\!%
+{\bfseries B.} \: #2 \hfill\!%
+{\bfseries C.} \: #3 \hfill\!%
+{\bfseries D.} \: #4 \hfill\!%
+}
+\newcommand{\ansFOURT}[4]{\par%
+{\bfseries(A)} \: #1 \par%
+{\bfseries(B)} \: #2 \par%
+{\bfseries(C)} \: #3 \par%
+{\bfseries(D)} \: #4 \par%
+}
+\newcommand{\ansFOURTp}[4]{\par%
+{\bfseries A.} \: #1 \par%
+{\bfseries B.} \: #2 \par%
+{\bfseries C.} \: #3 \par%
+{\bfseries D.} \: #4 \par%
+}
+\newcommand{\ansONEc}[3]{\par%
+{\bfseries(A)} \: $#1$ \hfill\!%
+{\bfseries(B)} \: $#2$ \hfill\!%
+{\bfseries(C)} \: $#3$ \hfill\!%
+}
+\newcommand{\ansONETc}[3]{\par%
+{\bfseries(A)} \: #1 \hfill\!%
+{\bfseries(B)} \: #2 \hfill\!%
+{\bfseries(C)} \: #3 \hfill\!%
+}
+\newcommand{\ansONEb}[2]{\par%
+{\bfseries(A)} \: $#1$ \hfill\!%
+{\bfseries(B)} \: $#2$ \hfill\!%
+}
+\newcommand{\ansONETb}[2]{\par%
+{\bfseries(A)} \: #1 \hfill\!%
+{\bfseries(B)} \: #2 \hfill\!%
+}
+\newcommand{\ansONEbp}[2]{\par%
+{\bfseries A.} \: $#1$ \hfill\!%
+{\bfseries B.} \: $#2$ \hfill\!%
+}
+\newcommand{\ansONETbp}[2]{\par%
+{\bfseries A.} \: #1 \hfill\!%
+{\bfseries B.} \: #2 \hfill\!%
+}
+
+
+\NewDocumentCommand \DisplayPageLayout { }
+{
+    \calculatetrims
+    \AddToShipoutPictureBG{
+    \begin{tikzpicture}[remember picture, overlay, line width=3pt]
+ \draw[red] (memoir page.south west) rectangle (memoir page.north east);
+ \draw[green] (memoir header area.south west) rectangle (memoir header area.north east);
+ \draw[blue] (memoir text area.south west) rectangle (memoir text area.north east);
+
+ \draw[yellow] (memoir footer area.south west) rectangle (memoir footer area.north east);
+ \draw[violet] (memoir marginpar area.south west) rectangle (memoir marginpar area.north east);
+\end{tikzpicture}
+
+    }
+}
+
+\let\oldfrac\frac% Store \frac
+\renewcommand{\frac}[2]{%
+  \mathchoice
+    {\oldfrac{#1}{#2}}% display style
+    {#1/#2}% text style
+    {#1/#2}% script style
+    {#1/#2}% script-script style
+}
+
+%그림삽입
+%\begin{center}
+%\includegraphic[scale=0.5]{2019amc10A8.png}    
+%\end{center}
+
+
+\newtcolorbox{SATBox}[2][]{
+    enhanced,%
+             attach boxed title to top left={yshift=-.6cm,},%
+             boxed title style={colframe=black, colback=black, coltext=white, height=0.6cm, width=1cm, arc=0mm},
+             title={\large\bfseries\sffamily\theSATQuestionNum},%
+             %boxed title style={colframe=black,colback=black,coltext=white,},%
+              colback=lightgray,% background
+              colframe=lightgray,
+              coltext=black, % text color
+              width=\linewidth,%
+              height=0.6cm, 
+              halign=left,
+              valign=center,
+              fontupper=\large\sffamily,
+              arc=0mm,
+              left=15mm,
+              #1
+}
+
+
+\newtcolorbox{SelBox}[2][]{
+    enhanced,%
+    attach boxed title to top left={yshift=-\tcboxedtitleheight-\tcbtextheight/32*13,xshift=2mm},%
+    boxed title style={
+    colframe=black, 
+    colback=white, 
+    coltext=black, 
+    height=7mm, 
+    width=10mm, 
+    arc=3.1mm, % Half of the height/width for a perfect circle
+    boxrule=0.2mm,
+    halign=center,
+    valign=center,
+    left=1mm, 
+    right=1mm, 
+    top=1mm, 
+    bottom=1mm,
+},
+    title={\color{black}\sffamily#2},%
+        %boxed title style={colframe=black,colback=black,coltext=white,},%
+        colback=white,% background
+        colframe=black,
+        coltext=black, % text color
+        width=\linewidth,%
+        %height=1cm, 
+        halign=left,
+        valign=center,
+        arc=2mm,
+        left=10mm,
+        boxrule=0.2mm,
+        #1
+}

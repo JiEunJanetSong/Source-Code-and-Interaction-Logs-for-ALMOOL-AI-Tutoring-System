@@ -1,0 +1,95 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the limit.
+
+$\lim _{x \rightarrow 0} \dfrac{\sin 3 x \sin 5 x}{x^2}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Using small-angle approximations or product expansions:
+
+We want
+$
+\lim_{x \to 0} \dfrac{\sin(3x)\,\sin(5x)}{x^2}.
+$
+
+Approach 1: Direct small-angle approximation
+
+For small $x$, $\sin(\alpha x) \approx \alpha x$. Thus,
+$
+\sin(3x) \approx 3x, 
+\quad
+\sin(5x) \approx 5x.
+$
+
+Hence,
+$
+\sin(3x)\,\sin(5x) \approx (3x)(5x) = 15x^2.
+$
+
+Then
+$
+\dfrac{\sin(3x)\,\sin(5x)}{x^2} 
+\approx \dfrac{15x^2}{x^2} 
+= 15,
+$
+and the limit is $15$.
+
+Approach 2: Use $\lim_{x \to 0} \dfrac{\sin(ax)}{ax} = 1$ and factor
+
+$
+\dfrac{\sin(3x)\,\sin(5x)}{x^2}
+= \Bigl(\sin(3x)\Bigr)\Bigl(\sin(5x)\Bigr) \cdot \dfrac{1}{x^2}.
+$
+
+Rewrite each sine with its own factor:
+
+$
+= \dfrac{\sin(3x)}{3x} \cdot \dfrac{\sin(5x)}{5x} \cdot (3x)(5x) \cdot \dfrac{1}{x^2}.
+$
+
+Combine:
+
+$
+= \biggl(\dfrac{\sin(3x)}{3x}\biggr)\,\biggl(\dfrac{\sin(5x)}{5x}\biggr)\,(15x^2)\,\dfrac{1}{x^2}.
+$
+$
+= \biggl(\dfrac{\sin(3x)}{3x}\biggr)\,\biggl(\dfrac{\sin(5x)}{5x}\biggr)\,(15).
+$
+As $x \to 0$, $\dfrac{\sin(3x)}{3x} \to 1$ and $\dfrac{\sin(5x)}{5x} \to 1$. 
+
+Therefore,
+
+$
+\lim_{x \to 0} \dfrac{\sin(3x)\,\sin(5x)}{x^2}
+= 1 \times 1 \times 15
+= 15.
+$
+
+Hence, the limit is
+
+$
+\boxed{15}.
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,73 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+What is the unit digit of:
+
+$$
+222,222-22,222-2,222-222-22-2?
+$$
+
+\ansFIVEs{%start
+		0 }{%<--- (A)
+		2 }{%<--- (B)
+		4 }{%<--- (C)
+		8 }{%<---- (D)
+		10 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are asked for the unit digit of:
+
+$$
+222222-22222-2222-222-22-2
+$$
+
+
+Instead of computing full numbers, observe only the unit digits:
+
+- Each number ends in 2
+
+- Subtracting five numbers ending in 2 from a number ending in 2
+
+That is:
+
+$$
+2-2-2-2-2-2
+$$
+
+
+Calculate step by step (modulo 10):
+
+$$
+0-2=\begin{gathered}
+2-2=0 \\
+-2 \equiv 8 \quad(\bmod 10) \\
+8-2=6 \\
+6-2=4 \\
+4-2=2
+\end{gathered}
+$$
+
+
+Final unit digit: $\square$ 2
+
+Answer: (B) 2
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

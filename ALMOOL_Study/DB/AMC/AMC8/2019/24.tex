@@ -1,0 +1,83 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+In triangle $A B C$, point $D$ divides side $\overline{A C}$ so that $A D: D C=1: 2$. Let $E$ be the midpoint of $\overline{B D}$ and let $F$ be the point of intersection of line $B C$ and line $A E$. Given that the area of $\triangle A B C$ is 360, what is the area of $\triangle E B F ?$
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2019-24.png}
+	\end{center}
+	
+	\ansFIVEs{%start
+		24}{%<--- (A)
+		30 }{%<--- (B)
+		32 }{%<--- (C)
+		36 }{%<---- (D)
+	40}%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2019-24-s-1.png}
+	\end{center}
+
+	Let $G$ be the point on side $B C$ such that $\overline{D G}$ is parallel to $\overline{A F}$. Then $B F=F G$ because $\triangle B E F$ and $\triangle B D G$ are similar and $B E=E D$. Also $2 F G=G C$ because $\triangle A C F$ and $\triangle D C G$ are similar and $2 A D=D C$. Thus $B C=B F+F G+G C=4 B F$. Let $[X Y Z]$ denote the area of a triangle $X Y Z$. Then
+
+$$
+[B D C]=\frac{2}{3}[B A C]=240
+$$
+
+because $D C=2 A D$ and the triangles have the same altitude to line $A C$. Draw segment $\overline{F D}$. Similarly, $[B D F]=\frac{1}{4}[B D C]=60$. Therefore $[B E F]=\frac{1}{2}[B D F]=30$.
+
+OR
+
+Because triangles $A B D$ and $D B C$ share the same altitude to line $A C$ and $A D: D C=1: 2$, the ratio of the areas $[A B D]:[D B C]$ also is $1: 2$. Draw segment $\overline{F D}$. Similarly the ratio $[A F D]:[D F C]$ is $1: 2$.
+Let $x$ represent the area of $\triangle E B F$. Then because $B E=E D$, the areas $[A B E]$ and $[A E D]$ are equal and $[E B F]=[D E F]=x$.
+Given that the area of $\triangle A B C$ is 360 , we can calculate the following areas:
+
+$$
+\begin{aligned}
+& {[A B D]=\frac{1}{3}[A B C]=\frac{1}{3}(360)=120} \\
+& {[D B C]=\frac{2}{3}[A B C]=\frac{2}{3}(360)=240} \\
+& {[A B E]=[A E D]=\frac{1}{2}[A B D]=\frac{1}{2}(120)=60}
+\end{aligned}
+$$
+
+Then using the ratio of the areas of $\triangle A F D$ and $\triangle D F C$ we can solve for $x$.
+
+$$
+\begin{aligned}
+\frac{[A F D]}{[D F C]} & =\frac{1}{2} \\
+\frac{[A E D]+[D E F]}{[D B C]-[D B F]} & =\frac{1}{2} \\
+\frac{60+x}{240-2 x} & =\frac{1}{2} \\
+120+2 x & =240-2 x \\
+4 x & =120 \\
+x & =30
+\end{aligned}
+$$
+
+
+Therefore the area of $\triangle E B F$ is 30.
+
+	\begin{center}		
+		\includegraphics[scale=0.6]{AMC-8-pics/2019-24-s-2.png}
+		\end{center}
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+Answer (B)
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,116 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=x^2 e^{-\tfrac{1}{x}}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to differentiate
+
+$$
+y(x) \;=\; x^2 \, e^{-\tfrac{1}{x}}.
+$$
+
+\textbf{Step 1: Use the Product Rule}
+
+Let
+
+$$
+u(x) = x^2
+\quad\text{and}\quad
+v(x) = e^{-\tfrac{1}{x}}.
+$$
+
+Then
+
+$$
+y(x) = u(x) \, v(x).
+$$
+
+By the product rule:
+
+$$
+y'(x) 
+= u'(x)\,v(x) \;+\; u(x)\,v'(x).
+$$
+
+\textbf{1a. Differentiate} $u(x) = x^2$
+
+$$
+u'(x) = 2x.
+$$
+
+\textbf{1b. Differentiate} $v(x) = e^{-\tfrac{1}{x}}$
+
+Use the chain rule: let $w(x) = -\tfrac{1}{x} = -x^{-1}$. Then
+
+- $w'(x) = - \bigl(-1 x^{-2}\bigr) = +x^{-2} = \tfrac{1}{x^2}.$ 
+
+- Thus
+  $$
+  v'(x) = \dfrac{d}{dx}\bigl[e^{w(x)}\bigr]
+  = e^{w(x)} \cdot w'(x)
+  = e^{-\tfrac{1}{x}}\cdot \dfrac{1}{x^2}.
+  $$
+
+Hence
+
+$$
+v'(x) 
+= \dfrac{e^{-\tfrac{1}{x}}}{x^2}.
+$$
+
+\textbf{Step 2: Combine}
+
+Substitute into the product rule:
+
+$$
+y'(x)
+= u'(x)\,v(x) + u(x)\,v'(x)
+= \bigl[2x\bigr]\bigl[e^{-\tfrac{1}{x}}\bigr] \;+\; \bigl[x^2\bigr]\Bigl[\dfrac{e^{-\tfrac{1}{x}}}{x^2}\Bigr].
+$$
+
+Simplify term by term:
+
+1. $2x \, e^{-\tfrac{1}{x}}$ stays as is.
+
+2. $x^2 \times \dfrac{1}{x^2} = 1$, so the second term is simply $e^{-\tfrac{1}{x}}$.
+
+Therefore,
+
+$$
+y'(x)
+= 2x\,e^{-\tfrac{1}{x}} + e^{-\tfrac{1}{x}}
+= e^{-\tfrac{1}{x}} \bigl(2x + 1\bigr).
+$$
+
+So the final derivative is:
+
+$$
+\boxed{
+y'(x) = e^{-\tfrac{1}{x}}\,\bigl(2x + 1\bigr).
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,68 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\sec ^2(m \theta)$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to differentiate
+
+$$
+y(\theta) \;=\; \sec^2\bigl(m\theta\bigr).
+$$
+
+A convenient way is to treat $\sec^2(u)$ as $\bigl(\sec(u)\bigr)^2$. Recall that
+
+$$
+\dfrac{d}{du}\bigl[\sec^2(u)\bigr] = 2\sec(u)\dfrac{d}{du}\bigl[\sec(u)\bigr]
+=
+2\sec(u)\bigl[\sec(u)\tan(u)\bigr]
+=
+2\sec^2(u)\tan(u).
+$$
+
+Thus, if we set
+
+$$
+u(\theta) = m\theta,
+$$
+
+then by the chain rule:
+
+$$
+\dfrac{d}{d\theta}\Bigl[\sec^2\bigl(m\theta\bigr)\Bigr]
+= 2\sec^2\bigl(m\theta\bigr)\tan\bigl(m\theta\bigr)
+\times\dfrac{d}{d\theta}\bigl[m\theta\bigr].
+$$
+
+Since $\dfrac{d}{d\theta}[m\theta] = m,$ we obtain
+
+$$
+\boxed{
+\dfrac{dy}{d\theta}
+= 2m\sec^2\bigl(m\theta\bigr)\tan\bigl(m\theta\bigr).
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

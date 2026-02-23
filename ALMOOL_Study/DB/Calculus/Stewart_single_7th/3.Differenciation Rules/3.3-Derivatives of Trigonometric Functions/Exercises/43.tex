@@ -1,0 +1,76 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the limit.
+
+$\lim _{x \rightarrow 0} \dfrac{\sin 3 x}{5 x^3-4 x}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+$
+\lim_{x \to 0} \dfrac{\sin(3x)}{5x^3 - 4x}.
+$
+
+1. Factor the denominator:
+
+$
+5x^3 - 4x = x(5x^2 - 4).
+$
+
+So we can rewrite the limit as
+
+$
+\lim_{x \to 0} \dfrac{\sin(3x)}{x\,(5x^2 - 4)}.
+$
+
+2. Use the standard limit $\sin(3x)/(3x) \to 1$:  
+
+$
+\dfrac{\sin(3x)}{5x^3 - 4x}
+= \dfrac{\sin(3x)}{3x} \;\cdot\; \dfrac{3x}{x(5x^2 - 4)}.
+$
+
+3. Separate out the factors:  
+$
+= \biggl(\dfrac{\sin(3x)}{3x}\biggr) \;\cdot\; \dfrac{3}{5x^2 - 4}.
+$
+
+As $x \to 0$, $\dfrac{\sin(3x)}{3x} \to 1$. 
+
+Meanwhile, $5x^2 - 4 \to -4$. Hence,
+
+$
+\lim_{x \to 0} \dfrac{\sin(3x)}{5x^3 - 4x}
+= \lim_{x \to 0} \biggl(\dfrac{\sin(3x)}{3x}\biggr) 
+  \;\cdot\; \lim_{x \to 0} \dfrac{3}{5x^2 - 4}
+= 1 \;\cdot\; \dfrac{3}{-4}
+= -\dfrac{3}{4}.
+$
+
+Therefore,
+
+$
+\boxed{-\dfrac{3}{4}}.
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

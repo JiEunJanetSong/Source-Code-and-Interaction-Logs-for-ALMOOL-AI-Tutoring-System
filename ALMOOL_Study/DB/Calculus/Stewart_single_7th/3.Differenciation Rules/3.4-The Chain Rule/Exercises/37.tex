@@ -1,0 +1,81 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\cot ^2(\sin \theta)$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+First, let $u = \sin(\theta)$. Then your function becomes
+
+$$
+y = \cot^2(u).
+$$
+
+Using the chain rule, we proceed in two steps:
+
+\textbf{1. Differentiate $y$ with respect to $u$:}
+
+$$
+\dfrac{dy}{du} 
+= 2 \cot(u) \cdot \dfrac{d}{du} \bigl(\cot u\bigr).
+$$
+
+Recall that
+
+$$
+\dfrac{d}{du}(\cot u) = -\csc^2 u.
+$$
+
+Hence,
+
+$$
+\dfrac{dy}{du}
+= 2 \cot(u) \cdot \bigl(-\csc^2 u \bigr)
+= -2 \cot(u)\,\csc^2(u).
+$$
+
+\textbf{2. Differentiate $u = \sin(\theta)$ with respect to $\theta$:}
+
+$$
+\dfrac{du}{d\theta} = \cos(\theta).
+$$
+
+By the chain rule,
+
+$$
+\dfrac{dy}{d\theta}
+= \dfrac{dy}{du} \cdot \dfrac{du}{d\theta}
+= \bigl(-2 \cot(u)\,\csc^2(u)\bigr) \cdot \cos(\theta).
+$$
+
+Since $u = \sin(\theta)$, substitute back:
+
+$$
+\boxed{
+\dfrac{dy}{d\theta}
+= -2\,\cot\bigl(\sin(\theta)\bigr)\,\csc^2\bigl(\sin(\theta)\bigr)\,\cos(\theta).
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

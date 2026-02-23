@@ -1,0 +1,64 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+In the right triangle $A B C, A C=12, B C=5$, and angle $C$ is a right angle. A semicircle is inscribed in the triangle as shown. What is the radius of the semicircle?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2017-22.png}
+	\end{center}
+
+\ansFIVEs{%start
+		\frac{7}{6} }{%<--- (A)
+		\frac{13}{5} }{%<--- (B)
+		\frac{59}{18} }{%<--- (C)
+		\frac{10}{3} }{%<---- (D)
+		\frac{60}{13} }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Answer (D): Let $O$ be the center of the inscribed semicircle on $\overline{A C}$, and let $D$ be the point at which $\overline{A B}$ is tangent to the semicircle. Because $\overline{O D}$ is a radius of the semicircle it is perpendicular to $\overline{A B}$, making $\overline{O D}$ an altitude of $\triangle A O B$. By the Pythagorean Theorem, $A B=13$. In the diagram, $\overline{O B}$ partitions $\triangle A B C$ so that
+
+$$
+\operatorname{Area}(\triangle A B C)=\operatorname{Area}(\triangle B O C)+\operatorname{Area}(\triangle A O B)
+$$
+
+
+Since we know $\triangle A B C$ has area 30 , we have
+
+$$
+\begin{aligned}
+30 & =\operatorname{Area}(\triangle B O C)+\operatorname{Area}(\triangle A O B) \\
+& =\frac{1}{2}(B C) r+\frac{1}{2}(A B) r=\frac{5}{2} r+\frac{13}{2} r=9 r
+\end{aligned}
+$$
+
+
+Therefore $r=\frac{30}{9}=\frac{10}{3}$.
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2017-22.png}
+	\end{center}
+
+	OR
+
+	Because $\overline{O D}$ is a radius of the semicircle, it is perpendicular to $\overline{A B}$, making $\triangle A D O$ similar to $\triangle A C B$. Because $\overline{B C}$ and $\overline{B D}$ are both tangent to the semicircle, they are congruent. So $B D=5$ and $A D=8$. It follows that $\frac{r}{8}=\frac{5}{12}$ and so $r=\frac{40}{12}=\frac{10}{3}$.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

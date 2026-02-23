@@ -1,0 +1,79 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral using integration by parts with the indicated choices of $u$ and $dv$.
+   
+$$\int\ x^2\ \ln \ x\ dx \quad u=\ln\ x,\ du=x^2\ dx$$
+
+}\SetValue{Solution}{%
+
+Step 1: Differentiate $u$ and integrate $d v$
+
+1. If $u=\ln x$, then
+
+$$
+d u=\dfrac{1}{x} d x
+$$
+
+2. If $d v=x^2 d x$, then
+
+$$
+v=\int x^2 d x=\dfrac{x^3}{3}
+$$
+
+
+Step 2: Apply the integration-by-parts formula
+Recall the formula:
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+
+Hence,
+
+$$
+\int x^2 \ln x d x=(\ln x)\left(\dfrac{x^3}{3}\right)-\int\left(\dfrac{x^3}{3}\right)\left(\dfrac{1}{x}\right) d x
+$$
+
+
+Simplify inside the integral:
+
+$$
+=\dfrac{x^3}{3} \ln x-\int \dfrac{x^3}{3} \cdot \dfrac{1}{x} d x=\dfrac{x^3}{3} \ln x-\int \dfrac{x^2}{3} d x
+$$
+
+
+Step 3: Evaluate the remaining integral
+
+$$
+\int \dfrac{x^2}{3} d x=\dfrac{1}{3} \int x^2 d x=\dfrac{1}{3} \cdot \dfrac{x^3}{3}=\dfrac{x^3}{9}
+$$
+
+
+Thus,
+
+$$
+\int x^2 \ln x d x=\dfrac{x^3}{3} \ln x-\dfrac{x^3}{9}+C
+$$
+
+where $C$ is the constant of integration.
+
+Final Answer
+
+$$
+\int x^2 \ln x d x=\dfrac{x^3}{3} \ln x-\dfrac{x^3}{9}+C.
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+}\SetValue{Answer}{%
+
+$\int x^2 \ln x d x=\dfrac{x^3}{3} \ln x-\dfrac{x^3}{9}+C$
+
+}
+\ProcessDATA
+
+
+

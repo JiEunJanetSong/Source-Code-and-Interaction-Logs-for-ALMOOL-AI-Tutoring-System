@@ -1,0 +1,71 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+   
+$$\int\ x\ \cos \ 5x\ d x$$
+
+}\SetValue{Solution}{%
+
+To integrate
+
+$$
+\int x \cos (5 x) d x
+$$
+
+we use integration by parts. Let
+
+$$
+u=x \quad \text { and } \quad d v=\cos (5 x) d x .
+$$
+
+
+Then,
+
+$$
+d u=d x \quad \text { and } \quad v=\int \cos (5 x) d x=\dfrac{1}{5} \sin (5 x)
+$$
+
+
+Substituting into the integration by parts formula,
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+we get:
+
+$$
+\int x \cos (5 x) d x=x \cdot \dfrac{1}{5} \sin (5 x)-\int \dfrac{1}{5} \sin (5 x) d x
+$$
+
+
+Next, integrate $\dfrac{1}{5} \sin (5 x)$ :
+
+$$
+\int \dfrac{1}{5} \sin (5 x) d x=\dfrac{1}{5} \int \sin (5 x) d x=\dfrac{1}{5}\left(-\dfrac{1}{5} \cos (5 x)\right)=-\dfrac{1}{25} \cos (5 x)
+$$
+
+
+Putting this all together:
+
+$$
+\int x \cos (5 x) d x=\dfrac{x}{5} \sin (5 x)-\left(-\dfrac{1}{25} \cos (5 x)\right)=\dfrac{x}{5} \sin (5 x)+\dfrac{1}{25} \cos (5 x)+C
+$$
+
+where $C$ is the constant of integration.
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+   
+
+

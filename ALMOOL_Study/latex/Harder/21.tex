@@ -1,0 +1,40 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Which of the following equivalent forms of the function \( g(x) = 3x^2 + 9x - 12 \) is the most suitable to indicate the \( x \)-coordinates of the \( x \)-intercepts of the graph of \( y = g(x) \) in the \( xy \)-plane? 
+
+\ansFOURs{%start
+	  g(x) = 3(x^2 + 3x - 4)}{%<--- (A)
+	  g(x) = 3(x + 1)(x - 4)}{%<--- (B)
+	  g(x) = 3(x - 1)(x + 4)}{%<--- (C)
+	  g(x) = (3x - 3)(x + 4)}%<---- (D)
+
+}\SetValue{Solution}{%
+
+We are given the function \( g(x) = 3x^2 + 9x - 12 \). Our goal is to find the form that best reveals the \( x \)-intercepts. Let's begin by factoring the expression.\begin{alignat*}{2}
+g(x) 
+&= 3x^2 + 9x - 12 \qquad && \{\text{given function} \} \\
+&= 3(x^2 + 3x - 4) \qquad && \{\text{factor out 3} \} 
+\end{alignat*}
+Next, we will factor the quadratic expression inside the parentheses.\begin{alignat*}{2}
+x^2 + 3x - 4 
+&= (x - 1)(x + 4) \qquad && \{\text{find factors of } -4 \text{ that sum to } 3 \}
+\end{alignat*}
+Now substitute this factored form back into the original expression.\begin{alignat*}{2}
+g(x) 
+&= 3(x - 1)(x + 4) \qquad && \{\text{substitute factored quadratic} \}
+\end{alignat*}
+Finally, setting \( g(x) = 0 \) to find the \( x \)-intercepts, we solve:\begin{alignat*}{2}
+3(x - 1)(x + 4) &= 0 \\
+x - 1 &= 0 \quad \text{or} \quad x + 4 = 0 \\
+x &= 1 \quad \text{or} \quad x = -4
+\end{alignat*}
+Thus, the \( x \)-intercepts are \( x = 1 \) and \( x = -4 \), and the most suitable form to reveal the intercepts is \( g(x) = 3(x - 1)(x + 4) \).
+
+Thus, the correct choice is $\fbox{C}$.
+
+}\SetValue{Answer}{%
+D
+}
+\ProcessDATA
+
+

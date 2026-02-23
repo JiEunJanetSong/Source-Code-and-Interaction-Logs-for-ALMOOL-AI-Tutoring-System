@@ -1,0 +1,80 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+
+Find an equation of the tangent line to the curve $y=\dfrac{2}{\left(1+e^{-x}\right)}$ at the point $(0,1)$.
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given:
+
+- Function: $ y = \dfrac{2}{1 + e^{-x}}$
+
+- Point: $ (0, 1)$
+
+We want the equation of the tangent line at that point.
+
+Step 1: Differentiate $ y$
+
+We’ll use the quotient rule (or chain rule via rewriting):
+
+Option: Rewrite first
+
+Let’s write:
+
+$$
+y = 2(1 + e^{-x})^{-1}
+$$
+
+Differentiate using the chain rule:
+
+$$
+y' = 2 \cdot (-1)(1 + e^{-x})^{-2} \cdot \dfrac{d}{dx}(1 + e^{-x})
+= -2(1 + e^{-x})^{-2} \cdot (-e^{-x})
+$$
+
+$$
+y' = \dfrac{2e^{-x}}{(1 + e^{-x})^2}
+$$
+
+Step 2: Evaluate derivative at $ x = 0$
+
+$$
+y'(0) = \dfrac{2e^{0}}{(1 + e^{0})^2} = \dfrac{2 \cdot 1}{(1 + 1)^2} = \dfrac{2}{4} = \dfrac{1}{2}
+$$
+
+So the slope of the tangent line is $ \dfrac{1}{2}$.
+
+Step 3: Use point-slope form
+
+Point: $ (0, 1)$, Slope: $ \dfrac{1}{2}$
+
+$$
+y - 1 = \dfrac{1}{2}(x - 0) \Rightarrow y = \dfrac{1}{2}x + 1
+$$
+
+Final Answer:
+
+$$
+\boxed{y = \dfrac{1}{2}x + 1}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

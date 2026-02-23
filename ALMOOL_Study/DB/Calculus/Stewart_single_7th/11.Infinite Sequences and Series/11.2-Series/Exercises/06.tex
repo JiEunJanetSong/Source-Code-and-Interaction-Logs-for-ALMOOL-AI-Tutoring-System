@@ -1,0 +1,93 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Calculate the first eight terms of the sequence of partial sums correct to four decimal places. Does it appear that the series is convergent or divergent?
+
+$$\sum_{n=1}^{\infty} \dfrac{1}{\ln (n+1)}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Let's compute the first 8 partial sums of the series:
+
+$$
+\sum_{n=1}^{\infty} \dfrac{1}{\ln (n+1)}
+$$
+
+
+Let:
+
+$$
+a_n=\dfrac{1}{\ln (n+1)}, \quad s_n=\sum_{k=1}^n a_k
+$$
+
+
+We'll compute each $a_n$ and accumulate them to find $s_n$, rounding each partial sum to 4 decimal places.
+
+Step 1: Compute the values
+
+We'll use $\ln (n+1)$, the natural logarithm, and calculate:
+
+\begin{tabular}{|l|l|l|}
+\hline $n$ & $a_n=\dfrac{1}{\ln (n+1)}$ & $s_n$ (partial sum) \\
+\hline 1 & $1 / \ln (2)=1.4427$ & 1.4427 \\
+\hline 2 & $1 / \ln (3)=0.9102$ & 2.3529 \\
+\hline 3 & $1 / \ln (4)=0.7213$ & 3.0742 \\
+\hline 4 & $1 / \ln (5)=0.6213$ & 3.6955 \\
+\hline 5 & $1 / \ln (6)=0.5581$ & 4.2536 \\
+\hline 6 & $1 / \ln (7)=0.5139$ & 4.7675 \\
+\hline 7 & $1 / \ln (8)=0.4809$ & 5.2484 \\
+\hline 8 & $1 / \ln (9)=0.4551$ & 5.7035 \\
+\hline
+\end{tabular}
+(All values rounded to 4 decimal places)
+
+Step 2: Summary
+
+First 8 partial sums:
+
+$$
+1.4427,2.3529,3.0742,3.6955,4.2536,4.7675,5.2484,5.7035
+$$
+
+Step 3: Convergence or divergence?
+
+We observe that:
+
+- The values of $s_n$ keep increasing,
+
+- There is no sign of the sequence leveling off,
+
+- The terms $a_n=\dfrac{1}{\ln (n+1)}$ decrease very slowly.
+
+This series is known to diverge, since the logarithm grows too slowly to ensure convergence.
+
+Final Answer:
+
+- First 8 partial sums:
+
+$$
+1.4427,2.3529,3.0742,3.6955,4.2536,4.7675,5.2484,5.7035
+$$
+
+- The series appears to be divergent.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

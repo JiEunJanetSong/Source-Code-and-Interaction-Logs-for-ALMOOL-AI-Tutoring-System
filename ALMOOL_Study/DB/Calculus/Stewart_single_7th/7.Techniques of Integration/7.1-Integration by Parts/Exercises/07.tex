@@ -1,0 +1,170 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ (x^2+2x)\ \cos \ x\ d x$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int\left(x^2+2 x\right) \cos (x) d x
+$$
+
+
+A straightforward way is to split it and integrate each part:
+
+$$
+\int\left(x^2+2 x\right) \cos (x) d x=\int x^2 \cos (x) d x+2 \int x \cos (x) d x
+$$
+
+
+We'll handle these two integrals one at a time.
+1) The integral $\int x^2 \cos (x) d x$
+
+Use integration by parts. Let
+
+$$
+u=x^2 \quad \text { and } \quad d v=\cos (x) d x
+$$
+
+
+Then
+
+$$
+d u=2 x d x \quad \text { and } \quad v=\sin (x)
+$$
+
+
+By the formula $\int u d v=u v-\int v d u$,
+
+$$
+\int x^2 \cos (x) d x=x^2 \sin (x)-\int \sin (x)(2 x d x)
+$$
+
+
+So
+
+$$
+\int x^2 \cos (x) d x=x^2 \sin (x)-2 \int x \sin (x) d x
+$$
+
+
+We must now handle $\int x \sin (x) d x$ again by parts:
+- Let $u=x$ and $d v=\sin (x) d x$.
+- Then $d u=d x$ and $v=-\cos (x)$.
+
+Hence,
+
+$$
+\int x \sin (x) d x=x(-\cos (x))-\int(-\cos (x)) d x=-x \cos (x)+\int \cos (x) d x=-x \cos (x)+\sin (x)
+$$
+
+
+Therefore,
+
+$$
+2 \int x \sin (x) d x=2[-x \cos (x)+\sin (x)]=-2 x \cos (x)+2 \sin (x) .
+$$
+
+
+Substitute back:
+
+$$
+\int x^2 \cos (x) d x=x^2 \sin (x)-[-2 x \cos (x)+2 \sin (x)]=x^2 \sin (x)+2 x \cos (x)-2 \sin (x)
+$$
+
+2) The integral $\int x \cos (x) d x$
+
+Again, integration by parts:
+- Let $u=x, d v=\cos (x) d x$.
+- Then $d u=d x, v=\sin (x)$.
+
+So
+
+$$
+\int x \cos (x) d x=x \sin (x)-\int \sin (x) d x=x \sin (x)+\cos (x)
+$$
+
+3) Combine the results
+
+We had
+
+$$
+\int\left(x^2+2 x\right) \cos (x) d x=\int x^2 \cos (x) d x+2 \int x \cos (x) d x
+$$
+
+
+Substitute our two findings:
+1. $\int x^2 \cos (x) d x=x^2 \sin (x)+2 x \cos (x)-2 \sin (x)$.
+2. $\int x \cos (x) d x=x \sin (x)+\cos (x)$.
+
+Thus,
+
+$$
+\int\left(x^2+2 x\right) \cos (x) d x=\left[x^2 \sin (x)+2 x \cos (x)-2 \sin (x)\right]+2[x \sin (x)+\cos (x)]
+$$
+
+
+Distribute the 2 in the second bracket:
+
+$$
+=x^2 \sin (x)+2 x \cos (x)-2 \sin (x)+2 x \sin (x)+2 \cos (x)
+$$
+
+
+Combine like terms in a tidy way, for instance grouping $\sin (x)$ terms and $\cos (x)$ terms:
+
+- The $\sin (x)$ terms:
+
+$$
+x^2 \sin (x)+2 x \sin (x)-2 \sin (x)=\sin (x)\left(x^2+2 x-2\right)
+$$
+
+- The $\cos (x)$ terms:
+
+$$
+2 x \cos (x)+2 \cos (x)=2 \cos (x)(x+1)
+$$
+
+
+A nice factored form is therefore
+
+$$
+\int\left(x^2+2 x\right) \cos (x) d x=\sin (x)\left(x^2+2 x-2\right)+2 \cos (x)(x+1)+C
+$$
+
+
+Either that, or you can leave it un-factored if you prefer. Both forms are correct.
+Including the constant of integration $C$, the final answer is:
+
+$$
+\int\left(x^2+2 x\right) \cos (x) d x=x^2 \sin (x)+2 x \cos (x)-2 \sin (x)+2 x \sin (x)+2 \cos (x)+C
+$$
+
+
+Or in the factored version:
+
+$$
+\int\left(x^2+2 x\right) \cos (x) d x=\sin (x)\left(x^2+2 x-2\right)+2 \cos (x)(x+1)+C.
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
+   
+   
+
+   
+
+

@@ -1,0 +1,44 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Kei draws a 6-by-6 grid. He colors 13 of the unit squares silver and the remaining squares gold. Kei then folds the grid in half vertically, forming pairs of overlapping unit squares. Let $m$ and $M$ equal the least and greatest possible number of gold-on-gold pairs, respectively. What is the value of $m+M$?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2025-15.png}
+	\end{center}
+
+\ansFIVEs{%start
+		12 }{%<--- (A)
+		14 }{%<--- (B)
+		16 }{%<--- (C)
+		18 }{%<---- (D)
+		20 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+First, we note that there are 18 "pairs" of squares folded on top of each other after the folding. The minimum number of gold pairs occurs when silver squares occupy the maximum number of pairs, and the maximum number of gold pairs occurs when silver squares occupy the minimum number of pairs. The former case occurs when all 13 silver squares are placed in different pairs, resulting in $18-13=5$ gold pairs. The latter case occurs when the silver squares are paired up as much as possible, resulting in 6 complete pairs and another square occupying another pair slot. Then there are $18-7=11$ gold pairs. Our answer is $11+5=$ (C) 16 . $\sim$ cxsmi
+
+Solution 2
+We can see that the least number of gold-on-gold pairs will be obtained when the 13 silver squares are placed on the two sides so that they don't overlap when folded over (because then it will minimize the number of gold-on-golds). We can see that if we split them up 6 and 7 on both sides, and then fold it, the number of gold-on-golds will be $18-13=5$.
+
+The maximum number of gold-on-golds will be achieved when the silver squares overlap when folded over, which will increase the number of gold-on-golds. If we align 6 silver squares with each other on each side, and put the last one somewhere else, we get the maximum is $18-7=11$. Therefore, the answer is $11+5=($ C) 16 .
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,104 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Follow the steps below to solve
+
+$$
+y^{\prime}=-3 y+5, \quad y(0)=1
+$$
+
+(b) Write the differential equation as a total derivative of a potential function $\psi$.
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+To write the differential equation $y^{\prime}=-3 y+5$ as a total derivative of a potential function $\psi$, we follow the steps of the integrating factor method.
+
+First, rewrite the differential equation in the standard linear first-order form:
+
+$$
+y^{\prime}+3 y=5
+$$
+
+
+From part (a), the integrating factor is $\mu(t)=e^{3 t}$.
+Multiply the standard form of the differential equation by the integrating factor:
+
+$$
+e^{3 t}\left(y^{\prime}+3 y\right)=e^{3 t}(5)
+$$
+
+
+$$
+e^{3 t} y^{\prime}+3 e^{3 t} y=5 e^{3 t}
+$$
+
+
+The left side of this equation is the derivative of the product of the integrating factor and $y(t)$ :
+
+$$
+\frac{d}{d t}\left(e^{3 t} y\right)=e^{3 t} y^{\prime}+3 e^{3 t} y
+$$
+
+
+So, the multiplied equation can be written as:
+
+$$
+\frac{d}{d t}\left(e^{3 t} y\right)=5 e^{3 t}
+$$
+
+
+To express this equation in the form $\psi^{\prime}=0$, move the term on the right side to the left side:
+
+$$
+\frac{d}{d t}\left(e^{3 t} y\right)-5 e^{3 t}=0
+$$
+
+
+Now, we need to find a function $\psi(t, y)$ such that its total derivative with respect to $t$ is the left side of this equation. The left side is $\frac{d}{d t}\left(e^{3 t} y\right)-5 e^{3 t}$.
+
+We can see that $\frac{d}{d t}\left(e^{3 t} y\right)$ is the derivative of $e^{3 t} y$.
+
+We need to find a function whose derivative is $-5 e^{3 t}$. 
+
+This is the antiderivative of $-5 e^{3 t}$ with respect to $t$:
+
+$$
+\int-5 e^{3 t} d t=-5 \int e^{3 t} d t=-5\left(\frac{1}{3} e^{3 t}\right)+C=-\frac{5}{3} e^{3 t}+C
+$$
+
+Ignoring the constant of integration for defining $\psi$, the function whose derivative is $-5 e^{3 t}$ is $-\frac{5}{3} e^{3 t}$.
+
+Therefore, the expression $\frac{d}{d t}\left(e^{3 t} y\right)-5 e^{3 t}$ is the derivative of $e^{3 t} y-\frac{5}{3} e^{3 t}$.
+
+Let the potential function $\psi(t, y)$ be:
+
+$$
+\psi(t, y)=e^{3 t} y-\frac{5}{3} e^{3 t}
+$$
+
+
+With this definition, the equation $\frac{d}{d t}\left(e^{3 t} y\right)-5 e^{3 t}=0$ is equivalent to $\frac{d}{d t}(\psi(t, y))=0$, which is $\psi^{\prime}(t)=0$.
+
+Thus, the differential equation $y^{\prime}=-3 y+5$ can be written as a total derivative of the potential function $\psi(t, y)=e^{3 t} y-\frac{5}{3} e^{3 t}$, such that $\psi^{\prime}=0$.
+
+The final answer is $\psi(t, y)=e^{3 t} y-\frac{5}{3} e^{3 t}$.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

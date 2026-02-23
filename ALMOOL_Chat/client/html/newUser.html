@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/problemNumber.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha3/0.9.3/sha3.min.js"></script>
+    <script src="/assets/js/login.js"></script>
+    <script>
+        function click() {
+            let ID = document.getElementById("ID").value;
+            let email = document.getElementById("email").value;
+            let PW = document.getElementById("PW").value;
+            let PW2 = document.getElementById("PW2").value;
+
+            if (PW != PW2) {
+                alert("비밀번호가 일치하지 않습니다.");
+                return;
+            }
+
+            const data = JSON.stringify({
+                userID: ID,
+                userPW: encryptString(PW),
+                email: email
+            });
+
+            const httpData = new XMLHttpRequest();
+            httpData.open('POST', `http://localhost:8080/newUserNoMail.php`, false);
+            httpData.setRequestHeader('content-type', 'application/json');
+
+            httpData.send(data);
+            if (httpData.responseText != "error") {
+                document.getElementById("userData").innerHTML = `
+                <div class="userInfo" style="font-size:40px;text-align: center;color:var(--ALMOOL-color-03);">ALMOOL</div>
+
+                <div class="userInfo">
+                    <div>An account verification email has been sent to</div>
+                    <div style="font-size:30px;color:var(--ALMOOL-color-03);">${email}</div>
+                </div>
+
+                <div class="userInfo">
+                    Please open the email and click the verification link to complete your regestration.
+                </div>
+                
+                <div class="userInfo">
+                    <div>If you don't see the email,</div>
+                    <div>please check your spam folder</div>
+                </div>
+                `;
+                document.getElementById("login_tt").style.display = "none";
+            }
+            else
+                alert(`이미 가입한 아이디입니다.`);
+        }
+
+        window.onload = function () {
+            let loginButton = document.getElementById("login_tt");
+            loginButton.addEventListener('click', (event) => {
+                click();
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="userData" id="userData">
+        <div class="userInfo" style="font-size:40px;text-align: center;color:var(--ALMOOL-color-03);">ALMOOL</div>
+
+        <div class="userInfo">
+            <div class="userInfoLabel">ID</div>
+            <div><input id="ID" class="userInfoInput" type="text" style="width:100%;height:30px;"></div>
+        </div>
+
+        <div class="userInfo">
+            <div class="userInfoLabel">E-Mail</div>
+            <div><input id="email" class="userInfoInput" type="text" style="width:100%;height:30px;"></div>
+        </div>
+
+        <div class="userInfo">
+            <div class="userInfoLabel">Password</div>
+            <div><input id="PW" class="userInfoInput" type="password" style="width:100%;height:30px;"></div>
+        </div>
+
+        <div class="userInfo">
+            <div class="userInfoLabel">Confirm Password</div>
+            <div><input id="PW2" class="userInfoInput" type="password" style="width:100%;height:30px;"></div>
+        </div>
+
+        <div class="userButton" id="login_tt">Sign Up</div>
+    </div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Any three vertices of the cube $P Q R S T U V W$, shown in the figure below, can be connected to form a triangle. (For example, vertices $P, Q$, and $R$ can be connected to form isosceles $\triangle P Q R$.) How many of these triangles are equilateral and contain $P$ as a vertex?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2024-20.png}
+	\end{center}
+
+\ansFIVEs{%start
+		0 }{%<--- (A)
+		1 }{%<--- (B)
+		2 }{%<--- (C)
+		3 }{%<---- (D)
+		6 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+The only equilateral triangles that can be formed are through the diagonals of the faces of the square. From P you have 3 possible vertices that are possible to form a diagonal through one of the faces. Therefore, there are 3 possible triangles. So the answer is 
+(D) 3 
+
+Solution 2
+Each other compatible point must be an even number of edges away from P , so the compatible points are R, V, and T. Therefore, we must choose two of the three points, because $P$ must be a point in the triangle. So, the answer is $\binom{3}{2}=$\begin{tabular}{|l|}
+\hline$(D) 3$ \\
+\hline
+\end{tabular}
+
+Solution 3 (arduous and not recommended)
+List them out- you get $P R V, P R T$, and $P V T$. Therefore, the answer is $\square$
+(D) 3
+
+Solution 4 (Easy)
+After looking at the cube, we realize that an equilateral triangle can only be formed by three lines that form a diagonal along a face of the cube (such as $P V$ ). Because the problem has a condition that one of the triangle's vertex must be on $P$, the three diagonals that can be formed are $P T, P R$, and $P V$.
+
+Now, we can choose any of 2 out of the 3 lines we have listed, and connect any of them with another line (for example, if we choose $P T$ and $P R$, the third diagonal is $R T$ ). Thus, there are 3 ways to choose the 3 diagonals, so the answer is 3 , or 
+(D) 3
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,541 @@
+img
+{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+img.objAnswer-Problem
+{
+    max-width: 50%;
+    max-height: fit-content;
+}
+
+img.objAnswer-Solution
+{
+    max-height: fit-content;
+}
+
+.titleBar
+{ 
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+    user-select: none;
+    --barWidth: calc(50%);
+}
+
+.examInfo
+{
+    flex-direction: column;
+}
+
+.examInfo.title
+{
+    font-size: 24px;
+    text-align: center;
+}
+
+.examInfo.explanation
+{
+    font-size: 12px;
+    text-align: center;
+}
+
+.timer
+{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    
+    left:50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+.timerTime
+{
+    font-size: 24px;
+}
+
+.timerHide
+{
+    font-size: 12px;
+}
+
+.tools
+{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+
+    right: 40px;
+    align-items: flex-end;
+    font-size: 24px;
+    gap:25px;
+}
+
+.toolSet
+{
+    gap: 5px;
+}
+
+.toolBox
+{
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.toolIcon
+{
+    display: flex;
+    justify-content: center;
+}
+
+.toolTitle
+{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+.calculatorDivBar
+{
+    display:flex;
+    position:absolute;
+    left: 100px;
+    top: 70px;
+    width: 30%;
+    height: 30px;
+    justify-content: right;
+    z-index: 50;
+}
+
+.calculatorDivDrag
+{
+    cursor:grab;
+    background-color: #000000;
+    flex:1;
+    justify-content: right;
+    z-index: 50;
+}
+
+.closeButton
+{
+    cursor:pointer;
+    width:30px;
+    height:30px;
+    background-color: #aaaaaa;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.calculatorDiv
+{
+    position:absolute;
+    left: 100px;
+    top: 100px;
+    width: 30%;
+    height: 80%;
+    background-color: #aaccff;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+
+.examContentsBox
+{ 
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 160px);
+    border: 1px solid black;
+    user-select: none;
+    --barWidth: calc(50%);
+}
+
+.examContentsNotice
+{
+    width:calc(40% - 10px);
+    display:flex;
+    height:calc(100% - 100px);
+}
+
+.examContentsResize
+{
+    width:30px;
+    height:calc(100% - 100px);
+    display:flex;
+    justify-content: center;
+    cursor:ew-resize;
+}
+
+.examContentsResizeBar
+{
+    width:2px;
+    height:100%;
+    display:flex;
+    background-color: #cccccc;
+}
+
+.examContents
+{
+    width: 50%; 
+    height:calc(100% - 100px);
+    display:flex;
+    flex-direction: column;
+    overflow:auto;
+}
+
+
+
+
+.problemTitle
+{
+    width:100%;
+    height:40px;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+}
+
+.problemNumber
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:black;
+    color:white;
+    
+    width:10%;
+}
+
+.problemMark
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:gray;
+    color:white;
+    
+    width:40%;
+}
+
+.problemEmpty
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:gray;
+    color:white;
+    
+    width:30%;
+}
+
+.problemEraseAnswer
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:black;
+    color:white;
+    
+    width:20%;
+}
+
+
+
+
+.problemContents
+{
+    width:100%;
+    height:calc(100% - 40px);
+    font-size: 24px;
+}
+
+.problemMainText
+{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.problemAnswerObj
+{
+    display:flex;
+    flex-direction: row;
+    
+    width:100%;
+    height:50px;
+    padding:8px;
+    text-align: center;
+    border:2px solid black;
+    border-radius: 10px;
+    gap:10px;
+    cursor:pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height:auto;
+}
+
+.problemAnswerObjKind
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    border:1px solid black;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    font-size:18px;
+}
+
+.problemAnswerObjContents
+{
+    display:inline;
+    align-items: center;
+    font-size:18px;
+}
+
+
+
+.problemAnswerSubj
+{
+    display:flex;
+    flex-direction: row;
+    
+    width:100%;
+    padding:8px;
+    justify-content: center;
+    text-align: center;
+    gap:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.problemAnswerSubjInput
+{
+    width:40%;
+    height:60px;
+    justify-content: center;
+    text-align: center;
+    border:1px solid black;
+    border-radius: 10px;
+}
+
+.problemAnswerSubjReview
+{
+    display: grid;
+
+    width:40%;
+    height:60px;
+    align-items: center;
+}
+
+.moreListDiv
+{
+    position:absolute;
+    left:calc(100% - 200px);
+    top:80px;
+    width: 200px;
+    height: 120px;
+    display:flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    justify-content: top;
+    align-items: center;
+    z-index: 50;
+}
+
+.moreListRow
+{
+    width:100%;
+    height:40px;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    cursor:pointer;
+}
+.moreListRow:hover
+{
+    background-color: aqua;
+}
+
+
+
+.answerListDivBar
+{
+    display:flex;
+    position:absolute;
+    left: 100px;
+    top: 70px;
+    width: 450px;
+    height: 30px;
+    justify-content: right;
+    z-index: 50;
+}
+
+.answerListDivDrag
+{
+    cursor:grab;
+    background-color: #000000;
+    flex:1;
+    justify-content: right;
+    z-index: 50;
+}
+
+.answerListDiv
+{
+    position:absolute;
+    width: 450px;
+    height: 350px;
+    background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.answerListExplain
+{
+    width:100%;
+    height:100px;
+}
+
+.answerListRow
+{
+    width:100%;
+    height:30px;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    margin-top:10px;
+}
+
+.answerListColumn
+{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+
+
+
+.footerBar
+{ 
+    position: absolute;
+    top: calc(100% - 80px);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+    user-select: none;
+}
+
+.footerInfo
+{
+    flex-direction: column;
+}
+
+.answerList
+{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+
+    padding:5px;
+    border:2px solid black;
+    border-radius: 10px;
+    
+    left:50%;
+    transform: translateX(-50%);
+    align-items: center;
+    cursor:pointer;
+}
+
+.moveProblemSet
+{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+
+    right: 40px;
+    align-items: flex-end;
+    font-size: 24px;
+    gap:15px;
+}
+
+.moveProblem
+{
+    padding:8px 20px 8px 20px;
+    background-color: #aaaaff;
+    border-radius: 24px;
+
+    font-size: 20px;
+    text-align: center;
+    cursor:pointer;
+}
+
+
+.problemAskToTutor
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgb(238,238,238);
+    color:magenta;
+    
+    width:100%;
+    height:40px;
+    padding: 0px 2%;
+}
+
+.problemAskToTutor:hover
+{
+    background-color:magenta;
+    color:rgb(238,238,238);
+}
+
+
+
+ul {
+    list-style-type: disc; /* This specifies the bullet style */
+    padding-left: 20px;   /* This adds some padding to the left of the list */
+}
+
+li {
+margin-bottom: 5px;   /* This adds a small space between each list item */
+}

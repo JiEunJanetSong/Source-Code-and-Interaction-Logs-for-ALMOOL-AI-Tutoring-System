@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html data-theme="light">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="DigitalSAT_sample.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="new.css" rel="stylesheet">
+    <script>
+
+        $(document).ready( function () {
+        
+            let elt = document.getElementById('content');
+            desmosCalculator = Desmos.GraphingCalculator(elt);
+        }); 
+        
+        </script>
+</head>
+<body>
+<div id="app">
+    <div class="container svelte-f5txts" style="top: 100px; left:100px; z-index:101;">
+        <div class="title svelte-f5txts"><span slot="title">Calculator</span></div>
+        <div class="close svelte-f5txts"></div>
+        <div class="content svelte-f5txts resizable" style="width: 648px; height: 721px; min-width: 450px; min-height: 700px;"> </div>
+    </div>    
+<div class="body">
+<div class="test-container">
+    <div> </div>
+</div>
+
+<div class="container tempA"><div class="header-info left tempA"><div class="header-title test-title tempA">Section 2, Module 2: Math</div> <div class="direction tempA"><span class="header-desc tempA">Directions</span> <div class="arrow tempA"></div></div></div> <div class="header-info center tempA"><div class="timer tempA">33:12</div> <span class="header-desc btn tempA">Hide</span></div> <div class="header-info right tempA"><div class="tools tempA"><div class="single-tool tempA"><div class="tool-icon tempA"><img src="./icons/calculator.png" alt="calculator" class="tempA"></div> 
+                    <span class="header-desc tempA">Calculator</span></div> <div class="single-tool tempA"><div class="tool-icon tempA"><img src="./icons/reference.png" alt="reference" class="tempA"></div> 
+                    <span class="header-desc tempA">Reference</span></div>  <div class="single-tool tempA"><div class="tool-icon tempA"><img src="./icons/more.png" alt="more" class="tempA"></div> 
+                <span class="header-desc tempA">More</span></div></div></div> </div>
+<div class="container tempB"><div class="name-zone tempB"><img src="./logo.png" class="logo tempB" alt="logo"> <span class="student-name tempB">Unknown</span></div>  <div class="question-info tempB enable"><span>Question 1 of 3</span> <div class="arrow-up tempB"></div></div> <div class="ctrl-btns-container tempB"><div class="ctrl-btn tempB">Back</div> <div class="ctrl-btn tempB enable">Next</div></div></div>
+</div>
+</div>
+</body>
+

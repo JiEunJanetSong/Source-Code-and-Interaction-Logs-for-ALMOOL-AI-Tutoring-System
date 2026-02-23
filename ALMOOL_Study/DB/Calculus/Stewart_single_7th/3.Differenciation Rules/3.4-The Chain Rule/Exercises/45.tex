@@ -1,0 +1,106 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\cos \sqrt{\sin (\tan \pi x)}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We have the function
+
+$$
+y = \cos\!\bigl(\sqrt{\sin(\tan(\pi x))}\bigr).
+$$
+
+To differentiate it, it helps to proceed in multiple steps from the inside out:
+
+\textbf{1. Innermost layer: $w = \pi x$}
+
+$$
+\dfrac{dw}{dx} = \pi.
+$$
+
+\textbf{2. Next layer: $z = \tan(w) = \tan(\pi x)$}
+
+$$
+\dfrac{dz}{dw} = \sec^2(w) = \sec^2(\pi x)
+\quad\Longrightarrow\quad
+\dfrac{dz}{dx} = \sec^2(\pi x)\,\dfrac{dw}{dx} 
+= \pi\,\sec^2(\pi x).
+$$
+
+\textbf{3. Next layer: $u = \sin(z) = \sin(\tan(\pi x))$}
+
+$$
+\dfrac{du}{dz} = \cos(z) = \cos(\tan(\pi x))
+\quad\Longrightarrow\quad
+\dfrac{du}{dx} = \cos(\tan(\pi x)) \,\dfrac{dz}{dx} 
+= \cos(\tan(\pi x))\,\bigl(\pi\,\sec^2(\pi x)\bigr).
+$$
+
+\textbf{4. Next layer: $v = \sqrt{u} = \sqrt{\sin(\tan(\pi x))}$}
+
+We can write $v = u^{1/2}$, so
+
+$$
+\dfrac{dv}{du} = \dfrac{1}{2\sqrt{u}}
+= \dfrac{1}{2\sqrt{\sin(\tan(\pi x))}}.
+$$
+
+Hence,
+
+$$
+\dfrac{dv}{dx} 
+= \dfrac{dv}{du}\,\dfrac{du}{dx}
+= \dfrac{1}{2\sqrt{\sin(\tan(\pi x))}}\;
+  \bigl[\pi\,\cos(\tan(\pi x))\,\sec^2(\pi x)\bigr].
+$$
+
+\textbf{5. Outermost layer: $y = \cos(v)$}
+
+$$
+\dfrac{dy}{dv} = -\sin(v) = -\sin\!\bigl(\sqrt{\sin(\tan(\pi x))}\bigr).
+$$
+
+Thus, by the chain rule,
+
+$$
+\dfrac{dy}{dx}
+= \dfrac{dy}{dv}\,\dfrac{dv}{dx}
+= -\sin\!\bigl(\sqrt{\sin(\tan(\pi x))}\bigr)
+  \;\times\;
+  \dfrac{\pi\,\cos(\tan(\pi x))\,\sec^2(\pi x)}{2\,\sqrt{\sin(\tan(\pi x))}}.
+$$
+
+\textbf{Final Answer}
+
+$$
+\boxed{
+\dfrac{dy}{dx}
+= - \,\sin\!\bigl(\sqrt{\sin(\tan(\pi x))}\bigr)\,
+    \dfrac{\pi \,\cos\!\bigl(\tan(\pi x)\bigr)\,\sec^2\!\bigl(\pi x\bigr)}
+         {2\,\sqrt{\sin\!\bigl(\tan(\pi x)\bigr)}}
+}.
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

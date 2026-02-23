@@ -1,0 +1,90 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the limit.
+
+$\lim _{x \rightarrow \tfrac{\pi}{4}} \dfrac{1-\tan x}{\sin x-\cos x}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to find
+$
+\lim_{x \to \dfrac{\pi}{4}} \dfrac{1 - \tan x}{\sin x - \cos x}.
+$
+
+A direct substitution at $x = \dfrac{\pi}{4}$ yields
+$
+1 - \tan \bigl(\tfrac{\pi}{4}\bigr) = 1 - 1 = 0, 
+\quad
+\sin \bigl(\tfrac{\pi}{4}\bigr) - \cos \bigl(\tfrac{\pi}{4}\bigr) 
+= \dfrac{\sqrt{2}}{2} - \dfrac{\sqrt{2}}{2} = 0,
+$
+
+so the expression is in an indeterminate form $0/0$.
+
+We can apply L’Hôpital’s Rule, which says:
+
+$
+\lim_{x \to a} \dfrac{f(x)}{g(x)} 
+= \lim_{x \to a} \dfrac{f'(x)}{g'(x)}
+\quad
+\text{if}~f(a)=g(a)=0.
+$
+
+1. Differentiate the numerator $1 - \tan x$:
+   $
+   \dfrac{d}{dx} \bigl(1 - \tan x\bigr) = 0 - \sec^2 x = -\sec^2 x.
+   $
+
+2. Differentiate the denominator $\sin x - \cos x$:
+   $
+   \dfrac{d}{dx} (\sin x - \cos x) = \cos x + \sin x.
+   $
+
+Hence, by L’Hôpital’s Rule,
+
+$
+\lim_{x \to \dfrac{\pi}{4}} \dfrac{1 - \tan x}{\sin x - \cos x}
+= \lim_{x \to \dfrac{\pi}{4}} \dfrac{-\sec^2 x}{\cos x + \sin x}.
+$
+
+Evaluate at $x = \tfrac{\pi}{4}$:
+
+- $\sec \bigl(\tfrac{\pi}{4}\bigr) = \dfrac{1}{\cos(\tfrac{\pi}{4})} = \dfrac{1}{\tfrac{\sqrt{2}}{2}} = \sqrt{2}$, so $\sec^2 (\tfrac{\pi}{4}) = 2$.  
+
+- $\cos\bigl(\tfrac{\pi}{4}\bigr) + \sin\bigl(\tfrac{\pi}{4}\bigr) = \dfrac{\sqrt{2}}{2} + \dfrac{\sqrt{2}}{2} = \sqrt{2}.$
+
+Thus,
+
+$
+\dfrac{-\sec^2(\tfrac{\pi}{4})}{\cos(\tfrac{\pi}{4}) + \sin(\tfrac{\pi}{4})}
+= \dfrac{-2}{\sqrt{2}}
+= -\sqrt{2}.
+$
+
+Therefore,
+
+$
+\boxed{-\sqrt{2}}.
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

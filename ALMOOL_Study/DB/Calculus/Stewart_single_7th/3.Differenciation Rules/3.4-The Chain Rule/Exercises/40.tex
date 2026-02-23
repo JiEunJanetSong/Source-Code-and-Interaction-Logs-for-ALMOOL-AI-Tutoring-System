@@ -1,0 +1,79 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\sin (\sin (\sin x))$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+To find the derivative of
+
+$$
+y = \sin\bigl(\sin(\sin x)\bigr),
+$$
+
+we will apply the chain rule repeatedly.
+
+1. Innermost function: $u = \sin x$  
+
+   $$
+   \dfrac{du}{dx} = \cos x.
+   $$
+
+2. Next layer: $v = \sin(u) = \sin(\sin x)$  
+
+   $$
+   \dfrac{dv}{du} = \cos(\sin x).
+   $$
+
+   Then by the chain rule,
+
+   $$
+   \dfrac{dv}{dx} = \dfrac{dv}{du}\cdot \dfrac{du}{dx} 
+   = \cos(\sin x)\,\cos x.
+   $$
+
+3. Outermost layer: $y = \sin(v) = \sin(\sin(\sin x))$  
+
+   $$
+   \dfrac{dy}{dv} = \cos(\sin(\sin x)).
+   $$
+
+   Hence, by the chain rule again,
+   
+   $$
+   \dfrac{dy}{dx} 
+   = \dfrac{dy}{dv} \cdot \dfrac{dv}{dx}
+   = \cos\bigl(\sin(\sin x)\bigr)\,\cdot \cos(\sin x)\,\cdot \cos x.
+   $$
+
+Putting it all together:
+
+$$
+\boxed{
+\dfrac{dy}{dx} 
+= \cos\bigl(\sin(\sin x)\bigr)\,\cos(\sin x)\,\cos x.
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

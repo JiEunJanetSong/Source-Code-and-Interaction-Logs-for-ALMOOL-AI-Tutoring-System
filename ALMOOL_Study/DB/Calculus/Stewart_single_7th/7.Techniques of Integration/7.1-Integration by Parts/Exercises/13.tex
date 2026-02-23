@@ -1,0 +1,111 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ t\ \sec^2 \ 2\ t \ d t$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int t \sec ^2(2 t) d t
+$$
+
+
+A suitable approach is integration by parts. Recall the formula:
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+1) Set up integration by parts
+
+Let
+
+$$
+u=t, \quad d v=\sec ^2(2 t) d t
+$$
+
+
+Then:
+
+$$
+d u=d t, \quad v=\int \sec ^2(2 t) d t
+$$
+
+
+We know that $\dfrac{d}{d t} \tan (2 t)=2 \sec ^2(2 t)$. Hence
+
+$$
+\int \sec ^2(2 t) d t=\dfrac{1}{2} \tan (2 t)
+$$
+
+2) Apply the integration by parts formula
+
+$$
+\int t \sec ^2(2 t) d t=u v-\int v d u=t \cdot\left(\dfrac{1}{2} \tan (2 t)\right)-\int\left(\dfrac{1}{2} \tan (2 t)\right) d t
+$$
+
+
+So
+
+$$
+\int t \sec ^2(2 t) d t=\dfrac{t}{2} \tan (2 t)-\dfrac{1}{2} \int \tan (2 t) d t
+$$
+
+3) Handle the remaining integral $\int \tan (2 t) d t$
+
+A known standard formula is:
+
+$$
+\int \tan (a x) d x=-\dfrac{1}{a} \ln |\cos (a x)|+C
+$$
+
+
+Thus,
+
+$$
+\int \tan (2 t) d t=-\dfrac{1}{2} \ln |\cos (2 t)|+C
+$$
+
+4) Combine the results
+
+Substitute back:
+
+$$
+\int t \sec ^2(2 t) d t=\dfrac{t}{2} \tan (2 t)-\dfrac{1}{2}\left(-\dfrac{1}{2} \ln |\cos (2 t)|\right)+C .
+$$
+
+
+Distribute:
+
+$$
+=\dfrac{t}{2} \tan (2 t)+\dfrac{1}{4} \ln |\cos (2 t)|+C .
+$$
+
+
+Hence, the final result is:
+
+$$
+\int t \sec ^2(2 t) d t=\dfrac{t}{2} \tan (2 t)+\dfrac{1}{4} \ln |\cos (2 t)|+C .
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
+   
+   
+
+   
+
+

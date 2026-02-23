@@ -1,0 +1,68 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+The coordinates of $\triangle A B C$ are $A(5,7), B(11,7)$, and $C(3, y)$, with $y>7$. The area of $\triangle A B C$ is 12. What is the value of $y ?$
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2024-11.png}
+	\end{center}
+	
+\ansFIVEs{%start
+		8 }{%<--- (A)
+		9 }{%<--- (B)
+		10 }{%<--- (C)
+		11 }{%<---- (D)
+		12 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Since the triangle has a base of 6 , we can plug in that value as the base. Then, we can solve the equation for the height. Doing so gives us,
+
+$$
+\frac{6 h}{2}=3 h=12 .
+$$
+
+
+This means that $h=4$, so that means that we have to add 4 to the $y$-coordinate. So the answer is $7+4=(D) 11$
+
+Solution 2
+By the Shoelace Theorem, $\triangle A B C$ has area
+
+$$
+\frac{1}{2}|(y \cdot 11+7 \cdot 5+7 \cdot 3)-(3 \cdot 7+11 \cdot 7+5 \cdot y)|=\frac{1}{2}|(11 y+56)-(98+5 y)|=\frac{1}{2}|6 y-42| .
+$$
+
+
+From the problem, this is equal to 12 . We now solve for y .
+
+$$
+\begin{aligned}
+& \frac{1}{2}|6 y-42|=12 \\
+& |6 y-42|=24 \\
+& 6 y-42=24 \text { OR } 6 y-42=-24 \\
+& 6 y=66 \text { OR } 6 y=18 \\
+& y=11 \text { OR } y=3
+\end{aligned}
+$$
+
+
+However, since, as stated in the problem, $y>7$, our only valid solution is (D)11.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

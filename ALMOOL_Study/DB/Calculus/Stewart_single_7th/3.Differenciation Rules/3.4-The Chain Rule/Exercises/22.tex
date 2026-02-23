@@ -1,0 +1,145 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$f(s)=\sqrt{\dfrac{s^2+1}{s^2+4}}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We have
+
+$$
+f(s) \;=\; \sqrt{\dfrac{s^2 + 1}{s^2 + 4}}
+\;=\;
+\biggl(\,\dfrac{s^2 + 1}{s^2 + 4}\biggr)^{\tfrac12}.
+$$
+
+To differentiate, it is convenient to use the chain rule, regarding the inside as $\displaystyle u(s) = \dfrac{s^2 + 1}{s^2 + 4}$ and the outer function as $(\,\cdot\,)^{1/2}$.
+
+\textbf{1. Differentiate the outer function}
+
+If $f(s) = \bigl(u(s)\bigr)^{1/2}$, then by the chain rule,
+
+$$
+f'(s) 
+= \tfrac12\,\bigl(u(s)\bigr)^{-\tfrac12}\;\cdot\;u'(s)
+\;=\;
+\dfrac{1}{2\sqrt{u(s)}}\,u'(s).
+$$
+
+Here, $u(s) = \tfrac{s^2 + 1}{s^2 + 4}$.
+
+\textbf{2. Differentiate the inner function} $u(s)$
+
+Use the quotient rule for
+
+$$
+u(s) \;=\; \dfrac{s^2 + 1}{s^2 + 4}.
+$$
+
+Let $f(s) = s^2 + 1$ and $g(s) = s^2 + 4$. Then:
+
+- $f'(s) = 2s,\quad g'(s) = 2s.$
+
+- The quotient rule: 
+  $$
+  \Bigl(\dfrac{f}{g}\Bigr)' 
+  = \dfrac{f'\,g \;-\; f\,g'}{g^2}.
+  $$
+
+Hence,
+
+$$
+u'(s)
+= \dfrac{\bigl(2s\bigr)\,(s^2 + 4)\;-\;\bigl(s^2 + 1\bigr)\,(2s)}{(s^2 + 4)^2}
+= \dfrac{2s\,[(s^2 + 4) - (s^2 + 1)]}{(s^2 + 4)^2}
+= \dfrac{2s\,(3)}{(s^2 + 4)^2}
+= \dfrac{6s}{(s^2 + 4)^2}.
+$$
+
+\textbf{3. Combine via the chain rule}
+
+Putting it all together:
+
+$$
+f'(s) 
+= \dfrac{1}{2\sqrt{\tfrac{s^2 + 1}{s^2 + 4}}}
+\;\times\;
+\dfrac{6s}{(s^2 + 4)^2}.
+$$
+
+We can simplify the factor $\dfrac{1}{\sqrt{\tfrac{s^2 + 1}{s^2 + 4}}}$.  Recall
+
+$$
+\sqrt{\dfrac{s^2+1}{s^2+4}}
+\;=\;
+\dfrac{\sqrt{s^2+1}}{\sqrt{s^2+4}}
+\quad\Longrightarrow\quad
+\dfrac{1}{\sqrt{\dfrac{s^2+1}{s^2+4}}}
+\;=\;
+\dfrac{\sqrt{s^2+4}}{\sqrt{s^2+1}}.
+$$
+
+Hence,
+
+$$
+f'(s)
+= \dfrac{6s}{2}\,\cdot\,\dfrac{\sqrt{s^2+4}}{\sqrt{s^2+1}}\;\cdot\;\dfrac{1}{(s^2+4)^2}
+\;=\;
+3s\,\dfrac{\sqrt{s^2+4}}{(s^2+4)^2\,\sqrt{s^2+1}}.
+$$
+
+Notice that $\sqrt{s^2+4}$ in the numerator will partially cancel with $(s^2+4)^2$ in the denominator:
+
+$$
+\dfrac{\sqrt{s^2+4}}{(s^2+4)^2}
+\;=\;
+\dfrac{1}{(s^2+4)^{\tfrac{3}{2}}}.
+$$
+
+Therefore,
+
+$$
+f'(s)
+= 3s\,\dfrac{1}{(s^2+4)^{\tfrac{3}{2}}}\,\dfrac{1}{\sqrt{s^2+1}}
+\;=\;
+\boxed{
+\dfrac{3s}{(s^2+4)^{\tfrac{3}{2}}\,\sqrt{s^2+1}}
+}.
+$$
+
+Either of the following is perfectly acceptable as a final answer:
+
+1. Partially factored:  
+   $\displaystyle
+   f'(s)
+   = \dfrac{1}{2\sqrt{\tfrac{s^2 + 1}{s^2 + 4}}}\,\cdot \dfrac{6s}{(s^2+4)^2}
+   $
+
+2. Fully simplified:  
+   $\displaystyle
+   \boxed{
+   f'(s) = \dfrac{3s}{(s^2+4)^{3/2}\,\sqrt{s^2+1}}
+   }.$
+   
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

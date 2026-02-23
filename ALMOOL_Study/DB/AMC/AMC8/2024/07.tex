@@ -1,0 +1,44 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+ 
+A $3 \times 7$ rectangle is covered without overlap by $3$ shapes of tiles: $2 \times 2$, $1 \times 4$, and $1 \times 1$, shown below. What is the minimum possible number of $1 \times 1$ tiles used?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2024-07.png}
+	\end{center}
+
+\ansFIVEs{%start
+		1 }{%<--- (A)
+		2 }{%<--- (B)
+		3 }{%<--- (C)
+		4 }{%<---- (D)
+		5 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+
+We can eliminate B, C, and D, because they are not 21 subtracted by any multiple of 4 . Finally, we see that there is no way to have $A$, so the solution is $\square$ (E) 5.
+
+Solution 2
+Let $x$ be the number of 1 by 1 tiles. There are 21 squares and each 2 by 2 or 1 by 4 tile takes up 4 squares, so $x \equiv 1(\bmod 4)$, so it is either 1 or 5 . Color the columns, starting with red, then blue, and alternating colors, ending with a red column. There are 12 red squares and 9 blue squares, but each 2 by 2 and 1 by 4 shape takes up an equal number of blue and red squares, so there must be 3 more 1 by 1 tiles on red squares than on blue squares, which is impossible if there is just one, so the answer is $\square$
+(E) 5 which can easily be confirmed to work.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

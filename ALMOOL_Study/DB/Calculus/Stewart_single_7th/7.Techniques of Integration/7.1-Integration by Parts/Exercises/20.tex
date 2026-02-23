@@ -1,0 +1,93 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+   
+$$\int\ x\ \tan^2\ x\ d x$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int x \tan ^2(x) d x .
+$$
+
+
+A helpful identity is
+
+$$
+\tan ^2(x)=\sec ^2(x)-1
+$$
+
+
+Thus,
+
+$$
+\int x \tan ^2(x) d x=\int x\left(\sec ^2(x)-1\right) d x=\int x \sec ^2(x) d x-\int x d x
+$$
+
+1. Handle $\int x \sec ^2(x) d x$
+
+Use integration by parts:
+
+$$
+u=x, \quad d v=\sec ^2(x) d x \Longrightarrow d u=d x, \quad v=\tan (x)
+$$
+
+
+Then
+
+$$
+\int x \sec ^2(x) d x=x \tan (x)-\int \tan (x) d x
+$$
+
+
+We know
+
+$$
+\int \tan (x) d x=-\ln |\cos (x)|
+$$
+
+Hence,
+
+$$
+\int x \sec ^2(x) d x=x \tan (x)+\ln |\cos (x)|
+$$
+
+2. Handle $\int x d x$
+
+This is straightforward:
+
+$$
+\int x d x=\dfrac{x^2}{2}
+$$
+
+
+Putting them together,
+
+$$
+\int x \tan ^2(x) d x=(x \tan (x)+\ln |\cos (x)|)-\dfrac{x^2}{2}+C
+$$
+
+where $C$ is the constant of integration.
+Therefore, a concise final answer is:
+
+$$
+\int x \tan ^2(x) d x=x \tan (x)+\ln |\cos (x)|-\dfrac{x^2}{2}+C.
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+   
+
+

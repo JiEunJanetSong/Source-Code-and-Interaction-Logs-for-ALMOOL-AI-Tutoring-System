@@ -1,0 +1,201 @@
+\documentclass[showtrims,svgnames,chapter,openany,oneside]{oblivoir}
+\usepackage{ibmath}%수식 명령 설정파일
+\usepackage{memtikzpagenodes}% 페이지 레이아웃
+\usepackage{SATdesign}% 디자인 설정파일
+\usepackage{bigints} %큰 적분기호
+\usepackage{dhucs-enumitem}
+\usepackage{tabularray}
+\usepackage{bookmark}
+\usepackage{multirow}
+
+%\usepackage{amsmath}
+%%%%%%
+\newcommand{\autoinput}{\input{AMC\expandafter\AMClevel/\expandafter\AMCyear AMC\expandafter\AMClevel\expandafter\AMCtype.tex}}
+\newcommand\AMCyear{2001}%
+\newcommand\AMClevel{10}%
+\newcommand\AMCtype{B}%
+%%%%%%%%%%%% 줄바꿈 or 페이지바꿈 설정하기
+\newcommand{\Jnewpage}{%\JNewpage라는 이름의 기존에 없던 새로운 명령을 만들고, 그 명령을 입력하면 무엇이 실행될지 명시
+%\vskip30pt %%% 줄바꾸려면 주석해제
+ %%% 페이지바꾸려면 주석해제
+}
+%%%%%%%%%%% 불러올 파일 설정
+%%%%%%%%%%% 머릿말 설정\text{a parabola tangent to the }x\text{-axis} 
+\headersetting{%left start
+\colormouth[\MYCOLOR]{AlMool-EOS-GFMaP-Week 7}%{USSCE-2018-M$_\textbf{G1}$}% PDF출력시 왼쪽 head
+}{%middle start 
+%\today%middle contents
+}{%{right start
+\colormouth[\MYCOLOR]{AI-Powered Education for Sustainable Development}%right contents
+}
+
+\begin{document}\pagestyle{mathclass2021}
+
+%%% 어떤파일 부를지
+
+%\input{AMC12/2000AMC12-}
+
+%Problem 문제지 Solution 해설지 Teacher 문제+해설
+\SetValue{mainTitle}{AlMool-EOS-GFMaP-ResearchTeam}%%%%왼쪽상단
+\SetValue{Book}{SATProblem}
+%\SetValue{Book}{Solution}
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries W7-GroupA}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{W7-GroupA}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/03-a.tex}%1
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/03-b.tex}%2
+
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/10-b.tex}%8
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries W7-GroupB}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{W7-GroupB}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+
+\newpage
+\input{GFMaP/ICEAS2025/G2/2022/11-a.tex}%7-2
+
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/19.tex}%7-6
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/43.tex}%12
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries W7-GroupC}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{W7-GroupC}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/09-a.tex}%6
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/09-b.tex}%7
+
+
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/18.tex}%7-5
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries W7-GroupD}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{W7-GroupD}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{GFMaP/ICEAS2025/G2/2022/11-b-i.tex}%7-3
+\newpage
+\input{GFMaP/ICEAS2025/G2/2022/11-b-ii.tex}%7-4
+
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/38.tex}%7-11
+
+%\begin{comment}
+\newpage 
+\null\vfill 
+\hfill {\color{\MYCOLOR}\bfseries W7-GroupE}\hfill\null%PDF출력시 표지
+\vfill\null
+
+\newpage 
+\SetValue{examTitle}{W7-GroupE}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/08-a.tex}%3
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/08-b.tex}%4
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/08-c.tex}%5
+
+
+
+\end{document}
+\newpage 
+\SetValue{examTitle}{Week 6-GFMaP}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/03-a.tex}%1
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/03-b.tex}%2
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/08-a.tex}%3
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/08-b.tex}%4
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/08-c.tex}%5
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/09-a.tex}%6
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/09-b.tex}%7
+\newpage
+\input{GFMaP/ICEAS2025/G2/2023/10-b.tex}%8
+
+\newpage 
+\SetValue{examTitle}{Week 7-GFMaP}%test체크박스
+\SetValue{examTime}{2100}
+\setcounter{SATQuestionNum}{0}
+\SetValue{NoticeSwitch}{0}%%%주관식 공지사항 표시여부
+
+\newpage
+\input{GFMaP/ICEAS2025/G2/2022/04.tex}%1
+\newpage
+\input{GFMaP/ICEAS2025/G2/2022/11-a.tex}%2
+\newpage
+\input{GFMaP/ICEAS2025/G2/2022/11-b-i.tex}%3
+\newpage
+\input{GFMaP/ICEAS2025/G2/2022/11-b-ii.tex}%4
+
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/18.tex}%5
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/19.tex}%6
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/23.tex}%7
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/29.tex}%8
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/33.tex}%9
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/36.tex}%10
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/38.tex}%11
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/43.tex}%12
+\newpage
+\input{GFMaP/ICEAS2025/G1/2022/44.tex}%13
+
+\end{document}

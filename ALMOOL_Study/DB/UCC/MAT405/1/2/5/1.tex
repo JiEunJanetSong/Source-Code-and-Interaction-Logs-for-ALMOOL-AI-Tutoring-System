@@ -1,0 +1,107 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find all solutions of
+
+$$
+y^{\prime}=4 t y
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the first-order differential equation:
+
+$$
+y^{\prime}=4 t y
+$$
+
+
+This can be written in the standard linear form:
+
+$$
+y^{\prime}-4 t y=0
+$$
+
+which is a first-order linear differential equation with a variable coefficient. To solve it, we apply the integrating factor method.
+
+Step 1: Identify the coefficient function
+
+We rewrite the equation in the form:
+
+$$
+y^{\prime}+p(t) y=g(t)
+$$
+
+
+In our case:
+
+- $p(t)=-4 t$
+
+- $g(t)=0$
+
+Step 2: Compute the integrating factor
+
+The integrating factor $\mu(t)$ is defined as:
+
+$$
+\mu(t)=e^{\int p(t) d t}=e^{\int-4 t d t}=e^{-2 t^2}
+$$
+
+
+Step 3: Multiply through by the integrating factor
+
+Multiply both sides of the differential equation by $\mu(t)$ :
+
+$$
+e^{-2 t^2} y^{\prime}-4 t e^{-2 t^2} y=0
+$$
+
+
+The left-hand side is now the derivative of the product:
+
+$$
+\frac{d}{d t}\left(e^{-2 t^2} y\right)=0
+$$
+
+Step 4: Integrate both sides
+
+$$
+\frac{d}{d t}\left(e^{-2 t^2} y\right)=0 \quad \Rightarrow \quad e^{-2 t^2} y=C
+$$
+
+where $C \in \mathbb{R}$ is the constant of integration.
+
+Step 5: Solve for $y(t)$
+
+$$
+y(t)=C e^{2 t^2}
+$$
+
+
+Final Answer:
+
+$$
+y(t)=C e^{2 t^2}, \quad C \in \mathbb{R}
+$$
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,109 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+The grid below is to be filled with integers in such a way that the sum of the numbers in each row and the sum of the numbers in each column are the same. Four numbers are missing. The number $x$ in the lower left corner is larger than the other three missing numbers. What is the smallest possible value of $x$?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2022-20.png}
+	\end{center}
+
+\ansFIVEs{%start
+		-1 }{%<--- (A)
+		5 }{%<--- (B)
+		6 }{%<--- (C)
+		8 }{%<---- (D)
+		9 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Use known row and column sums
+
+From the grid:
+
+- Top row sum: $-2+9+5=12$
+
+- Right column sum: $5+(-1)+8=12$
+
+So, each row and column must sum to 12.
+
+Step 2: Let variables represent missing entries
+
+Let the missing values be:
+
+\begin{tabular}{|c|c|c|}
+\hline-2 & 9 & 5 \\
+\hline$y+10$ & -1 & $x-1$ \\
+\hline$x$ & $y$ & 8 \\
+\hline
+\end{tabular}
+
+Step 3: Use row and column totals
+
+- Bottom row:
+
+$$
+x+y+8=12 \Rightarrow x+y=4
+$$
+
+- Middle row:
+
+$$
+(y+10)+(-1)+(x-1)=12 \Rightarrow x+y+8=12 \quad \text { (same as above) }
+$$
+
+- So all constraints reduce to:
+
+$$
+x+y=4
+$$
+
+Step 4: Use condition that $x$ is the largest among the 4 missing numbers
+
+We compare $x$ with:
+
+- $x-1$
+
+- $y+10$
+
+- $y$
+
+Use equation (1): $y=4-x$
+
+Then:
+
+- $y+10=4-x+10=14-x$
+
+Now compare:
+
+- $x>x-1 \rightarrow$ always true
+
+- $x>y \rightarrow x>4-x \Rightarrow 2 x>4 \Rightarrow x>2$
+
+- $x>y+10 \rightarrow x>14-x \Rightarrow 2 x>14 \Rightarrow x>7$
+
+So, smallest integer satisfying all:
+
+$$
+x>7 \Rightarrow x=8
+$$
+
+(D) 8.	
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

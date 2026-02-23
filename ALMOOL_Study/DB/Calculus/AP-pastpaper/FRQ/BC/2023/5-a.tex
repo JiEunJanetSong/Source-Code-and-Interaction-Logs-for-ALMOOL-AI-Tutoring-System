@@ -1,0 +1,80 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+\begin{center}		
+    \includegraphics[scale=0.4]{APpics/2023BCF05.png}
+        \end{center}
+
+The graphs of the functions $f$ and $g$ are shown in the figure for $0 \leq x \leq 3$. It is known that $g(x)=\frac{12}{3+x}$ for $x \geq 0$. The twice-differentiable function $f$, which is not explicitly given, satisfies $f(3)=2$ and $\int_0^3 f(x) d x=10$.
+        
+(a) Find the area of the shaded region enclosed by the graphs of $f$ and $g$.
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Area $=\int_0^3(f(x)-g(x)) d x=\int_0^3 f(x) d x-\int_0^3 g(x) d x$
+
+$=10-\int_0^3 \frac{12}{3+x} d x=10-12[\ln |3+x|]_0^3$
+
+$=10-12(\ln 6-\ln 3)=10-12(\ln 2)$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+The model solution is presented using standard mathematical notation.
+Answers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.
+
+\begin{center}		
+    \includegraphics[scale=0.4]{APpics/2023BCF05.png}
+        \end{center}
+  
+The graphs of the functions $f$ and $g$ are shown in the figure for $0 \leq x \leq 3$. It is known that $g(x)=\frac{12}{3+x}$ for $x \geq 0$. The twice-differentiable function $f$, which is not explicitly given, satisfies $f(3)=2$ and $\int_0^3 f(x) d x=10$
+
+## Model Solution (a)
+
+Area $=\int_0^3(f(x)-g(x)) d x=\int_0^3 f(x) d x-\int_0^3 g(x) d x$
+
+$=10-\int_0^3 \frac{12}{3+x} d x=10-12[\ln |3+x|]_0^3$
+
+$=10-12(\ln 6-\ln 3)=10-12(\ln 2)$
+
+## Scoring (a)
+
+- For Area $=\int_0^3(f(x)-g(x)) d x=\int_0^3 f(x) d x-\int_0^3 g(x) d x$
+        - Integral; 1 point
+
+- For $=10-\int_0^3 \frac{12}{3+x} d x=10-12[\ln |3+x|]_0^3$
+        - Antiderivative of $g(x)$; 1 point
+
+- For $=10-12(\ln 6-\ln 3)=10-12(\ln 2)$
+        - Answer; 1 point
+
+## Scoring notes (a)
+
+- The first point is earned for any of the integrands $f(x)-g(x), g(x)-f(x),|f(x)-g(x)|$, or $|g(x)-f(x)|$ in any definite integral. If the limits are incorrect, the response does not earn the third point.
+
+- The first point is earned with an implied integrand for $f$ and explicit integrand for $g$, such as
+
+$$
+10-\int_0^3 g(x) d x
+$$
+
+- The second point is earned for finding $a \int \frac{d x}{3+x}=a \cdot \ln |3+x|$ or $a \cdot \ln (3+x)$.
+
+- A response is eligible for the third point only if it has earned the first 2 points. The third point is earned only for the correct answer. The answer does not need to be simplified; however, if simplification is attempted, it must be correct.
+
+- A response is not eligible for the third point with incorrect limits of integration for $u$-substitution, for example, $\int_0^3 \frac{12}{3+x} d x=\int_0^3 \frac{12}{u} d u=12[\ln (x+3)]_0^3$.
+
+- A response with incorrect communication, such as ``Area $=\int_0^3(g(x)-f(x)) d x=10-12(\ln 2)$," does not earn the third point. However, a response of ``''$\int_0^3(g(x)-f(x)) d x=12(\ln 2)-10$, so the area is $10-12(\ln 2)$" earns all 3 points.
+
+Total for part (a) 3 points
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

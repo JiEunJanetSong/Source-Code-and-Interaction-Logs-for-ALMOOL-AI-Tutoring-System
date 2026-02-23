@@ -1,0 +1,77 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        $t$  (minutes) & 0 & 3 & 7 & 12 \\ 
+        \hline
+        $C(t)$  (degrees Celsius) & 100 & 85 & 69 & 55 \\
+        \hline
+    \end{tabular}
+\end{center}
+
+The temperature of coffee in a cup at time $t$ minutes is modeled by a decreasing differentiable function $C$, where $C(t)$ is measured in degrees Celsius. For $0 \leq t \leq 12$, selected values of $C(t)$ are given in the table shown.
+
+(c) For $12 \leq t \leq 20$, the rate of change of the temperature of the coffee is modeled by $C^{\prime}(t)=\frac{-24.55 e^{0.01 t}}{t}$, where $C^{\prime}(t)$ is measured in degrees Celsius per minute. Find the temperature of the coffee at time $t=20$.
+            
+}\SetValue{Solution}{%
+
+$C(20)=C(12)+\int_{12}^{20} C^{\prime}(t) d t  =55-14.670812=40.329188$ 
+
+The temperature of the coffee at time $t=20$ is 40.329 degrees Celsius.
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+The model solution is presented using standard mathematical notation.
+
+Answers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.
+
+| $t$ <br> (minutes) | 0 | 3 | 7 | 12 |
+| :---: | :---: | :---: | :---: | :---: |
+| $C(t)$ <br> (degrees Celsius) | 100 | 85 | 69 | 55 |
+
+The temperature of coffee in a cup at time $t$ minutes is modeled by a decreasing differentiable function $C$, where $C(t)$ is measured in degrees Celsius. For $0 \leq t \leq 12$, selected values of $C(t)$ are given in the table shown.
+
+## Model Solution (c)
+
+$C(20)=C(12)+\int_{12}^{20} C^{\prime}(t) d t  =55-14.670812=40.329188$ 
+
+The temperature of the coffee at time $t=20$ is 40.329 degrees Celsius.
+
+## Scoring (c)
+
+- For $C(20)=C(12)+\int_{12}^{20} C^{\prime}(t) d t  $
+    - Integral : $\mathbf{1}$ point \\
+    - Uses initial condition : 1 point \\
+    
+-For $40.329188$ or $40.329$
+    - Answer : 1 point
+
+## Scoring notes (c)
+
+- The first point is earned for a definite integral with integrand $C^{\prime}(t)$. If the limits of integration are incorrect, the response does not earn the third point.
+
+- A linkage error such as $C(20)=\int_{12}^{20} C^{\prime}(t) d t=55-14.670812$ or $\int_{12}^{20} C^{\prime}(t) d t=-14.670812=40.329188$ earns the first 2 points but does not earn the third point.
+
+- Missing differential $(d t)$ :
+
+- Unambiguous responses of $C(20)=C(12)+\int_{12}^{20} C^{\prime}(t)$ or $C(20)=55+\int_{12}^{20} C^{\prime}(t)$ earn the first 2 points and are eligible for the third point.
+
+- Ambiguous responses of $C(20)=\int_{12}^{20} C^{\prime}(t)+C(12)$ or $C(20)=\int_{12}^{20} C^{\prime}(t)+55$ do not earn the first point, earn the second point, and earn the third point if the given numeric answer is correct. If there is no numeric answer given, these responses do not earn the third point.
+
+- The second point is earned for adding $C(12)$ or 55 to a definite integral with a lower limit of 12 , either symbolically or numerically.
+
+- The third point is earned for an answer of $55-14.671$ or $-14.671+55$ with no additional simplification, provided there is some supporting work for these values.
+
+- An answer of just 40.329 with no supporting work does not earn any points.
+
+Total for part (c) 3 points
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

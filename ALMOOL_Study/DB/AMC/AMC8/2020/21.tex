@@ -1,0 +1,55 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+   
+A game board consists of 64 squares that alternate in color between black and white. The figure below shows square $P$ in the bottom row and square $Q$ in the top row. A marker is placed at $P$. A step consists of moving the marker onto one of the adjoining white squares in the row above. How many 7-step paths are there from $P$ to $Q$ ? (The figure shows a sample path.)
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2020-21.png}
+	\end{center}
+	
+\ansFIVEs{%start
+		28 }{%<--- (A)
+		30 }{%<--- (B)
+		32 }{%<--- (C)
+		33 }{%<---- (D)
+		35 }%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Answer (A):
+
+Beginning with the row above $P$ and filling in one row at a time, the number of paths that lead from $P$ to each square can be counted, as shown in the figure below. (Squares that cannot be reached or do not lead to $Q$ in 7 moves are left blank.) Note that the number of paths leading to a square equals the sum of the counts in the adjoining squares below it. (For example, to reach the square with 10 paths, it is necessary to pass through one of the adjoining squares below; they have 4 and 6 paths leading to them, respectively.) Applying this counting method to each row, moving up from the bottom, results in a total of 28 seven-step paths from $P$ to $Q$.
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2020-21-s-1.png}
+	\end{center}
+
+	OR
+
+	Each step moves the marker either one column to the left $(L)$ or one column to the right $(R)$. Because $Q$ is one column to the right of $P$, each path must consist of 4 moves to the right and 3 moves to the left. Ignoring the possibility that a path may extend past the right edge of the board, the number of paths from $P$ to $Q$ is equivalent to the number of distinguishable permutations of $R R R R L L L$, which equals the number of combinations of 7 objects taken 4 at a time: ${ }_7 C_4=\binom{7}{4}=\frac{7!}{4!3!}=35$.
+
+	This total, however, includes paths that move the marker off the right edge of the board. One such path is shown below. A path leaves the board when the number of $R$ moves exceeds the number of $L$ moves by 3. There are 7 paths that extend beyond the board: $\underline{L R R R R L L, ~ R L R R R L L, ~ R R L R R L L, ~ a n d ~}$ the 4 paths that begin with $\underline{R R R}$. Removing these 7 paths leaves 35-7 $=28$ seven-step paths from $P$ to $Q$.	
+
+	\begin{center}		
+		\includegraphics[scale=0.6]{AMC-8-pics/2020-21-s-2.png}
+		\end{center}
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

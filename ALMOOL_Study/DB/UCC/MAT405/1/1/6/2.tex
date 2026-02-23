@@ -1,0 +1,129 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find constants $a, b$, so that
+
+$$
+y(t)=(t+3) e^{2 t}
+$$
+
+is solution of the IVP
+
+$$
+y^{\prime}=a y+e^{2 t}, \quad y(0)=b.
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the function:
+
+$$
+y(t)=(t+3) e^{2 t}
+$$
+
+and the initial value problem (IVP):
+
+$$
+y^{\prime}=a y+e^{2 t}, \quad y(0)=b
+$$
+
+
+We are to find constants $a$ and $b$ so that $y(t)$ solves this IVP.
+
+Step 1: Compute $y^{\prime}(t)$
+
+Use the product rule:
+
+$$
+\begin{gathered}
+y(t)=(t+3) e^{2 t} \quad \Rightarrow \quad y^{\prime}(t)=\frac{d}{d t}\left[(t+3) e^{2 t}\right] \\
+y^{\prime}(t)=(t+3) \cdot \frac{d}{d t}\left[e^{2 t}\right]+e^{2 t} \cdot \frac{d}{d t}[t+3]=(t+3)\left(2 e^{2 t}\right)+e^{2 t}(1)=2(t+3) e^{2 t}+e^{2 t} \\
+\Rightarrow y^{\prime}(t)=[2(t+3)+1] e^{2 t}=(2 t+7) e^{2 t}
+\end{gathered}
+$$
+
+Step 2: Express $y^{\prime}$ as $a y+e^{2 t}$
+
+We are told:
+
+$$
+y^{\prime}=a y+e^{2 t}
+$$
+
+
+From earlier:
+
+- $y(t)=(t+3) e^{2 t}$
+
+- $y^{\prime}(t)=(2 t+7) e^{2 t}$
+
+Plug into the differential equation:
+
+$$
+(2 t+7) e^{2 t}=a \cdot(t+3) e^{2 t}+e^{2 t}
+$$
+
+
+Divide both sides by $e^{2 t}$ (since $e^{2 t} \neq 0$ ):
+
+$$
+2 t+7=a(t+3)+1
+$$
+
+
+Simplify right-hand side:
+
+$$
+a(t+3)+1=a t+3 a+1
+$$
+
+
+Match both sides:
+
+$$
+2 t+7=a t+3 a+1
+$$
+
+
+Equating coefficients:
+
+- Coefficient of $t: a=2$
+
+- Constant term: $3 a+1=7 \Rightarrow 3 a=6 \Rightarrow a=2$ (confirmed)
+
+Step 3: Compute $b=y(0)$
+
+From $y(t)=(t+3) e^{2 t}$, plug in $t=0$:
+
+$$
+y(0)=(0+3) e^0=3 \cdot 1=3 \Rightarrow b=3
+$$
+
+
+Final Answer:
+
+$$
+a=2, \quad b=3
+$$
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

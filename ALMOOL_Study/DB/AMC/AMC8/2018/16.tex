@@ -1,0 +1,90 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Professor Chang has nine different language books lined up on a bookshelf: two Arabic, three German, and four Spanish. How many ways are there to arrange the nine books on the shelf keeping the Arabic books together and keeping the Spanish books together?
+
+\ansFIVEs{%start
+		1440 }{%<--- (A)
+		2880 }{%<--- (B)
+		5760 }{%<--- (C)
+		182,440 }{%<---- (D)
+		362,880 }%<---- (D)
+}\SetValue{Concept}{%
+
+장 교수는 책장에 아랍어 책 2권, 독일어 책 3권, 스페인어 책 4권 등 9권의 다른 언어 책을 꽂아 놓았습니다. 책장에 놓인 9권의 책을 아랍어 책과 스페인어 책을 함께 배치하는 방법은 몇 가지가 있을까요?
+
+풀이
+
+1. 묶음(블록) 만들기
+- 아랍어 책 2 권은 반드시 붙어 있어야 하므로 하나의 블록 A 로 묶습니다.
+- 스페인어 책 4 권도 반드시 붙어 있어야 하므로 하나의 블록 S 로 묶습니다.
+- 독일어 책 3 권은 따로 제약이 없으므로 각각 $\mathbf{G}_1, \mathbf{G}_2, \mathbf{G}_3$ 로 취급합니다.
+
+이렇게 하면 총 5 개의 '물체' $\left(\mathrm{A}, \mathrm{S}, \mathrm{G}_1, \mathrm{G}_2, \mathrm{G}_3\right)$ 를 선반에 나열하는 문제가 됩니다.
+2. 블록(물체) 배치 방법
+- 5 개의 물체를 한 줄로 배열하는 방법의 수는
+
+$$
+5!=120 \text { 가지 }
+$$
+
+
+입니다.
+3. 블록 내부에서의 배열
+- 아랍어 블록 A 안에서는 책 2 권을 서로 바꿔 놓을 수 있으므로 $2!=2$ 가지.
+- 스페인어 블록 S 안에서는 책 4 권을 순서를 섞을 수 있으므로 $4!=24$ 가지.
+- 독일어 책들은 이미 개별 물체이므로 추가로 섞을 부분이 없습니다.
+4. 전체 경우의 수 계산
+
+위 세 단계를 모두 곱해 주면
+
+$$
+5!\times 2!\times 4!=120 \times 2 \times 24=5760
+$$
+
+
+따라서 조건을 만족하며 9권을 선반에 놓는 방법의 총수는 5760 가지입니다.
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+1. Arrange the five blocks on the shelf
+
+The blocks are $A, S, G_1, G_2, G_3$.
+Number of orders:
+
+$$
+5!=120 .
+$$
+
+2. Arrange books within each block
+- Arabic block: $2!=2$ ways
+- Spanish block: $4!=24$ ways
+- Each German book is already a single item.
+3. Total arrangements
+
+$$
+\begin{gathered}
+5!\times 2!\times 4!=120 \times 2 \times 24=5760 . \\
+5760
+\end{gathered}
+$$
+
+}\SetValue{Solution MAA}{%
+Answer (C): There are two ways to arrange the two Arabic books among themselves and there are $4 \cdot 3 \cdot 2 \cdot 1=24$ ways to arrange the four Spanish books among themselves. If the two Arabic books are considered as a unit and the four Spanish books are considered as a unit, then, including the three German books, there are five objects to arrange on the shelf. These five objects can be arranged on the shelf in $5 \cdot 4 \cdot 3 \cdot 2 \cdot 1=120$ ways. So altogether the books can be arranged in $2 \cdot 24 \cdot 120=5760$ ways.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

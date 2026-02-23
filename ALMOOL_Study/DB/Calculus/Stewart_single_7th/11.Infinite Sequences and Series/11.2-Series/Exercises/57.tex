@@ -1,0 +1,103 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the values of $x$ for which the series converges. Find the sum of the series for those values of $x$.
+
+$$\sum_{n=1}^{\infty}(-5)^n x^n$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Recognize the Series Type
+
+This is a geometric series of the form:
+
+$$
+\sum_{n=1}^{\infty} a r^n
+$$
+
+
+Here,
+
+- $a=-5 x$ (first term when $n=1$ ),
+
+- common ratio $r=-5 x$
+
+So we can write:
+
+$$
+\sum_{n=1}^{\infty}(-5 x)^n=(-5 x)+(-5 x)^2+(-5 x)^3+\cdots
+$$
+
+
+Step 2: Convergence Condition
+
+A geometric series $\sum_{n=0}^{\infty} r^n$ converges if and only if:
+
+$$
+|r|<1
+$$
+
+
+In our case, the ratio is $r=-5 x$, so the convergence condition is:
+
+$$
+|-5 x|<1 \quad \Rightarrow \quad|x|<\dfrac{1}{5}
+$$
+
+Step 3: Find the Sum
+
+Let's first recall the sum formula for a geometric series starting at $n=0$ :
+
+$$
+\sum_{n=0}^{\infty} r^n=\dfrac{1}{1-r}
+$$
+
+
+But our series starts at $n=1$, so we subtract the $n=0$ term:
+
+$$
+\sum_{n=1}^{\infty} r^n=\dfrac{r}{1-r}
+$$
+
+
+Substitute $r=-5 x$ :
+
+$$
+\sum_{n=1}^{\infty}(-5 x)^n=\dfrac{-5 x}{1-(-5 x)}=\dfrac{-5 x}{1+5 x}
+$$
+
+Final Answer:
+
+- The series converges for:
+
+$$
+|x|<\dfrac{1}{5}
+$$
+
+- For those values of $x$, the sum is:
+
+$$
+\dfrac{-5 x}{1+5 x}
+$$
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

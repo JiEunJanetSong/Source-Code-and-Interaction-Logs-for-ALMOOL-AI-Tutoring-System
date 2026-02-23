@@ -1,0 +1,67 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+John is taking a rowboat both up and down a 16-kilometer length of a river. A constant current of 1 kilometer per hour makes his trip downstream faster than his trip upstream because he is moving with the current downstream and fighting against the current when traveling upstream. If a round-trip journey took him a total of 4 hours, and if he rowed at a constant pace the whole time, what is the rate in kilometers per hour, to the nearest tenth, at which John is rowing independent of the current?
+
+\ansFOURs{%start
+ 7.3}{%<--- (A)
+ 8.1}{%<--- (B)
+ 8.9}{%<--- (C)
+ 9.7}%<---- (D)
+ 
+}\SetValue{Solution}{%
+
+Answer: \textbf{(B)} 
+
+Use the formula Distance = Rate x Time to make your calculations. The distance is $16 \mathrm{~km} /$ hour for the journey in either direction. The rates, however, are different. The rate going upstream is $1 \mathrm{~km} / \mathrm{hr}$ less than the rate at which John is actually rowing because he is going against the current. The rate going downstream is $1 \mathrm{~km} / \mathrm{hr}$ more than the rate at which he is actually rowing because he is going with the current. If $x$ is the rate at which John is rowing, the time, $u$, to go upstream is:
+        
+        $
+        d=r u \rightarrow 16=(x-1) \rightarrow u=\frac{16}{x-1}
+        $
+        
+        
+        The time going downstream, $t$, can be calculated in a similar way:
+        
+        $
+        d=r t \rightarrow 16=(x+1) t \rightarrow t=\frac{16}{x+1}
+        $
+        
+        
+        Since the total time of the journey is 4 hours, combine these two expressions together into one equation:
+        
+        $
+        \frac{16}{x-1}+\frac{16}{x+1}=4
+        $
+        
+        
+        Then solve for $x$ :
+$
+\begin{aligned}
+\frac{16}{x-1}+\frac{16}{x+1}&=4 \\
+\rightarrow \frac{16(x+1)}{(x-1)(x+1)}+\frac{16(x-1)}{(x+1)(x-1)}&=4 \\
+\rightarrow \frac{16(x+1)+16(x-1)}{x^2-1}&=4 \\
+\rightarrow \frac{16x+16+16x-16}{x^2-1}&=4 \\
+\rightarrow \frac{32x}{x^2-1}&=4 \\
+\rightarrow 32x&=4x^2-4 \\
+\rightarrow 4x^2-32x-4&=0 \\
+\rightarrow x^2-8x-1&=0
+\end{aligned}
+$
+Use the quadratic formula to solve:
+
+$
+\begin{aligned}
+x &= \frac{-b \pm \sqrt{b^2-4ac}}{2a} \\
+&= \frac{8 \pm \sqrt{(-8)^2-4 \cdot 1 \cdot(-1)}}{2 \cdot 1} \\
+&= \frac{8 \pm \sqrt{68}}{2} \\
+&= \frac{8 \pm 2\sqrt{17}}{2} \\
+&= 4 \pm \sqrt{17}
+\end{aligned}
+$
+
+You get two solutions. However, you can use only $4+\sqrt{17}$, because velocity cannot be negative. The value of $4+\sqrt{17}$ is approximately 8.1.
+}\SetValue{Answer}{%
+B
+}
+\ProcessDATA
+
+

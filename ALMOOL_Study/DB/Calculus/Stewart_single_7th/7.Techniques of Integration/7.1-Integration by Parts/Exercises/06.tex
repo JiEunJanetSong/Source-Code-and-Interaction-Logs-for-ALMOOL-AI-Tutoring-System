@@ -1,0 +1,124 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ (x-1)\ \sin \ \pi x\ d x$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int(x-1) \sin (\pi x) d x
+$$
+
+
+A convenient approach is to split the integral into two separate integrals:
+
+$$
+\int(x-1) \sin (\pi x) d x=\int x \sin (\pi x) d x-\int \sin (\pi x) d x
+$$
+
+
+We handle each part separately.
+1) Integrate $\int x \sin (\pi x) d x$
+
+Use integration by parts:
+- Let $u=x$. Then $d u=d x$.
+- Let $d v=\sin (\pi x) d x$. Then
+
+$$
+v=\int \sin (\pi x) d x=-\dfrac{1}{\pi} \cos (\pi x)
+$$
+
+
+Using the formula $\int u d v=u v-\int v d u$, we get:
+
+$$
+\int x \sin (\pi x) d x=x\left(-\dfrac{1}{\pi} \cos (\pi x)\right)-\int\left(-\dfrac{1}{\pi} \cos (\pi x)\right) d x
+$$
+
+
+Simplify step by step:
+1. First term:
+
+$$
+x \cdot\left(-\dfrac{1}{\pi} \cos (\pi x)\right)=-\dfrac{x}{\pi} \cos (\pi x)
+$$
+
+2. Second term:
+
+$$
+-\int\left(-\dfrac{1}{\pi} \cos (\pi x)\right) d x=\dfrac{1}{\pi} \int \cos (\pi x) d x=\dfrac{1}{\pi}\left(\dfrac{1}{\pi} \sin (\pi x)\right)=\dfrac{1}{\pi^2} \sin (\pi x)
+$$
+
+
+Hence,
+
+$$
+\int x \sin (\pi x) d x=-\dfrac{x}{\pi} \cos (\pi x)+\dfrac{1}{\pi^2} \sin (\pi x)
+$$
+
+2) Integrate $\int \sin (\pi x) d x$
+
+This is simpler:
+
+$$
+\int \sin (\pi x) d x=-\dfrac{1}{\pi} \cos (\pi x) .
+$$
+
+3) Combine both parts
+
+$$
+\int(x-1) \sin (\pi x) d x=\int x \sin (\pi x) d x-\int \sin (\pi x) d x .
+$$
+
+
+Substitute the results:
+
+$$
+=\left[-\dfrac{x}{\pi} \cos (\pi x)+\dfrac{1}{\pi^2} \sin (\pi x)\right]-\left[-\dfrac{1}{\pi} \cos (\pi x)\right] .
+$$
+
+
+Distribute the minus sign in the second bracket:
+
+$$
+=-\dfrac{x}{\pi} \cos (\pi x)+\dfrac{1}{\pi^2} \sin (\pi x)+\dfrac{1}{\pi} \cos (\pi x) .
+$$
+
+
+Combine like terms involving $\cos (\pi x)$ :
+
+$$
+-\dfrac{x}{\pi} \cos (\pi x)+\dfrac{1}{\pi} \cos (\pi x)=-\dfrac{x-1}{\pi} \cos (\pi x) .
+$$
+
+
+Hence the integral is
+
+$$
+\int(x-1) \sin (\pi x) d x=-\dfrac{x-1}{\pi} \cos (\pi x)+\dfrac{1}{\pi^2} \sin (\pi x)+C
+$$
+
+where $C$ is the constant of integration.
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
+   
+   
+   
+
+   
+
+

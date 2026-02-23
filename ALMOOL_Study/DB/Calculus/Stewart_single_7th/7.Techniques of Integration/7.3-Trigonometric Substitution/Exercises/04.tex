@@ -1,0 +1,155 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int_0^1 x^3 \sqrt{1-x^2}\  d x$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int_0^1 x^3 \sqrt{1-x^2} d x
+$$
+
+
+A very direct method uses the substitution $x^2=s$. Let's go through the steps carefully.
+
+1) Substitution
+
+Set
+
+$$
+s=x^2 \quad \Longrightarrow \quad d s=2 x d x \quad \Longrightarrow \quad x d x=\dfrac{d s}{2} .
+$$
+
+
+Also, when $x$ goes from 0 to $1, s$ goes from 0 to 1.
+
+We rewrite the integrand:
+
+- $x^3=x \cdot x^2=x \cdot s$. But since $x=\sqrt{s}$, then $x^3=\sqrt{s} \cdot s=s^{3 / 2}$.
+
+- $\sqrt{1-x^2}=\sqrt{1-s}$.
+- $d x=\dfrac{d s}{2 x}=\dfrac{d s}{2 \sqrt{s}}$.
+
+Hence,
+
+$$
+x^3 \sqrt{1-x^2} d x=\left[s^{3 / 2}\right] \sqrt{1-s}\left[\dfrac{d s}{2 \sqrt{s}}\right]
+$$
+
+
+Inside the bracket,
+
+$$
+s^{3 / 2} \dfrac{1}{\sqrt{s}}=s^{3 / 2-1 / 2}=s^1=s
+$$
+
+
+Therefore the expression becomes
+
+$$
+s \sqrt{1-s} \dfrac{1}{2} d s=\dfrac{1}{2} s(1-s)^{1 / 2} d s
+$$
+
+
+So the integral transforms into
+
+$$
+\int_0^1 x^3 \sqrt{1-x^2} d x=\int_{s=0}^{s=1} \dfrac{1}{2} s(1-s)^{1 / 2} d s=\dfrac{1}{2} \int_0^1 s(1-s)^{1 / 2} d s
+$$
+
+2) Evaluate $\int_0^1 s(1-s)^{1 / 2} d s$
+
+Let's call this integral $I$ :
+
+$$
+I=\int_0^1 s(1-s)^{1 / 2} d s
+$$
+
+
+One way is to expand and integrate term by term by using the substitution $u=1-s$. But an even quicker way is simply to do that substitution:
+
+$$
+u=1-s \quad \Longrightarrow \quad d u=-d s \quad \Longrightarrow \quad d s=-d u
+$$
+
+and when $s=0, u=1$; when $s=1, u=0$. 
+
+Thus,
+
+$$
+I=\int_{s=0}^{s=1} s(1-s)^{1 / 2} d s=\int_{u=1}^{u=0}[(1-u)](u)^{1 / 2}[-d u]
+$$
+
+
+Flipping the integration limits to avoid the negative sign:
+
+$$
+I=\int_0^1(1-u) u^{1 / 2} d u=\int_0^1\left[u^{1 / 2}-u^{3 / 2}\right] d u
+$$
+
+
+Split it:
+
+$$
+I=\int_0^1 u^{1 / 2} d u-\int_0^1 u^{3 / 2} d u
+$$
+
+
+Compute each:
+
+1. $\int_0^1 u^{1 / 2} d u=\left[\dfrac{u^{3 / 2}}{\dfrac{3}{2}}\right]_0^1=\left[\dfrac{2}{3} u^{3 / 2}\right]_0^1=\dfrac{2}{3}$.
+
+2. $\int_0^1 u^{3 / 2} d u=\left[\dfrac{u^{5 / 2}}{\dfrac{5}{2}}\right]_0^1=\left[\dfrac{2}{5} u^{5 / 2}\right]_0^1=\dfrac{2}{5}$.
+
+So,
+
+$$
+I=\dfrac{2}{3}-\dfrac{2}{5}=\dfrac{10}{15}-\dfrac{6}{15}=\dfrac{4}{15}
+$$
+
+
+Therefore,
+
+$$
+\int_0^1 s(1-s)^{1 / 2} d s=\dfrac{4}{15} .
+$$
+
+3) Combine with the factor $\dfrac{1}{2}$
+
+Recall from the substitution step, we had a factor $\dfrac{1}{2}$ outside:
+
+$$
+\int_0^1 x^3 \sqrt{1-x^2} d x=\dfrac{1}{2} \int_0^1 s(1-s)^{1 / 2} d s=\dfrac{1}{2} \cdot \dfrac{4}{15}=\dfrac{2}{15}.
+$$
+
+
+Hence, the final value of the definite integral is
+
+$$
+\int_0^1 x^3 \sqrt{1-x^2} d x=\dfrac{2}{15}
+$$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+
+## Model Solution (a)
+
+
+## Scoring (a)
+
+For $\text { Area }=\int_0^2(f(x)-g(x)) d x$,
+Integrand; 1 point, Answer; 1 point.
+
+## Scoring notes (a)
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+

@@ -1,0 +1,80 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\frac{(-1)^{n+1}n}{n+\sqrt n}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \frac{(-1)^{n+1}n}{n + \sqrt{n}}
+$
+
+Step 1: Analyze the Absolute Value of the Sequence
+
+Focus on the magnitude first:
+
+$
+\left| a_n \right| = \left| \frac{n}{n + \sqrt{n}} \right| = \frac{n}{n + \sqrt{n}}
+$
+
+Divide numerator and denominator by $n$:
+
+$
+\left| a_n \right| = \frac{1}{1 + \frac{1}{\sqrt{n}}}
+$
+
+As $n \to \infty$, $\frac{1}{\sqrt{n}} \to 0$, so:
+
+$
+\left| a_n \right| \to \frac{1}{1 + 0} = 1
+$
+
+So the magnitude of the terms approaches 1.
+
+Step 2: Consider the Sign
+
+The sign alternates because of $(-1)^{n+1}$, so the sequence oscillates:
+
+- When $n$ is odd: $a_n > 0$
+
+- When $n$ is even: $a_n < 0$
+
+And the values approach ±1 alternately.
+
+Step 3: Does the Sequence Converge?
+
+The sequence oscillates between values near 1 and -1 as $n$ increases. Since the values do not settle to a single number (they keep switching signs), the sequence does not converge.
+
+Final Answer:
+
+- The sequence diverges
+
+- It oscillates and does not settle to a single limit
+
+$
+\boxed{\text{The sequence diverges}}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

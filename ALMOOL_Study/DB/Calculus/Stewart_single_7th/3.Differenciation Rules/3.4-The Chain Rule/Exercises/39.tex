@@ -1,0 +1,78 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$f(t)=\tan \left(e^t\right)+e^{\tan t}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We have 
+
+$$
+f(t)=\tan\bigl(e^t\bigr)+e^{\tan t}.
+$$
+
+To find its derivative, we apply the sum rule and the chain rule to each term separately.
+
+\textbf{1) Derivative of $\tan(e^t)$}
+
+Let $u = e^t$. Then,
+$$
+\dfrac{d}{dt}[\tan(u)] = \sec^2(u)\,\dfrac{du}{dt}.
+$$
+We know $\dfrac{d}{dt}[e^t] = e^t$. Hence,
+$$
+\dfrac{d}{dt}[\tan(e^t)] 
+= \sec^2\bigl(e^t\bigr)\,\cdot e^t.
+$$
+
+\textbf{2) Derivative of $e^{\tan t}$}
+
+Let $v = \tan t$. Then,
+$$
+\dfrac{d}{dt}\bigl[e^v\bigr] 
+= e^v \,\dfrac{dv}{dt}.
+$$
+We know $\dfrac{d}{dt}[\tan t] = \sec^2 t$. Hence,
+$$
+\dfrac{d}{dt}[e^{\tan t}]
+= e^{\tan t}\,\cdot \sec^2 t.
+$$
+
+\textbf{Combine both results}
+
+$$
+f'(t)
+= \dfrac{d}{dt}\bigl[\tan(e^t)\bigr]
++ \dfrac{d}{dt}\bigl[e^{\tan t}\bigr]
+= e^t \,\sec^2\bigl(e^t\bigr)
++ e^{\tan t}\,\sec^2 t.
+$$
+
+So the derivative is:
+
+$$
+\boxed{f'(t) \;=\; e^t \,\sec^2\bigl(e^t\bigr) + e^{\tan t}\,\sec^2 t.}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

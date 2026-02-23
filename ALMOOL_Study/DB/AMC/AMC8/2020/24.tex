@@ -1,0 +1,72 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+   
+A large square region is paved with $n^2$ gray square tiles, each measuring $s$ inches on a side. A border $d$ inches wide surrounds each tile. The figure below shows the case for $n=3$. When $n=24$, the 576 gray tiles cover $64 \%$ of the area of the large square region. What is the ratio $\frac{d}{s}$ for this larger value of $n$?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2020-24.png}
+	\end{center}
+	
+\ansFIVEs{%start
+		\frac{6}{25} }{%<--- (A)
+		\frac{1}{4} }{%<--- (B)
+		\frac{9}{25} }{%<--- (C)
+		\frac{7}{16} }{%<---- (D)
+		\frac{9}{16} }%<---- (D)
+
+}\SetValue{Concept}{%
+
+넓은 정사각형 영역은 각각 한 변의 크기가 s인치인 회색 정사각형 타일로 포장되어 있습니다. 각 타일을 d인치 너비의 테두리가 둘러싸고 있습니다. 아래 그림은 n = 3의 경우를 보여줍니다. n = 24일 때 576개의 회색 타일이 64\%, 즉 큰 정사각형 영역의 면적을 차지합니다. 이 더 큰 값의 n에 대한 비율은 어떻게 될까요?
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Answer (A): When $n=24$, there are $24^2=576$ gray tiles, each with an area of $s^2$ square inches. Together the tiles cover an area of $24^2 s^2$ square inches. Each side of the large square region spans 24 tiles plus 25 borders for a side length of $24 s+25 d$ inches, giving a total area of $(24 s+25 d)^2$ square inches. It is given that the gray tiles cover $64 \%$ of the total area. It follows that
+
+$$
+\frac{\text { area of gray tiles }}{\text { area of large square }}=\frac{24^2 s^2}{(24 s+25 d)^2}=\frac{64}{100}=\frac{16}{25},
+$$
+
+which simplifies to
+
+$$
+\frac{24 s}{24 s+25 d}=\frac{4}{5}
+$$
+
+
+Solving the equation for $\frac{d}{s}$ produces the following result:
+
+$$
+\frac{24 s+25 d}{24 s}=\frac{5}{4}
+$$
+
+$$
+\begin{aligned}
+1+\frac{25 d}{24 s} & =1+\frac{1}{4} \\
+\frac{d}{s} & =\frac{24}{25} \cdot \frac{1}{4} \\
+& =\frac{6}{25} .
+\end{aligned}
+$$
+
+
+Therefore, when $n=24$, the ratio $\frac{d}{s}$ is $\frac{6}{25}$.
+
+OR
+
+Let the side length of each gray tile be $s=1$ inch. Then the tiles have a total area of 576 square inches. Because $64 \%$ of the large square region is covered by gray tiles, the large square region has an area of $\frac{576}{0.64}=900$ square inches, and hence its side length is 30 inches. Each side of the large square region spans 24 tiles plus 25 borders, so $24+25 d=30$ and $d=\frac{30-24}{25}=\frac{6}{25}$. The desired ratio is $\frac{d}{s}=d=\frac{6}{25}$.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

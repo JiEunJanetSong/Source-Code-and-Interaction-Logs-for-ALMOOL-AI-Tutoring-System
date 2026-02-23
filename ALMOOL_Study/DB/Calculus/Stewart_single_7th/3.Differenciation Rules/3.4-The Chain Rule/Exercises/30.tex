@@ -1,0 +1,109 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$F(v)=\left(\dfrac{v}{v^3+1}\right)^6$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want the derivative of
+
+$$
+F(v) \;=\; \Bigl(\tfrac{v}{v^3 + 1}\Bigr)^{6}.
+$$
+
+\textbf{1. Set up for the chain rule}
+
+Let 
+$$
+u(v) \;=\; \dfrac{v}{v^3 + 1}.
+$$
+
+Then
+$$
+F(v) \;=\; \bigl(u(v)\bigr)^{6}.
+$$
+
+By the chain rule,
+
+$$
+F'(v) 
+= 6\,\bigl(u(v)\bigr)^{5}\;u'(v).
+$$
+
+Hence we must find $u'(v)$.
+
+\textbf{2. Differentiate} $u(v) = \dfrac{v}{v^3 + 1}$
+
+Use the quotient rule. Let the numerator be $f(v) = v$ and denominator be $g(v) = v^3 + 1$. Then
+
+$$
+f'(v) = 1,
+\quad
+g'(v) = 3v^2.
+$$
+
+By the quotient rule,
+
+$$
+u'(v)
+= \dfrac{f'(v)\,g(v) \;-\; f(v)\,g'(v)}{\bigl(g(v)\bigr)^2}
+= \dfrac{(1)\,(v^3 + 1) - v\,(3v^2)}{(v^3 + 1)^2}
+= \dfrac{v^3 + 1 - 3v^3}{(v^3 + 1)^2}
+= \dfrac{1 - 2v^3}{(v^3 + 1)^2}.
+$$
+
+\textbf{3. Combine via the chain rule}
+
+Substitute back into $F'(v) = 6\,(u(v))^5\,u'(v)$:
+
+$$
+F'(v)
+= 6 \,\Bigl(\dfrac{v}{v^3+1}\Bigr)^{5}\,\dfrac{1 - 2v^3}{(v^3 + 1)^2}.
+$$
+
+You can leave it in this form or simplify further.  Notice
+
+$$
+\Bigl(\dfrac{v}{v^3+1}\Bigr)^{5} 
+= \dfrac{v^5}{(v^3+1)^5}.
+$$
+
+Thus,
+
+$$
+F'(v)
+= 6 \cdot \dfrac{v^5}{(v^3+1)^5} \; \cdot \; \dfrac{1 - 2v^3}{(v^3+1)^2}
+= \dfrac{6\,v^5\,\bigl(1 - 2v^3\bigr)}{(v^3+1)^{7}}.
+$$
+
+Either form is correct. A fully simplified form is:
+
+$$
+\boxed{
+F'(v)
+= \dfrac{6\,v^5\,\bigl(1 - 2v^3\bigr)}{\bigl(v^3 + 1\bigr)^{7}}.
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

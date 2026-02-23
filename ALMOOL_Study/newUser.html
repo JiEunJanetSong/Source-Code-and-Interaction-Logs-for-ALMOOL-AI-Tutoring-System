@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="http://localhost:5001/assets/css/problemNumber.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha3/0.9.3/sha3.min.js"></script>
+        <script src="http://localhost:5001/assets/js/login.js"></script>
+        <script>
+            function click()
+            {
+                let ID = document.getElementById("ID").value;
+                let email = document.getElementById("email").value;
+                let PW = document.getElementById("PW").value;
+                let PW2 = document.getElementById("PW2").value;
+
+                if(PW != PW2)
+                {
+                    alert("비밀번호가 일치하지 않습니다.");
+                    return;
+                }
+    
+                const data = JSON.stringify({
+                    userID: ID,
+                    userPW: encryptString(PW),
+                    email: email
+                });
+
+                const httpData = new XMLHttpRequest();
+                httpData.open('POST',`newUserMail.php`,false);
+                httpData.setRequestHeader('content-type', 'application/json');
+
+                httpData.send(data);
+                if(httpData.responseText != "error")
+                    alert(`${email}로 회원 가입 확인 이메일을 보냈습니다. 가입 확인을 해 주시기 바랍니다.`);
+                else
+                    alert(`이미 가입한 아이디입니다.`);
+            }
+
+            window.onload=function()
+            {
+                let loginButton = document.getElementById("login_tt");
+                loginButton.addEventListener('click', (event) => {
+                    click();
+                });
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="modifyPasswordInput">
+            <h1>아이디</h1>
+            <div style="margin-bottom: 20px;"><input id="ID" type="text" style="width:100%;height:30px;"></div>
+
+            <h1>이메일</h1>
+            <div style="margin-bottom: 20px;"><input id="email" type="text" style="width:100%;height:30px;"></div>
+
+            <h1>비밀번호</h1>
+            <div style="margin-bottom: 20px;"><input id="PW" type="password" style="width:100%;height:30px;"></div>
+
+            <h1>비밀번호 확인</h1>
+            <div style="margin-bottom: 40px;"><input id="PW2" type="password" style="width:100%;height:30px;"></div>
+        </div>
+        
+        <div class="problemMoveButton" id="login_tt" style="width:100%;height:40px;cursor:pointer;">가입하기</div>
+    </body>
+</html>

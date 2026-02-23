@@ -1,0 +1,52 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+A roll of tape is 4 inches in diameter and is wrapped around a ring that is 2 inches in diameter. A cross section of the tape is shown in the figure below. The tape is 0.015 inches thick. If the tape is completely unrolled, approximately how long would it be? Round your answer to the nearest 100 inches.
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2024-22.png}
+	\end{center}
+
+\ansFIVEs{%start
+		300 }{%<--- (A)
+		600 }{%<--- (B)
+		1200 }{%<--- (C)
+		1500 }{%<---- (D)
+		1800 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+The roll of tape is $1 / 0.015=66$ layers thick. In order to find the total length, we have to find the average of each concentric circle and multiply it by 66 . Since the diameter of the small circle is 2 inches and the diameter of the large one is 4 inches, the "middle value" (or mean) is 3 . Therefore, the average circumference is $3 \pi$. Multiplying $3 \pi \cdot 66$ gives approximately
+(B) $\square$
+$\square$ . - llovemath3141592653589
+
+Solution 2
+There are about $\frac{1}{0.015}=\frac{200}{3}$ "full circles" of tape, and with average circumference of $\frac{4+2}{2} \pi=3 \pi \cdot \frac{200}{3} \cdot 3 \pi=200 \pi$, which means the answer is 600 .
+$\square$
+Solution 3
+We can figure out the length of the tape by considering the side of the tape as a really thin rectangle that has a width of 0.015 inches. The side of the tape is wrapped into an annulus(The shaded region between 2 circles with the same center), meaning the area of the shaded region is equal to the area of the really thin rectangle.
+The area of the shaded region is $\pi\left(\frac{4}{2}\right)^2-\pi\left(\frac{2}{2}\right)^2=3 \pi$, and we divide that by 0.015 to get $200 \pi$. Approximating $\pi$ to be 3 , we get the final answer to be $200 \cdot 3=(\mathbf{B}) 600$.
+
+Solution 3 (kind of different?, but fun!)
+The volume of the tape is always the same, but we can either calculate it when the tape is unrolled as a really long, thin rectangular prism, or we can calculate it as a cylinder with a hole cut out of it. When we calculate it as a long rectangular prism, we can say that the length is $X$ (this is what the problem wants!) and the width is $Y$. Then, the volume is, of course, $0.015 \cdot X \cdot Y$. Now, notice that the "width" of our rectangular prism is also the "height" of our cylinder with a hole cut out of it. Then, we can calculate the volume as base times height, or in this case, $3 \pi \cdot Y$. Now, since the volume always stays the same, we know that $3 \pi \cdot Y=0.015 \cdot X \cdot Y$. Cancelling the $Y$ 's give us an equation for $X$, and if we approximate $\pi$ as 3 , then $X=600$.
+$\square$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

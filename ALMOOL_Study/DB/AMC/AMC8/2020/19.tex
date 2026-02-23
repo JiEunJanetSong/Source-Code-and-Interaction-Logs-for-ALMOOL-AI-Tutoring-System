@@ -1,0 +1,38 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+   
+A number is called flippy if its digits alternate between two distinct digits. For example, 2020 and 37373 are flippy, but 3883 and 123123 are not. How many five-digit flippy numbers are divisible by 15?
+
+\ansFIVEs{%start
+		3 }{%<--- (A)
+		4 }{%<--- (B)
+		5 }{%<--- (C)
+		6 }{%<---- (D)
+		8 }%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Answer (B): A five-digit flippy number looks like $\underline{A} \underline{B} \underline{A} \underline{B} \underline{A}$ for some distinct digits $A$ and $B$ with $A \neq 0$ (otherwise it would not be a five-digit number). In order for this number to be divisible by 15, it must be divisible by 5 and 3.
+Any number divisible by 5 will have a units digit of 0 or 5. Because $A \neq 0, A$ must equal 5. This means the flippy number must have the form $\underline{5} \underline{B} \underline{5} \underline{B} \underline{5}$.
+
+For a number to be divisible by 3, the sum of its digits must be divisible by 3. The sum of the digits of $\underline{5} \underline{B} \underline{5} \underline{B} \underline{5}$ is $15+2 B$. This means $2 B$ must be divisible by 3, so $B$ is divisible by 3. There are 4 possible digits for $B: 0,3,6$, or 9. Therefore there are 4 five-digit flippy numbers divisible by 15 : $50505,53535,56565$, and 59595.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

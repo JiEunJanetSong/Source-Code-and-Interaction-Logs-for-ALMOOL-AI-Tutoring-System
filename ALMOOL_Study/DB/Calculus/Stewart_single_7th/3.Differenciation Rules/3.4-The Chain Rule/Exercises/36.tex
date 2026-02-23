@@ -1,0 +1,75 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\sqrt{1+x e^{-2 x}}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+To find the derivative of 
+
+$$
+y = \sqrt{1 + x e^{-2x}},
+$$
+
+we can write $y$ as 
+
+$$
+y = (1 + x e^{-2x})^{\dfrac{1}{2}}.
+$$
+
+Using the chain rule, the derivative is
+
+$$
+y'(x) 
+= \dfrac{1}{2}(1 + x e^{-2x})^{-\dfrac{1}{2}} 
+\cdot \dfrac{d}{dx}[1 + x e^{-2x}].
+$$
+
+Next, we compute the derivative of the inside term:
+
+$$
+\dfrac{d}{dx}[1 + x e^{-2x}]
+= e^{-2x} + x \cdot \dfrac{d}{dx}[e^{-2x}]
+= e^{-2x} + x(-2 e^{-2x})
+= e^{-2x} - 2x e^{-2x}
+= e^{-2x}(1 - 2x).
+$$
+
+Putting this all together:
+
+$$
+y'(x)
+= \dfrac{1}{2\sqrt{1 + x e^{-2x}}} \cdot e^{-2x}(1 - 2x)
+= \dfrac{e^{-2x}(1 - 2x)}{2 \sqrt{1 + x e^{-2x}}}.
+$$
+
+Hence, the derivative is
+
+$$
+\boxed{
+y'(x) = \dfrac{e^{-2x}\bigl(1 - 2x\bigr)}{2\, \sqrt{1 + x e^{-2x}}}.
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

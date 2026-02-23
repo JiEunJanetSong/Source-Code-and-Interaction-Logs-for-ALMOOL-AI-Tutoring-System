@@ -1,0 +1,107 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the series is convergent or divergent by expressing $s_n$ as a telescoping sum. If it is convergent, find its sum.
+
+$$\sum_{n=1}^{\infty}\left(\cos \dfrac{1}{n^2}-\cos \dfrac{1}{(n+1)^2}\right)$$
+
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Recognize the telescoping structure
+
+This series has the form:
+
+$$
+\sum_{n=1}^{\infty}\left(a_n-a_{n+1}\right)
+$$
+
+where $a_n=\cos \left(\dfrac{1}{n^2}\right)$
+
+A series of the form $\sum\left(a_n-a_{n+1}\right)$ telescopes, meaning most of the terms cancel.
+
+Step 2: Write out the first few terms
+
+$$
+\left(\cos \dfrac{1}{1^2}-\cos \dfrac{1}{2^2}\right)+\left(\cos \dfrac{1}{2^2}-\cos \dfrac{1}{3^2}\right)+\left(\cos \dfrac{1}{3^2}-\cos \dfrac{1}{4^2}\right)+\cdots
+$$
+
+
+Almost everything cancels out:
+
+- $-\cos \dfrac{1}{2^2}+\cos \dfrac{1}{2^2}=0$
+
+- $-\cos \dfrac{1}{3^2}+\cos \dfrac{1}{3^2}=0$
+
+- etc.
+
+So the partial sum $s_N$ becomes:
+
+$$
+s_N=\cos \dfrac{1}{1^2}-\cos \dfrac{1}{(N+1)^2}
+$$
+
+Step 3: Take the limit as $N \rightarrow \infty$
+
+We use the fact that:
+
+$$
+\lim _{N \rightarrow \infty} \cos \left(\dfrac{1}{(N+1)^2}\right)=\cos (0)=1
+$$
+
+
+So:
+
+$$
+\lim _{N \rightarrow \infty} s_N=\cos (1)-1
+$$
+
+
+Wait - there's a mistake here! Let's correct it:
+
+Actually,
+
+$$
+s_N=\cos \dfrac{1}{1^2}-\cos \dfrac{1}{(N+1)^2}=\cos (1)-\cos \left(\dfrac{1}{(N+1)^2}\right)
+$$
+
+
+As $N \rightarrow \infty, \dfrac{1}{(N+1)^2} \rightarrow 0$, so:
+
+$$
+\cos \left(\dfrac{1}{(N+1)^2}\right) \rightarrow 1
+$$
+
+
+Thus:
+
+$$
+\lim _{N \rightarrow \infty} s_N=\cos (1)-1
+$$
+
+Final Answer:
+
+- The series converges.
+
+- The sum is: $\cos (1)-1 \approx-0.4597$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

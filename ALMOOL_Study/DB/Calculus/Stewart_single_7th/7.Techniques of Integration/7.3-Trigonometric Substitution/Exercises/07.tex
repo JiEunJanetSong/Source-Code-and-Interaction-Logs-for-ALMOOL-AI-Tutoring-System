@@ -1,0 +1,53 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int_0^a \dfrac{d x}{\left(a^2+x^2\right)^{\tfrac{3}{2}}}, \quad a>0$$
+
+}\SetValue{Solution}{%
+
+1. $x=a \tan (\theta)$. Then $d x=a \sec ^2(\theta) d \theta$.
+2. $a^2+x^2=a^2+a^2 \tan ^2(\theta)=a^2 \sec ^2(\theta)$. So $\left(a^2+x^2\right)^{3 / 2}=a^3 \sec ^3(\theta)$.
+3. Then
+
+$$
+\int_0^a \dfrac{d x}{\left(a^2+x^2\right)^{3 / 2}}=\int_{\theta=0}^{\theta=\pi / 4} \dfrac{a \sec ^2(\theta) d \theta}{a^3 \sec ^3(\theta)}=\int_0^{\pi / 4} \dfrac{1}{a^2} \dfrac{\sec ^2(\theta)}{\sec ^3(\theta)} d \theta=\int_0^{\pi / 4} \dfrac{1}{a^2} \sec ^{-1}(\theta) d \theta=\dfrac{1}{a^2} \int_0^{\pi / 4} \cos (\theta) d \theta
+$$
+
+4. $\int_0^{\pi / 4} \cos (\theta) d \theta=\left.\sin (\theta)\right|_0 ^{\pi / 4}=\sin (\pi / 4)-\sin (0)=\dfrac{\sqrt{2}}{2}$.
+5. Multiply by $\dfrac{1}{a^2}$ :
+
+$$
+\dfrac{1}{a^2} \cdot \dfrac{\sqrt{2}}{2}=\dfrac{\sqrt{2}}{2 a^2}=\dfrac{1}{a^2 \sqrt{2}} .
+$$
+
+
+Exactly matching the result from the known antiderivative.
+Hence the correct final answer is
+
+$$
+\int_0^a \dfrac{d x}{\left(a^2+x^2\right)^{3 / 2}}=\dfrac{1}{a^2 \sqrt{2}}, \quad a>0
+$$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+
+## Model Solution (a)
+
+
+## Scoring (a)
+
+For $\text { Area }=\int_0^2(f(x)-g(x)) d x$,
+Integrand; 1 point, Answer; 1 point.
+
+## Scoring notes (a)
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

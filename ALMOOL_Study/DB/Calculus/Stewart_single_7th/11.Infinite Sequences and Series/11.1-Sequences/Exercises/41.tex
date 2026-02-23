@@ -1,0 +1,71 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$\left\{ n^2e^{-n} \right\}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = n^2 e^{-n}
+$
+
+We want to determine whether it converges or diverges as $n \to \infty$, and if it converges, find the limit.
+
+
+
+ Step 1: Understand the growth of terms
+
+- $n^2 \to \infty$ (polynomial growth)
+
+- $e^{-n} \to 0$ (exponential decay)
+
+So the sequence is the product of a polynomial term and a rapidly decaying exponential term.
+
+
+ Step 2: Use limit comparison or known result
+
+A classic result is that for any positive integer $k$, the sequence:
+
+$
+\lim_{n \to \infty} \frac{n^k}{e^n} = 0
+$
+
+This means exponential decay dominates polynomial growth as $n \to \infty$.
+
+In our case, $a_n = \frac{n^2}{e^n}$, so:
+
+$
+\lim_{n \to \infty} a_n = \lim_{n \to \infty} \frac{n^2}{e^n} = 0
+$
+
+Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{0}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,95 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int \dfrac{\sqrt{x^2-4}}{x}\  d x $$
+
+}\SetValue{Solution}{%
+
+Step 1: Use a trigonometric substitution
+
+Since we have a square root of the form $\sqrt{x^2-a^2}$, let's use the substitution:
+
+$$
+x=2 \sec \theta \quad \Rightarrow \quad d x=2 \sec \theta \tan \theta d \theta
+$$
+
+
+Then:
+
+- $\sqrt{x^2-4}=\sqrt{4 \sec ^2 \theta-4}=\sqrt{4\left(\sec ^2 \theta-1\right)}=\sqrt{4 \tan ^2 \theta}=2 \tan \theta$
+- $\dfrac{\sqrt{x^2-4}}{x}=\dfrac{2 \tan \theta}{2 \sec \theta}=\tan \theta / \sec \theta=\sin \theta$
+
+So the integrand becomes:
+
+$$
+\dfrac{\sqrt{x^2-4}}{x} d x=\sin \theta \cdot d x=\sin \theta \cdot(2 \sec \theta \tan \theta d \theta)
+$$
+
+
+Now use:
+
+$$
+\sin \theta=\dfrac{\tan \theta}{\sec \theta} \Rightarrow \text { So the product is } \dfrac{\tan \theta}{\sec \theta} \cdot 2 \sec \theta \tan \theta=2 \tan ^2 \theta
+$$
+
+
+Step 2: Integrate
+
+$$
+\int \dfrac{\sqrt{x^2-4}}{x} d x=\int 2 \tan ^2 \theta d \theta
+$$
+
+
+Recall the identity:
+
+$$
+\tan ^2 \theta=\sec ^2 \theta-1 \Rightarrow \int 2 \tan ^2 \theta d \theta=2 \int\left(\sec ^2 \theta-1\right) d \theta=2(\tan \theta-\theta)+C
+$$
+
+
+Step 3: Back-substitute
+
+We had:
+
+- $x=2 \sec \theta \Rightarrow \sec \theta=\dfrac{x}{2}$
+
+- $\mathrm{So} \theta=\sec ^{-1}\left(\dfrac{x}{2}\right)$
+
+- $\tan \theta=\sqrt{\sec ^2 \theta-1}=\sqrt{\left(\dfrac{x}{2}\right)^2-1}=\sqrt{\dfrac{x^2}{4}-1}=\dfrac{\sqrt{x^2-4}}{2}$
+
+Now plug back in:
+
+$$
+2 \tan \theta-2 \theta=\sqrt{x^2-4}-2 \sec ^{-1}\left(\dfrac{x}{2}\right)
+$$
+
+Final Answer:
+
+$$
+\sqrt{x^2-4}-2 \sec ^{-1}\left(\dfrac{x}{2}\right)+C
+$$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+
+## Model Solution (a)
+
+
+## Scoring (a)
+
+For $\text { Area }=\int_0^2(f(x)-g(x)) d x$,
+Integrand; 1 point, Answer; 1 point.
+
+## Scoring notes (a)
+
+
+}\SetValue{Answer}{%
+
+$\sqrt{x^2-4}-2 \sec ^{-1}\left(\dfrac{x}{2}\right)+C$
+
+}
+\ProcessDATA
+

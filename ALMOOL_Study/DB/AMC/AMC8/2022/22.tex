@@ -1,0 +1,74 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+A bus takes 2 minutes to drive from one stop to the next, and waits 1 minute at each stop to let passengers board. Zia takes 5 minutes to walk from one bus stop to the next. As Zia reaches a bus stop, if the bus is at the previous stop or has already left the previous stop, then she will wait for the bus. Otherwise she will start walking toward the next stop. Suppose the bus and Zia start at the same time toward the library, with the bus 3 stops behind. After how many minutes will Zia board the bus?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2022-22.png}
+	\end{center}
+
+\ansFIVEs{%start
+		17 }{%<--- (A)
+		19 }{%<--- (B)
+		20 }{%<--- (C)
+		21 }{%<---- (D)
+		23 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Formula-Based Solution
+
+Let $m$ be the number of minutes after departure when Zia arrives at a bus stop where the bus is at the previous stop.
+
+We know the following:
+
+- The bus starts 3 stops behind Zia.
+
+- The bus moves $\frac{1}{3}$ stop per minute ( 2 minutes to drive, 1 minute to wait $\rightarrow 3$ minutes per stop).
+
+- Zia walks 1 stop every 5 minutes $\rightarrow \frac{1}{5}$ stop per minute.
+
+Let's find the moment when the bus reaches the stop right before the stop Zia is at.
+
+At time $m$, the bus has moved $\frac{1}{3} m$ stops.
+
+At time $m$, Zia has moved $\frac{1}{5} m$ stops from her start at Stop 3.
+
+We want to find when the bus is one stop before Zia:
+
+$$
+\begin{gathered}
+\frac{1}{3} m=\frac{1}{5} m+3-1 \\
+\frac{1}{3} m-\frac{1}{5} m=2 \\
+\left(\frac{5-3}{15}\right) m=2 \\
+\frac{2}{15} m=2 \Rightarrow m=15
+\end{gathered}
+$$
+
+
+Now, Zia will wait for the bus at minute 15, and since the bus is one stop away (2 minutes of travel), she boards the bus at:
+
+$$
+15+2=17 \text { minutes }
+$$
+
+Answer: (A) 17
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

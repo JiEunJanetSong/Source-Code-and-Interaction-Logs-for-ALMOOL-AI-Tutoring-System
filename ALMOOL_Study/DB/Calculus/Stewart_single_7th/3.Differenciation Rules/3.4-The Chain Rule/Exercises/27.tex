@@ -1,0 +1,129 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\dfrac{r}{\sqrt{r^2+1}}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to find the derivative of
+
+$$
+y(r) = \dfrac{r}{\sqrt{r^2 + 1}}.
+$$
+
+A straightforward way is to view $y$ as a product of two functions:
+
+$$
+y(r) = r \cdot (r^2 + 1)^{-\tfrac12}.
+$$
+
+Let 
+
+$$
+u(r) = r, 
+\quad
+v(r) = (r^2 + 1)^{-\tfrac12}.
+$$
+
+Then by the product rule,
+
+$$
+y'(r) 
+= u'(r)\,v(r) \;+\; u(r)\,v'(r).
+$$
+
+\textbf{Step 1: Differentiate} $u(r)$
+
+$$
+u(r) = r
+\quad\Longrightarrow\quad
+u'(r) = 1.
+$$
+
+\textbf{Step 2: Differentiate} $v(r)$
+
+$$
+v(r) = (r^2 + 1)^{-\tfrac12}.
+$$
+
+Use the chain rule:
+
+1. Inner function $g(r) = r^2 + 1$ has derivative $g'(r) = 2r.$
+
+2. Outer function $(\cdot)^{-\tfrac12}$ has derivative $-\tfrac12(\cdot)^{-\tfrac32}.$
+
+Hence,
+
+$$
+v'(r) 
+= -\tfrac12\,(r^2 + 1)^{-\tfrac32} \;\cdot\;2r 
+= -r\,(r^2 + 1)^{-\tfrac32}.
+$$
+
+\textbf{Step 3: Combine via the product rule}
+
+$$
+y'(r)
+= \bigl[\,1\bigr]\!\bigl[(r^2 + 1)^{-\tfrac12}\bigr]
+\;+\;
+\bigl[\,r\bigr]\!\bigl[-r\,(r^2 + 1)^{-\tfrac32}\bigr].
+$$
+
+So,
+
+$$
+y'(r)
+= (r^2 + 1)^{-\tfrac12}
+\;-\;
+r^2\,(r^2 + 1)^{-\tfrac32}.
+$$
+
+Now factor out $(r^2 + 1)^{-\tfrac32}$:
+
+$$
+(r^2 + 1)^{-\tfrac12} 
+= (r^2 + 1)^{-\tfrac32} \,(r^2 + 1),
+$$
+
+so
+
+$$
+y'(r)
+= (r^2 + 1)\,(r^2 + 1)^{-\tfrac32}
+\;-\;
+r^2\,(r^2 + 1)^{-\tfrac32}
+= \bigl[(r^2 + 1) - r^2\bigr]\,(r^2 + 1)^{-\tfrac32}
+= (1)\,(r^2 + 1)^{-\tfrac32}.
+$$
+
+Hence,
+
+$$
+\boxed{
+y'(r) 
+= \dfrac{1}{\bigl(r^2 + 1\bigr)^{\tfrac32}}.
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

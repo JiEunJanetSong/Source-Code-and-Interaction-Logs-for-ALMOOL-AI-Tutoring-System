@@ -1,0 +1,106 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the general solution of
+
+$$
+y^{\prime}=-y+e^{-2 t}
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+using Theorem 1.2.1 (Variable Coefficients) from section 1.2.2, which provides a formula for solving first-order linear differential equations of the form
+
+$$
+y^{\prime}=a(t) y+b(t)
+$$
+
+
+Step 1: Match to the standard form
+
+We rewrite the equation as:
+
+$$
+y^{\prime}=(-1) \cdot y+e^{-2 t}
+$$
+
+
+Thus:
+
+- $a(t)=-1$
+
+- $b(t)=e^{-2 t}$
+
+Step 2: Apply the theorem
+
+We are told that the general solution is:
+
+$$
+y(t)=c e^{A(t)}+e^{A(t)} \int e^{-A(t)} b(t) d t
+$$
+
+where:
+
+$$
+A(t)=\int a(t) d t=\int-1 d t=-t
+$$
+
+
+Step 3: Plug into the formula
+
+$$
+y(t)=c e^{-t}+e^{-t} \int e^t \cdot e^{-2 t} d t
+$$
+
+
+Simplify the integrand:
+
+$$
+e^t \cdot e^{-2 t}=e^{-t}
+$$
+
+
+So the integral becomes:
+
+$$
+\int e^{-t} d t=-e^{-t}+C_1
+$$
+
+
+But we only need one constant of integration (the $c$ already covers it), so we drop $C_1$.
+
+Then:
+
+$$
+y(t)=c e^{-t}+e^{-t}\left(-e^{-t}\right)=c e^{-t}-e^{-2 t}
+$$
+
+
+Final Answer:
+
+$$
+y(t)=c e^{-t}-e^{-2 t}, \quad c \in \mathbb{R}
+$$
+
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

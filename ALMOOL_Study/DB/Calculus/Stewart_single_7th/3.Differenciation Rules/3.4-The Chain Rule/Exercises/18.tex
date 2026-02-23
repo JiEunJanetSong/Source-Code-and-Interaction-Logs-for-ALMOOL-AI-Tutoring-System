@@ -1,0 +1,135 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$g(x)=\left(x^2+1\right)^3\left(x^2+2\right)^6$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to differentiate
+
+$$
+g(x) = \bigl(x^2 + 1\bigr)^3 \bigl(x^2 + 2\bigr)^6.
+$$
+
+\textbf{Step 1:} Identify the two functions
+
+Let 
+
+$$
+u(x) = \bigl(x^2 + 1\bigr)^3 
+\quad\text{and}\quad 
+v(x) = \bigl(x^2 + 2\bigr)^6.
+$$
+
+Then 
+
+$$
+g(x) = u(x)\,v(x).
+$$
+
+\textbf{Step 2:} Differentiate $u(x)$
+
+Use the chain rule. For $u(x) = [h(x)]^3$ with $h(x) = x^2 + 1$:
+
+1. $h'(x) = 2x.$
+
+2. Outer derivative: if $\phi(x) = x^3$, then $\phi'(x) = 3x^2.$
+
+Thus,
+
+$$
+u'(x) 
+= 3 \bigl(x^2 + 1\bigr)^2 \cdot 2x 
+= 6x \,\bigl(x^2 + 1\bigr)^2.
+$$
+
+\textbf{Step 3:} Differentiate $v(x)$
+
+Similarly, for $v(x) = [k(x)]^6$ with $k(x) = x^2 + 2$:
+
+1. $k'(x) = 2x.$
+
+2. Outer derivative: if $\psi(x) = x^6$, then $\psi'(x) = 6x^5.$
+
+Hence,
+
+$$
+v'(x) 
+= 6 \bigl(x^2 + 2\bigr)^5 \cdot 2x 
+= 12x \,\bigl(x^2 + 2\bigr)^5.
+$$
+
+\textbf{Step 4:} Apply the product rule
+
+$$
+g'(x) 
+= u'(x)\,v(x) \;+\; u(x)\,v'(x).
+$$
+
+Substitute the expressions we found:
+
+$$
+g'(x) 
+= \Bigl[6x \,\bigl(x^2 + 1\bigr)^2\Bigr]\,\bigl(x^2 + 2\bigr)^6
+\;+\;
+\bigl(x^2 + 1\bigr)^3 \,\Bigl[12x \,\bigl(x^2 + 2\bigr)^5\Bigr].
+$$
+
+You can leave the answer in this form:
+
+$$
+\boxed{
+g'(x) 
+= 6x\,\bigl(x^2 + 1\bigr)^2 \bigl(x^2 + 2\bigr)^6
+\;+\;
+12x\,\bigl(x^2 + 1\bigr)^3 \bigl(x^2 + 2\bigr)^5.
+}
+$$
+
+\textbf{Optional:} Factor for a more compact form
+
+A common factor is $6x\,(x^2 + 1)^2 (x^2 + 2)^5$. Factoring out that term yields:
+
+$$
+g'(x)
+= 6x\,(x^2 + 1)^2\,(x^2 + 2)^5
+\Bigl[\, (x^2 + 2) + 2\,\bigl(x^2 + 1\bigr) \Bigr].
+$$
+
+Inside the bracket:
+
+$$
+(x^2 + 2) + 2(x^2 + 1) = (x^2 + 2) + 2x^2 + 2 = 3x^2 + 4.
+$$
+
+Thus, an equivalent form is
+
+$$
+\boxed{
+g'(x) 
+= 6x\,\bigl(x^2 + 1\bigr)^2 \,\bigl(x^2 + 2\bigr)^5 \,\bigl(3x^2 + 4\bigr).
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

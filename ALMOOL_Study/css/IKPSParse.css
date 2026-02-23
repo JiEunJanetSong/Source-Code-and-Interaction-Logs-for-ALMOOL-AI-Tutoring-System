@@ -1,0 +1,131 @@
+.texEnv_center{
+    display:flex;
+    justify-content:center;
+}
+
+.texEnum_paragraph{
+    display:flex;
+}
+
+.texEnum_enumItem{
+    display:flex;
+    width:50px;
+    justify-content: center;
+}
+
+.texEnum_Contents{
+    width:calc(100% - 50px);
+}
+
+
+.problemAnswerObj
+{
+    display:flex;
+    flex-direction: row;
+    
+    width:100%;
+    height:50px;
+    padding:8px;
+    text-align: center;
+    border:2px solid black;
+    border-radius: 10px;
+    gap:10px;
+    cursor:pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height:auto;
+}
+
+/*
+.problemAnswerObj:hover
+{
+    border:2px solid white;
+    background-color:#0077c8;
+    color:white;
+}
+*/
+
+.problemAnswerObjKind
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    border:1px solid black;
+    width:30px;
+    height:30px;
+    border-radius: 15px;
+    font-size:18px;
+}
+
+.problemAnswerObj.selected .problemAnswerObjKind {
+    border: 1px solid white;
+    /* Add other style changes for .problemAnswerObjKind here */
+}
+
+
+.problemAnswerObj .problemAnswerObjKind {
+    border: 1px solid black;
+    /* Add other style changes for .problemAnswerObjKind here */
+}
+
+/*
+.problemAnswerObj:hover .problemAnswerObjKind {
+    border: 1px solid black;
+    color : black;
+}
+
+.problemAnswerObj:hover .problemAnswerObjContents {
+    color : black;
+}
+*/
+
+
+.problemAnswerObjContents
+{
+    display:inline;
+    align-items: center;
+    font-size:18px;
+}
+
+.problemAnswerObj:not(.selected):hover {
+    background-color: white;
+    color: #0077c8;
+}
+
+.problemAnswerObj:not(.selected):hover .problemAnswerObjKind {
+    background-color:  white;
+    color: #0077c8;
+}
+
+.problemAnswerObj:not(.selected):hover .problemAnswerObjContents {
+    background-color:  white;
+    color: #0077c8;
+}
+
+.problemAnswerObj:not(.selected):hover .problemAnswerObjKind {
+    border: 1px solid #0077c8;
+    /* Add other style changes for .problemAnswerObjKind here */
+}
+
+
+
+.problemAnswerObj.init:not(.selected):hover {
+    color: white;
+    background-color: #0077c8;
+}
+
+.problemAnswerObj.init:not(.selected):hover .problemAnswerObjKind {
+    color: white;
+    background-color: #0077c8;
+}
+
+.problemAnswerObj.init:not(.selected):hover .problemAnswerObjContents {
+    color: white;
+    background-color: #0077c8;
+}
+
+.problemAnswerObj.init:not(.selected):hover .problemAnswerObjKind {
+    border: 1px solid white;
+    /* Add other style changes for .problemAnswerObjKind here */
+}

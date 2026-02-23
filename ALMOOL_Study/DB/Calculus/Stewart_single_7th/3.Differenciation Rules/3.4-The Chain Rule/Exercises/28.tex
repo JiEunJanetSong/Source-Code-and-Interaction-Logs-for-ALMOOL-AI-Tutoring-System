@@ -1,0 +1,142 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\dfrac{e^u-e^{-u}}{e^u+e^{-u}}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+First, note that the given function
+
+$$
+y(u) = \dfrac{e^u - e^{-u}}{e^u + e^{-u}}
+$$
+
+is the standard definition of the hyperbolic tangent:
+
+$$
+y(u) = \tanh(u).
+$$
+
+A well‐known fact about $\tanh(u)$ is that
+
+$$
+\dfrac{d}{du}\bigl[\tanh(u)\bigr]
+=
+\operatorname{sech}^2(u)
+=
+1 - \tanh^2(u).
+$$
+
+Hence, recognizing the function as $\tanh(u)$ immediately gives
+
+$$
+\boxed{ y'(u) = 1 - y(u)^2 = \operatorname{sech}^2(u). }
+$$
+
+\textbf{Derivation via the Quotient Rule}
+
+If you prefer to differentiate $\displaystyle y(u) = \dfrac{e^u - e^{-u}}{e^u + e^{-u}}$ directly, use the quotient rule.  Let
+
+$$
+\text{Numerator: } T(u) = e^u - e^{-u}, 
+\quad
+\text{Denominator: } B(u) = e^u + e^{-u}.
+$$
+
+Then
+
+$$
+T'(u) 
+= \dfrac{d}{du}\bigl(e^u - e^{-u}\bigr) 
+= e^u -\bigl(-e^{-u}\bigr) 
+= e^u + e^{-u},
+$$
+$$
+B'(u)
+= \dfrac{d}{du}\bigl(e^u + e^{-u}\bigr)
+= e^u - e^{-u}.
+$$
+
+By the quotient rule,
+
+$$
+y'(u)
+= \dfrac{T'(u)\,B(u) - T(u)\,B'(u)}{\bigl[B(u)\bigr]^2}
+= \dfrac{(e^u + e^{-u})(e^u + e^{-u}) - (e^u - e^{-u})(e^u - e^{-u})}
+       {\bigl(e^u + e^{-u}\bigr)^2}.
+$$
+
+Observe the numerator:
+
+$$
+(e^u + e^{-u})^2 
+= e^{2u} + 2 + e^{-2u},
+$$
+$$
+(e^u - e^{-u})^2 
+= e^{2u} - 2 + e^{-2u}.
+$$
+
+Their difference is 
+
+$$
+\bigl(e^{2u} + 2 + e^{-2u}\bigr)
+-
+\bigl(e^{2u} - 2 + e^{-2u}\bigr)
+= 4.
+$$
+
+Hence the numerator is $4$, and so
+
+$$
+y'(u)
+= \dfrac{4}{\bigl(e^u + e^{-u}\bigr)^2}.
+$$
+
+One can also verify that 
+
+$\operatorname{sech}^2(u) = \dfrac{4}{(e^u + e^{-u})^2}$, matching the known identity for $\tanh(u)$.
+
+\textbf{Summary}
+
+1. Using the hyperbolic identity:  
+   $$
+   y(u) = \tanh(u) 
+   \quad\Longrightarrow\quad
+   y'(u) = \operatorname{sech}^2(u) = 1 - \tanh^2(u) = 1 - y^2.
+   $$
+
+2. Using the quotient rule:  
+   $$
+    \boxed{ 
+   y'(u) 
+   = \dfrac{4}{\bigl(e^u + e^{-u}\bigr)^2}.
+   }$$
+
+Both expressions are correct and equivalent. The most concise answer is:
+
+$$
+\dfrac{dy}{du} = 1 - \bigl(\tanh(u)\bigr)^2 = \operatorname{sech}^2(u).
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

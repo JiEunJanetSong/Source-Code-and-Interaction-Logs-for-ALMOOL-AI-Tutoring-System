@@ -1,0 +1,166 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Evaluate the integral.
+
+$$\int\ \left( \arcsin \ x \right)^2 \ d x$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+I=\int[\arcsin (x)]^2 d x
+$$
+
+
+A natural method is integration by parts, using
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+1) First integration by parts
+
+Let
+
+$$
+u=[\arcsin (x)]^2, \quad d v=d x
+$$
+
+
+Then
+
+$$
+d u=2 \arcsin (x) \dfrac{d}{d x}(\arcsin x)=2 \arcsin (x) \dfrac{1}{\sqrt{1-x^2}} d x, \quad v=\int d x=x
+$$
+
+
+Substitute into the integration by parts formula:
+
+$$
+I=\int[\arcsin (x)]^2 d x=\underbrace{[\arcsin (x)]^2}_u \underbrace{x}_v-\int \underbrace{x}_v \underbrace{\left(2 \arcsin (x) \dfrac{1}{\sqrt{1-x^2}}\right)}_{d u} d x
+$$
+
+Hence,
+
+$$
+I=x[\arcsin (x)]^2-2 \int \dfrac{x \arcsin (x)}{\sqrt{1-x^2}} d x
+$$
+
+
+So we have reduced the problem to evaluating
+
+$$
+J=\int \dfrac{x \arcsin (x)}{\sqrt{1-x^2}} d x
+$$
+
+2) Substitute $x=\sin (t)$ in the remaining integral
+
+Let
+
+$$
+x=\sin t \quad \Longrightarrow \quad t=\arcsin (x), \quad d x=\cos t d t, \quad \sqrt{1-x^2}=\sqrt{1-\sin ^2 t}=\cos t \quad\left(\text { assuming } t \in\left[-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right]\right)
+$$
+
+
+Then
+
+$$
+J=\int \dfrac{(\sin t)(t)}{\cos t}(\cos t d t)=\int t \sin t d t
+$$
+
+
+Thus we need $\int t \sin t d t$.
+
+2.1) Integrate $\int t \sin t d t$ by parts
+
+Another integration by parts:
+
+- Let $u=t$, so $d u=d t$.
+
+- Let $d v=\sin t d t$, so $v=-\cos t$.
+
+Hence,
+
+$$
+\int t \sin t d t=t(-\cos t)-\int(-\cos t) d t=-t \cos t+\int \cos t d t=-t \cos t+\sin t
+$$
+
+
+Therefore,
+
+$$
+J=\int t \sin t d t=-t \cos t+\sin t
+$$
+
+
+Returning to $x$-variables: $t=\arcsin (x)$ and $\cos t=\sqrt{1-x^2}, \sin t=x$. So
+
+$$
+J=-\arcsin (x) \sqrt{1-x^2}+x
+$$
+
+3) Combine results
+
+We found:
+
+$$
+I=x[\arcsin (x)]^2-2 \int \dfrac{x \arcsin (x)}{\sqrt{1-x^2}} d x=x[\arcsin (x)]^2-2 J.
+$$
+
+But
+
+$$
+J=-\arcsin (x) \sqrt{1-x^2}+x
+$$
+
+
+Hence,
+
+$$
+-2 J=-2\left(-\arcsin (x) \sqrt{1-x^2}+x\right)=2 \arcsin (x) \sqrt{1-x^2}-2 x
+$$
+
+
+Therefore,
+
+$$
+I=x[\arcsin (x)]^2+2 \arcsin (x) \sqrt{1-x^2}-2 x+C
+$$
+
+where $C$ is the constant of integration.
+
+Final Answer
+
+$$
+\int[\arcsin (x)]^2 d x=x[\arcsin (x)]^2+2 \arcsin (x) \sqrt{1-x^2}-2 x+C
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
+ 
+   
+   
+
+   
+
+

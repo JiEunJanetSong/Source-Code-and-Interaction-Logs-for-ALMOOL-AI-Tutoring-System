@@ -1,0 +1,55 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$f(t)=\sin \left(e^t\right)+e^{\sin t}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+To differentiate 
+
+$$
+f(t) = \sin\bigl(e^t\bigr) + e^{\sin t},
+$$
+
+we handle each term separately:
+
+1. For $\sin(e^t)$:
+
+   $$
+   \dfrac{d}{dt} \sin(e^t) = \cos(e^t) \cdot \dfrac{d}{dt}(e^t) = \cos(e^t)\, e^t.
+   $$
+
+2. For $e^{\sin t}$:
+
+   $$
+   \dfrac{d}{dt} e^{\sin t} = e^{\sin t} \cdot \dfrac{d}{dt}(\sin t) = e^{\sin t}\, \cos t.
+   $$
+
+Therefore, summing these results,
+
+$$
+\boxed{f'(t) = e^t \cos\bigl(e^t\bigr) + e^{\sin t}\cos t.}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

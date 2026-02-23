@@ -1,0 +1,70 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+The Maclaurin series for a function $f$ is given by $\sum_{n=1}^{\infty} \frac{(n+1) x^n}{n^2 6^n}$ and converges to $f(x)$ for all $x$ in the interval of convergence. It can be shown that the Maclaurin series for $f$ has a radius of convergence of 6.
+
+(c) Find the general term of the Maclaurin series for $f^{\prime}$, the derivative of $f$. Find the radius of convergence of the Maclaurin series for $f^{\prime}$.
+
+}\SetValue{Solution}{%
+ 
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+The model solution is presented using standard mathematical notation.
+
+Answers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.
+
+The Maclaurin series for a function $f$ is given by $\sum_{n=1}^{\infty} \frac{(n+1) x^n}{n^2 6^n}$ and converges to $f(x)$ for all $x$ in the interval of convergence. It can be shown that the Maclaurin series for $f$ has a radius of convergence of 6.
+
+## Model Solution (c)
+
+The general term of the Maclaurin series for $f^{\prime}$ is
+
+$$
+\frac{(n+1) n x^{n-1}}{n^2 6^n}=\frac{(n+1) x^{n-1}}{n \cdot 6^n}
+$$
+
+
+Because the radius of convergence of the Maclaurin series for $f$ is 6, the radius of convergence of the Maclaurin series for $f^{\prime}$ is also 6.
+
+## Scoring (c)
+
+- For The general term of the Maclaurin series for $f^{\prime}$ is $\frac{(n+1) n x^{n-1}}{n^2 6^n}=\frac{(n+1) x^{n-1}}{n \cdot 6^n}$
+        - General term; 1 point
+
+- For Because the radius of convergence of the Maclaurin series for $f$ is 6, the radius of convergence of the Maclaurin series for $f^{\prime}$ is also 6.
+        - Radius; 1 point
+
+## Scoring notes (c)
+
+- A response of $\frac{(n+1) n x^{n-1}}{n^2 6^n}$ earns the first point. Any expression mathematically equivalent to this also earns the first point.
+
+- The response need not simplify $\frac{(n+1) n x^{n-1}}{n^2 6^n}$, but any presented simplification must be correct in order to earn the first point.
+
+- The second point is carned only for a supported answer of 6. The second point can be earned without the first.
+
+- Alternate solution for second point (ratio test):
+
+$$
+\lim _{n \rightarrow \infty}\left|\frac{\frac{(n+2) x^n}{(n+1) 6^{n+1}}}{\frac{(n+1) x^{n-1}}{n \cdot 6^*}}\right|=\lim _{n \rightarrow \infty}\left|\frac{n(n+2)}{(n+1)^2}, \frac{x}{6}\right|=\frac{|x|}{6}<1 \Rightarrow|x|<6
+$$
+
+
+Therefore, the radius of convergence of the Maclaurin series for $f^{+}$is 6.
+- Alternate solution for second point (root test):
+
+$$
+\lim _{n \rightarrow \infty} \sqrt[n]{\frac{(n+1)|x|^{n-1}}{n \cdot 6^n}}=\lim _{n \rightarrow \infty}\left(\frac{n+1}{n}\right)^{1 / n} \cdot|x|^{-1 / n} \cdot \frac{|x|}{6}=1 \cdot 1 \cdot \frac{|x|}{6}<1 \Rightarrow|x|<6
+$$
+
+
+Therefore, the radius of convergence of the Maclaurin series for $f^*$ is 6.
+
+Total for part (c) 2 points
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

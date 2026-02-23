@@ -1,0 +1,108 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+A ship steams from Port $\mathbf{P}$ for a distance of 15 km on a bearing of $070^{\circ}$ to port $\mathbf{Q}$. It then steams from port $\mathbf{Q}$ to $\mathbf{R}$ a distance of 20 km on a bearing of $125^{\circ}$. Find the distance and bearing of port $\mathbf{R}$ from port $\mathbf{P}$. Leave the answer in the nearest whole number.
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Assign coordinates using bearings
+Assume Port $\mathbf{P}$ is at the origin:
+
+$$
+\mathbf{P}=(0,0)
+$$
+
+
+From $\mathbf{P}$ to Q :
+
+- Bearing $070^{\circ}$ is measured clockwise from North, so the angle from the positive x-axis (East) is $90^{\circ}-70^{\circ}=20^{\circ}$.
+
+- Distance $=15 \mathrm{~km}$
+
+$$
+\overrightarrow{P Q}=15\left(\cos 20^{\circ}, \sin 20^{\circ}\right) \approx 15(0.9397,0.3420)=(14.096,5.13)
+$$
+
+
+Let's call this point:
+
+$$
+\mathbf{Q}=(14.096,5.13)
+$$
+
+
+From $\mathbf{Q}$ to $\mathbf{R}$ :
+
+- Bearing $125^{\circ} \rightarrow$ angle from East $=90^{\circ}-125^{\circ}=-35^{\circ}$, or equivalently, angle from East $=125^{\circ}-90^{\circ}=35^{\circ}$ below the East axis.
+
+- Distance $=20 \mathrm{~km}$
+
+So:
+
+$$
+\overrightarrow{Q R}=20\left(\cos 35^{\circ}, \sin 35^{\circ}\right)=20(0.8192,0.5736) \Rightarrow(16.384,11.472)
+$$
+
+
+But since it's below the East axis (heading southeast), the $y$-component should be negative:
+
+$$
+\overrightarrow{Q R}=20\left(\cos 35^{\circ},-\sin 35^{\circ}\right)=(16.384,-11.472)
+$$
+
+
+Now, add this to $\overrightarrow{P Q}$ to get the vector from $\mathbf{P}$ to $\mathbf{R}$ :
+
+$$
+\overrightarrow{P R}=\overrightarrow{P Q}+\overrightarrow{Q R}=(14.096+16.384,5.13-11.472)=(30.48,-6.342)
+$$
+
+Step 2: Distance from $\mathbf{P}$ to $\mathbf{R}$
+
+$$
+|\overrightarrow{P R}|=\sqrt{30.48^2+(-6.342)^2} \approx \sqrt{929.0+40.2}=\sqrt{969.2} \approx 31.1 \mathrm{~km}
+$$
+
+
+Step 3: Bearing from $\mathbf{P}$ to $\mathbf{R}$
+To find the bearing, compute the angle of vector $\overrightarrow{P R}=(30.48,-6.342)$ from the North.
+
+- First, compute angle from the East:
+
+$$
+\theta=\tan ^{-1}\left(\frac{-6.342}{30.48}\right) \approx \tan ^{-1}(-0.208) \approx-11.8^{\circ}
+$$
+
+
+Since this vector lies in the 4th quadrant (positive $x$, negative $y$ ), the bearing is:
+
+$$
+\text { Bearing }=90^{\circ}+|\theta|=90^{\circ}+11.8^{\circ}=101.8^{\circ} \approx 102^{\circ}
+$$
+
+Final Answer:
+
+- Distance from $\mathbf{P}$ to $\mathbf{R}: 31 \mathrm{~km}$
+
+- Bearing of $\mathbf{R}$ from $\mathbf{P}: 102^{\circ}$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

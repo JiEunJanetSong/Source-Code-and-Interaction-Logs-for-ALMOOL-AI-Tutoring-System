@@ -1,0 +1,69 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\frac{\sin 2n}{1+\sqrt{n}}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \frac{\sin(2n)}{1 + \sqrt{n}}
+$
+
+We want to determine whether it converges or diverges, and if it converges, find the limit.
+
+
+ Step 1: Analyze the numerator and denominator
+
+- $\sin(2n)$ oscillates between $-1$ and $1$ as $n \to \infty$.
+
+- $1 + \sqrt{n} \to \infty$
+
+So we have a bounded numerator and an unbounded denominator. This suggests that the fraction might tend to 0.
+
+
+
+ Step 2: Use inequalities and the Squeeze Theorem
+
+We know:
+
+$
+-1 \leq \sin(2n) \leq 1 \quad \Rightarrow \quad \frac{-1}{1 + \sqrt{n}} \leq a_n \leq \frac{1}{1 + \sqrt{n}}
+$
+
+As $n \to \infty$, both bounds tend to 0. Therefore, by the Squeeze Theorem:
+
+$
+\lim_{n \to \infty} a_n = 0
+$
+
+Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{0}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

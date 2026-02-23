@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html data-theme="light">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="md5.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<script>
+
+function signIn()
+{
+    let userID = document.getElementById("userID").value;
+    let userPW = document.getElementById("userPW").value;
+    let userPWConfirm = document.getElementById("userPWConfirm").value;
+    let email = document.getElementById("email").value;
+    let name = document.getElementById("name").value;
+
+    if(userPW == userPWConfirm)
+    {
+        const data = JSON.stringify({
+            ID: userID,
+            PW: userPW,
+            email:email,
+            name:name
+        });
+
+        const httpData = new XMLHttpRequest();
+        httpData.open('POST','DigitalSAT_signIn.php');
+        httpData.setRequestHeader('Content-Type', 'text/plain');
+        //httpData.setRequestHeader('Accept', 'application/json');
+        
+        httpData.onreadystatechange = function()
+        {
+            if (this.readyState == 4 && this.status == 200)
+            {
+                if(httpData.responseText == "success")
+                    window.location.href = `DigitalSAT_main_new.php`;
+            }
+        };
+
+        httpData.send(data);
+    }
+}
+
+</script>
+
+<body class="text-2xl">
+
+    <div class="flex flex-row justify-center">
+        <div class="basis-auto text-center" style="background-color: none; height:500px;">
+
+        <div class="form-control w-full max-w-xs py-1">
+            <label class="label">
+            <span class="label-text">ID</span>
+            </label>
+            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" id="userID"/>
+        </div>
+
+        <div class="form-control w-full max-w-xs py-1">
+            <label class="label">
+            <span class="label-text">Password</span>
+            </label>
+            <input type="password" placeholder="Type here" class="input input-bordered w-full max-w-xs" id="userPW"/>
+        </div>
+
+        <div class="form-control w-full max-w-xs py-1">
+            <label class="label">
+            <span class="label-text">Password Confirm</span>
+            </label>
+            <input type="password" placeholder="Type here" class="input input-bordered w-full max-w-xs" id="userPWConfirm"/>
+        </div>
+
+        <div class="form-control w-full max-w-xs py-1">
+            <label class="label">
+            <span class="label-text">Email</span>
+            </label>
+            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" id="email"/>
+        </div>
+
+        <div class="form-control w-full max-w-xs py-1">
+            <label class="label">
+            <span class="label-text">Name</span>
+            </label>
+            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" id="name"/>
+        </div>
+
+        <div class="form-control w-full max-w-xs" style="padding-top: 30px;">
+            <button type="button" onclick="signIn();" id="signIn" class="btn btn-accent">Sign In</button>
+        </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\ln\left( 2n^2+1 \right) -\ln\left( n^2+1 \right) $$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \ln(2n^2 + 1) - \ln(n^2 + 1)
+$
+
+
+
+ Step 1: Use logarithmic properties
+
+Apply the identity:
+
+$
+\ln A - \ln B = \ln\left(\frac{A}{B}\right)
+$
+
+So we rewrite:
+
+$
+a_n = \ln\left( \frac{2n^2 + 1}{n^2 + 1} \right)
+$
+
+
+
+ Step 2: Simplify the expression
+
+Divide numerator and denominator by $n^2$:
+
+$
+\frac{2n^2 + 1}{n^2 + 1} = \frac{2 + \frac{1}{n^2}}{1 + \frac{1}{n^2}} \to \frac{2}{1} = 2 \quad \text{as } n \to \infty
+$
+
+
+ Step 3: Take the limit
+
+$
+\lim_{n \to \infty} a_n = \lim_{n \to \infty} \ln\left( \frac{2n^2 + 1}{n^2 + 1} \right) = \ln(2)
+$
+
+Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{\ln 2}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,48 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Makayla finds all the possible ways to draw a path in a $5 \times 5$ diamond-shaped grid. Each path starts at the bottom of the grid and ends at the top, always moving one unit northeast or northwest. She computes the area of the region between each path and the right side of the grid. Two examples are shown in the figures below. What is the sum of the areas determined by all possible paths?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2025-25.png}
+	\end{center}
+
+\ansFIVEs{%start
+		2520 }{%<--- (A)
+		3150 }{%<--- (B)
+		3840 }{%<--- (C)
+		4730 }{%<---- (D)
+		5050 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+Step 1: To find the total number of paths, observe that all paths will have 10 total steps. We have to choose which 5 of these steps will be NE (the rest will be NW). So the total number of paths is $\binom{10}{5}$. The formula for combinations is: $\binom{n}{r}=\frac{n!}{r!(n-r)!}$ and $\binom{10}{5}=\frac{10!}{5!\times 5!}=252$.
+Step 2: Each path splits the total area of 25 in two parts. So, for any path that gives area $=A$, you can find a unique 'sister' path that has an area $=25-A$ (in other words, the pair of paths have a combined area of 25). Possible ways to define the 'sister' path are:
+- Rotate the entire grid $180^{\circ}$
+- Swap each step of the original paths (for example, each NW becomes NE) (this is a reflection over the diagonal)
+
+Step 3: There are a few ways to get from this observation to the total area:
+- There are $252 / 2=126$ pairs of such paths, and the total area of each pair is 25 . So the total area given by all paths is $126 \times 25$.
+- Each of the 252 paths gives an area of 25 if you also count the 'sister' paths. Since each 'sister' path is also one of the 252, you have to divide by 2 to avoid double counting. So the total area given by all paths is $\frac{252 \times 25}{2}$.
+- Note that the average area of two 'sister' paths is $\frac{25}{2}$, so you can think about every path having this area on average. So the total area given by all paths is $252 \times \frac{25}{2}$.
+The final answer is (B) 3150 .
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

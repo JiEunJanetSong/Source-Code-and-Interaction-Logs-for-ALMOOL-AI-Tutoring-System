@@ -1,0 +1,61 @@
+\begin{GPTQ}
+    곱해져있는거 미분 어떻게해   
+\end{GPTQ}
+
+\begin{GPTA}
+ 주어진 문제에서 곱해진 함수의 미분에는 곱의 법칙(product rule)을 사용할 수 있습니다. 곱의 법칙은 두 개의 합수가 곱해져 있을 때 도함수를 구하는 방법입니다.
+
+곱의 법칙 (Product Rule)
+
+두 함수 $u(x)$ 와 $v(x)$ 가 있을 때, 그들의 곱에 대한 도함수는 다음과 같이 표현됩니다:
+
+$$
+\frac{d}{d x}[u(x) \cdot v(x)]=u^{\prime}(x) v(x)+u(x) v^{\prime}(x)
+$$
+
+
+예제 설명
+
+주어진 문제를 예제 삼아 곱의 법칙을 설명하겠습니다:
+
+1. 식 작성하기:
+
+- 주어진 함수 $y=2(\sin \sqrt{x})^2$.
+
+- 먼저 $2 \sin \sqrt{x}$ 와 $\sin \sqrt{x}$ 라는 두 부분으로 나눌 수 있습니다.
+
+2. 함수 정의:
+
+- $u(x)=2 \sin \sqrt{x}$
+
+- $v(x)=\sin \sqrt{x}$
+
+3. 미분하기:
+
+- $u^{\prime}(x)=2 \cdot \cos \sqrt{x} \cdot \frac{1}{2 \sqrt{x}}=\frac{\cos \sqrt{x}}{\sqrt{x}}$
+
+- $v^{\prime}(x)=\cos \sqrt{x} \cdot \frac{1}{2 \sqrt{x}}=\frac{\cos \sqrt{x}}{2 \sqrt{x}}$
+
+4. 곱의 법칙 적용하기:
+
+- 곱의 법칙에 따라, $\frac{d}{d x}[u(x) v(x)]=u^{\prime}(x) v(x)+u(x) v^{\prime}(x)$ 입니다.
+
+$$
+\frac{d}{d x}\left[2(\sin \sqrt{x})^2\right]=\left(\frac{\cos \sqrt{x}}{\sqrt{x}}\right)(\sin \sqrt{x})+(2 \sin \sqrt{x})\left(\frac{\cos \sqrt{x}}{2 \sqrt{x}}\right)
+$$
+
+1. 간단히 정리하기:
+
+- 이 결과를 간단히 합치면 주어진 풀이와 같은 결과를 얻을 수 있습니다.
+
+걸국, 주어진 식에서의 도함수는 다음과 같이 됩니다:
+
+$$
+\frac{2 \sin \sqrt{x} \cos \sqrt{x}}{\sqrt{x}}
+$$
+
+
+이를 통해, 곱의 법칙은 복잡한 함수가 곱해져 있을 때 유용하게 사용할 수 있음을 알 수 있습니다
+   
+\end{GPTA}
+

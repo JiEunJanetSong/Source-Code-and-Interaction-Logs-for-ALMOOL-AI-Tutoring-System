@@ -1,0 +1,113 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+The faces of each of two fair dice are numbered $1,2,3,5,7$, and 8. When the two dice are tossed, what is the probability that their sum will be an even number?
+
+	\ansFIVEs{%start
+		\frac{4}{9}}{%<--- (A)
+		\frac{1}{2} }{%<--- (B)
+		\frac{5}{9} }{%<--- (C)
+		\frac{3}{5} }{%<---- (D)
+	\frac{2}{3}}%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+}\SetValue{Solution}{%
+
+We are given two fair dice, each with the following faces:
+
+$$
+\{1,2,3,5,7,8\}
+$$
+
+
+We are to find the probability that the sum of the two dice is an even number.
+
+Step 1: Understand even sums
+A sum is even if:
+- even + even = even
+- odd + odd = even
+
+A sum is odd if:
+- even + odd = odd
+- Step 2: Count even and odd numbers on a die
+
+Given face values: $\{1,2,3,5,7,8\}$
+- Even numbers: 2, $8 \rightarrow 2$ even numbers
+- Odd numbers: 1, 3, 5, 7 - 4 odd numbers
+
+So on each die:
+- 2 even numbers
+- 4 odd numbers
+
+Step 3: Total number of outcomes
+Since both dice have 6 faces:
+
+$$
+6 \times 6=36 \text { total outcomes }
+$$
+
+- Step 4: Count favorable outcomes (sum is even)
+
+There are two favorable cases:
+Case 1: Even + Even
+- Die A is even: 2 choices
+- Die B is even: 2 choices
+
+$$
+\rightarrow 2 \times 2=4 \text { outcomes }
+$$
+
+
+Case 2: Odd + Odd
+- Die A is odd: 4 choices
+- Die $B$ is odd: 4 choices
+
+$$
+\rightarrow 4 \times 4=16 \text { outcomes }
+$$
+
+
+So total favorable outcomes $=4+16=20$
+
+Step 5: Compute probability
+
+$$
+\text { Probability }=\frac{\text { favorable outcomes }}{\text { total outcomes }}=\frac{20}{36}=\frac{5}{9}
+$$
+
+Answer (C)
+}\SetValue{Solution MAA}{%
+
+The table below shows that 20 of the 36 sums will be even.
+\begin{tabular}{c|cccccc}
++ & 1 & 2 & 3 & 5 & 7 & 8 \\
+\hline 1 & 2 & 3 & 4 & 6 & 8 & 9 \\
+2 & 3 & 4 & 5 & 7 & 9 & 10 \\
+3 & 4 & 5 & 6 & 8 & 10 & 11 \\
+5 & 6 & 7 & 8 & 10 & 12 & 13 \\
+7 & 8 & 9 & 10 & 12 & 14 & 15 \\
+8 & 9 & 10 & 11 & 13 & 15 & 16
+\end{tabular}
+
+Therefore the probability that the sum will be even is $\frac{20}{36}=\frac{5}{9}$.
+
+OR
+
+The sum is even provided both dice are even or both dice are odd. Because there is a $\frac{1}{3}$ probability of one die being even, there is a $\frac{1}{9}$ probability that both will be even. There is a $\frac{2}{3}$ probability that one will be odd and thus a $\frac{4}{9}$ probability that both will be odd. Thus the overall probability that the sum is even is $\frac{1}{9}+\frac{4}{9}=\frac{5}{9}$.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+Answer (C)
+}
+\ProcessDATA
+
+
+

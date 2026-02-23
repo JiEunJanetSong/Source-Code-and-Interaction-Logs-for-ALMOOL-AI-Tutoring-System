@@ -1,0 +1,106 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+What is the value of the product
+
+$$
+\left(\frac{1 \cdot 3}{2 \cdot 2}\right)\left(\frac{2 \cdot 4}{3 \cdot 3}\right)\left(\frac{3 \cdot 5}{4 \cdot 4}\right) \cdots\left(\frac{97 \cdot 99}{98 \cdot 98}\right)\left(\frac{98 \cdot 100}{99 \cdot 99}\right)?
+$$
+
+	\ansFIVEs{%start
+		\frac{1}{2}}{%<--- (A)
+		\frac{50}{99} }{%<--- (B)
+		\frac{9800}{9801} }{%<--- (C)
+		\frac{100}{99} }{%<---- (D)
+	50}%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+}\SetValue{Solution}{%
+
+Step 1: Express the General Term
+Each term in the product looks like:
+
+$$
+\frac{n(n+2)}{(n+1)^2}
+$$
+
+
+So the full product becomes:
+
+$$
+\prod_{n=1}^{98} \frac{n(n+2)}{(n+1)^2}
+$$
+
+
+Now we break this into two separate fractions:
+
+$$
+\frac{n(n+2)}{(n+1)^2}=\frac{n}{n+1} \cdot \frac{n+2}{n+1}
+$$
+
+
+So the entire product becomes:
+
+$$
+\prod_{n=1}^{98}\left(\frac{n}{n+1} \cdot \frac{n+2}{n+1}\right)=\left(\prod_{n=1}^{98} \frac{n}{n+1}\right) \cdot\left(\prod_{n=1}^{98} \frac{n+2}{n+1}\right)
+$$
+
+Step 2: Evaluate Each Product Using Telescoping
+First part:
+
+$$
+\prod_{n=1}^{98} \frac{n}{n+1}=\frac{1}{2} \cdot \frac{2}{3} \cdot \frac{3}{4} \cdots \frac{98}{99}
+$$
+
+
+This is a telescoping product:
+All the numerators and denominators cancel except the first denominator and the last numerator:
+
+$$
+\frac{1}{99}
+$$
+
+
+Second part:
+
+$$
+\prod_{n=1}^{98} \frac{n+2}{n+1}=\frac{3}{2} \cdot \frac{4}{3} \cdot \frac{5}{4} \cdots \frac{100}{99}
+$$
+
+
+Again, this telescopes. Everything cancels except the first denominator and the last numerator:
+
+$$
+\frac{100}{2}=50
+$$
+
+- Step 3: Multiply the Two Results
+
+$$
+\frac{1}{99} \cdot 50=\frac{50}{99}
+$$
+
+Answer (B)
+}\SetValue{Solution MAA}{%
+
+\begin{aligned}
+	&\text { The product may be rewritten as }\\
+	&\left(\frac{1}{2}\right)\left(\frac{3 \cdot 2}{2 \cdot 3}\right)\left(\frac{4 \cdot 3}{3 \cdot 4}\right)\left(\frac{5 \cdot 4}{4 \cdot 5}\right) \cdots\left(\frac{99 \cdot 98}{98 \cdot 99}\right)\left(\frac{100}{99}\right)=\frac{1}{2} \cdot \frac{100}{99}=\frac{50}{99}.
+	\end{aligned}
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+Answer (B)
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,68 @@
+.userData
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  padding:50px;
+}
+
+.userInfo{
+  display:flex;
+  width:500px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.userInfoLabel{
+  display:flex;
+  color:var(--ALMOOL-color-03);
+}
+
+.userInfoInput{
+  border:2px solid var(--ALMOOL-color-03);
+}
+
+.userInfoInput:hover{
+  border:2px solid var(--ALMOOL-color-04);
+}
+
+.userButton{
+  width:500px;
+  height:60px;
+  cursor:pointer;
+
+  font-size: 25px;
+  color:white;
+  background-color: var(--ALMOOL-color-03);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userButton:hover{
+  background-color: var(--ALMOOL-color-04);
+}
+
+.batchUserList{
+  width:600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.batchUserList .batchUserInfo{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.batchUserInfo .batchUserData{
+  width:150px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}

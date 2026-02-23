@@ -1,0 +1,53 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+ 
+Buzz Bunny is hopping up and down a set of stairs, one step at a time. In how many ways can Buzz Bunny start on the ground, make a sequence of $6$ hops, and end up back on the ground? (For example, one sequence of hops is up-up-down-down-up-down.)
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2024-13.png}
+	\end{center}
+
+\ansFIVEs{%start
+		4 }{%<--- (A)
+		5 }{%<--- (B)
+		6 }{%<--- (C)
+		8 }{%<---- (D)
+		12 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+Looking at the answer choices, you see that you can list them out. Doing this gets you:
+UUDDUD
+UDUDUD
+UUUDDD
+UDUUDD
+UUDUDD
+Counting all the paths listed above gets you (B) 5 .
+
+Solution 2
+Any combination can be written as some re-arrangement of UUUDDD. Clearly we must end going down, and start going up, so we need the number of ways to insert $2 U$ 's and $2 D$ 's into $U_{----} D$. There are $\binom{4}{2}=6$ ways, but we have to remove the case UDDUUD, giving us (B) 5 .
+- We know there are no more cases since there will be at least one $U$ before we have a $D$ (from the first $U$ ), at least two $U$ 'S before two $D$ 's (since we removed the one case), and at least three $U$ 's before three $D$ 's, as we end with the third $D$.
+
+
+Solution 3
+These numbers are clearly the Catalan numbers. Since we have 6 steps, we need the third Catalan number, which is (B) 5 . 
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

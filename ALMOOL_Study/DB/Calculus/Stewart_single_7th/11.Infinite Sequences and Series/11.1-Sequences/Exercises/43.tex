@@ -1,0 +1,79 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\frac{\cos^2 n}{2^n}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \frac{\cos^2 n}{2^n}
+$
+
+
+
+ Step 1: Analyze the components
+
+- $\cos^2 n$ oscillates between 0 and 1 for all real $n$. It's bounded:
+
+$
+0 \leq \cos^2 n \leq 1
+$
+
+- $2^n \to \infty$ exponentially as $n \to \infty$
+
+So the numerator stays bounded, while the denominator grows very large.
+
+
+
+ Step 2: Use the Squeeze Theorem
+
+We know that:
+
+$
+0 \leq \frac{\cos^2 n}{2^n} \leq \frac{1}{2^n}
+$
+
+And:
+
+$
+\lim_{n \to \infty} \frac{1}{2^n} = 0
+$
+
+So by the Squeeze Theorem, we have:
+
+$
+\lim_{n \to \infty} a_n = 0
+$
+
+ Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{0}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,96 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Fifteen integers $a_1, a_2, a_3, \ldots, a_{15}$ are arranged in order on a number line. The integers are equally spaced and have the property that
+
+$$
+1 \leq a_1 \leq 10,13 \leq a_2 \leq 20, \text { and } 241 \leq a_{15} \leq 250
+$$
+
+What is the sum of digits of $a_{14}$?
+
+\ansFIVEs{%start
+		8 }{%<--- (A)
+		9 }{%<--- (B)
+		10 }{%<--- (C)
+		11 }{%<---- (D)
+		12 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given that $a_1, a_2, \ldots, a_{15}$ form an arithmetic sequence.
+
+Given:
+
+- $1 \leq a_1 \leq 10$
+
+- $13 \leq a_2=a_1+d \leq 20$
+
+- $241 \leq a_{15}=a_1+14 d \leq 250$
+
+Step 1: Find possible $d$
+
+From the third condition:
+
+$$
+\begin{aligned}
+241 \leq a_1+14 d & \leq 250 \Rightarrow 231 \leq 14 d \leq 249 \quad\left(\text { since } a_1 \leq 10\right) \\
+\Rightarrow & 16.5 \leq d \leq 17.79 \Rightarrow d=17
+\end{aligned}
+$$
+
+
+Step 2: Find possible $a_1$
+
+From the second condition:
+
+$$
+13 \leq a_1+17 \leq 20 \Rightarrow-4 \leq a_1 \leq 3
+$$
+
+
+Combine with $1 \leq a_1 \leq 10$ :
+
+$$
+1 \leq a_1 \leq 3
+$$
+
+
+Try values:
+
+- $a_1=3 \Rightarrow a_{15}=3+14 \cdot 17=241$
+
+Step 3: Find $a_{14}$
+
+$$
+a_{14}=a_1+13 d=3+13 \cdot 17=224
+$$
+
+
+Step 4: Digit sum
+
+$$
+2+2+4=8
+$$
+
+
+Answer: (A) 8
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

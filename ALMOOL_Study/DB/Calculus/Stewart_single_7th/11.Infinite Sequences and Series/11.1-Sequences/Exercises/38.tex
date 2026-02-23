@@ -1,0 +1,77 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$\left\{ \frac{\ln n}{\ln 2\ n} \right\}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \frac{\ln n}{\ln 2 \cdot n}.
+$
+
+
+
+ 1. Rewrite and Simplify
+
+We can factor out the constant $\frac{1}{\ln 2}$:
+
+$
+a_n = \frac{1}{\ln 2} \cdot \frac{\ln n}{n}.
+$
+
+
+
+ 2. Analyze the Limit
+
+It is a well-known limit that
+
+$
+\lim_{n \to \infty} \frac{\ln n}{n} = 0,
+$
+
+since $\ln n$ grows much more slowly than $n$.
+
+Hence,
+
+$
+\lim_{n \to \infty} a_n
+= \frac{1}{\ln 2} \,\cdot\, \lim_{n \to \infty} \frac{\ln n}{n}
+= \frac{1}{\ln 2} \cdot 0
+= 0.
+$
+
+
+
+ 3. Conclusion
+
+- The sequence $\displaystyle \left\{ \frac{\ln n}{\ln 2 \cdot n} \right\}$ converges.
+
+- Its limit is
+
+$
+\boxed{0.}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

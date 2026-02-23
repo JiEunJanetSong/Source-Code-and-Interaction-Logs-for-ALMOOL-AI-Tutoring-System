@@ -1,0 +1,45 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+If \((2x + m)(4x + n) = 8x^2 + kx + 20\) for all values of \(x\), and \(m + n = 9\), what are all possible values of \(k\)?
+
+\ansFOURsT{%start
+	 	 $13$ and $14$}{%<--- (A)
+	 	 $17$ and $18$}{%<--- (B)
+	 	 $22$ and $23$}{%<--- (C)
+		 $26$ and $28$}%<---- (D)
+
+}\SetValue{Solution}{%
+
+We begin by expanding the left-hand side of the equation and simplifying the expression.\begin{alignat*}{2}
+(2x + m)(4x + n) 
+&= 2x \cdot 4x + 2x \cdot n + m \cdot 4x + m \cdot n \qquad && \text{(distribute terms)} \\
+&= 8x^2 + 2nx + 4mx + mn  \qquad && \text{(simplify products)} \\
+&= 8x^2 + (2n + 4m)x + mn \qquad && \text{(combine like terms)} 
+\end{alignat*}
+Next, we equate the coefficients of like terms from both sides of the equation.\begin{alignat*}{2}
+8x^2 + (2n + 4m)x + mn &= 8x^2 + kx + 20 \qquad && \text{(equating both sides)} \\
+2n + 4m &= k \qquad && \text{(coefficients of } x \text{)} \\
+mn &= 20 \qquad && \text{(constant terms)}
+\end{alignat*}
+We now use the additional information given to find the values of \( m \) and \( n \).\begin{alignat*}{2}
+m + n &= 9 \qquad && \text{(given)} \\
+n &= 9 - m \qquad && \text{(solving for } n \text{)}
+\end{alignat*}
+Substitute \( n = 9 - m \) into the equation \( mn = 20 \):\begin{alignat*}{2}
+m(9 - m) &= 20 \qquad && \text{(substitute and simplify)} \\
+-m^2 + 9m - 20 &= 0 \qquad && \text{(rearrange)} \\
+m^2 - 9m + 20 &= 0 \qquad && \text{(multiply by } -1 \text{)} \\
+(m - 5)(m - 4) &= 0 \qquad && \text{(factor)} \\
+m &= 5 \quad \text{or} \quad m = 4 \qquad && \text{(solve)}
+\end{alignat*}
+Finally, substitute these values of \( m \) into the equations for \( n \) and \( k \).\begin{alignat*}{2}
+\text{If } m = 5, &\ n = 4: \quad k = 2(4) + 4(5) = 28 \qquad && \text{(calculate } k \text{)} \\
+\text{If } m = 4, &\ n = 5: \quad k = 2(5) + 4(4) = 26 \qquad && \text{(calculate } k \text{)}
+\end{alignat*}
+Thus, the possible values of \( k \) are $\fbox{D) $26$ and $28$}$.
+
+}\SetValue{Answer}{%
+D
+}\ProcessDATA
+
+

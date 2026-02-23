@@ -1,0 +1,88 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+\begin{tabular}{|c|c|c|c|}
+    \hline$x$ & 0 & $\pi$ & $2 \pi$ \\
+    \hline$f^{\prime}(x)$ & 5 & 6 & 0 \\
+    \hline
+    \end{tabular}
+    
+The function $f$ is twice differentiable for all $x$ with $f(0)=0$. Values of $f^{\prime}$, the derivative of $f$, are given in the table for selected values of $x$.
+
+(c) Use Euler's method, starting at $x=0$ with two steps of equal size, to approximate $f(2 \pi)$. Show the computations that lead to your answer.
+       
+}\SetValue{Solution}{%
+
+$$
+f(\pi) \approx f(0)+\pi f^{\prime}(0)=0+5 \pi=5 \pi
+$$
+
+$$
+f(2 \pi) \approx f(\pi)+\pi f^{\prime}(\pi)
+$$
+
+$\approx 5 \pi+6 \pi=11 \pi$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+The model solution is presented using standard mathematical notation.
+Answers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.
+
+\begin{tabular}{|c|c|c|c|}
+\hline$x$ & 0 & $\pi$ & $2 \pi$ \\
+\hline$f^{\prime}(x)$ & 5 & 6 & 0 \\
+\hline
+\end{tabular}
+
+The function $f$ is twice differentiable for all $x$ with $f(0)=0$. Values of $f^{\prime}$, the derivative of $f$, are given in the table for selected values of $x$.
+
+## Model Solution (c)
+
+$$
+f(\pi) \approx f(0)+\pi f^{\prime}(0)=0+5 \pi=5 \pi
+$$
+
+$$
+f(2 \pi) \approx f(\pi)+\pi f^{\prime}(\pi)
+$$
+
+$\approx 5 \pi+6 \pi=11 \pi$
+
+## Scoring (c)
+
+- For $f(\pi) \approx f(0)+\pi f^{\prime}(0)=0+5 \pi=5 \pi$,
+$f(2 \pi) \approx f(\pi)+\pi f^{\prime}(\pi)$
+    - Euler's method; 1 point
+
+- For $\approx 5 \pi+6 \pi=11 \pi$
+    - Answer; 1 point
+
+## Scoring notes (c)
+
+- To earn the first point a response must demonstrate two Euler's steps, with use of the correct expression for $\frac{d y}{d x}$, and at most one error. If there is an error, the second point is not earned.
+
+- In order to earn the first point, a response that presents a single error in computing the approximation of $f(\pi)$ must import the incorrect value in computing the approximation of $f(2 \pi)$.
+
+- The two Euler's steps may be explicit expressions or may be presented in a table. For example:
+\begin{tabular}{c|c|c}
+$x$ & $y$ & $\frac{d y}{d x} \cdot \Delta x\left(\right.$ or $\left.\frac{d y}{d x} \cdot \pi\right)$ \\
+\hline 0 & 0 & $5 \pi$ \\
+$\pi$ & $5 \pi$ & $6 \pi$ \\
+$2 \pi$ & $11 \pi$ &
+\end{tabular}
+
+- In the presence of a correct answer, a table does not need to be labeled in order to eam both points. In the presence of no answer or an incorrect answer, such a table must be correctly labeled in order to carn the first point.
+
+- Both points are earned for $5 \pi+6 \pi$.
+
+- The response may report the final answer as $(2 \pi, 11 \pi)$.
+
+Total for part (c) 2 points
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

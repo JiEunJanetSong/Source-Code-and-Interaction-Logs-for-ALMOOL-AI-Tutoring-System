@@ -1,0 +1,41 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+In trapezoid $A B C D$, angles $B$ and $C$ measure $60^{\circ}$ and $A B=D C$. The side lengths are all positive integers, and the perimeter of $A B C D$ is 30 units. How many non-congruent trapezoids satisfy all of these conditions?
+
+\ansFIVEs{%start
+		0 }{%<--- (A)
+		1 }{%<--- (B)
+		2 }{%<--- (C)
+		3 }{%<---- (D)
+		4 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+Let $a$ be the length of the shorter base, and let $b$ be the length of the longer one. Note that these two parameters, along with the angle measures and the fact that the trapezoid is isosceles, uniquely determine a trapezoid. We drop perpendiculars down from the endpoints of the top base. Then the length from the foot of this perpendicular to either vertex will be half the difference between the lengths of the two bases, or $\frac{b-a}{2}$. Now, since we have a 30-60-90 triangle and this side length corresponds to the " 30 " part, the length of the hypotenuse (one of the legs) is $2 \cdot \frac{b-a}{2}=b-a$. Then the perimeter of the trapezoid is $2(b-a)+a+b=3 b-a=30$. The only other stipulation for this trapezoid to be valid is that $b>a$ (which was our assumption). We can now easily count the valid pairs $(a, b)$, yielding $(3,11),(6,12),(9,13),(12,14)$. It is clear that proceeding further would cause $a \geq b$, so we have (E) 4 valid trapezoids. 
+
+Solution 2
+Let $x$ be the length of $A B$ and $D C$, and let $b$ be the length of the shorter base. Because $\angle B$ and $\angle C=60^{\circ}$, the length of the longer base is $b+\frac{x}{2}+\frac{x}{2}=b+x$. Therefore, the perimeter is $3 x+2 b=30$. The number of positive integer pairs $(x, b)$ is $(2,12),(4,9),(6,6),(8,3)$, meaning the answer is $(\mathbf{E}) 4$.
+
+Solution 3
+Let $x$ be the length of the legs of the trapezoid. Draw the angle bisectors of the 120 degree angles. Now you have 2 equilateral triangles, and another figure in between them. Let $x+a$ be the length of the shorter base of the trapezoid, and let $2 x+a$ be the length of the longer base. Since the perimeter of the trapezoid is $30,5 x+2 a=30$. Since $x>0$, and $a$ can be negative as long as $x+a>0$, you get 4 solutions for ( $x, a$ ), namely $(2,10),(4,5),(6,0),(8,-5)$. Any solution with $x \geq 10$ would lead to $x+a \leq 0$. Hence, the answer is (E) 4
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

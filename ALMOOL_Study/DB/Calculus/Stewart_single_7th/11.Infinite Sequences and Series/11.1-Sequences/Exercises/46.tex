@@ -1,0 +1,77 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=2^{-n}\cos {n\pi}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = 2^{-n} \cos(n\pi)
+$
+
+
+
+ Step 1: Understand the behavior of $\cos(n\pi)$
+
+Recall that:
+
+$
+\cos(n\pi) = (-1)^n
+$
+
+So the sequence becomes:
+
+$
+a_n = 2^{-n} \cdot (-1)^n = \frac{(-1)^n}{2^n}
+$
+
+This is an alternating sequence whose absolute value is:
+
+$
+|a_n| = \frac{1}{2^n}
+\to 0 \quad \text{as } n \to \infty
+$
+
+Because $\frac{1}{2^n} \to 0$, and the factor $(-1)^n$ just alternates the sign.
+
+
+
+ Step 2: Take the limit
+
+$
+\lim_{n \to \infty} a_n = \lim_{n \to \infty} \frac{(-1)^n}{2^n} = 0
+$
+
+The sign changes, but the magnitude tends to 0.
+
+Final Answer:
+
+The sequence converges, and its limit is:
+
+$
+\boxed{0}
+$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

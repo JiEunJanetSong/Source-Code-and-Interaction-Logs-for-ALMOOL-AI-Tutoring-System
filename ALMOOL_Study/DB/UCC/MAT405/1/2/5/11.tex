@@ -1,0 +1,115 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find all solutions of the equation
+
+$$
+y^{\prime}=-x y+6 x \sqrt{y}
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Recognize Bernoulli Form
+
+We rewrite the equation as:
+
+$$
+y^{\prime}+x y=6 x y^{1 / 2}
+$$
+
+
+This is a Bernoulli equation of the form:
+
+$$
+y^{\prime}+a(x) y=b(x) y^n
+$$
+
+with:
+
+- $a(x)=x$
+
+- $b(x)=6 x$
+
+- $n=\frac{1}{2}$
+
+Step 2: Bernoulli Substitution
+
+Let:
+
+$$
+v=y^{1-n}=y^{1 / 2}=\sqrt{y} \quad \Rightarrow \quad y=v^2, \quad y^{\prime}=2 v v^{\prime}
+$$
+
+
+Substitute into the equation:
+
+$$
+2 v v^{\prime}+x v^2=6 x v \Rightarrow v v^{\prime}+\frac{x}{2} v^2=3 x v
+$$
+
+
+Divide by $v \neq 0$ :
+
+$$
+v^{\prime}+\frac{x}{2} v=3 x
+$$
+
+Step 3: Solve the Linear Equation
+
+This is a linear ODE:
+
+$$
+v^{\prime}+\frac{x}{2} v=3 x
+$$
+
+
+Integrating factor:
+
+$$
+\mu(x)=e^{\int \frac{x}{2} d x}=e^{x^2 / 4}
+$$
+
+
+Multiply both sides:
+
+$$
+\frac{d}{d x}\left(e^{x^2 / 4} v\right)=3 x e^{x^2 / 4}
+$$
+
+
+Integrate:
+
+$$
+e^{x^2 / 4} v=\int 3 x e^{x^2 / 4} d x=6 e^{x^2 / 4}+C \Rightarrow v=6+C e^{-x^2 / 4}
+$$
+
+
+Step 4: Back-substitute
+
+Since $v=\sqrt{y}$, we have:
+
+$$
+y=v^2=\left(6+C e^{-x^2 / 4}\right)^2
+$$
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

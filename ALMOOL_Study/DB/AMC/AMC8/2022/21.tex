@@ -1,0 +1,103 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Steph scored 15 baskets out of 20 attempts in the first half of a game, and 10 baskets out of 10 attempts in the second half. Candace took 12 attempts in the first half and 18 attempts in the second. In each half, Steph scored a higher percentage of baskets than Candace.
+
+Surprisingly they ended with the same overall percentage of baskets scored. How many more baskets did Candace score in the second half than in the first?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2022-21.png}
+	\end{center}
+
+\ansFIVEs{%start
+		7 }{%<--- (A)
+		8 }{%<--- (B)
+		9 }{%<--- (C)
+		10 }{%<---- (D)
+		11 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Steph's performance
+
+- First half: $\frac{15}{20}=75 \%$
+
+- Second half: $\frac{10}{10}=100 \%$
+
+- Total:
+
+$$
+\begin{gathered}
+\text { Total made }=15+10=25, \quad \text { Total attempts }=20+10=30 \\
+\text { Overall percentage }=\frac{25}{30}=\frac{5}{6} \approx 83.33 \%
+\end{gathered}
+$$
+
+
+Step 2: Let Candace's successful baskets be:
+
+- First half: $x$ out of 12
+
+- Second half: $y$ out of 18
+
+Total:
+
+- Attempts $=12+18=30$
+
+- Made $=x+y$
+
+We are told:
+
+$$
+\frac{x+y}{30}=\frac{25}{30} \Rightarrow x+y=25
+$$
+
+
+Also:
+
+- $\frac{x}{12}<\frac{15}{20}=0.75 \Rightarrow x<9$
+
+- $\frac{y}{18}<\frac{10}{10}=1.00 \Rightarrow y<18$
+
+Step 3: Solve under constraints
+
+From (1): $x+y=25$
+
+Try values of $x<9$ :
+
+- If $x=8$, then $y=17$
+
+- Check:
+
+- $\frac{8}{12}=0. \overline{66}<0.75$
+
+- $\frac{17}{18} \approx 0.944<1$
+
+$\rightarrow$ Valid solution
+
+Final Step: Difference in baskets between halves
+
+$$
+y-x=17-8=9
+$$
+
+(C) 9
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

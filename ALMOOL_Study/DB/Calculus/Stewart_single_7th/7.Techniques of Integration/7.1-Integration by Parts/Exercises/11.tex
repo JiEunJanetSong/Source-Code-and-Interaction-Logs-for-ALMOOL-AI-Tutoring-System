@@ -1,0 +1,103 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ \arctan \ 4\ t \ d t$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int \arctan (4 t) d t
+$$
+
+
+A convenient method is integration by parts. Recall that
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+
+Step 1: Choose $u$ and $d v$
+Let
+
+$$
+u=\arctan (4 t), \quad d v=d t
+$$
+
+
+Then
+
+$$
+d u=\dfrac{4}{1+(4 t)^2} d t=\dfrac{4}{1+16 t^2} d t, \quad v=\int d t=t
+$$
+
+
+Step 2: Apply the formula
+
+$$
+\int \arctan (4 t) d t=u v-\int v d u=t \arctan (4 t)-\int t\left(\dfrac{4}{1+16 t^2}\right) d t
+$$
+
+Hence,
+
+$$
+\int \arctan (4 t) d t=t \arctan (4 t)-4 \int \dfrac{t}{1+16 t^2} d t
+$$
+
+
+Step 3: Integrate $\int \dfrac{t}{1+16 t^2} d t$
+Use the substitution:
+
+$$
+u=1+16 t^2 \quad \Longrightarrow \quad d u=32 t d t \quad \Longrightarrow \quad t d t=\dfrac{d u}{32}
+$$
+
+
+Thus,
+
+$$
+\int \dfrac{t}{1+16 t^2} d t=\int \dfrac{1}{u} \dfrac{d u}{32}=\dfrac{1}{32} \int \dfrac{d u}{u}=\dfrac{1}{32} \ln |u|+C=\dfrac{1}{32} \ln \left(1+16 t^2\right)+C
+$$
+
+(Since $1+16 t^2>0$ for all real $t$, we don't strictly need the absolute value.)
+Hence,
+
+$$
+4 \int \dfrac{t}{1+16 t^2} d t=4\left(\dfrac{1}{32} \ln \left(1+16 t^2\right)\right)=\dfrac{4}{32} \ln \left(1+16 t^2\right)=\dfrac{1}{8} \ln \left(1+16 t^2\right)
+$$
+
+Step 4: Combine everything
+
+$$
+\int \arctan (4 t) d t=t \arctan (4 t)-\left[\dfrac{1}{8} \ln \left(1+16 t^2\right)\right]+C
+$$
+
+where $C$ is the constant of integration.
+
+Final Answer
+
+$$
+\int \arctan (4 t) d t=t \arctan (4 t)-\dfrac{1}{8} \ln \left(1+16 t^2\right)+C .
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+   
+   
+
+   
+
+

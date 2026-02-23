@@ -1,0 +1,62 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+The function $f$ has derivatives of all orders for all real numbers. It is known that $f(0)=2, f^{\prime}(0)=3$, $f^{\prime \prime}(x)=-f\left(x^2\right)$, and $f^{\prime \prime \prime}(x)=-2 x \cdot f^{\prime}\left(x^2\right)$
+
+(b) The fourth-degree Taylor polynomial for $f$ about $x=0$ is used to approximate $f(0.1)$. Given that $\left|f^{(5)}(x)\right| \leq 15$ for $0 \leq x \leq 0.5$, use the Lagrange error bound to show that this approximation is within $\frac{1}{10^5}$ of the exact value of $f(0.1)$.
+
+}\SetValue{Solution}{%
+
+By the Lagrange error bound,
+
+$$
+\begin{aligned}
+\left|T_4(0.1)-f(0.1)\right| & \leq \frac{\max _{0 \leq x \leq 0.1}\left|f^{(5)}(x)\right|}{5!} \cdot(0.1)^5 \\
+& \leq \frac{15}{120} \cdot \frac{1}{10^5} \leq \frac{1}{10^5}
+\end{aligned}
+$$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+The model solution is presented using standard mathematical notation.
+
+Answers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.
+
+The function $f$ has derivatives of all orders for all real numbers. It is known that $f(0)=2, f^{\prime}(0)=3$, $f^{\prime \prime}(x)=-f\left(x^2\right)$, and $f^{\prime \prime \prime}(x)=-2 x \cdot f^{\prime}\left(x^2\right)$.
+
+## Model Solution (b)
+
+By the Lagrange error bound,
+
+$$
+\begin{aligned}
+\left|T_4(0.1)-f(0.1)\right| & \leq \frac{\max _{0 \leq x \leq 0.1}\left|f^{(5)}(x)\right|}{5!} \cdot(0.1)^5 \\
+& \leq \frac{15}{120} \cdot \frac{1}{10^5} \leq \frac{1}{10^5}
+\end{aligned}
+$$
+
+## Scoring (b)
+
+- For $\left|T_4(0.1)-f(0.1)\right| & \leq \frac{\max _{0 \leq x \leq 0.1}\left|f^{(5)}(x)\right|}{5!} \cdot(0.1)^5 $
+    - Form of error bound; 1 point
+
+- For $\left|T_4(0.1)-f(0.1)\right| \leq \frac{1}{10^5}$
+    - Show $\left|Error\right| \leq \frac{1}{10^5}$; 1 point
+
+## Scoring notes (b)
+
+- The first point is earned for $\frac{\max _{0 \leq x \leq 0.1}\left|f^{(5)}(x)\right|}{5!} \cdot(0.1)^5$ or $\frac{15}{5!}(0.1)^5$. Subsequent errors in simplification will not earn the second point.
+
+- To earn the second point a response must communicate the inequality Error $\leq \frac{15}{5!} \cdot(0.1)^5 \leq \frac{1}{10^5}$.
+
+- A response that states Error $=\frac{15}{5!} \cdot(0.1)^5$ or Error $=\frac{1}{10^5}$ does not earn the second point.
+
+Total for part (b) 2 points
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

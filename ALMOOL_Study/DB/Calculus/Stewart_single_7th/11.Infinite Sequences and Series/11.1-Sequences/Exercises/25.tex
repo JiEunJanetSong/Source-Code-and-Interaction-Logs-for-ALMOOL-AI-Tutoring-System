@@ -1,0 +1,77 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the sequence converges or diverges. If it converges, find the limit.
+
+$$a_n=\frac{3+5n^2}{n+n^2}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the sequence:
+
+$
+a_n = \frac{3 + 5n^2}{n + n^2}
+$
+
+ Step 1: Identify Dominant Terms
+
+As $n \to \infty$, the highest powers of $n$ dominate the behavior of the function.
+
+- Numerator: $3 + 5n^2 \approx 5n^2$
+
+- Denominator: $n + n^2 = n(1 + n) \approx n^2$
+
+So for large $n$:
+
+$
+a_n \approx \frac{5n^2}{n^2} = 5
+$
+
+ Step 2: Divide by $n^2$ to Find the Exact Limit
+
+$
+a_n = \frac{3 + 5n^2}{n + n^2} = \frac{n^2\left(\frac{3}{n^2} + 5\right)}{n^2\left(\frac{1}{n} + 1\right)} = \frac{\frac{3}{n^2} + 5}{\frac{1}{n} + 1}
+$
+
+Now take the limit as $n \to \infty$:
+
+- $\frac{3}{n^2} \to 0$
+
+- $\frac{1}{n} \to 0$
+
+So:
+
+$
+\lim_{n \to \infty} a_n = \frac{0 + 5}{0 + 1} = 5
+$
+
+ Final Answer:
+
+- The sequence converges.
+
+- The limit is:
+
+$
+\boxed{5}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

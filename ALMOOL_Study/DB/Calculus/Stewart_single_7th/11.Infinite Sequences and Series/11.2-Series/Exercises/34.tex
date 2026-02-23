@@ -1,0 +1,89 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the series is convergent or divergent. If it is convergent, find its sum.
+
+$$\sum_{n=1}^{\infty}\left[(0.8)^{n-1}-(0.3)^n\right]$$
+
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Split the Series
+
+This is the sum of two series:
+
+$$
+\sum_{n=1}^{\infty}(0.8)^{n-1}-\sum_{n=1}^{\infty}(0.3)^n
+$$
+
+
+Step 2: Evaluate Each Series
+
+1. First series: $\sum_{n=1}^{\infty}(0.8)^{n-1}$
+
+Let's shift the index so it becomes a standard geometric series:
+
+Let $m=n-1$, so when $n=1, m=0$ :
+
+$$
+\sum_{n=1}^{\infty}(0.8)^{n-1}=\sum_{m=0}^{\infty}(0.8)^m
+$$
+
+
+This is a geometric series with:
+
+- First term $a=1$
+
+- Common ratio $r=0.8$
+
+$$
+\sum=\dfrac{1}{1-0.8}=\dfrac{1}{0.2}=5
+$$
+
+2. Second series: $\sum_{n=1}^{\infty}(0.3)^n$
+
+This is also a geometric series:
+
+- First term $a=0.3$
+
+- Common ratio $r=0.3$
+
+$$
+\sum=\dfrac{0.3}{1-0.3}=\dfrac{0.3}{0.7}=\dfrac{3}{7}
+$$
+
+
+Step 3: Subtract the Two Sums
+
+$$
+\sum_{n=1}^{\infty}\left[(0.8)^{n-1}-(0.3)^n\right]=5-\dfrac{3}{7}=\dfrac{35-3}{7}=\dfrac{32}{7}
+$$
+
+
+Final Answer:
+
+$$
+\dfrac{32}{7}
+$$
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

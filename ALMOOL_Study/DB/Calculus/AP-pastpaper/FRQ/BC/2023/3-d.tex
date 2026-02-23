@@ -1,0 +1,76 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+A bottle of milk is taken out of a refrigerator and placed in a pan of hot water to be warmed. The increasing function $M$ models the temperature of the milk at time $t$, where $M(t)$ is measured in degrees Celsius $\left({ }^{\circ} \mathrm{C}\right)$ and $t$ is the number of minutes since the bottle was placed in the pan. $M$ satisfies the differential equation $\frac{d M}{d t}=\frac{1}{4}(40-M)$. At time $t=0$, the temperature of the milk is $5^{\circ} \mathrm{C}$. It can be shown that $M(t)<40$ for all values of $t$.
+
+(d) Use separation of variables to find an expression for $M(t)$, the particular solution to the differential equation $\frac{d M}{d t}=\frac{1}{4}(40-M)$ with initial condition $M(0)=5$.
+
+}\SetValue{Solution}{%LaTeX
+
+$\begin{aligned} & \frac{d M}{40-M}=\frac{1}{4} d t \\ & \int \frac{d M}{40-M}=\int \frac{1}{4} d t\end{aligned}$
+
+$-\ln |40-M|=\frac{1}{4} t+C$
+
+$\begin{aligned} & -\ln |40-5|=0+C \Rightarrow C=-\ln 35 \\ & M(t)<40 \Rightarrow 40-M>0 \Rightarrow|40-M|=40-M \\ & -\ln (40-M)=\frac{1}{4} t-\ln 35 \\ & \ln (40-M)=-\frac{1}{4} t+\ln 35\end{aligned}$
+
+$\begin{aligned} & 40-M=35 e^{-\tfrac{t}{4}} \\ & M=40-35 e^{-\tfrac{t}{4}}\end{aligned}$
+
+}\SetValue{Rubric}{%Markdown
+
+# General Scoring Notes
+
+The model solution is presented using standard mathematical notation.
+
+Answers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.
+
+A bottle of milk is taken out of a refrigerator and placed in a pan of hot water to be warmed. The increasing function $M$ models the temperature of the milk at time $t$, where $M(t)$ is measured in degrees Celsius $\left({ }^{\circ} \mathrm{C}\right)$ and $t$ is the number of minutes since the bottle was placed in the pan. $M$ satisfies the differential equation $\frac{d M}{d t}=\frac{1}{4}(40-M)$. At time $t=0$, the temperature of the milk is $5^{\circ} \mathrm{C}$. It can be shown that $M(t)<40$ for all values of $t$.
+
+## Model Solution (d)
+
+$\begin{aligned} & \frac{d M}{40-M}=\frac{1}{4} d t \\ & \int \frac{d M}{40-M}=\int \frac{1}{4} d t\end{aligned}$
+
+$-\ln |40-M|=\frac{1}{4} t+C$
+
+$\begin{aligned} & -\ln |40-5|=0+C \Rightarrow C=-\ln 35 \\ & M(t)<40 \Rightarrow 40-M>0 \Rightarrow|40-M|=40-M \\ & -\ln (40-M)=\frac{1}{4} t-\ln 35 \\ & \ln (40-M)=-\frac{1}{4} t+\ln 35\end{aligned}$
+
+$\begin{aligned} & 40-M=35 e^{-\tfrac{t}{4}} \\ & M=40-35 e^{-\tfrac{t}{4}}\end{aligned}$
+
+## Scoring (d)
+
+- For $\begin{aligned} & \frac{d M}{40-M}=\frac{1}{4} d t \\ & \int \frac{d M}{40-M}=\int \frac{1}{4} d t\end{aligned}$
+    - Separates variables ; 1 point
+
+- For $-\ln |40-M|=\frac{1}{4} t+C$
+    - Finds antiderivatives ; 1 point
+
+- For $\begin{aligned} & -\ln |40-5|=0+C \Rightarrow C=-\ln 35 \\ & M(t)<40 \Rightarrow 40-M>0 \Rightarrow|40-M|=40-M \\ & -\ln (40-M)=\frac{1}{4} t-\ln 35 \\ & \ln (40-M)=-\frac{1}{4} t+\ln 35\end{aligned}$
+    - Constant of integration and uses initial condition ; 1 point
+
+- For $\begin{aligned} & 40-M=35 e^{-t / 4} \\ & M=40-35 e^{-\tfrac{t}{4}}\end{aligned}$
+    - Solves for M ; 1 point
+
+## Scoring notes (d)
+
+- A response with no separation of variables earns 0 out of 4 points.
+
+- A response that presents an antiderivative of $-\ln (40-M)$ without absolute value symbols is eligible for all 4 points.
+
+- A response with no constant of integration can earn at most the first 2 points.
+
+- A response is eligible for the third point only if it has earned the first 2 points.
+
+- Special Case: A response that presents $+\ln (40-M)=\dfrac{t}{4}+C$ (or equivalent) does not earn the second point, is eligible for the third point, but not eligible for the fourth.
+
+- An eligible response earns the third point by correctly including the constant of integration in an equation and substituting 0 for $t$ and 5 for $M$.
+
+- A response is eligible for the fourth point only if it has earned the first 3 points.
+
+- A response earns the fourth point only for an answer of $M=40-35 e^{-\tfrac{t}{4}}$ or equivalent.
+
+Total for part (d) 4 points
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

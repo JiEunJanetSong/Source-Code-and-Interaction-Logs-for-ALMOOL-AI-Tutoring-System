@@ -1,0 +1,77 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Differentiate.
+
+$f(x)=x e^x \csc x$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Using the Product Rule with three factors:
+
+We have
+$
+f(x) = x \, e^x \,\csc x.
+$
+Think of $f$ as the product $u \cdot v \cdot w$ where
+$
+u = x,\quad v = e^x,\quad w = \csc x.
+$
+
+Then the derivative $f'(x)$ is given by
+$
+f'(x) 
+= u' \, v \, w + u \, v' \, w + u \, v \, w'.
+$
+
+Compute each derivative:
+
+1. $u' = \dfrac{d}{dx}(x) = 1.$  
+
+2. $v' = \dfrac{d}{dx}(e^x) = e^x.$  
+
+3. $w' = \dfrac{d}{dx}(\csc x) = -\csc x \cot x.$
+
+Putting it all together:
+
+$
+f'(x) 
+= (1)\, e^x \,\csc x \;+\; x \, (e^x)\,\csc x \;+\; x \, e^x \,\bigl(-\csc x \cot x\bigr).
+$
+
+Simplify:
+
+$
+f'(x) 
+= e^x \csc x 
+  + x e^x \csc x 
+  - x e^x \csc x \cot x.
+$
+
+You may also factor out the common terms $e^x \csc x$:
+
+$
+\boxed{f'(x) 
+= e^x \csc x\,\bigl(1 + x - x \cot x\bigr).}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

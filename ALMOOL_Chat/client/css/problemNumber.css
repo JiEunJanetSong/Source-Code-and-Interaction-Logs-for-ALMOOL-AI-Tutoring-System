@@ -1,0 +1,288 @@
+.problemNumberInput {
+  border: none;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  font-size: 30px;
+  width: 160px;
+  color: var(--colour-2); 
+}
+
+.problemNumberInput:focus {
+  border-bottom: 2px solid var(--accent); /* Thicker underline on focus */
+  color: var(--accent);
+}
+
+.problemNumberInput + .problemNumberInput { /* Adjacent sibling selector for the label */
+  color:  var(--colour-2); 
+}
+
+.problemNumberInput:focus + .problemNumberInput { /* Change color of the label when input is focused */
+  color: var(--accent);
+}
+
+.problemNumberInput.problemNumberInputTransparent{
+  border:none;
+  background: transparent;
+  border-bottom: none;
+  outline:none;
+  height:30px;
+  width: 160px;
+  font-size:30px;
+  color:transparent;
+}
+
+.problemNumberInput.problemNumberInputGray{
+  border:none;
+  background: transparent;
+  border-bottom: 1px solid  var(--colour-5);
+  outline:none;
+  height:30px;
+  font-size:30px;
+  color: var(--colour-3);
+  width: 160px;
+}
+
+.flexBox{
+  display:block;
+  padding:10px;
+}
+
+.innerBox{
+  margin:10px;
+  display: flex;
+  gap: 10px;
+  padding-top:10px;
+}
+
+.bookShortTitle{
+  font-size:20px;
+  color: var(--colour-2);
+}
+
+
+.transparentInput{
+  background:transparent;
+  border:transparent;
+  width:20px;
+  font-size:20px;
+  text-align: center;
+  border-color: var(--colour-5);
+}
+
+.problemSelect {
+  max-width: 260px;
+  padding: var(--section-gap);
+  overflow: auto;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.problem_collection {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.problem_buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.problem_buttons button {
+  padding: 8px 12px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  border: 1px solid  var(--accent);
+  border-radius: var(--border-radius-1);
+  width: 100%;
+  justify-content: center;
+}
+
+.problem_buttons button span {
+  color: var(--colour-2);
+  font-size: 14px;
+}
+
+.chatData
+{
+  padding-bottom: 2px;
+  padding-top: 2px;
+  display:block;
+}
+
+.chatDataQuoted
+{
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px; 
+  padding-top: 2px;
+  background: #ccffff;
+  display:block;
+}
+
+.chatQuoteContents
+{
+  width:100%;
+}
+
+.chatQuoteButton
+{
+  cursor:pointer;
+  width:20px;
+  text-align: center;
+}
+
+.chatData:hover
+{
+  padding-bottom: 2px;
+  padding-top: 2px;
+  
+  background: #ffccff;
+}
+
+.convo:hover
+{
+  background: #ffccff;
+}
+
+.nowConversation
+{
+  background: #ffccff;
+}
+
+quotedChat
+{
+  display:block;
+  background-color:#ffffcc;
+  padding:4px;
+  margin-bottom: 10px;
+}
+
+.chatContent
+{
+  width:100%;
+}
+
+
+
+.problemMoveWrap
+{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:10px;
+  width:170px;
+}
+
+.problemMoveButton
+{
+  padding:4px;
+  cursor:pointer;
+  border: 1px solid;
+  background-color: #cfcfcf;
+  border-radius: var(--border-radius-1);
+  text-align: center;
+}
+
+.problemMoveButton:hover {
+  border-style: solid;
+}
+
+
+.leftBoxAround
+{
+  overflow-y:auto;
+  overflow-x:hidden;
+  max-width:200px;
+  max-height: 1100px;
+}
+
+.leftBoxAround.shown
+{
+  position:absolute;
+  max-height: 80%;
+}
+
+.loginBox
+{
+  display:flex;
+  flex-direction: column;
+  width:170px;
+}
+
+.loginSubBox
+{
+  display:flex;
+  flex-direction: row;
+  gap:10px;
+  margin:5px 0px;
+}
+
+.modifyPasswordDialog
+{
+  width:50%;
+  margin:auto;
+  border:none;
+  padding:20px;
+}
+
+dialog::backdrop {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.problemSelectionOneSubject{
+  display:grid;
+  grid-template-columns: repeat(5,16%);
+  gap:20px 5%;
+  padding:20px;
+}
+
+.subjectSelect{
+  width:170px;
+  height:35px;
+  -webkit-appearance: menulist-button;
+}
+
+.moveProblem{
+  display:flex;
+  flex-direction:row;
+  padding: 10px 40px;
+  gap: 60%;
+  justify-content: center;
+}
+
+.showButton{
+  padding:5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #cfcfcf;
+  text-align: center;
+}
+
+.showButton:hover{
+  background-color: #eeeeee;
+}
+
+:root{
+  --ALMOOL-color-00: #7777ee;
+  --ALMOOL-color-01: #ee77ee;
+  --ALMOOL-color-02: #77ee77;
+  --ALMOOL-color-03: #5fb3b4;
+  --ALMOOL-color-04: #6ec6c7;
+  --ALMOOL-color-05: #70c7c8;
+  --ALMOOL-color-06: #4a9a9b;
+}

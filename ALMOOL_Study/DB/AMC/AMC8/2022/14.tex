@@ -1,0 +1,63 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+In how many ways can the letters in BEEKEEPER be rearranged so that two or more Es do not appear together?
+
+\ansFIVEs{%start
+		 1 }{%<--- (A)
+		 4 }{%<--- (B)
+		 12 }{%<--- (C)
+		 24 }{%<---- (D)
+		 120 }%<---- (D)
+		 
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the word BEEKEEPER and asked:
+
+In how many ways can the letters be rearranged so that no two or more Es appear together?
+
+Step 1: Count the Es
+
+- BEEKEEPER has 5 Es
+
+- Other letters: B, K, P, R (4 unique non-E letters)
+
+Step 2: Place Es so that no two are adjacent
+
+We must place Es in separate slots, with at least one non-E letter between any two Es.
+
+So, we first place the 4 non-E letters (B, K, P, R) in a line:
+
+$$
+\underline{\quad} B \underline{\quad} K \underline{\quad} P \underline{\quad} R \underline{\quad}
+$$
+
+This gives 5 slots between/around the letters where Es can be placed, and no two Es will be adjacent if we place them in separate slots.
+
+Step 3: Choose 5 slots from 5
+
+We must place the 5 Es in these 5 slots - one E per slot, so only 1 way to do it.
+
+But we can permute the 4 non-E letters in $4!=24$ ways.
+
+Final Answer: (D) 24
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

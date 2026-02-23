@@ -1,0 +1,96 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find at least 10 partial sums of the series. Graph both the sequence of terms and the sequence of partial sums on the same screen. Does it appear that the series is convergent or divergent? If it is convergent, find the sum. If it is divergent, explain why.
+
+$$\sum_{n=1}^{\infty} \dfrac{7^{n+1}}{10^n}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Here are the first 10 partial sums of the series:
+
+\begin{tabular}{|l|l|}
+\hline & $\sum_{n=1}^{\infty} \dfrac{7^{n+1}}{10^n}$ \\
+\hline $n$ & Partial Sum $s_n$ (rounded) \\
+\hline 1 & 4.900000 \\
+\hline 2 & 8.330000 \\
+\hline 3 & 10.731000 \\
+\hline 4 & 12.411700 \\
+\hline 5 & 13.588190 \\
+\hline 6 & 14.411733 \\
+\hline 7 & 14.988213 \\
+\hline 8 & 15.391749 \\
+\hline 9 & 15.674224 \\
+\hline 10 & 15.871957 \\
+\hline
+\end{tabular}
+
+Observation from the graph:
+
+- The terms decrease steadily.
+
+- The partial sums approach a horizontal asymptote, showing convergence.
+
+Series Analysis:
+
+Given:
+
+$$
+\dfrac{7^{n+1}}{10^n}=7 \cdot\left(\dfrac{7}{10}\right)^n
+$$
+
+
+This is a geometric series of the form:
+
+$$
+\sum_{n=1}^{\infty} 7 \cdot\left(\dfrac{7}{10}\right)^n
+$$
+
+
+It converges because the common ratio $r=\dfrac{7}{10}<1$. The sum of an infinite geometric series with first term ar (starting from $n=1$ ) is:
+
+$$
+S=\dfrac{a r}{1-r}
+$$
+
+
+Here:
+
+- $a=7, r=\dfrac{7}{10}$
+
+- First term $=7 \cdot \dfrac{7}{10}=4.9$
+
+So the sum is:
+
+$$
+S=\dfrac{4.9}{1-\dfrac{7}{10}}=\dfrac{4.9}{0.3}=16 . \overline{3}=\dfrac{49}{3}
+$$
+
+Final Answer:
+
+- The series converges.
+
+- The sum is $\dfrac{49}{3} \approx 16.3333$.
+
+- The first 10 partial sums support this, gradually approaching the limit. 
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

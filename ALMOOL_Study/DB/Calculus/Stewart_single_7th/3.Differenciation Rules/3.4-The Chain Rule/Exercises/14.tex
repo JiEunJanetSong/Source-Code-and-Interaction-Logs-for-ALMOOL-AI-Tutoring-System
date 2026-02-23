@@ -1,0 +1,56 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=a^3+\cos ^3 x$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+First, notice that $a^3$ is a constant with respect to $x$, so its derivative is $0$. 
+
+Next, we differentiate $\cos^3(x)$. We can view $\cos^3(x)$ as $(\cos x)^3$. Using the chain rule:
+
+1. Let $u = \cos x$. Then $\cos^3(x) = u^3$.
+
+2. $\dfrac{du}{dx} = -\sin x$.
+
+3. $\dfrac{d}{dx}[u^3] = 3u^2 = 3(\cos x)^2$.
+
+Putting it all together:
+
+$$
+\dfrac{d}{dx}[\cos^3 x] 
+= 3(\cos x)^2 \cdot \dfrac{d}{dx}(\cos x)
+= 3(\cos x)^2 \cdot (-\sin x)
+= -3 \cos^2 x \, \sin x.
+$$
+
+Hence, the derivative of $y$ with respect to $x$ is:
+
+$$
+\boxed{
+y' = 0 - 3\cos^2 x \, \sin x = -3\cos^2 x \, \sin x.
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

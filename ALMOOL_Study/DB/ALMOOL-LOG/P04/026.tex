@@ -1,0 +1,45 @@
+\begin{GPTQ}
+u라고 하지말고 x로 생각해도 계산해볼래?
+\end{GPTQ}
+
+\begin{GPTA}
+물론입니다 $!x$ 변수를 사용하여 직접 계산하는 과정을 보겠습니다.
+우리는 $f(x)=2(\sin (\sqrt{x}))^2$ 의 미분을 찾아야 합니다. 여기서는 체인 룰과 곱의 미분 법칙을 사용하여 계산합니다.
+
+단계별 계산
+
+1. 함수 혜석: 주어진 함수는 $2(\sin (\sqrt{x}))^2$ 입니다. 이 함수는 외부 함수 $v=2 y^2$ 의 구조로 생각할 수 있으며, 여기서 $y=\sin (\sqrt{x})$ 입니다.
+
+2. 미분 시작: 외부 함수 $v=2(\sin (\sqrt{x}))^2$ 를 $x$ 에 대해 직접 미분합니다. 체인 룰을 사용하여 미분합니다.
+
+3. 미분 계산:
+
+$$
+\frac{d}{d x}\left(2(\sin (\sqrt{x}))^2\right)=2 \cdot \frac{d}{d x}\left((\sin (\sqrt{x}))^2\right)
+$$
+
+4. 곱 미분 법쳐과 체인 를: 내부 함수 $(\sin (\sqrt{x}))^2$ 의 미분을 계산할 때 각 부분을 미분합니다:
+
+$$
+\frac{d}{d x}\left((\sin (\sqrt{x}))^2\right)=2 \cdot(\sin (\sqrt{x})) \cdot \frac{d}{d x}(\sin (\sqrt{x}))
+$$
+
+5. $\sin (\sqrt{x})$ 의 미분: 앞서 계산한 대로 $\sin (\sqrt{x})$ 의 미분은 다음과 같습니다:
+
+$$
+\frac{d}{d x}(\sin (\sqrt{x}))=\cos (\sqrt{x}) \cdot \frac{1}{2 \sqrt{x}}
+$$
+
+6. 미분 결합 및 정리:
+
+$$
+\begin{aligned}
+\frac{d}{d x}\left(2(\sin (\sqrt{x}))^2\right) & =2 \cdot 2 \cdot \sin (\sqrt{x}) \cdot \cos (\sqrt{x}) \cdot \frac{1}{2 \sqrt{x}} \\
+= & \frac{2 \sin (\sqrt{x}) \cos (\sqrt{x})}{\sqrt{x}}
+\end{aligned}
+$$
+
+
+여기서 체인 를 및 곱 미분 법칙을 사용하여 $x$ 변수로 직접 계산을 수행한 결과입니다. 최종 결과는 $\frac{2 \sin (\sqrt{x}) \cos (\sqrt{x})}{\sqrt{x}}$ 입니다.
+\end{GPTA}
+

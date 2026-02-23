@@ -1,0 +1,57 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+$$ \sqrt{-6 x+6}+2=x+1 $$ What is the solution set of the equation above? 
+
+\ansFOURs{%start
+	\{-1\}   }{%<--- (A)
+	\{1\}   }{%<--- (B)
+	\{-1,-5\}   }{%<--- (C)
+    \{1,-5\} }%<---- (D)
+
+}\SetValue{Solution}{%
+
+We need to find the solution set for the equation \( \sqrt{-6x + 6} + 2 = x + 1 \).
+
+\begin{alignat*}{2}
+\sqrt{-6x + 6} + 2 &= x + 1 \qquad && \{ \text{Given equation} \} \\
+\sqrt{-6x + 6} &= x - 1 \qquad && \{ \text{Subtract 2 from both sides} \} \\
+\left(\sqrt{-6x + 6}\right)^2 &= (x - 1)^2 \qquad && \{ \text{Square both sides} \} \\
+-6x + 6 &= x^2 - 2x + 1 \qquad && \{ \text{Expand the right side} \} \\
+0 &= x^2 + 4x - 5 \qquad && \{ \text{Move all terms to one side} \}
+\end{alignat*}
+
+Now, we will solve the quadratic equation.
+
+\begin{alignat*}{2}
+(x + 5)(x - 1) &= 0 \qquad && \{ \text{Factor the quadratic} \} \\
+x &= -5, \, 1 \qquad && \{ \text{Solve for } x \}
+\end{alignat*}
+
+Check each solution in the original equation.
+
+Checking \( x = -5 \):
+\[
+\sqrt{-6(-5) + 6} + 2 = -5 + 1
+\]
+\[
+\sqrt{36} + 2 = -4 \Rightarrow 6 + 2 = -4 \quad \text{(False)}
+\]
+
+Checking \( x = 1 \):
+\[
+\sqrt{-6(1) + 6} + 2 = 1 + 1
+\]
+\[
+\sqrt{0} + 2 = 2 \Rightarrow 0 + 2 = 2 \quad \text{(True)}
+\]
+
+The only valid solution is \( x = 1 \).
+
+Thus, the correct answer is $\fbox{B) $1$}$.
+
+}\SetValue{Answer}{%
+C
+}
+\ProcessDATA
+
+

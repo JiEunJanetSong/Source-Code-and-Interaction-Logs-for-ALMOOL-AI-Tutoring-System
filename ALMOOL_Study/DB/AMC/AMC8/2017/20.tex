@@ -1,0 +1,62 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+An integer between 1000 and 9999, inclusive, is chosen at random. What is the probability that it is an odd integer whose digits are all distinct?
+
+\ansFIVEs{%start
+		\frac{14}{75} }{%<--- (A)
+		\frac{56}{225} }{%<--- (B)
+		\frac{107}{400} }{%<--- (C)
+		\frac{7}{25} }{%<---- (D)
+		\frac{9}{25} }%<---- (D)
+}\SetValue{Concept}{%
+
+1000 이상 9999 이하의 네 자리 정수 가운데 하나를 임의로 고른다.
+이 수가 자릿수가 모두 서로 다르면서 홀수일 확률은 얼마인가?
+
+1. 전체 경우의 수
+- 1000 부터 9999 까지의 정수는 모두 $9999-1000+1=9000$ 개이다.
+2. 조건을 만족하는 수 세기
+1. 일의 자리(홀수 조건)
+- 홀수가 되려면 일의 자리는 $1,3,5,7,9$ 중 하나여야 한다.
+$\rightarrow 5$ 가지 선택.
+2. 천의 자리 (첫 자리는 0 이 아님)
+- 천의 자리는 $1 \sim 9$ 중에서 일의 자리와 겹치지 않는 숫자를 고른다.
+$\rightarrow 9-1=8$ 가지 선택.
+3. 백의 자리
+- 0~9 중에서 이미 사용한 두 자리(천•일 자리)를 제외한 숫자를 고른다.
+$\rightarrow 10-2=8$ 가지 선택.
+4. 십의 자리
+- 0~9 중에서 이미 사용한 세 자리(천•백•일 자리)를 제외한 숫자를 고른다.
+$\rightarrow 10-3=7$ 가지 선택.
+따라서 조건을 만족하는 수의 개수는
+
+$$
+5 \times 8 \times 8 \times 7=2240 .
+$$
+
+3. 확률 계산
+
+$$
+\frac{2240}{9000}=\frac{56}{225} .
+$$
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Answer (B): There are 9000 integers between 1000 and 9999 inclusive. For an integer to be odd it must end in $1,3,5,7$, or 9. So there are 5 choices for the units digit. For a number to be between 1000 and 9999 the thousands digit must be nonzero and so there are now 8 choices for the thousands digit. For the hundreds digit there are 8 choices and for the tens digit there are 7 choices for a total number of $5 \cdot 8 \cdot 8 \cdot 7=2240$ choices. So the probability is $\frac{2240}{9000}=\frac{56}{225}$.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

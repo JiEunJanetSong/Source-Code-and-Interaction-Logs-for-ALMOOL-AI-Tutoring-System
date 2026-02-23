@@ -1,0 +1,30 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Given that $x$ and $n$ are numbers greater than 1, which of the following expressions would have the greatest overall increase in $y$ values between $x$ values from 2 to 100?
+
+\ansFOURs{%start
+y=n x+3}{%<--- (A)
+y=-n x+3}{%<--- (B)
+y=x^n+3}{%<--- (C)
+y=x^{-n}+3}%<---- (D)
+}\SetValue{Solution}{%
+
+Answer: \textbf{(C)} 
+
+Try plugging in some sample values for $x$, like 2 and 100 , and assume $n$ is a constant, like 3, to see how the equations behave: Choice (C) clearly has the greatest overall increase, going from 11 to 1,000,003. Alternatively, you can simply realize that a number greater than 1 to a power more than 1 will be greater than the other possibilities.
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Equation} & \textbf{Substitute $x=2$ and $n=3$} & \textbf{Value when $x=2$ and $n=3$} & \textbf{Substitute $x=100$ and $n=3$} & \textbf{Value when $x=100$ and $n=3$} \\ \hline
+A. $y = nx + 3$ & $y = 3 \times 2 + 3$ & 9 & $y = 3 \times 100 + 3$ & 303 \\ \hline
+B. $y = -nx + 3$ & $y = -3 \times 2 + 3$ & -3 & $y = -3 \times 100 + 3$ & -297 \\ \hline
+C. $y = x^n + 3$ & $y = 2^3 + 3$ & 11 & $y = 100^3 + 3$ & 1,000,003 \\ \hline
+D. $y = x^{-n} + 3$ & $y = 2^{-3} + 3$ & $3\frac{1}{8}$ & $y = 100^{-3} + 3$ & 3.000001 \\ \hline
+\end{tabular}
+
+}\SetValue{Answer}{%
+C
+}
+\ProcessDATA
+
+

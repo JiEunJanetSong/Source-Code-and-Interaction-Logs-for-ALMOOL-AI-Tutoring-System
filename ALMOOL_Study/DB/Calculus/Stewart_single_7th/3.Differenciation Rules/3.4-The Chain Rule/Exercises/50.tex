@@ -1,0 +1,94 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find $y^{\prime}$ and $y^{\prime \prime}$.
+
+$y=e^{e^x}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given:
+
+$$
+y = e^{e^x}
+$$
+
+We are to find the first and second derivatives: $ y'$ and $ y''$.
+
+\textbf{Step 1: First Derivative $ y'$}
+
+Use the **chain rule**:
+
+Let’s define:
+
+- Let $ u = e^x$, so $ y = e^u$
+
+- Then $ \dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$
+
+So:
+
+$$
+y' = \dfrac{d}{dx}(e^{e^x}) = e^{e^x} \cdot \dfrac{d}{dx}(e^x) = e^{e^x} \cdot e^x
+$$
+
+\textbf{Step 2: Second Derivative $ y''$}
+
+Now differentiate $ y' = e^{e^x} \cdot e^x$ using the **product rule**:
+
+Let:
+
+- $ f(x) = e^{e^x}$
+
+- $ g(x) = e^x$
+
+Then:
+
+$$
+y'' = f'(x) \cdot g(x) + f(x) \cdot g'(x)
+$$
+
+We already know:
+
+- $ f(x) = e^{e^x} \Rightarrow f'(x) = e^{e^x} \cdot e^x$
+
+- $ g(x) = e^x \Rightarrow g'(x) = e^x$
+
+Now plug in:
+
+$$
+y'' = (e^{e^x} \cdot e^x) \cdot e^x + e^{e^x} \cdot e^x
+= e^{e^x} \cdot e^{2x} + e^{e^x} \cdot e^x
+= e^{e^x} \left( e^{2x} + e^x \right)
+$$
+
+\textbf{Final Answers:}
+
+$$
+\boxed{
+\begin{aligned}
+y' &= e^{e^x} \cdot e^x \\
+y'' &= e^{e^x} \left( e^{2x} + e^x \right)
+\end{aligned}
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

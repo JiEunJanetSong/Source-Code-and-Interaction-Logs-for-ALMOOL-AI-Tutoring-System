@@ -1,0 +1,111 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ s\ 2^s\ d s$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int s 2^s d s
+$$
+
+
+A convenient method is integration by parts. Recall the formula:
+
+$$
+\int u d v=u v-\int v d u
+$$
+
+
+Step 1: Choose $u$ and $d v$
+Let
+
+$$
+u=s, \quad d v=2^s d s
+$$
+
+
+Then,
+
+$$
+d u=d s, \quad v=\int 2^s d s
+$$
+
+
+To find $v$, recall that $2^s=e^{(\ln 2) s}$. Thus,
+
+$$
+\int 2^s d s=\int e^{(\ln 2) s} d s=\dfrac{1}{\ln 2} e^{(\ln 2) s}=\dfrac{2^s}{\ln 2}
+$$
+
+
+Hence,
+
+$$
+v=\dfrac{2^s}{\ln 2}
+$$
+
+Step 2: Apply the integration by parts formula
+
+$$
+\int s 2^s d s=u v-\int v d u=s\left(\dfrac{2^s}{\ln 2}\right)-\int \dfrac{2^s}{\ln 2}(d s) .
+$$
+
+
+Factor out $\dfrac{1}{\ln 2}$ where it is convenient:
+
+$$
+=\dfrac{s 2^s}{\ln 2}-\dfrac{1}{\ln 2} \int 2^s d s
+$$
+
+
+Step 3: Integrate $\int 2^s d s$
+As before,
+
+$$
+\int 2^s d s=\dfrac{2^s}{\ln 2}
+$$
+
+
+Thus,
+
+$$
+-\dfrac{1}{\ln 2} \int 2^s d s=-\dfrac{1}{\ln 2}\left(\dfrac{2^s}{\ln 2}\right)=-\dfrac{2^s}{(\ln 2)^2} .
+$$
+
+Step 4: Combine everything
+Putting it all together:
+
+$$
+\int s 2^s d s=\dfrac{s 2^s}{\ln 2}-\dfrac{2^s}{(\ln 2)^2}+C
+$$
+
+where $C$ is the constant of integration.
+
+Final Answer
+
+$$
+\int s 2^s d s=\dfrac{s 2^s}{\ln 2}-\dfrac{2^s}{(\ln 2)^2}+C.
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+   
+   
+
+   
+
+

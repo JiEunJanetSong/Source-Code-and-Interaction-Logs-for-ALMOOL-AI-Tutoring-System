@@ -1,0 +1,155 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find all solutions of the equation
+
+$$
+y^{\prime}+t y=t y^2.
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+This is a Bernoulli equation, which has the form:
+
+$$
+y^{\prime}+p(t) y=q(t) y^n
+$$
+
+
+In our case:
+
+- $p(t)=t$
+
+- $q(t)=t$
+
+- $n=2$
+
+Since $n \neq 0,1$, we use the standard substitution for Bernoulli equations.
+
+Step 1: Divide both sides by $y^2$
+
+We first write it in a clean Bernoulli form:
+
+$$
+y^{\prime}+t y=t y^2 \quad \Rightarrow \quad y^{\prime}=t y^2-t y
+$$
+
+
+But instead of dividing by $y^2$, we do the standard substitution:
+
+Let
+
+$$
+v=y^{1-n}=y^{-1} \quad \Rightarrow \quad y=\frac{1}{v}
+$$
+
+
+Then use the chain rule:
+
+$$
+y^{\prime}=\frac{d}{d t}\left(\frac{1}{v}\right)=-\frac{v^{\prime}}{v^2}
+$$
+
+
+Substitute into the original equation:
+
+$$
+-\frac{v^{\prime}}{v^2}+t \cdot \frac{1}{v}=t \cdot \frac{1}{v^2}
+$$
+
+
+Multiply through by $v^2$ to eliminate denominators:
+
+$$
+-v^{\prime}+t v=t \quad \Rightarrow \quad v^{\prime}-t v=-t
+$$
+
+Step 2: Solve the linear ODE for $v(t)$
+
+$$
+v^{\prime}-t v=-t
+$$
+
+
+This is a first-order linear ODE. We use the integrating factor method.
+
+Integrating factor:
+
+$$
+\mu(t)=e^{\int-t d t}=e^{-t^2 / 2}
+$$
+
+
+Multiply through:
+
+$$
+e^{-t^2 / 2} v^{\prime}-t e^{-t^2 / 2} v=-t e^{-t^2 / 2}
+$$
+
+
+Left-hand side is:
+
+$$
+\frac{d}{d t}\left(e^{-t^2 / 2} v\right)=-t e^{-t^2 / 2}
+$$
+
+
+Integrate both sides:
+
+$$
+\int \frac{d}{d t}\left(e^{-t^2 / 2} v\right) d t=\int-t e^{-t^2 / 2} d t
+$$
+
+
+Use substitution: Let $u=-t^2 / 2 \Rightarrow d u=-t d t$
+Then:
+
+$$
+\int-t e^{-t^2 / 2} d t=\int e^u d u=e^u=e^{-t^2 / 2}+C
+$$
+
+
+So:
+
+$$
+e^{-t^2 / 2} v=e^{-t^2 / 2}+C \quad \Rightarrow \quad v=1+C e^{t^2 / 2}
+$$
+
+
+Step 3: Return to $y(t)$
+
+Recall $v=\frac{1}{y}$, so:
+
+$$
+\frac{1}{y}=1+C e^{t^2 / 2} \quad \Rightarrow \quad y(t)=\frac{1}{1+C e^{t^2 / 2}}
+$$
+
+
+Final Answer:
+
+$$
+y(t)=\frac{1}{1+C e^{t^2 / 2}}, \quad C \in \mathbb{R}
+$$
+
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

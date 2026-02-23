@@ -1,0 +1,39 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+   
+From a regular octagon, a triangle is formed by connecting three randomly chosen vertices of the octagon. What is the probability that at least one of the sides of the triangle is also a side of the octagon?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2018-23.png}
+	\end{center}
+
+\ansFIVEs{%start
+		\frac{2}{7} }{%<--- (A)
+		\frac{5}{42} }{%<--- (B)
+		\frac{11}{14} }{%<--- (C)
+		\frac{5}{7} }{%<---- (D)
+		\frac{6}{7} }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Answer (D): For each side of the octagon, there are 6 triangles containing that side. Because the 8 triangles containing two adjacent sides of the octagon are counted twice, there are a total of $8 \cdot 6-8=40$ triangles sharing a side with the octagon. The total number of triangles that can be formed from the eight vertices is $\frac{8 \cdot 7 \cdot 6}{3!}=56$, so the probability is $\frac{40}{56}=\frac{5}{7}$.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

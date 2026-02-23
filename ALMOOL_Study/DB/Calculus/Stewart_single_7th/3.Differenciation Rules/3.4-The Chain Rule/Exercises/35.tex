@@ -1,0 +1,127 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\cos \left(\dfrac{1-e^{2 x}}{1+e^{2 x}}\right)$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to differentiate
+
+$$
+y(x) \;=\; \cos\!\Bigl(\dfrac{1 - e^{2x}}{1 + e^{2x}}\Bigr).
+$$
+
+\textbf{1. Use the chain rule}
+
+Let 
+$$
+u(x) \;=\; \dfrac{1 - e^{2x}}{1 + e^{2x}}.
+$$
+Then $y = \cos(u)$.  By the chain rule,
+
+$$
+y'(x) 
+= -\sin\bigl(u(x)\bigr)\;u'(x).
+$$
+
+Hence we need to compute $u'(x)$.
+
+\textbf{2. Differentiate} $u(x) = \dfrac{1 - e^{2x}}{1 + e^{2x}}$
+
+Use the quotient rule.  Set
+
+$$
+\text{Numerator: } f(x) = 1 - e^{2x}, 
+\quad
+\text{Denominator: } g(x) = 1 + e^{2x}.
+$$
+
+Then
+
+$$
+f'(x) = -\,2\,e^{2x}, 
+\qquad
+g'(x) = 2\,e^{2x}.
+$$
+
+By the quotient rule,
+
+$$
+u'(x)
+= \dfrac{\,f'(x)\,g(x)\;-\;f(x)\,g'(x)\,}{\bigl[g(x)\bigr]^2}
+= \dfrac{(-2 e^{2x})(1 + e^{2x}) \;-\; (1 - e^{2x})(2 e^{2x})}
+       {\bigl(1 + e^{2x}\bigr)^2}.
+$$
+
+Compute the numerator carefully:
+
+1. $f'(x)\,g(x) = (-2 e^{2x})(1 + e^{2x}) = -2 e^{2x} - 2 e^{4x}.$
+
+2. $f(x)\,g'(x) = (1 - e^{2x})(2 e^{2x}) = 2 e^{2x} - 2 e^{4x}.$
+
+So the difference is
+
+$$
+\bigl[-2 e^{2x} \;-\; 2 e^{4x}\bigr] 
+\;-\;
+\bigl[2 e^{2x} \;-\; 2 e^{4x}\bigr]
+= -2 e^{2x} - 2 e^{4x} - 2 e^{2x} + 2 e^{4x}
+= -4 e^{2x}.
+$$
+
+Thus,
+
+$$
+u'(x)
+= \dfrac{-4 e^{2x}}{\bigl(1 + e^{2x}\bigr)^2}.
+$$
+
+\textbf{3. Combine via the chain rule}
+
+$$
+y'(x)
+= -\sin\Bigl(\dfrac{1 - e^{2x}}{1 + e^{2x}}\Bigr) 
+\;\times\;
+\Bigl[\,-\dfrac{4 e^{2x}}{(1 + e^{2x})^2}\Bigr].
+$$
+
+The two negatives multiply to give a positive:
+
+$$
+y'(x)
+= \dfrac{4\,e^{2x}}{\bigl(1 + e^{2x}\bigr)^2}
+\,\sin\!\Bigl(\tfrac{1 - e^{2x}}{1 + e^{2x}}\Bigr).
+$$
+
+Hence the final derivative is
+
+$$
+\boxed{
+y'(x) 
+= \dfrac{4\,e^{2x}}{\bigl(1 + e^{2x}\bigr)^2}\,
+\sin\!\Bigl(\dfrac{1 - e^{2x}}{1 + e^{2x}}\Bigr).
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

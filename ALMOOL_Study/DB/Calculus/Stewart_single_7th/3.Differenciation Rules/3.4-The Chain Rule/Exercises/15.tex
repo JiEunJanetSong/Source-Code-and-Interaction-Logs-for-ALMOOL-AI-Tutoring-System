@@ -1,0 +1,57 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=x e^{-k x}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+To differentiate the function
+
+$$
+y = x\, e^{-kx},
+$$
+
+use the product rule:
+
+$$
+\dfrac{d}{dx}\bigl[x\, e^{-kx}\bigr] 
+= \dfrac{d}{dx}[x] \cdot e^{-kx} + x \cdot \dfrac{d}{dx}[e^{-kx}].
+$$
+
+1. $\dfrac{d}{dx}[x] = 1.$
+
+2. $\dfrac{d}{dx}[e^{-kx}] = e^{-kx} \cdot \dfrac{d}{dx}(-kx) = -k\,e^{-kx}.$
+
+Substituting, we get:
+
+$$
+y' = 1 \cdot e^{-kx} + x \cdot \bigl(-k\,e^{-kx}\bigr) = e^{-kx} - kx\,e^{-kx}.
+$$
+
+Factor out $e^{-kx}$ to simplify:
+
+$$
+\boxed{y' = e^{-kx}\,\bigl(1 - kx\bigr).}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

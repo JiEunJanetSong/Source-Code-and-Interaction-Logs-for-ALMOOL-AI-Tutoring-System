@@ -1,0 +1,46 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Zara has a collection of 4 marbles: an Aggie, a Bumblebee, a Steelie, and a Tiger. She wants to display them in a row on a shelf, but does not want to put the Steelie and the Tiger next to one another. In how many ways can she do this?
+
+\ansFIVEs{%start
+		 6 }{%<--- (A)
+		 8 }{%<--- (B)
+		 12 }{%<--- (C)
+		 18 }{%<---- (D)
+		 24 }%<---- (D)
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Answer (C): There are 6 ways Zara can place the Steelie and the Tiger so that they are not next to one another. Those arrangements are shown below.
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2020-10-s.png}
+	\end{center}
+
+	For each arrangement, there are 2 ways to place the remaining marbles: either the Aggie appears to the left of the Bumblebee or it appears to the right. This makes $6 \cdot 2=12$ arrangements with the Steelie and the Tiger not next to one another.
+
+	OR
+	
+	The number of arrangements can be determined by using complementary counting. That is, begin with the total number of possible arrangements, which is $4!=4 \cdot 3 \cdot 2 \cdot 1=24$, then subtract the number of ways to place the Steelie and the Tiger next to each other. If the Steelie and the Tiger are considered as a single object, then there are 3 objects to arrange and $3!=3 \cdot 2 \cdot 1=6$ ways to do so. There are 2 ways to arrange the Steelie and the Tiger, so there are $6 \cdot 2=12$ arrangements with the Steelie and the Tiger adjacent to each other. Thus there are $24-12=12$ arrangements with the Steelie and the Tiger not next to one another.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

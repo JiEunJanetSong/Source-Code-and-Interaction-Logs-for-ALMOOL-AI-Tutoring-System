@@ -1,0 +1,96 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$f(t)=\sin ^2\left(e^{\sin t}\right)$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to differentiate 
+
+$$
+f(t) = \sin^2\bigl(e^{\sin t}\bigr).
+$$
+
+A good way to do this is to think of $f$ as a composition of two functions:
+
+1. The **outer** function: $g(x) = \sin^2(x) = (\sin x)^2.$  
+
+2. The **inner** function: $h(t) = e^{\sin t}.$
+
+\textbf{Step 1: Differentiate the outer function $g(x) = (\sin x)^2$}
+
+If $x$ is some expression, then
+
+$$
+\dfrac{d}{dx}\bigl[\sin^2(x)\bigr] 
+= 2 \sin(x)\,\cos(x).
+$$
+
+\textbf{Step 2: Differentiate the inner function $h(t) = e^{\sin t}$}
+
+We set $z = \sin t$. 
+
+Then
+
+$$
+\dfrac{d}{dt}\bigl(e^z\bigr) = e^z \cdot \dfrac{dz}{dt} 
+= e^z \cos t,
+$$
+
+and since $z = \sin t$, we substitute back $z = \sin t$:
+
+$$
+\dfrac{d}{dt}\bigl(e^{\sin t}\bigr) 
+= e^{\sin t} \cos t.
+$$
+
+\textbf{Step 3: Apply the chain rule}
+
+Putting it all together,
+
+$$
+\dfrac{df}{dt}
+= \dfrac{d}{dx}\bigl[\sin^2(x)\bigr]\Big|_{x = e^{\sin t}}
+ \;\times\; \dfrac{d}{dt}\bigl[e^{\sin t}\bigr].
+$$
+
+Hence,
+
+$$
+\dfrac{df}{dt}
+= \underbrace{2 \sin\bigl(e^{\sin t}\bigr)\,\cos\bigl(e^{\sin t}\bigr)}_{\text{derivative of }\sin^2(x)\text{ at }x=e^{\sin t}}
+ \;\times\; \underbrace{\left[e^{\sin t}\,\cos t\right]}_{\text{derivative of }e^{\sin t}}.
+$$
+
+So the derivative is:
+
+$$
+\boxed{
+f'(t)
+= 2 \,\sin\bigl(e^{\sin t}\bigr)\,\cos\bigl(e^{\sin t}\bigr)
+\; e^{\sin t}\;\cos t.
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

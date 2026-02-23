@@ -1,0 +1,92 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=2^{\sin \pi x}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want to differentiate
+
+$$
+y(x) \;=\; 2^{\sin(\pi x)}.
+$$
+
+A convenient approach is to rewrite $2^{\sin(\pi x)}$ in terms of the natural exponential:
+
+$$
+2^{\sin(\pi x)}
+= e^{\ln(2)\,\sin(\pi x)}.
+$$
+
+\textbf{Step 1: Set up the chain rule}
+
+Let 
+$$
+g(x) = \ln(2)\,\sin(\pi x).
+$$
+
+Then 
+$$
+y(x) = e^{g(x)}.
+$$
+
+By the chain rule,
+
+$$
+y'(x) 
+= e^{g(x)} \cdot g'(x).
+$$
+
+\textbf{Step 2: Differentiate} $g(x)$
+
+$$
+g(x) = \ln(2)\,\sin(\pi x).
+$$
+
+We can treat $\ln(2)$ as a constant. Then
+
+$$
+g'(x)
+= \ln(2)\,\dfrac{d}{dx}[\sin(\pi x)]
+= \ln(2)\,\bigl[\cos(\pi x)\cdot \pi\bigr]
+= \pi\,\ln(2)\,\cos(\pi x).
+$$
+
+\textbf{Step 3: Combine}
+
+$$
+y'(x)
+= e^{g(x)}\cdot \bigl[\pi\,\ln(2)\,\cos(\pi x)\bigr]
+= \pi\,\ln(2)\,\cos(\pi x)\;e^{\ln(2)\,\sin(\pi x)}.
+$$
+
+Rewriting $e^{\ln(2)\,\sin(\pi x)}$ back as $2^{\sin(\pi x)}$, we get
+
+$$
+\boxed{
+y'(x) 
+= \pi\,\ln(2)\,\cos(\pi x)\;2^{\sin(\pi x)}.
+}
+$$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

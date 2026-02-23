@@ -1,0 +1,99 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$f(x)=(2 x-3)^4\left(x^2+x+1\right)^5$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We can differentiate $f(x)$ by viewing it as a product of two functions and then applying the product rule:
+
+$$
+f(x) = \underbrace{(2x - 3)^4}_{u(x)} \cdot \underbrace{\bigl(x^2 + x + 1\bigr)^5}_{v(x)}.
+$$
+
+The product rule states
+
+$$
+\dfrac{d}{dx}\bigl[u(x)\,v(x)\bigr] = u'(x)\,v(x) + u(x)\,v'(x).
+$$
+
+\textbf{Step 1.} Find $u'(x)$
+
+$$
+u(x) = (2x - 3)^4.
+$$
+
+Use the chain rule:
+
+1. Inner function: $2x - 3$, whose derivative is $2$.
+
+2. Outer function: $(\cdot)^4$, whose derivative is $4(\cdot)^3$.
+
+Hence,
+
+$$
+u'(x) = 4(2x - 3)^3 \cdot 2 = 8(2x - 3)^3.
+$$
+
+\textbf{Step 2.} Find $v'(x)$
+
+$$
+v(x) = \bigl(x^2 + x + 1\bigr)^5.
+$$
+
+Again use the chain rule:
+
+1. Inner function: $x^2 + x + 1$, whose derivative is $2x + 1$.
+
+2. Outer function: $(\cdot)^5$, whose derivative is $5(\cdot)^4$.
+
+Hence,
+
+$$
+v'(x) 
+= 5(x^2 + x + 1)^4 \cdot (2x + 1).
+$$
+
+\textbf{Step 3.} Combine via the product rule
+
+$$
+f'(x) 
+= u'(x)\,v(x) + u(x)\,v'(x)
+$$
+
+$$
+= \Bigl[\,8(2x - 3)^3\Bigr]\,\Bigl[(x^2 + x + 1)^5\Bigr] 
+\;+\; \Bigl[(2x - 3)^4\Bigr]\,\Bigl[5(x^2 + x + 1)^4 (2x + 1)\Bigr].
+$$
+
+You can leave the derivative in this expanded sum form or factor out common terms if you wish. A perfectly acceptable final form is:
+
+$$
+\boxed{
+f'(x) 
+= 8(2x - 3)^3\,(x^2 + x + 1)^5 \;+\; 5(2x - 3)^4\,(x^2 + x + 1)^4 \,(2x + 1).
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

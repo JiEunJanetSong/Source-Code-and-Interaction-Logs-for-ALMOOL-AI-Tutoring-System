@@ -1,0 +1,95 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find $y^{\prime}$ and $y^{\prime \prime}$.
+
+$y=\cos ^2 x$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We have 
+
+$$
+y = \cos^2 x.
+$$
+
+A straightforward way to see this is to write $y = \bigl(\cos x\bigr)^2$.
+
+First derivative $y'$
+
+Use the chain rule (or simply treat it as a power rule applied to $\cos x$):
+
+$$
+y' = 2\,\cos x \cdot \dfrac{d}{dx}[\cos x] = 2 \cos x \cdot (-\sin x) = -2 \,\sin x \,\cos x.
+$$
+
+Often, this is also written in a trigonometric identity form:
+
+$$
+-2 \sin x \cos x = -\sin(2x).
+$$
+
+So either form is acceptable:
+
+$$
+\boxed{y' = -2\,\sin x\,\cos x = -\sin(2x).}
+$$
+
+Second derivative $y''$
+
+If we use $y' = -2\,\sin x \cos x$, apply the product rule:
+
+$$
+y' = -2\, [\,\sin x \,\cos x\,].
+$$
+
+Let $f(x) = \sin x$ and $g(x) = \cos x$. 
+
+Then
+
+$$
+\dfrac{d}{dx}[\sin x \,\cos x] = \sin x \cdot (-\sin x) + \cos x \cdot \cos x 
+= -\sin^2 x + \cos^2 x 
+= \cos(2x).
+$$
+
+Hence,
+
+$$
+y'' 
+= -2 \,\dfrac{d}{dx}[\sin x\,\cos x]
+= -2 \,\cos(2x).
+$$
+
+Alternatively, starting with $y' = -\sin(2x)$, we immediately get
+
+$$
+y'' = -\dfrac{d}{dx}[\sin(2x)] = -\bigl[2\,\cos(2x)\bigr] = -2 \cos(2x).
+$$
+
+So,
+
+$$
+\boxed{y'' = -2\,\cos(2x).}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

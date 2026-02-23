@@ -1,0 +1,76 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the limit.
+
+$\lim _{t \rightarrow 0} \dfrac{\tan 6 t}{\sin 2 t}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want 
+$
+\lim_{t \to 0} \dfrac{\tan(6t)}{\sin(2t)}.
+$
+
+For small $t$, we use the approximations $\tan(6t) \approx 6t$ and $\sin(2t) \approx 2t$. 
+
+Therefore,
+
+$
+\dfrac{\tan(6t)}{\sin(2t)} 
+\approx \dfrac{6t}{2t} 
+= 3.
+$
+
+To be more rigorous, we can apply the standard limits $\lim_{x \to 0} \dfrac{\tan x}{x} = 1$ and $\lim_{x \to 0} \dfrac{\sin x}{x} = 1$. 
+
+Specifically:
+
+$
+\dfrac{\tan(6t)}{\sin(2t)} 
+= \dfrac{\tan(6t)}{6t} \cdot \dfrac{2t}{\sin(2t)} \cdot \dfrac{6}{2}.
+$
+
+As $t \to 0$:
+$
+\dfrac{\tan(6t)}{6t} \to 1, 
+\quad
+\dfrac{2t}{\sin(2t)} \to 1,
+\quad
+\dfrac{6}{2} = 3.
+$
+
+Hence,
+
+$
+\lim_{t \to 0} \dfrac{\tan(6t)}{\sin(2t)} 
+= 1 \cdot 1 \cdot 3 
+= 3.
+$
+
+Therefore, 
+
+$
+\boxed{3}.
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,64 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+A classroom has a row of 35 coat hooks. Paulina likes coats to be equally spaced, so that there is the same number of empty hooks before the first coat, after the last coat, and between every coat and the next one. Suppose there is at least 1 coat and at least 1 empty hook. How many different numbers of coats can satisfy Paulina's pattern?
+
+\ansFIVEs{%start
+		2 }{%<--- (A)
+		4 }{%<--- (B)
+		5 }{%<--- (C)
+		7 }{%<---- (D)
+		9 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+Suppose there are $c$ coats on the rack. Notice that there are $c+1$ "gaps" formed by these coats, each of which must have the same number of empty spaces (say, $k$ ). Then the values $k$ and $c$ must satisfy $c+k(c+1)=35 \Longrightarrow k c+k+c=35$. We now use Simon's Favorite Factoring Trick as follows:
+
+$$
+\begin{aligned}
+& k c+k+c=35 \\
+\Longrightarrow & k c+k+c+1=36 \\
+\Longrightarrow & (k+1)(c+1)=36
+\end{aligned}
+$$
+
+
+Our only restrictions now are that $k>0 \Longrightarrow k+1>1$ and $c>0 \Longrightarrow c+1>1$.
+Other than that, each factor pair of 36 produces a valid solution ( $k, c$ ), which in turn uniquely determines an arrangement. Since 36 has 9 factors, our answer is $9-2=\boxed{(\mathbf{D}) 7}$.
+
+Solution 2
+Say Paulina placed $n$ coats. That will divide the 35 hooks into $n+1$ spaces and $35-n$ empty hooks. Therefore,
+
+$$
+n+1 \mid 35-n .
+$$
+
+
+The values of $n$ that satisfy this are
+
+$$
+n \in 1,2,3,5,8,11,17
+$$
+
+
+The answer is $\square$ (D) 7 
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

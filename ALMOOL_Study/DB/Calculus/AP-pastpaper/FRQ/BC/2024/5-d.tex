@@ -1,0 +1,86 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+\begin{tabular}{|c|c|c|c|}
+    \hline$x$ & 0 & $\pi$ & $2 \pi$ \\
+    \hline$f^{\prime}(x)$ & 5 & 6 & 0 \\
+    \hline
+    \end{tabular}
+    
+The function $f$ is twice differentiable for all $x$ with $f(0)=0$. Values of $f^{\prime}$, the derivative of $f$, are given in the table for selected values of $x$.
+
+(d) Find $\int(t+5) \cos \left(\frac{t}{4}\right) d t$. Show the work that leads to your answer.
+
+}\SetValue{Solution}{%
+
+$\begin{array}{ll}u=t+5 & d v=\cos \left(\frac{t}{4}\right) d t \\ d u=d t & v=4 \sin \left(\frac{t}{4}\right)\end{array}$ 
+
+$\int(t+5) \cos \left(\frac{t}{4}\right) d t=4(t+5) \sin \left(\frac{t}{4}\right)-\int 4 \sin \left(\frac{t}{4}\right) d t$
+
+$=4(t+5) \sin \left(\frac{t}{4}\right)+16 \cos \left(\frac{t}{4}\right)+C$
+
+}\SetValue{Rubric}{%
+
+# General Scoring Notes
+
+The model solution is presented using standard mathematical notation.
+Answers (numeric or algebraic) need not be simplified. Answers given as a decimal approximation should be correct to three places after the decimal point. Within each individual free-response question, at most one point is not earned for inappropriate rounding.
+
+\begin{tabular}{|c|c|c|c|}
+\hline$x$ & 0 & $\pi$ & $2 \pi$ \\
+\hline$f^{\prime}(x)$ & 5 & 6 & 0 \\
+\hline
+\end{tabular}
+
+The function $f$ is twice differentiable for all $x$ with $f(0)=0$. Values of $f^{\prime}$, the derivative of $f$, are given in the table for selected values of $x$.
+
+## Model Solution (d)
+
+$\begin{array}{ll}u=t+5 & d v=\cos \left(\frac{t}{4}\right) d t \\ d u=d t & v=4 \sin \left(\frac{t}{4}\right)\end{array}$ 
+
+$\int(t+5) \cos \left(\frac{t}{4}\right) d t=4(t+5) \sin \left(\frac{t}{4}\right)-\int 4 \sin \left(\frac{t}{4}\right) d t$
+
+$=4(t+5) \sin \left(\frac{t}{4}\right)+16 \cos \left(\frac{t}{4}\right)+C$
+
+## Scoring (d)
+
+- For $\begin{array}{ll}u=t+5 & d v=\cos \left(\frac{t}{4}\right) d t \\ d u=d t & v=4 \sin \left(\frac{t}{4}\right)\end{array}$ 
+    - $u$ and $dv$; 1 point
+
+- For $\int(t+5) \cos \left(\frac{t}{4}\right) d t=4(t+5) \sin \left(\frac{t}{4}\right)-\int 4 \sin \left(\frac{t}{4}\right) d t$
+    - $uv-\int v du$; 1 point
+
+- For $=4(t+5) \sin \left(\frac{t}{4}\right)+16 \cos \left(\frac{t}{4}\right)+C$
+    - Answer; 1 point
+
+## Scoring notes (d)
+
+- The first and second points are earned with an implied $u$ and $d v$ in the presence of $4(t+5) \sin \left(\frac{t}{4}\right)-\int 4 \sin \left(\frac{t}{4}\right) d t$ or a mathematically equivalent expression.
+
+- The tabular method may be used to show integration by parts. In this case, the first point is earned by columns (labeled or unlabeled) that begin with $t+5$ and $\cos \left(\frac{t}{4}\right)$. The second point is earned for $4(t+5) \sin \left(\frac{t}{4}\right)-\int 4 \sin \left(\frac{t}{4}\right) d t$ or a mathematically equivalent expression.
+
+- The third point is eamed only for an expression mathematically equivalent to $4(t+5) \sin \left(\frac{t}{4}\right)+16 \cos \left(\frac{t}{4}\right)+C$ (such as $4 t \sin \left(\frac{t}{4}\right)+20 \sin \left(\frac{t}{4}\right)+16 \cos \left(\frac{t}{4}\right)+C$ ) in the presence of correct supporting work.
+
+- To earn the third point a response must have a final answer that includes a constant of integration.
+
+- Alternate solution:
+
+$$
+\begin{aligned}
+& \int(t+5) \cos \left(\frac{t}{4}\right) d t=\int t \cos \left(\frac{t}{4}\right) d t+\int 5 \cos \left(\frac{t}{4}\right) d t \\
+& u=t \quad d v=\cos \left(\frac{t}{4}\right) d t \\
+& d u=d t \quad v=4 \sin \left(\frac{t}{4}\right) \\
+& \int t \cos \left(\frac{t}{4}\right) d t+\int 5 \cos \left(\frac{t}{4}\right) d t=4 t \sin \left(\frac{t}{4}\right)-\int 4 \sin \left(\frac{t}{4}\right) d t+\int 5 \cos \left(\frac{t}{4}\right) d t \\
+& =4 t \sin \left(\frac{t}{4}\right)+16 \cos \left(\frac{t}{4}\right)+20 \sin \left(\frac{t}{4}\right)+C
+\end{aligned}
+$$
+
+- A response can earn the first and second points for correctly applying integration by parts to $\int t \cos \left(\frac{t}{4}\right) d t$. The tabular method may be used to show integration by parts. The third point is earned for the correct answer.
+
+Total for part (d) 3 points
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+

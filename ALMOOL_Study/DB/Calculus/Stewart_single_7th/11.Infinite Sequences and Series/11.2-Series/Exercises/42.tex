@@ -1,0 +1,62 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the series is convergent or divergent. If it is convergent, find its sum.
+
+$$\sum_{n=1}^{\infty} \dfrac{e^n}{n^2}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Analyze the general term
+
+The general term is:
+
+$$
+a_n=\dfrac{e^n}{n^2}
+$$
+
+
+As $n \rightarrow \infty$:
+
+- The numerator $e^n$ grows exponentially.
+
+- The denominator $n^2$ grows polynomially.
+
+Since exponential growth dominates polynomial growth, the terms $a_n$ do not approach 0 fast enough for convergence-in fact, they grow without bound.
+
+Step 2: Apply the Divergence Test
+
+The divergence test says:
+
+If $\lim _{n \rightarrow \infty} a_n \neq 0$, then $\sum a_n$ diverges.
+
+Let's test the limit:
+
+$$
+\lim _{n \rightarrow \infty} \dfrac{e^n}{n^2}=\infty
+$$
+
+
+Hence, the terms do not go to zero. So, the series must diverge.
+
+Final Answer: The series diverges.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,73 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+The numbers from 1 to 49 are arranged in a spiral pattern on a square grid, beginning at the center. The first few numbers have been entered into the grid below. Consider the four numbers that will appear in the shaded squares, on the same diagonal as the number 7. How many of these four numbers are prime?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2023-04.png}
+	\end{center}
+
+\ansFIVEs{%start
+		0 }{%<--- (A)
+		1 }{%<--- (B)
+		2 }{%<--- (C)
+		3 }{%<---- (D)
+		4 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We fill out the grid, as shown below:
+
+\begin{center}		
+    \includegraphics[scale=0.3]{AMC-8-pics/2023-04-s.png}
+	\end{center}
+
+	Step 1: Understand the Pattern
+
+	- The numbers from 1 to 49 are placed in a spiral, starting from the center.
+
+	- The shaded squares lie on the same diagonal as 7.
+
+	- We're asked: How many of the four diagonal numbers are prime?
+	
+	From the fully filled grid (based on the spiral structure), the four diagonal numbers on the same diagonal as 7 are:
+	
+	$$
+	\{19,23,25,47\}
+	$$
+	
+	
+	Step 2: Check for Primes
+
+	- $19 \rightarrow \nabla$ Prime
+
+	- $23 \rightarrow \nabla$ Prime
+
+	- $25 \rightarrow$ Not prime (divisible by 5)
+
+	- $47 \rightarrow \nabla$ Prime
+	
+	Final Count
+
+	There are 3 prime numbers among the four.
+	
+	Answer: (D) $3$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

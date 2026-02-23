@@ -1,0 +1,109 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find all solutions of
+
+$$
+y^{\prime}=2 y+5
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the first-order linear differential equation:
+
+$$
+y^{\prime}=2 y+5
+$$
+
+
+Step 1: Write in standard form
+
+$$
+y^{\prime}-2 y=5
+$$
+
+
+This is a linear differential equation of the form:
+
+$$
+y^{\prime}+P(t) y=Q(t)
+$$
+
+with:
+- $P(t)=-2$
+- $Q(t)=5$
+
+Step 2: Find the integrating factor
+
+$$
+\mu(t)=e^{\int-2 d t}=e^{-2 t}
+$$
+
+
+Step 3: Multiply both sides by the integrating factor
+
+$$
+e^{-2 t}\left(y^{\prime}-2 y\right)=5 e^{-2 t} \Rightarrow \frac{d}{d t}\left(e^{-2 t} y\right)=5 e^{-2 t}
+$$
+
+
+Step 4: Integrate both sides
+
+$$
+\int \frac{d}{d t}\left(e^{-2 t} y\right) d t=\int 5 e^{-2 t} d t
+$$
+
+
+Left-hand side:
+
+$$
+e^{-2 t} y
+$$
+
+
+Right-hand side:
+
+$$
+\int 5 e^{-2 t} d t=5 \cdot \frac{e^{-2 t}}{-2}=-\frac{5}{2} e^{-2 t}+C
+$$
+
+
+So:
+
+$$
+e^{-2 t} y=-\frac{5}{2} e^{-2 t}+C
+$$
+
+Step 5: Solve for $y(t)$
+
+Multiply both sides by $e^{2 t}$:
+
+$$
+y(t)=-\frac{5}{2}+C e^{2 t}
+$$
+
+
+Final Answer:
+
+$y(t)=C e^{2 t}-\frac{5}{2}, \quad$ for all $C \in \mathbb{R}$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

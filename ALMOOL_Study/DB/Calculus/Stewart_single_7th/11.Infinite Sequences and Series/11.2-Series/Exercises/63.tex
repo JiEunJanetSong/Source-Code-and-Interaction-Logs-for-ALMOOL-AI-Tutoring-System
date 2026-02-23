@@ -1,0 +1,110 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the values of $x$ for which the series converges. Find the sum of the series for those values of $x$.
+
+ $$\sum_{n=0}^{\infty} e^{n x}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Recognize the Geometric Series Form
+
+We can write the general term as:
+
+$$
+\left(e^x\right)^n
+$$
+
+
+So the series becomes:
+
+$$
+\sum_{n=0}^{\infty}\left(e^x\right)^n
+$$
+
+
+This is a geometric series with common ratio:
+
+$$
+r=e^x
+$$
+
+
+Step 2: Convergence Condition
+
+A geometric series $\sum r^n$ converges if and only if:
+
+$$
+|r|<1
+$$
+
+
+So we need:
+
+$$
+\left|e^x\right|<1
+$$
+
+
+Since $e^x>0$ for all real $x$, this is equivalent to:
+
+$$
+e^x<1 \quad \Rightarrow \quad x<0
+$$
+
+
+So the series converges when:
+
+$$
+x<0
+$$
+
+Step 3: Find the Sum
+
+The sum of a geometric series is:
+
+$$
+\sum_{n=0}^{\infty} r^n=\dfrac{1}{1-r}
+$$
+
+
+Here, $r=e^x$, so:
+
+$$
+\sum_{n=0}^{\infty} e^{n x}=\dfrac{1}{1-e^x}
+$$
+
+Final Answer:
+
+- The series converges for:
+
+$$
+x<0
+$$
+
+- For those values of $x$, the sum is:
+
+$$
+\dfrac{1}{1-e^x}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

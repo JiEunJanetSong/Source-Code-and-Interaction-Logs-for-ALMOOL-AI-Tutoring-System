@@ -1,0 +1,111 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+Evaluate the integral.
+
+$$\int\ t\ \sinh \ m t \ d t$$
+
+}\SetValue{Solution}{%
+
+We want to evaluate
+
+$$
+\int t \sinh (m t) d t
+$$
+
+where $m$ is a constant.
+
+Step 1: Use Integration by Parts
+Recall the integration by parts formula:
+
+$$
+\int u d v=u v-\int v d u .
+$$
+
+
+Let
+
+$$
+u=t, \quad d v=\sinh (m t) d t .
+$$
+
+
+Then
+
+$$
+d u=d t, \quad v=\int \sinh (m t) d t .
+$$
+
+
+We know
+
+$$
+\int \sinh (m t) d t=\dfrac{1}{m} \cosh (m t)
+$$
+
+Hence,
+
+$$
+v=\dfrac{1}{m} \cosh (m t)
+$$
+
+
+Step 2: Apply the Formula
+
+$$
+\int t \sinh (m t) d t=u v-\int v d u=t \cdot\left(\dfrac{1}{m} \cosh (m t)\right)-\int\left(\dfrac{1}{m} \cosh (m t)\right) d t
+$$
+
+
+Simplify:
+
+$$
+=\dfrac{t}{m} \cosh (m t)-\dfrac{1}{m} \int \cosh (m t) d t
+$$
+
+
+Step 3: Integrate $\cosh (m t)$
+
+$$
+\int \cosh (m t) d t=\dfrac{1}{m} \sinh (m t)
+$$
+
+
+Thus,
+
+$$
+-\dfrac{1}{m} \int \cosh (m t) d t=-\dfrac{1}{m}\left(\dfrac{1}{m} \sinh (m t)\right)=-\dfrac{1}{m^2} \sinh (m t)
+$$
+
+Step 4: Combine Everything
+Putting it all together:
+
+$$
+\int t \sinh (m t) d t=\dfrac{t}{m} \cosh (m t)-\dfrac{1}{m^2} \sinh (m t)+C,
+$$
+
+where $C$ is the constant of integration.
+
+Final Answer
+
+$$
+\int t \sinh (m t) d t=\dfrac{t}{m} \cosh (m t)-\dfrac{1}{m^2} \sinh (m t)+C \text {. }
+$$
+
+}\SetValue{Rubric}{%
+
+
+
+
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+ 
+   
+   
+
+   
+
+

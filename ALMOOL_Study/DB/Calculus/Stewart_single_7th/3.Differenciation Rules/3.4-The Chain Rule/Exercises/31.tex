@@ -1,0 +1,66 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the derivative of the function.
+
+$y=\sin (\tan 2 x)$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want the derivative of 
+
+$$
+y(x) = \sin\bigl(\tan(2x)\bigr).
+$$
+
+Use the chain rule twice:
+
+1. Let $u(x) = \tan(2x)$. Then $y = \sin(u)$.
+
+2. Differentiate the outer function $\sin(u)$ with respect to $u$:
+   $$
+   \dfrac{dy}{du} = \cos(u).
+   $$
+
+3. Differentiate $u(x) = \tan(2x)$ with respect to $x$:
+   $$
+   \dfrac{du}{dx} 
+   = \sec^2(2x)\,\dfrac{d}{dx}[2x]
+   = 2\,\sec^2(2x).
+   $$
+   
+4. Combine via the chain rule:
+   $$
+   y'(x) 
+   = \dfrac{dy}{du} \cdot \dfrac{du}{dx}
+   = \cos\bigl(\tan(2x)\bigr)\,\bigl[2\,\sec^2(2x)\bigr].
+   $$
+
+Hence,
+
+$$
+\boxed{
+y'(x) = 2\,\sec^2\bigl(2x\bigr)\,\cos\bigl(\tan(2x)\bigr).
+}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

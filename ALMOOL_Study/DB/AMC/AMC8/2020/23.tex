@@ -1,0 +1,39 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Five different awards are to be given to three students. Each student will receive at least one award. In how many different ways can the awards be distributed?
+
+\ansFIVEs{%start
+		 120 }{%<--- (A)
+		 150 }{%<--- (B)
+		 180 }{%<--- (C)
+		 210 }{%<---- (D)
+		 240 }%<---- (D)
+
+}\SetValue{Concept}{%
+
+세 명의 학생에게 다섯 가지 상이 수여됩니다. 각 학생은 적어도 하나의 상을 받게 됩니다. 상은 몇 가지 방법으로 나눠줄 수 있나요?
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Answer (B): There are two cases to consider.
+Case 1: One student receives 1 award and the other two students receive 2 awards each. There are 3 ways to select the student who will receive 1 award and 5 choices for that student's award. That leaves 4 awards to distribute evenly. For the next student there are ${ }_4 C_2=\binom{4}{2}=\frac{4 \cdot 3}{2}=6$ ways to choose that student's 2 awards, leaving the remaining 2 awards for the third student. Therefore the number of ways to give 1 award to one student and 2 awards to each of the other two students is $3 \cdot 5 \cdot 6=90$.
+Case 2: One student receives 3 awards and the other two students receive 1 award each. There are 3 ways to select the student who receives 3 awards and ${ }_5 C_3=\binom{5}{3}=\frac{5 \cdot 4 \cdot 3}{3 \cdot 2 \cdot 1}=10$ ways to choose that student's awards. The remaining 2 awards can be distributed to the other two students in 2 ways. Therefore the number of ways to give 3 awards to one student and 1 award to each of the other two students is $3 \cdot 10 \cdot 2=60$.
+
+In total there are $90+60=150$ ways to distribute the 5 awards.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

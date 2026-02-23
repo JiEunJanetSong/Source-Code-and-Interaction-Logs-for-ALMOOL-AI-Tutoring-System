@@ -1,0 +1,97 @@
+\documentclass[preview, 11pt]{oblivoir}
+%\documentclass[11pt]{article}
+%sudo updmap-sys
+\usepackage{amsmath}
+\usepackage[c]{esvect}
+\usepackage{graphicx}
+\pagestyle{empty}\renewcommand{\vec}[1]{\vv{#1}}
+\let\nvec\vec
+\def\vec#1{\nvec{\vphantom t\smash{#1}}}
+\newcommand\sfrac[3][3pt]{\rule{0pt}{\dimexpr#1+1.4ex\relax}^\frac{#2}{#3}}
+\newcommand\upfrac[3][3pt]{\rule{0pt}{\dimexpr#1+1.4ex\relax}^{#2}}
+\newcommand{\intfrac}[5]{ \int_{\tfrac{#1}{#2}}^{\tfrac{#3}{#4}}{#5}}
+\newcommand{\abv}[1]{\left|\vec{\mathrm{#1}}\right|}
+\newcommand{\mrm}[1]{\mathrm{#1}}
+\newcommand{\vrm}[1]{\vec{\mathrm{#1}}}
+\newcommand{\ovr}[1]{\overline{\mathrm{#1}}}
+\newcommand{\abvsign}[1][2pt]{\raisebox{#1}{\big|}}
+\newcommand{\avi}[2][-1pt]{\raisebox{#1}{$\abvsign\vv{#2}\abvsign$}}
+\newcommand{\avr}[2][-1pt]{\raisebox{#1}{$\abvsign\vv{\smash{\mathrm{#2}}\vphantom t}\abvsign$}}
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\newcommand*\bcd@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\newcommand*\bcd{\mathpalette\bigcdot@{.5}}
+\newcommand{\ccirc}{\mathbin{\mathchoice{\xcirc\scriptstyle}{\xcirc\scriptstyle}{\xcirc\scriptscriptstyle}{\xcirc\scriptscriptstyle}}}
+\newcommand{\xcirc}[1]{\vcenter{\hbox{$#1\circ$}}}\newcommand{\comp}[2]{#1 \ccirc #2}
+\newcommand{\COMP}[3]{\left( #1 \ccirc #2 \right)\left(#3\right)}
+\newcommand\expo[2][4pt]{\rule{0pt}{\dimexpr#1+1.4ex\relax}^{\textstyle#2}}
+\newcommand\pow[2][4pt]{\rule{0pt}{\dimexpr#1+1.4ex\relax}^{\textstyle#2}}
+\newcommand\spow[2][0pt]{\rule{0pt}{\dimexpr#1+1.4ex\relax}^{\scriptstyle#2}}
+\newcommand\expoop[2][0.725pt]{\raisebox{#1}{$\scriptstyle #2$}}
+\makeatother
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{bm}
+\usepackage{geometry}
+
+\geometry{
+ a4paper,
+ left=30mm,
+ right=30mm,
+ top=20mm,
+ bottom=30mm
+ }
+
+\begin{document}
+
+\section*{Result}
+\begin{tabular}{|c|c|}
+\hline
+Total Problem Number & Correct Number \\\hline
+{*{TotalProblemNumber}*} & {*{CorrectNumber}*}\\\hline
+\end{tabular}
+\\[5pt]
+
+
+\section*{Details}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Problem Number & Correct Answer & Your Answer & Correctness \\\hline
+#ifdef{RealAnswer1} 1 & {*{RealAnswer1}*} & {*{MyAnswer1}*} & {*{Correctness1}*}\\\hline
+#ifdef{RealAnswer2} 2 & {*{RealAnswer2}*} & {*{MyAnswer2}*} & {*{Correctness2}*}\\\hline
+#ifdef{RealAnswer3} 3 & {*{RealAnswer3}*} & {*{MyAnswer3}*} & {*{Correctness3}*}\\\hline
+#ifdef{RealAnswer4} 4 & {*{RealAnswer4}*} & {*{MyAnswer4}*} & {*{Correctness4}*}\\\hline
+#ifdef{RealAnswer5} 5 & {*{RealAnswer5}*} & {*{MyAnswer5}*} & {*{Correctness5}*}\\\hline
+#ifdef{RealAnswer6} 6 & {*{RealAnswer6}*} & {*{MyAnswer6}*} & {*{Correctness6}*}\\\hline
+#ifdef{RealAnswer7} 7 & {*{RealAnswer7}*} & {*{MyAnswer7}*} & {*{Correctness7}*}\\\hline
+#ifdef{RealAnswer8} 8 & {*{RealAnswer8}*} & {*{MyAnswer8}*} & {*{Correctness8}*}\\\hline
+#ifdef{RealAnswer9} 9 & {*{RealAnswer9}*} & {*{MyAnswer9}*} & {*{Correctness9}*}\\\hline
+#ifdef{RealAnswer10} 10 & {*{RealAnswer10}*} & {*{MyAnswer10}*} & {*{Correctness10}*}\\\hline
+#ifdef{RealAnswer11} 11 & {*{RealAnswer11}*} & {*{MyAnswer11}*} & {*{Correctness11}*}\\\hline
+#ifdef{RealAnswer12} 12 & {*{RealAnswer12}*} & {*{MyAnswer12}*} & {*{Correctness12}*}\\\hline
+#ifdef{RealAnswer13} 13 & {*{RealAnswer13}*} & {*{MyAnswer13}*} & {*{Correctness13}*}\\\hline
+#ifdef{RealAnswer14} 14 & {*{RealAnswer14}*} & {*{MyAnswer14}*} & {*{Correctness14}*}\\\hline
+#ifdef{RealAnswer15} 15 & {*{RealAnswer15}*} & {*{MyAnswer15}*} & {*{Correctness15}*}\\\hline
+#ifdef{RealAnswer16} 16 & {*{RealAnswer16}*} & {*{MyAnswer16}*} & {*{Correctness16}*}\\\hline
+#ifdef{RealAnswer17} 17 & {*{RealAnswer17}*} & {*{MyAnswer17}*} & {*{Correctness17}*}\\\hline
+#ifdef{RealAnswer18} 18 & {*{RealAnswer18}*} & {*{MyAnswer18}*} & {*{Correctness18}*}\\\hline
+#ifdef{RealAnswer19} 19 & {*{RealAnswer19}*} & {*{MyAnswer19}*} & {*{Correctness19}*}\\\hline
+#ifdef{RealAnswer20} 20 & {*{RealAnswer20}*} & {*{MyAnswer20}*} & {*{Correctness20}*}\\\hline
+#ifdef{RealAnswer21} 21 & {*{RealAnswer21}*} & {*{MyAnswer21}*} & {*{Correctness21}*}\\\hline
+#ifdef{RealAnswer22} 22 & {*{RealAnswer22}*} & {*{MyAnswer22}*} & {*{Correctness22}*}\\\hline
+#ifdef{RealAnswer23} 23 & {*{RealAnswer23}*} & {*{MyAnswer23}*} & {*{Correctness23}*}\\\hline
+#ifdef{RealAnswer24} 24 & {*{RealAnswer24}*} & {*{MyAnswer24}*} & {*{Correctness24}*}\\\hline
+#ifdef{RealAnswer25} 25 & {*{RealAnswer25}*} & {*{MyAnswer25}*} & {*{Correctness25}*}\\\hline
+#ifdef{RealAnswer26} 26 & {*{RealAnswer26}*} & {*{MyAnswer26}*} & {*{Correctness26}*}\\\hline
+#ifdef{RealAnswer27} 27 & {*{RealAnswer27}*} & {*{MyAnswer27}*} & {*{Correctness27}*}\\\hline
+#ifdef{RealAnswer28} 28 & {*{RealAnswer28}*} & {*{MyAnswer28}*} & {*{Correctness28}*}\\\hline
+#ifdef{RealAnswer29} 29 & {*{RealAnswer29}*} & {*{MyAnswer29}*} & {*{Correctness29}*}\\\hline
+#ifdef{RealAnswer30} 30 & {*{RealAnswer30}*} & {*{MyAnswer30}*} & {*{Correctness30}*}\\\hline
+#ifdef{RealAnswer31} 31 & {*{RealAnswer31}*} & {*{MyAnswer31}*} & {*{Correctness31}*}\\\hline
+#ifdef{RealAnswer32} 32 & {*{RealAnswer32}*} & {*{MyAnswer32}*} & {*{Correctness32}*}\\\hline
+#ifdef{RealAnswer33} 33 & {*{RealAnswer33}*} & {*{MyAnswer33}*} & {*{Correctness33}*}\\\hline
+\end{tabular}
+
+\end{document}

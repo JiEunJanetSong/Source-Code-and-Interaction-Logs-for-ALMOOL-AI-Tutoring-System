@@ -1,0 +1,116 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+  
+Find the solution to the initial value problem
+
+$$
+t y^{\prime}=2 y+4 t^3 \cos (4 t), \quad y\left(\frac{\pi}{8}\right)=0
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Standard form
+Divide both sides by $t$ (assuming $t \neq 0$ ):
+
+$$
+y^{\prime}-\frac{2}{t} y=4 t^2 \cos (4 t)
+$$
+
+
+This is a first-order linear differential equation in standard form:
+
+$$
+y^{\prime}+a(t) y=b(t)
+$$
+
+with:
+- $a(t)=-\frac{2}{t}$
+- $b(t)=4 t^2 \cos (4 t)$
+
+Step 2: Find the integrating factor
+
+$$
+\mu(t)=e^{\int a(t) d t}=e^{\int-\frac{2}{t} d t}=e^{-2 \ln |t|}=t^{-2}
+$$
+
+(We can assume $t>0$ since $\frac{\pi}{8}>0$.)
+
+Step 3: Multiply both sides by the integrating factor
+
+$$
+t^{-2} y^{\prime}-\frac{2}{t^3} y=4 \cos (4 t)
+$$
+
+
+Left-hand side is:
+
+$$
+\frac{d}{d t}\left(t^{-2} y\right)
+$$
+
+
+So:
+
+$$
+\frac{d}{d t}\left(t^{-2} y\right)=4 \cos (4 t)
+$$
+
+
+Step 4: Integrate both sides
+
+$$
+\begin{gathered}
+\int \frac{d}{d t}\left(t^{-2} y\right) d t=\int 4 \cos (4 t) d t \\
+t^{-2} y=\int 4 \cos (4 t) d t=\int 4 \cos (4 t) d t=\frac{4}{4} \sin (4 t)+C=\sin (4 t)+C
+\end{gathered}
+$$
+
+Step 5: Solve for $y(t)$
+
+$$
+y(t)=t^2(\sin (4 t)+C)
+$$
+
+
+Step 6: Apply the initial condition $y\left(\frac{\pi}{8}\right)=0$
+
+$$
+0=\left(\frac{\pi}{8}\right)^2(\sin (\pi / 2)+C)=\left(\frac{\pi}{8}\right)^2(1+C)
+$$
+
+
+Since $\left(\frac{\pi}{8}\right)^2 \neq 0$, we must have:
+
+$$
+1+C=0 \Rightarrow C=-1
+$$
+
+
+Final Answer:
+
+$$
+y(t)=t^2(\sin (4 t)-1)=-t^2+t^2 \sin (4 t)
+$$
+
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

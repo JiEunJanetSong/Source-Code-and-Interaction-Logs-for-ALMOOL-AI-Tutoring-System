@@ -1,0 +1,102 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Calculate the first eight terms of the sequence of partial sums correct to four decimal places. Does it appear that the series is convergent or divergent?
+
+$$\sum_{n=1}^{\infty} \dfrac{n}{1+\sqrt{n}}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We are given the infinite series:
+
+$$
+\sum_{n=1}^{\infty} \dfrac{n}{1+\sqrt{n}}
+$$
+
+
+Let:
+
+$$
+a_n=\dfrac{n}{1+\sqrt{n}}, \quad s_n=\sum_{k=1}^n a_k
+$$
+
+
+We will compute the first eight terms of the sequence of partial sums, rounding to four decimal places, and analyze whether the series appears to converge or diverge.
+
+Step 1: Compute the individual terms $a_n=\dfrac{n}{1+\sqrt{n}}$
+
+\begin{tabular}{|l|l|l|}
+\hline $n$ & $\sqrt{n}$ & $a_n=\dfrac{n}{1+\sqrt{n}}$ \\
+\hline 1 & 1.0000 & $\dfrac{1}{1+1}=0.5000$ \\
+\hline 2 & 1.4142 & $\dfrac{2}{1+1.4142} \approx 0.8284$ \\
+\hline 3 & 1.7321 & $\dfrac{3}{1+1.7321} \approx 1.0980$ \\
+\hline 4 & 2.0000 & $\dfrac{4}{1+2}=1.3333$ \\
+\hline 5 & 2.2361 & $\dfrac{5}{1+2.2361} \approx 1.5451$ \\
+\hline 6 & 2.4495 & $\dfrac{6}{1+2.4495} \approx 1.7391$ \\
+\hline 7 & 2.6458 & $\dfrac{7}{1+2.6458} \approx 1.9198$ \\
+\hline 8 & 2.8284 & $\dfrac{8}{1+2.8284} \approx 2.0882$ \\
+\hline
+\end{tabular}
+
+Step 2: Compute the partial sums $s_n=\sum_{k=1}^n a_k$
+
+\begin{tabular}{|l|l|}
+\hline $n$ & $s_n$ (rounded to 4 decimals) \\
+\hline 1 & 0.5000 \\
+\hline 2 & 1.3284 \\
+\hline 3 & 2.4264 \\
+\hline 4 & 3.7597 \\
+\hline 5 & 5.3048 \\
+\hline 6 & 7.0439 \\
+\hline 7 & 8.9637 \\
+\hline 8 & 11.0519 \\
+\hline
+\end{tabular}
+
+Step 3: Analyze convergence
+
+We observe that:
+
+- The individual terms $a_n$ are increasing slowly, and
+
+- The partial sums $s_n$ are growing quickly without any sign of stabilizing.
+
+Also, we can analyze the term's behavior:
+
+$$
+a_n=\dfrac{n}{1+\sqrt{n}}=\dfrac{\sqrt{n} \cdot \sqrt{n}}{1+\sqrt{n}} \approx \sqrt{n} \quad \text { as } n \rightarrow \infty
+$$
+
+
+And since $\sum \sqrt{n}$ diverges, this series also diverges.
+
+Final Answer:
+
+- First 8 partial sums (rounded to 4 decimal places):
+
+$$
+0.5000,1.3284,2.4264,3.7597,5.3048,7.0439,8.9637,11.0519
+$$
+
+- The series appears to be divergent.
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

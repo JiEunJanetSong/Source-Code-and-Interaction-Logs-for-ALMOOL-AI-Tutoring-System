@@ -1,0 +1,79 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Determine whether the geometric series is convergent or divergent. If it is convergent, find its sum.
+
+$$\sum_{n=1}^{\infty} \dfrac{e^n}{3^{n-1}}$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Step 1: Rewrite the general term
+
+We want to express the term in geometric form: $a \cdot r^{n-1}$
+
+$$
+\dfrac{e^n}{3^{n-1}}=e \cdot\left(\dfrac{e}{3}\right)^{n-1}
+$$
+
+
+So the series becomes:
+
+$$
+\sum_{n=1}^{\infty} e\left(\dfrac{e}{3}\right)^{n-1}
+$$
+
+
+This is a geometric series with:
+
+- First term: $a=e$
+
+- Common ratio: $r=\dfrac{e}{3}$
+
+Step 2: Convergence Test
+
+A geometric series $\sum a r^{n-1}$ converges if and only if $|r|<1$
+
+Here:
+
+- $e \approx 2.718$
+
+- So $\dfrac{e}{3} \approx 0.906<1$
+
+Therefore, the series converges
+
+Step 3: Use the geometric series sum formula
+
+$$
+S=\dfrac{a}{1-r}=\dfrac{e}{1-\dfrac{e}{3}}=\dfrac{e}{\dfrac{3-e}{3}}=\dfrac{3 e}{3-e}
+$$
+
+Final Answer:
+
+- The series is convergent
+
+- The sum is:
+
+$$
+\dfrac{3 e}{3-e}
+$$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

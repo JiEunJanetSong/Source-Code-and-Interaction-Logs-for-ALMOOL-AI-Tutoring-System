@@ -1,0 +1,46 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Minh enters the numbers 1 through 81 into the cells of a $9 \times 9$ grid in some order. She calculates the product of the numbers in each row and column. What is the least number of rows and columns that could have a product divisible by 3?
+
+\ansFIVEs{%start
+		8 }{%<--- (A)
+		9 }{%<--- (B)
+		10 }{%<--- (C)
+		11 }{%<---- (D)
+		12 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+Note you can swap/rotate any configuration of rows, such that all the rows and columns that have a product of 3 are in the top left. Hence the points are bounded by a $a \times b$ rectangle. This has $a b$ area and $a+b$ rows and columns divisible by 3 . We want $a b \geq 27$ and $a+b$ minimized.
+
+If $a b=27$, we achieve minimum with $a+b=9+3=12$.
+If $a b=28$,our best is $a+b=7+4=11$. Note if $a+b=10, a b=25$. Because $25<27$, there is no smaller answer, and we get (D) 11 .
+- SahanWijetunga ~vockey(minor edits) ~phy6(minor edits)
+
+Solution 2
+For a row or column to have a product divisible by 3 , there must be a multiple of 3 in the row or column. To create the least amount of rows and columns with multiples of 3 , we must find a way to keep them all together, to minimize the total number of rows and columns with multiples of threes in it. From 1 to 81 , there are 27 multiples of $3(81 / 3=27)$. So we have to fill 27 cells with numbers that are multiples of 3 . If we put 25 of these numbers in a $5 * 5$ grid, there would be 5 rows and 5 columns ( 10 in total), with products divisible by 3 . However, we have 27 numbers, so 2 numbers still need to be put in the $9 * 9$ grid. If we put both numbers in the 6 th column, but one in the first row, and one in the second row, (next to the 5 by 5 grid already filled), we would have a total of 6 columns now, and still 5 rows with products that are multiples of 3 . Since $6+5=11$, the answer is (D) 11
+$\sim$ goofytaipan (minor edit) DehnTwistNil $\sim$ carOt (a few minor edits)
+
+Solution 3
+In the numbers 1 to 81 , there are 27 multiples of three. In order to minimize the rows and columns, the best way is to make a square. However, the closest square is 25 , meaning there are two multiples of three remaining. However, you can place these multiples right above the $5 \times 5$ square, meaning the answer is (D) $11 \sim$ e Just be better $\sim$ Shriyans Chowdhury (minor configuration error)
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

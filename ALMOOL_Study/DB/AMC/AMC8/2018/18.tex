@@ -1,0 +1,86 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+How many positive factors does 23,232 have?
+
+\ansFIVEs{%start
+		9 }{%<--- (A)
+		12 }{%<--- (B)
+		28 }{%<--- (C)
+		36 }{%<---- (D)
+		42 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+}\SetValue{Solution}{%
+
+To count the positive divisors of 23232, first factor it into primes.
+1. Prime factorization
+
+$$
+\begin{aligned}
+23232 \div 2 & =11616 \\
+11616 \div 2 & =5808 \\
+5808 \div 2 & =2904 \\
+2904 \div 2 & =1452 \\
+1452 \div 2 & =726 \\
+726 \div 2 & =363
+\end{aligned}
+$$
+
+
+Thus $23232=2^6 \times 363$.
+Now factor 363:
+
+$$
+363=3 \times 121=3 \times 11^2
+$$
+
+
+So
+
+$$
+23232=2^6 3^1 11^2 .
+$$
+
+2. Use the exponent-plus-one rule
+
+If
+
+$$
+n=p_1^{e_1} p_2^{e_2} \cdots p_k^{e_k}
+$$
+
+then the number of positive divisors of $n$ is
+
+$$
+\left(e_1+1\right)\left(e_2+1\right) \cdots\left(e_k+1\right)
+$$
+
+
+For 23 232:
+
+$$
+(6+1)(1+1)(2+1)=7 \times 2 \times 3=42
+$$
+
+42
+
+}\SetValue{Solution}{%
+
+Answer (E): The prime factorization of 23,232 is $2^6 \cdot 3 \cdot 11^2$. Each factor of 23,232 must be of the form $2^a \cdot 3^b \cdot 11^c$, where $a=0,1,2,3,4,5$, or $6, b=0$ or 1 , and $c=0,1$, or 2 . Therefore, the number of factors of 23,232 is $7 \cdot 2 \cdot 3=42$.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

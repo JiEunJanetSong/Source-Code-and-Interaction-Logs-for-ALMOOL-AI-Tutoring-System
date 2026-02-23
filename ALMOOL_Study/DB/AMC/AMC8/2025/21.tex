@@ -1,0 +1,46 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+The Konigsberg School has assigned grades 1 through 7 to pods $A$ through $G$, one grade per pod. Some of the pods are connected by walkways, as shown in the figure below. The school noticed that each pair of connected pods has been assigned grades differing by 2 or more grade levels. (For example, grades 1 and 2 will not be in pods directly connected by a walkway.) What is the sum of the grade levels assigned to pods $C, E$, and $F$?
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2025-21.png}
+	\end{center}
+
+\ansFIVEs{%start
+		12 }{%<--- (A)
+		13 }{%<--- (B)
+		14 }{%<--- (C)
+		15 }{%<---- (D)
+		16 }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1
+The key observation for this solution is to observe that pods $C$ and $F$ both have degree 5; that is, they are connected to five other pods. This implies that $C$ and $F$ must contain grades 1 and 7 in either order (if $C$ or $F$ contained any of grades $2,3,4,5$, or 6 , then there would only be four possible grades for five pods, a contradiction). It does not matter which grade $C$ and $F$ gets (see Solution 2 below), so we will assume that pod $C$ is assigned grade 1 , and pod $F$ is assigned grade 7.
+Next, pod $D$ is the only pod which is not adjacent to pod $F$, so pod $D$ must be assigned grade 6. Similarly, pod $G$ must be assigned grade 2 .
+Lastly, we need to assign grades 3,4 , and 5 to pods $A, B$, and $E$. Note that $A$ and $B$ are adjacent; therefore, pods $A$ and $B$ must contain grades 3 and 5 . We conclude that $E$ must be assigned grade 4 . The requested sum is $1+4+7=(\mathbf{A}) 12$.
+
+Solution 2 (Fast)
+Suppose that we replaced each label $x$ with $8-x$. That is, we replaced the grade $a$ assigned to $A$ with the grade $8-a$, the grade $b$ assigned to $B$ with $8-b$, and so on. We claim that if the initial labeling is valid (i.e., each pair of connected pods has grades differing by 2 or more), then so will the new labeling. This follows as if $|x-y| \geq 2$, then $|(8-x)-(8-y)|=|-x+y|=|x-y| \geq 2$. This shows that if there is an assignment $(a, b, c, d, e, f, g)$ of grades to the pods, where $\{a, b, \ldots, g\}=\{1,2, \ldots, 7\}$, then there is a second, valid assignment.
+
+Because this is an AMC 8 problem and only one answer is correct, we can conclude that $c+e+f=(8-c)+(8-e)+(8-f)$. Simplifying and solving for $c+e+f$ gives $c+e+f=(\mathbf{A}) 12$.
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

@@ -1,0 +1,57 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Each square in a $3 \times 3$ grid is randomly filled with one of the 4 gray and white tiles shown below on the right.
+
+\begin{center}		
+    \includegraphics[scale=0.6]{AMC-8-pics/2023-23-1.png}
+	\end{center}
+
+What is the probability that the tiling will contain a large gray diamond in one of the smaller $2 \times 2$ grids? Below is an example of such tiling.
+
+	\begin{center}		
+		\includegraphics[scale=0.6]{AMC-8-pics/2023-23-2.png}
+		\end{center}
+		
+\ansFIVEs{%start
+		\frac{1}{1024} }{%<--- (A)
+		\frac{1}{256} }{%<--- (B)
+		\frac{1}{64} }{%<--- (C)
+		\frac{1}{16} }{%<---- (D)
+		\frac{1}{4} }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+There are 4 cases that the tiling will contain a large gray diamond in one of the smaller $2 \times 2$ grids, as shown below:
+
+\begin{center}		
+	\includegraphics[scale=0.6]{AMC-8-pics/2023-23-s.png}
+	\end{center}
+
+There are $4^5$ ways to decide the 5 white squares for each case, and the cases do not have any overlap.
+
+So, the requested probability is
+	
+	$$
+	\frac{4 \cdot 4^5}{4^9}=\frac{4^6}{4^9}=\frac{1}{4^3}=\text { (C) } \frac{1}{64}
+	$$
+	
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

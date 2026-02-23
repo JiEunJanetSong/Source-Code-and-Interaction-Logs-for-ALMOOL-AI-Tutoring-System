@@ -1,0 +1,126 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the solution of the IVP
+
+$$
+y^{\prime}=-4 y+2, \quad y(0)=5
+$$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Let's solve the initial value problem $y^{\prime}=-4 y+2$, with $y(0)=5$ using the integrating factor method.
+
+First, rewrite the differential equation in the standard linear first-order form:
+
+$\$ y^{\prime}+P(t) y=Q(t) \$$ The given equation is $y^{\prime}=-4 y+2$. Move the term involving $y$ to the left side:
+
+$$
+y^{\prime}+4 y=2
+$$
+
+
+Here, we can identify $P(t)=4$ and $Q(t)=2$.
+
+Next, calculate the integrating factor, $I(t)$, using the formula $I(t)=e^{\int P(t) d t}$:
+
+$$
+I(t)=e^{\int 4 d t}=e^{4 t}
+$$
+
+
+Now, multiply the standard form of the differential equation by the integrating factor:
+
+$$
+e^{4 t}\left(y^{\prime}+4 y\right)=e^{4 t}(2)
+$$
+
+$\$ e^{4 t} y^{\prime}+4 e^{4 t} y=2 e^{4 t} \$$ The left side of this equation is the derivative of the product of the integrating factor and $y(t)$, i.e., $\frac{d}{d t}\left(e^{4 t} y\right)$. So, we can write:
+
+$$
+\frac{d}{d t}\left(e^{4 t} y\right)=2 e^{4 t}
+$$
+
+
+Now, integrate both sides with respect to $t$:
+
+$$
+\begin{gathered}
+\int \frac{d}{d t}\left(e^{4 t} y\right) d t=\int 2 e^{4 t} d t \\
+e^{4 t} y=2 \int e^{4 t} d t \\
+e^{4 t} y=2\left(\frac{1}{4} e^{4 t}\right)+C
+\end{gathered}
+$$
+
+
+$$
+e^{4 t} y=\frac{1}{2} e^{4 t}+C
+$$
+
+where $C$ is the constant of integration.
+
+Now, solve for $y(t)$ by dividing both sides by $e^{4 t}$:
+
+$$
+\begin{aligned}
+& y(t)=\frac{\frac{1}{2} e^{4 t}+C}{e^{4 t}} \\
+& y(t)=\frac{1}{2}+C e^{-4 t}
+\end{aligned}
+$$
+
+
+This is the general solution to the differential equation.
+
+Finally, use the initial condition $y(0)=5$ to find the value of $C$. Substitute $t=0$ and $y=5$ into the general solution:
+
+$$
+\begin{gathered}
+5=\frac{1}{2}+C e^{-4(0)} \\
+5=\frac{1}{2}+C e^0 \\
+5=\frac{1}{2}+C(1) \\
+5=\frac{1}{2}+C \\
+C=5-\frac{1}{2}=\frac{10}{2}-\frac{1}{2}=\frac{9}{2}
+\end{gathered}
+$$
+
+
+Substitute the value of $C=\frac{9}{2}$ back into the general solution to get the particular solution for the IVP:
+
+$$
+y(t)=\frac{1}{2}+\frac{9}{2} e^{-4 t}
+$$
+
+
+Rearranging the terms, we get:
+
+$$
+y(t)=\frac{9}{2} e^{-4 t}+\frac{1}{2}
+$$
+
+
+The final answer is $y(t)=\frac{9}{2} e^{-4 t}+\frac{1}{2}$.
+
+
+
+
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

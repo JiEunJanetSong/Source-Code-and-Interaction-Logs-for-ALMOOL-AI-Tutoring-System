@@ -1,0 +1,72 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Differentiate.
+
+$f(\theta)=\dfrac{\sec \theta}{1+\sec \theta}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Using the Quotient Rule:
+
+We have
+$
+f(\theta) = \dfrac{\sec \theta}{1 + \sec \theta}.
+$
+Set $u = \sec \theta$ and $v = 1 + \sec \theta$. 
+
+Then:
+
+$
+u' = \sec \theta \tan \theta, 
+\quad
+v' = \sec \theta \tan \theta.
+$
+
+Using the quotient rule,
+$
+\biggl(\dfrac{u}{v}\biggr)' 
+= \dfrac{u'v - uv'}{v^2},
+$
+
+we get
+
+$
+f'(\theta) 
+= \dfrac{\bigl(\sec \theta \tan \theta\bigr)\bigl(1 + \sec \theta\bigr) \;-\; \sec \theta \bigl(\sec \theta \tan \theta\bigr)}{\bigl(1 + \sec \theta\bigr)^2}
+= \dfrac{\sec \theta \tan \theta \bigl(1 + \sec \theta\bigr) - \sec^2 \theta \tan \theta}{\bigl(1 + \sec \theta\bigr)^2}.
+$
+
+Inside the numerator:
+$
+\sec \theta \tan \theta \bigl(1 + \sec \theta\bigr) - \sec^2 \theta \tan \theta
+= \sec \theta \tan \theta + \sec^2 \theta \tan \theta - \sec^2 \theta \tan \theta
+= \sec \theta \tan \theta.
+$
+
+Hence,
+$
+\boxed{f'(\theta) 
+= \dfrac{\sec \theta \tan \theta}{\bigl(1 + \sec \theta\bigr)^2}.}
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

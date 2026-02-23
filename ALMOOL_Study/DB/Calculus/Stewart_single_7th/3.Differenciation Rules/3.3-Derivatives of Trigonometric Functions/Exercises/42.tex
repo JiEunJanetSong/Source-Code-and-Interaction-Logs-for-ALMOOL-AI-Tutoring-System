@@ -1,0 +1,84 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+Find the limit.
+
+$\lim _{\theta \rightarrow 0} \dfrac{\cos \theta-1}{\sin \theta}$
+
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+We want
+$
+\lim_{\theta \to 0} \dfrac{\cos \theta - 1}{\sin \theta}.
+$
+
+A common way to see this limit is to use the small-angle approximations:
+$
+\cos \theta \approx 1 - \dfrac{\theta^2}{2}, 
+\quad
+\sin \theta \approx \theta,
+$
+for $\theta \to 0$. 
+
+Then
+
+$
+\cos \theta - 1 
+\approx \bigl(1 - \tfrac{\theta^2}{2}\bigr) - 1 
+= -\dfrac{\theta^2}{2},
+$
+
+so
+$
+\dfrac{\cos \theta - 1}{\sin \theta} 
+\approx \dfrac{-\tfrac{\theta^2}{2}}{\theta} 
+= -\dfrac{\theta}{2}.
+$
+
+As $\theta \to 0$, this expression goes to $0$.
+
+A more rigorous approach uses L'Hôpital’s Rule. 
+
+Since
+$\cos \theta - 1 \to 0$ and $\sin \theta \to 0$ as $\theta \to 0$, we can differentiate numerator and denominator:
+
+$
+\lim_{\theta \to 0} \dfrac{\cos \theta - 1}{\sin \theta}
+\; \xrightarrow[\text{L'Hôpital}]{} \;
+\lim_{\theta \to 0} \dfrac{\dfrac{d}{d\theta}(\cos \theta - 1)}{\dfrac{d}{d\theta}(\sin \theta)}
+= \lim_{\theta \to 0} \dfrac{-\sin \theta}{\cos \theta}.
+$
+
+Evaluating at $\theta = 0$ gives
+$
+\dfrac{-\sin(0)}{\cos(0)} 
+= \dfrac{0}{1} 
+= 0.
+$
+
+Therefore,
+
+$
+\boxed{0}.
+$
+
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+

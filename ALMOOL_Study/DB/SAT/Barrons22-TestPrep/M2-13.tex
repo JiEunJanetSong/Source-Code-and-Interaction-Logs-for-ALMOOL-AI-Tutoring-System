@@ -1,0 +1,47 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+A company has four different stores at four different locations throughout a large city. The company gathered data on the initial prices, sale prices, and respective quantities sold of a particular item.
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Store} & \textbf{Price Before Sale} & \textbf{Quantity Sold Before Sale} & \textbf{Sale Price} & \textbf{Quantity Sold After Sale} \\ \hline
+Store A        & \$12.50                   & 350                                & \$11.00             & 400                                \\ \hline
+Store B        & \$13.25                   & 260                                & \$10.00             & 520                                \\ \hline
+Store C        & \$11.75                   & 550                                & \$9.50              & 625                                \\ \hline
+Store D        & \$14.00                   & 220                                & \$10.25             & 460                                \\ \hline
+\end{tabular}
+\end{center}
+
+
+Look at how many of the particular item Stores A and B sold at the presale price. What is the arithmetic mean of this set of values to the nearest tenth?
+
+\ansFOURs{%start
+ 8.1}{%<--- (A)
+ 9.7}{%<--- (B)
+ 10.5}{%<--- (C)
+ 12.8}%<---- (D)
+
+}\SetValue{Solution}{%
+Answer: \textbf{(D)} 
+
+The arithmetic mean is the average. Solve this problem using a weighted average. In other words, calculate the average by factoring in the relative amounts of the item sold by each store.
+\begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{Store} & \textbf{Price Before Sale} & \textbf{Quantity Sold Before Sale} & \textbf{Sale Price} & \textbf{Quantity Sold After Sale} \\ \hline
+    Store A        & \$12.50                   & 350                                & \$11.00             & 400                                \\ \hline
+    Store B        & \$13.25                   & 260                                & \$10.00             & 520                                \\ \hline
+    Store C        & \$11.75                   & 550                                & \$9.50              & 625                                \\ \hline
+    Store D        & \$14.00                   & 220                                & \$10.25             & 460                                \\ \hline
+    \end{tabular}
+    
+    Store A sold 350 items for $\$ 12.50$ each, and Store B sold 260 items for $\$ 13.25$ each. The total number of items sold is $350+260$. You can compute the average as follows:
+    
+    Total Income/Total Number of Items Sold $=\dfrac{[(12.50 \times 350)+(13.25 \times 260)]}{(350+260)} \approx 12.8$
+
+}\SetValue{Answer}{%
+D
+}
+\ProcessDATA
+
+

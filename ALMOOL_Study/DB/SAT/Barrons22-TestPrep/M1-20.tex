@@ -1,0 +1,49 @@
+\SetValue{SectionAB}{}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%
+
+\begin{center}
+\begin{tabular}{|c|c|}
+    \hline$n$ & Pattern \\
+    \hline 1 & 1 \\
+    \hline 2 & $1+3$ \\
+    \hline 3 & $1+3+5$ \\
+    \hline 4 & $1+3+5+7$ \\
+    \hline 5 & $1+3+5+7+9$ \\
+    \hline
+    \end{tabular}
+\end{center}
+
+    The table above gives the values of a sum of the first $n$ numbers, starting with 1. Which of the following is a correct statement about $n$ ?
+
+\ansFOURsT{%start
+The product of $n$ and its corresponding sum decreases as $n$ increases.}{%<--- (A)
+The difference between each additional value of $n$ and the previous value of $n$ is increasing exponentially.}{%<--- (B)
+The sum of the first $n$ odd numbers equals the square of $n$.}{%<--- (C)
+The sum of the first $n$ numbers is comprised solely of prime numbers.}%<---- (D)
+
+}\SetValue{Solution}{%
+
+Answer: \textbf{(C)} 
+
+Rewrite the table by calculating the actual sums:
+        \begin{tabular}{|c|c|c|}
+        \hline $\boldsymbol{n}$ & Pattern & Sum \\
+        \hline 1 & 1 & 1 \\
+        \hline 2 & $1+3$ & 4 \\
+        \hline 3 & $1+3+5$ & 9 \\
+        \hline 4 & $1+3+5+7$ & 16 \\
+        \hline 5 & $1+3+5+7+9$ & 25 \\
+        \hline
+        \end{tabular}
+        
+        Each value in the ``Sum" column is the corresponding value of $n$ squared:
+
+        $
+        1=1^2 , \quad 4=2^2 , \quad 9=3^2 , \quad 16=4^2 , \quad 25=5^2
+        $
+  
+}\SetValue{Answer}{%
+C
+}
+\ProcessDATA
+
+

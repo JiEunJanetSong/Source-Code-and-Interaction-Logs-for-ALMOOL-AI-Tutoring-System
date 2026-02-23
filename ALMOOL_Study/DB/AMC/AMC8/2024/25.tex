@@ -1,0 +1,46 @@
+\SetValue{Module}{1}\SetValue{SectionAB}{A}\SetValue{MainChapter}{}\SetValue{SubChapter}{}\SetValue{Contents}{%%
+    
+A small airplane has 4 rows of seats with 3 seats in each row. Eight passengers have boarded the plane and are distributed randomly among the seats. A married couple is next to board. What is the probability there will be 2 adjacent seats in the same row for the couple?
+
+\ansFIVEs{%start
+		\frac{8}{15} }{%<--- (A)
+		\frac{32}{55} }{%<--- (B)
+		\frac{20}{33} }{%<--- (C)
+		\frac{34}{55} }{%<---- (D)
+		\frac{8}{11} }%<---- (D)
+}\SetValue{Concept}{%
+
+
+
+}\SetValue{AltText}{%
+
+
+
+}\SetValue{Solution}{%
+
+Solution 1 (Complementary Counting Casework)
+Suppose the passengers are indistinguishable. There are $\binom{12}{8}=495$ total ways to distribute the passengers. We proceed with complementary counting, and instead, will count the number of passenger arrangements such that the couple cannot sit anywhere. Consider the partitions of 8 among the rows of 3 seats, to make our lives easier, assuming they are non-increasing. We have $(3,3,2,0),(3,3,1,1),(3,2,2,1),(2,2,2,2)$.
+
+For the first partition, clearly, the couple will always be able to sit in the row with 0 occupied seats, so we have 0 cases here.
+
+For the second partition, there are $\frac{4!}{2!2!}=6$ ways to permute the partition. Now the rows with exactly 1 passenger must be in the middle, so this case generates 6 cases.
+
+For the third partition, there are $\frac{4!}{2!}=12$ ways to permute the partition. For rows with 2 passengers, there are $\binom{3}{2}=3$ ways to arrange them in the row so that the couple cannot sit there. The row with 1 passenger must be in the middle. We obtain $12 \cdot 3^2=108$ cases.
+
+For the fourth partition, there is 1 way to permute the partition. As said before, rows with 2 passengers can be arranged in 3 ways, so we obtain $3^4=81$ cases.
+
+Collectively, we obtain a total of $6+108+81=195$ cases. The final probability is $1-\frac{195}{495}=$ (C) $\frac{20}{33}$.
+$\square$
+}\SetValue{Rubric}{%Markdown
+
+
+
+}\SetValue{Hint}{%
+Solution Goes Here
+}\SetValue{Answer}{%
+
+}
+\ProcessDATA
+
+
+
